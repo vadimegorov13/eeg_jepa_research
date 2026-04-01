@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import argparse
-import contextlib
 import hashlib
 import json
 import os
@@ -12,7 +11,6 @@ import sys
 import time
 from copy import deepcopy
 from datetime import datetime
-from io import StringIO
 from pathlib import Path
 from pprint import pformat
 from typing import Any
@@ -21,10 +19,11 @@ import nbformat # type: ignore
 from nbclient import NotebookClient # type: ignore
 from nbclient.exceptions import CellExecutionError # type: ignore
 
-
 CONFIG_CELL_PATTERN = re.compile(r"^\s*CONFIG\s*=\s*\{", re.MULTILINE)
 ARTIFACT_LINE_PATTERN = re.compile(r"All artifacts in:\s*(.+)")
 RUN_ID_PATTERN = re.compile(r"Run ID:\s*(\S+)")
+METADATA_LINE_PATTERN = re.compile(r"^__EXPERIMENT_META__=(.+)$", re.MULTILINE)
+ARTIFACT_MARKER_FILES = ("run_metadata.json", "global_metrics.json", "cv_results.json")
 
 
 def parse_args() -> argparse.Namespace:
@@ -88,7 +87,7 @@ def make_override_cell(overrides: dict[str, Any]) -> nbformat.NotebookNode:
 
 
 def default_artifact_root(notebook_path: Path) -> Path:
-    return notebook_path.parent / "artifacts" / "lee-2019-ssvep-fine-tuning"
+    return notebook_path.parent.parent / "artifacts"
 
 
 def create_run_id(configs: list[dict[str, Any]], configs_name: str) -> str:
@@ -143,6 +142,60 @@ def parse_artifact_info(output_text: str) -> tuple[str | None, str | None]:
 
     return artifact_dir, run_id
 
+def make_metadata_cell() -> nbformat.NotebookNode:
+    source = (
+        "# Injected by experiments.py (metadata capture)\n"
+        "import json\n"
+        "import sys\n"
+        "_config = globals().get('CONFIG', {})\n"
+        "_artifact_dir = (\n"
+        "    globals().get('artifact_dir')\n"
+        "    or globals().get('artifacts_dir')\n"
+        "    or globals().get('ARTIFACT_DIR')\n"
+        "    or globals().get('ARTIFACTS_DIR')\n"
+        ")\n"
+        "_run_id = (\n"
+        "    globals().get('run_id')\n"
+        "    or globals().get('RUN_ID')\n"
+        ")\n"
+        "if _artifact_dir is None and isinstance(_config, dict):\n"
+        "    _artifact_dir = _config.get('artifact_dir') or _config.get('artifacts_dir')\n"
+        "if _run_id is None and isinstance(_config, dict):\n"
+        "    _run_id = _config.get('run_id')\n"
+        "sys.stdout.write('__EXPERIMENT_META__=' + json.dumps({\n"
+        "    'artifact_dir': str(_artifact_dir) if _artifact_dir is not None else None,\n"
+        "    'run_id': str(_run_id) if _run_id is not None else None,\n"
+        "}, default=str) + '\\n')\n"
+        "sys.stdout.flush()\n"
+    )
+    return nbformat.v4.new_code_cell(source=source)
+
+
+def parse_metadata_from_output(output_text: str) -> tuple[str | None, str | None]:
+    matches = METADATA_LINE_PATTERN.findall(output_text)
+    if not matches:
+        return None, None
+
+    try:
+        payload = json.loads(matches[-1].strip())
+    except json.JSONDecodeError:
+        return None, None
+
+    artifact_dir = payload.get("artifact_dir")
+    run_id = payload.get("run_id")
+
+    if isinstance(artifact_dir, str):
+        artifact_dir = artifact_dir.strip() or None
+    else:
+        artifact_dir = None
+
+    if isinstance(run_id, str):
+        run_id = run_id.strip() or None
+    else:
+        run_id = None
+
+    return artifact_dir, run_id
+
 
 def is_pid_running(pid: int) -> bool:
     try:
@@ -150,6 +203,42 @@ def is_pid_running(pid: int) -> bool:
     except OSError:
         return False
     return True
+
+
+def snapshot_artifact_dirs(artifact_root: Path) -> set[Path]:
+    if not artifact_root.exists():
+        return set()
+
+    dirs: set[Path] = set()
+    for marker_name in ARTIFACT_MARKER_FILES:
+        for marker_path in artifact_root.rglob(marker_name):
+            dirs.add(marker_path.parent.resolve())
+    return dirs
+
+
+def newest_recent_artifact_dir(
+    artifact_dirs: set[Path],
+    started_wall_time: float,
+    recent_window_seconds: int = 120,
+) -> str | None:
+    candidates: list[tuple[float, Path]] = []
+    for artifact_dir in artifact_dirs:
+        marker_mtime = None
+        for marker_name in ARTIFACT_MARKER_FILES:
+            marker_path = artifact_dir / marker_name
+            if marker_path.exists():
+                marker_mtime = marker_path.stat().st_mtime
+                break
+        if marker_mtime is None:
+            continue
+        if marker_mtime >= started_wall_time - recent_window_seconds:
+            candidates.append((marker_mtime, artifact_dir))
+
+    if not candidates:
+        return None
+
+    candidates.sort(key=lambda item: item[0], reverse=True)
+    return str(candidates[0][1])
 
 
 def write_status(status_path: Path, payload: dict[str, Any]) -> None:
@@ -240,9 +329,15 @@ def execute_one(
     nb = deepcopy(base_nb)
     config_idx = find_config_cell_index(nb)
     nb.cells.insert(config_idx + 1, make_override_cell(overrides))
+    nb.cells.append(make_metadata_cell())
 
-    artifact_root = Path(overrides.get("artifact_dir", default_artifact_root(notebook_path)))
-    before_dirs = {p.resolve() for p in artifact_root.iterdir() if p.is_dir()} if artifact_root.exists() else set()
+    artifact_root_value = (
+        overrides.get("artifact_dir")
+        or overrides.get("artifacts_dir")
+        or default_artifact_root(notebook_path)
+    )
+    artifact_root = Path(artifact_root_value)
+    before_dirs = snapshot_artifact_dirs(artifact_root)
 
     notebook_kwargs = {
         "nb": nb,
@@ -265,13 +360,32 @@ def execute_one(
 
     elapsed_seconds = round(time.time() - started, 3)
     output_text = collect_text_outputs(nb)
-    artifact_dir, run_id = parse_artifact_info(output_text)
 
+    # 1) Prefer machine-readable metadata from the injected final cell.
+    metadata_artifact_dir, metadata_run_id = parse_metadata_from_output(output_text)
+
+    # 2) Fall back to your old human-readable log scraping.
+    parsed_artifact_dir, parsed_run_id = parse_artifact_info(output_text)
+
+    artifact_dir = metadata_artifact_dir or parsed_artifact_dir
+    run_id = metadata_run_id or parsed_run_id
+
+    # 3) Final fallback for artifact_dir: detect exactly one new directory.
     if artifact_dir is None and artifact_root.exists():
-        after_dirs = {p.resolve() for p in artifact_root.iterdir() if p.is_dir()}
+        after_dirs = snapshot_artifact_dirs(artifact_root)
         new_dirs = sorted(after_dirs - before_dirs)
         if len(new_dirs) == 1:
             artifact_dir = str(new_dirs[0])
+
+    # 4) If no new directory appeared (e.g. re-run in same minute), pick the most recently
+    # touched artifact directory based on marker files updated during this execution.
+    if artifact_dir is None and artifact_root.exists():
+        after_dirs = snapshot_artifact_dirs(artifact_root)
+        artifact_dir = newest_recent_artifact_dir(after_dirs, started_wall_time=started)
+
+    # 5) Optional fallback: if your artifact directory name is the run_id, recover it from there.
+    if run_id is None and artifact_dir is not None:
+        run_id = Path(artifact_dir).name
 
     return {
         "status": status,
