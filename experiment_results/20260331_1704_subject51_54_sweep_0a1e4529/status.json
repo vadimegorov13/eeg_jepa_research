@@ -1,0 +1,38 @@
+{
+  "run_id": "20260331_1704_subject51_54_sweep_0a1e4529",
+  "state": "running",
+  "pid": 50808,
+  "pid_running": true,
+  "notebook": "/home/vegorov/Repos/eeg_jepa_research/src/lee2019_finetune_sjepa.ipynb",
+  "configs": "/home/vegorov/Repos/eeg_jepa_research/src/utils/experiments/configs/subject51_54_sweep.json",
+  "total_configs": 24,
+  "completed_configs": 22,
+  "failed_configs": 0,
+  "current_config_index": 22,
+  "latest_result": {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 302,
+      "set_seed": true,
+      "sfreq": 128,
+      "bandpass_low": 0.5,
+      "bandpass_high": 40.0,
+      "convert_to_uV": true,
+      "normalize": true,
+      "normalization_method": "zscore",
+      "learning_rate": 0.001,
+      "subjects_to_use": [
+        51,
+        54
+      ],
+      "paradigm": "SSVEP"
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260331_1723_0b5f0dae",
+    "run_id": "20260331_1723_0b5f0dae",
+    "elapsed_seconds": 84.666
+  },
+  "results_dir": "experiment_results/20260331_1704_subject51_54_sweep_0a1e4529",
+  "started_at": "2026-03-31T17:04:33",
+  "updated_at": "2026-03-31T17:24:49"
+}

@@ -1,0 +1,1244 @@
+[2026-04-01 11:18:23] Requested device 'auto' ignored; forcing CPU-only execution.
+[2026-04-01 11:18:23] Using device: cpu
+[2026-04-01 11:18:23] Seed set to: 42
+[2026-04-01 11:18:23] ======================================================================
+[2026-04-01 11:18:23] CONFIGURATION
+[2026-04-01 11:18:23] ======================================================================
+[2026-04-01 11:18:23]   artifact_dir: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-s-jepa-pretraining
+[2026-04-01 11:18:23]   bandpass_high: 40.0
+[2026-04-01 11:18:23]   bandpass_low: 0.5
+[2026-04-01 11:18:23]   batch_size: 32
+[2026-04-01 11:18:23]   chunk_shuffle: True
+[2026-04-01 11:18:23]   device: auto
+[2026-04-01 11:18:23]   early_stopping_patience: 50
+[2026-04-01 11:18:23]   ema_decay: 0.996
+[2026-04-01 11:18:23]   excluded_subject_ids: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[2026-04-01 11:18:23]   learning_rate: 0.001
+[2026-04-01 11:18:23]   mask_diameter_percent: 60
+[2026-04-01 11:18:23]   masking_strategy: random_spatial_block_radius
+[2026-04-01 11:18:23]   n_epochs: 300
+[2026-04-01 11:18:23]   paradigm_names: ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:18:23]   predictor_dim_feedforward: 256
+[2026-04-01 11:18:23]   predictor_n_layers: 4
+[2026-04-01 11:18:23]   predictor_nhead: 8
+[2026-04-01 11:18:23]   pretrain_duration_s: 16.0
+[2026-04-01 11:18:23]   sampling_interval_s: 16
+[2026-04-01 11:18:23]   seed: 42
+[2026-04-01 11:18:23]   sfreq: 128
+[2026-04-01 11:18:23]   train_subject_chunk_size: 1
+[2026-04-01 11:18:23]   train_subject_ids: [1]
+[2026-04-01 11:18:23]   val_subject_chunk_size: 1
+[2026-04-01 11:18:23]   val_subject_ids: [2]
+[2026-04-01 11:18:23]   weight_decay: 0.0
+[2026-04-01 11:18:23]   window_preload: False
+[2026-04-01 11:18:23] ======================================================================
+[2026-04-01 11:18:23] Configuration saved to: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-s-jepa-pretraining/20260401_1118_57750d1f/config.json
+[2026-04-01 11:18:23] Lee2019 S-JEPA pretraining split:
+[2026-04-01 11:18:23]   Train subjects:                [1]
+[2026-04-01 11:18:23]   Validation subjects:           [2]
+[2026-04-01 11:18:23]   Excluded downstream subjects:  [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[2026-04-01 11:18:23]   Train chunk size:              1
+[2026-04-01 11:18:23]   Validation chunk size:         1
+[2026-04-01 11:18:23]   Chunk shuffle (train):         True
+[2026-04-01 11:18:23]   Window preload:                False
+[2026-04-01 11:22:55] Loaded reference chunk:
+[2026-04-01 11:22:55]   Subjects:                 [1]
+[2026-04-01 11:22:55]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:22:55]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:22:55]   Total recordings in chunk:4
+
+[2026-04-01 11:22:55] Reference chunk prepared for geometry/model sanity setup.
+[2026-04-01 11:22:55]   Reference subjects:            [1]
+[2026-04-01 11:22:55]   Reference recordings:          4
+[2026-04-01 11:22:55] Pretraining window parameters:
+[2026-04-01 11:22:55]   sfreq:                      128 Hz
+[2026-04-01 11:22:55]   pretrain_duration_s:        16.0 s
+[2026-04-01 11:22:55]   sampling_interval_s:        16 s
+[2026-04-01 11:22:55]   window_size_samples:        2048
+[2026-04-01 11:22:55]   sampling_interval_samples:  2048
+[2026-04-01 11:22:55] Preprocessors ready for chunked train/validation streaming.
+[2026-04-01 11:23:31] Loaded reference chunk:
+[2026-04-01 11:23:31]   Subjects:                 [1]
+[2026-04-01 11:23:31]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:23:31]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:23:31]   Total recordings in chunk:4
+[2026-04-01 11:23:31] Applying preprocessing to reference chunk [1]...
+[2026-04-01 11:23:41]   Recordings:                 4
+[2026-04-01 11:23:41]   sfreq:                      128.0 Hz
+[2026-04-01 11:23:41]   EEG channel count:          62
+[2026-04-01 11:23:41]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 11:23:41]   Std(signal):                2.2511e-05 uV
+[2026-04-01 11:23:41] Creating reference subjects [1] windows:
+[2026-04-01 11:23:41]   window_size_samples:       2048
+[2026-04-01 11:23:41]   sampling_interval_samples: 2048
+[2026-04-01 11:23:41]   preload:                   False
+[2026-04-01 11:23:41]   Total windows created: 307
+[2026-04-01 11:23:41]   Window shape (C, T):   (62, 2048)
+
+[2026-04-01 11:23:41] Reference chunk windows ready:
+[2026-04-01 11:23:41]   Subjects:                    [1]
+[2026-04-01 11:23:41]   Recordings by paradigm:      {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:23:41]   Window count:                307
+[2026-04-01 11:23:41] Geometry summary:
+[2026-04-01 11:23:41]   Montage present:          True
+[2026-04-01 11:23:41]   Montage kind:             DigMontage
+[2026-04-01 11:23:41]   EEG channels:             62
+[2026-04-01 11:23:41]   Valid EEG positions:      62
+[2026-04-01 11:23:41]   Valid position ratio:     1.000
+[2026-04-01 11:23:41]   Any all-zero channels:    False
+[2026-04-01 11:23:41]   Valid xyz min/max:        x[-0.0876, 0.0842] y[-0.0828, 0.1153] z[-0.0132, 0.1415]
+[2026-04-01 11:23:41]   First channel xyz preview:
+[2026-04-01 11:23:41]        Fp1: (-0.0309,  0.1146,  0.0279) valid=True
+[2026-04-01 11:23:41]        Fp2: ( 0.0284,  0.1153,  0.0277) valid=True
+[2026-04-01 11:23:41]         F7: (-0.0719,  0.0731,  0.0258) valid=True
+[2026-04-01 11:23:41]         F3: (-0.0518,  0.0867,  0.0787) valid=True
+[2026-04-01 11:23:41]         Fz: (-0.0012,  0.0933,  0.1026) valid=True
+[2026-04-01 11:23:41]         F4: ( 0.0503,  0.0874,  0.0773) valid=True
+[2026-04-01 11:23:41]         F8: ( 0.0714,  0.0745,  0.0251) valid=True
+[2026-04-01 11:23:41]        FC5: (-0.0789,  0.0514,  0.0630) valid=True
+[2026-04-01 11:23:41] Sanitized SignalJEPA channel metadata:
+[2026-04-01 11:23:41]   EEG channels:             62
+[2026-04-01 11:23:41]   Valid xyz channels:       62
+[2026-04-01 11:23:41]   Sanitized xyz min/max:    x[-0.0876, 0.0842] y[-0.0828, 0.1153] z[-0.0132, 0.1415]
+
+[2026-04-01 11:23:41] EEG channel geometry summary:
+[2026-04-01 11:23:41]   N_CHANNELS:               62
+[2026-04-01 11:23:41]   CH_POSITIONS shape:       (62, 3)
+[2026-04-01 11:23:41]   Sanitized CHS_INFO count: 62
+[2026-04-01 11:23:41] Window sanity checks (reference-train-chunk):
+[2026-04-01 11:23:41]   Total windows:          307
+[2026-04-01 11:23:41]   Window shape (C, T):    (62, 2048)
+[2026-04-01 11:23:41]   Mean:                   1.2984e-05
+[2026-04-01 11:23:41]   Std(signal) (µV):       1.9971e-05
+[2026-04-01 11:23:41]   Max:                    2.6309e-04
+[2026-04-01 11:28:07] Loaded validation-preview chunk:
+[2026-04-01 11:28:07]   Subjects:                 [2]
+[2026-04-01 11:28:07]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:28:07]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:28:07]   Total recordings in chunk:4
+[2026-04-01 11:28:07] Applying preprocessing to validation-preview chunk [2]...
+[2026-04-01 11:28:17]   Recordings:                 4
+[2026-04-01 11:28:17]   sfreq:                      128.0 Hz
+[2026-04-01 11:28:17]   EEG channel count:          62
+[2026-04-01 11:28:17]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 11:28:17]   Std(signal):                1.5731e-05 uV
+[2026-04-01 11:28:17] Creating validation-preview subjects [2] windows:
+[2026-04-01 11:28:17]   window_size_samples:       2048
+[2026-04-01 11:28:17]   sampling_interval_samples: 2048
+[2026-04-01 11:28:17]   preload:                   False
+[2026-04-01 11:28:17]   Total windows created: 289
+[2026-04-01 11:28:17]   Window shape (C, T):   (62, 2048)
+[2026-04-01 11:28:17] Window sanity checks (validation-preview-chunk):
+[2026-04-01 11:28:17]   Total windows:          289
+[2026-04-01 11:28:17]   Window shape (C, T):    (62, 2048)
+[2026-04-01 11:28:17]   Mean:                   9.0201e-06
+[2026-04-01 11:28:17]   Std(signal) (µV):       1.8278e-05
+[2026-04-01 11:28:17]   Max:                    2.7187e-04
+[2026-04-01 11:28:17] Feature encoder token geometry:
+[2026-04-01 11:28:17]   WINDOW_SIZE_SAMPLES:  2048
+[2026-04-01 11:28:17]   N_TOK_PER_CHANNEL:    15
+[2026-04-01 11:28:17]   EMB_DIM:              64
+[2026-04-01 11:28:17]   TOTAL_TOKENS:         930
+[2026-04-01 11:28:17] Student / teacher backbone summary:
+[2026-04-01 11:28:17]   Student parameters:           3,456,852
+[2026-04-01 11:28:17]   Feature encoder parameters:   13,840
+[2026-04-01 11:28:17]   Positional encoder params:    1,860
+[2026-04-01 11:28:17]   Transformer parameters:       3,441,152
+[2026-04-01 11:28:17]   Teacher trainable parameters: 0
+[2026-04-01 11:28:17] Backbone finite probe: OK
+[2026-04-01 11:28:17] Radius-based random spatial block mask sampler:
+[2026-04-01 11:28:17]   n_channels:               62
+[2026-04-01 11:28:17]   n_valid_channels:         62
+[2026-04-01 11:28:17]   head_diameter (valid):    0.206672
+[2026-04-01 11:28:17]   mask_diameter_percent:    60
+[2026-04-01 11:28:17]   mask_diameter:            0.124003
+[2026-04-01 11:28:17]   mask_radius:              0.062002
+[2026-04-01 11:28:17]   n_tok_per_channel:        15
+[2026-04-01 11:28:17] Mask check: Cz
+[2026-04-01 11:28:17]   radius: 0.062002
+[2026-04-01 11:28:17]   masked channels: 8
+[2026-04-01 11:28:17]   masked tokens: 120
+[2026-04-01 11:28:17]   masked names: ['FC1', 'FC2', 'Cz', 'CP1', 'CP2', 'C1', 'C2', 'CPz']
+[2026-04-01 11:28:17] 40% mask around Cz:
+[2026-04-01 11:28:17]   radius: 0.041334
+[2026-04-01 11:28:17]   masked channels (4): ['Cz', 'C1', 'C2', 'CPz']
+
+[2026-04-01 11:28:17] 60% mask around Cz:
+[2026-04-01 11:28:17]   radius: 0.062002
+[2026-04-01 11:28:17]   masked channels (8): ['FC1', 'FC2', 'Cz', 'CP1', 'CP2', 'C1', 'C2', 'CPz']
+
+[2026-04-01 11:28:17] 80% mask around Cz:
+[2026-04-01 11:28:17]   radius: 0.082669
+[2026-04-01 11:28:17]   masked channels (16): ['Fz', 'FC1', 'FC2', 'C3', 'Cz', 'C4', 'CP1', 'CP2', 'Pz', 'FC3', 'C1', 'C2', 'CP3', 'CPz', 'P1', 'P2']
+
+[2026-04-01 11:28:17] 40% mask around C6:
+[2026-04-01 11:28:17]   radius: 0.041334
+[2026-04-01 11:28:17]   masked channels (5): ['FC6', 'C4', 'T8', 'CP6', 'C6']
+
+[2026-04-01 11:28:17] 60% mask around C6:
+[2026-04-01 11:28:17]   radius: 0.062002
+[2026-04-01 11:28:17]   masked channels (10): ['FC6', 'C4', 'T8', 'CP6', 'FC4', 'C6', 'CP4', 'FTT10h', 'TPP8h', 'TP8']
+
+[2026-04-01 11:28:17] 80% mask around C6:
+[2026-04-01 11:28:17]   radius: 0.082669
+[2026-04-01 11:28:17]   masked channels (18): ['F4', 'F8', 'FC2', 'FC6', 'C4', 'T8', 'CP6', 'TP10', 'P4', 'P8', 'FC4', 'C2', 'C6', 'CP4', 'FTT10h', 'TPP8h', 'TP8', 'TPP10h']
+
+[2026-04-01 11:28:18] 40% mask around Oz:
+[2026-04-01 11:28:18]   radius: 0.041334
+[2026-04-01 11:28:18]   masked channels (4): ['O1', 'Oz', 'O2', 'POz']
+
+[2026-04-01 11:28:18] 60% mask around Oz:
+[2026-04-01 11:28:18]   radius: 0.062002
+[2026-04-01 11:28:18]   masked channels (6): ['O1', 'Oz', 'O2', 'POz', 'PO3', 'PO4']
+
+[2026-04-01 11:28:18] 80% mask around Oz:
+[2026-04-01 11:28:18]   radius: 0.082669
+[2026-04-01 11:28:18]   masked channels (13): ['P3', 'Pz', 'P4', 'PO9', 'O1', 'Oz', 'O2', 'PO10', 'P1', 'P2', 'POz', 'PO3', 'PO4']
+
+[2026-04-01 11:28:18] 40% mask around Cz:
+[2026-04-01 11:28:18]   radius: 0.041334
+[2026-04-01 11:28:18]   masked channels (4): ['Cz', 'C1', 'C2', 'CPz']
+
+[2026-04-01 11:28:18] 60% mask around Cz:
+[2026-04-01 11:28:18]   radius: 0.062002
+[2026-04-01 11:28:18]   masked channels (8): ['FC1', 'FC2', 'Cz', 'CP1', 'CP2', 'C1', 'C2', 'CPz']
+
+[2026-04-01 11:28:18] 80% mask around Cz:
+[2026-04-01 11:28:18]   radius: 0.082669
+[2026-04-01 11:28:18]   masked channels (16): ['Fz', 'FC1', 'FC2', 'C3', 'Cz', 'C4', 'CP1', 'CP2', 'Pz', 'FC3', 'C1', 'C2', 'CP3', 'CPz', 'P1', 'P2']
+
+[2026-04-01 11:28:18] Token-routing:
+[2026-04-01 11:28:18]   Full token shape:         (930, 64)
+[2026-04-01 11:28:18]   Visible token shape:      (795, 64)
+[2026-04-01 11:28:18]   Masked token shape:       (135, 64)
+[2026-04-01 11:28:18]   Sample masked channels:   9
+[2026-04-01 11:28:18] Single-sample token routing validated OK.
+[2026-04-01 11:28:18] MaskedTokenPredictor initialized:
+[2026-04-01 11:28:18]   d_model:          64
+[2026-04-01 11:28:18]   nhead:            8
+[2026-04-01 11:28:18]   num_layers:       4
+[2026-04-01 11:28:18]   dim_feedforward:  256
+[2026-04-01 11:28:18]   Total parameters: 267,136
+
+[2026-04-01 11:28:18] Predictor shape test: OK
+[2026-04-01 11:28:18]   student_context: (1, 780, 64)
+[2026-04-01 11:28:18]   masked_pos_enc:  (1, 150, 64)
+[2026-04-01 11:28:18]   prediction:      (1, 150, 64)
+[2026-04-01 11:28:55] Loaded debug-train chunk:
+[2026-04-01 11:28:55]   Subjects:                 [1]
+[2026-04-01 11:28:55]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:28:55]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:28:55]   Total recordings in chunk:4
+[2026-04-01 11:28:55] Applying preprocessing to debug-train chunk [1]...
+[2026-04-01 11:29:07]   Recordings:                 4
+[2026-04-01 11:29:07]   sfreq:                      128.0 Hz
+[2026-04-01 11:29:07]   EEG channel count:          62
+[2026-04-01 11:29:07]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 11:29:07]   Std(signal):                2.2511e-05 uV
+[2026-04-01 11:29:07] Creating debug-train subjects [1] windows:
+[2026-04-01 11:29:07]   window_size_samples:       2048
+[2026-04-01 11:29:07]   sampling_interval_samples: 2048
+[2026-04-01 11:29:07]   preload:                   False
+[2026-04-01 11:29:07]   Total windows created: 307
+[2026-04-01 11:29:07]   Window shape (C, T):   (62, 2048)
+[2026-04-01 11:29:41] Loaded debug-validation chunk:
+[2026-04-01 11:29:41]   Subjects:                 [2]
+[2026-04-01 11:29:41]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:29:41]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:29:41]   Total recordings in chunk:4
+[2026-04-01 11:29:41] Applying preprocessing to debug-validation chunk [2]...
+[2026-04-01 11:29:51]   Recordings:                 4
+[2026-04-01 11:29:51]   sfreq:                      128.0 Hz
+[2026-04-01 11:29:51]   EEG channel count:          62
+[2026-04-01 11:29:51]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 11:29:51]   Std(signal):                1.5731e-05 uV
+[2026-04-01 11:29:51] Creating debug-validation subjects [2] windows:
+[2026-04-01 11:29:51]   window_size_samples:       2048
+[2026-04-01 11:29:51]   sampling_interval_samples: 2048
+[2026-04-01 11:29:51]   preload:                   False
+[2026-04-01 11:29:51]   Total windows created: 289
+[2026-04-01 11:29:51]   Window shape (C, T):   (62, 2048)
+[2026-04-01 11:29:51] Optimizer: Adam
+[2026-04-01 11:29:51] Learning rate:             0.001
+[2026-04-01 11:29:51] Weight decay:              0.0
+[2026-04-01 11:29:51] Debug train chunk subjects: [1]
+[2026-04-01 11:29:51] Debug train windows:        307
+[2026-04-01 11:29:51] Debug val chunk subjects:   [2]
+[2026-04-01 11:29:51] Debug val windows:          289
+
+[2026-04-01 11:29:51] Running first-batch debug (dry-run before optimizer step)...
+[2026-04-01 11:29:51]   [debug] first-sample training path:
+[2026-04-01 11:29:51]     x_single:             (1, 62, 2048)
+[2026-04-01 11:29:51]     teacher_full_tokens:  (1, 930, 64)
+[2026-04-01 11:29:51]     student_visible:      (1, 795, 64)
+[2026-04-01 11:29:51]     masked_queries:       (1, 135, 64)
+[2026-04-01 11:29:51]     predicted_masked:     (1, 135, 64)
+[2026-04-01 11:29:51]     teacher_masked:       (1, 135, 64)
+[2026-04-01 11:29:51]     center_channel:       40
+[2026-04-01 11:29:51]     masked_channels:      9
+[2026-04-01 11:29:51]     masked_tokens:        135
+[2026-04-01 11:29:51]     visible_tokens:       795
+[2026-04-01 11:29:51]     sample_loss:          1.064591
+[2026-04-01 11:30:01]   Dry-run first training-batch loss: 1.044765
+[2026-04-01 11:30:13]   First training-batch loss (updated): 1.044563
+[2026-04-01 11:30:13]   Mean masked channels:               8.25
+[2026-04-01 11:30:13]   Mean masked tokens:                 123.75
+[2026-04-01 11:30:14]   First validation-batch loss: 0.824340
+[2026-04-01 11:30:15] ======================================================================
+[2026-04-01 11:30:15] STARTING LEE2019 S-JEPA PRETRAINING
+[2026-04-01 11:30:15] ======================================================================
+[2026-04-01 11:30:15] Paradigms:              ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:30:15] Train subjects:         [1]
+[2026-04-01 11:30:15] Validation subjects:    [2]
+[2026-04-01 11:30:15] Excluded subjects:      [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[2026-04-01 11:30:15] Train chunk size:       1
+[2026-04-01 11:30:15] Validation chunk size:  1
+[2026-04-01 11:30:15] Train chunks/epoch:     1
+[2026-04-01 11:30:15] Validation chunks/epoch:1
+[2026-04-01 11:30:15] Window preload:         False
+[2026-04-01 11:30:15] Pretrain duration:      16.0 s
+[2026-04-01 11:30:15] Sampling interval:      16 s
+[2026-04-01 11:30:15] Mask diameter:          60%
+[2026-04-01 11:30:15] Batch size:             32
+[2026-04-01 11:30:15] Epoch limit:            300
+[2026-04-01 11:30:15] Early-stop patience:    50
+[2026-04-01 11:30:15] EMA decay:              0.996
+[2026-04-01 11:30:15] Device:                 cpu
+[2026-04-01 11:30:15] ======================================================================
+[2026-04-01 11:30:15] [train] epoch 1: chunks=1 chunk_size=1 shuffle=True preload=False
+[2026-04-01 11:30:15] [train] epoch 1 chunk 1/1 subjects=[1] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:30:49] Loaded train chunk:
+[2026-04-01 11:30:49]   Subjects:                 [1]
+[2026-04-01 11:30:49]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:30:49]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:30:49]   Total recordings in chunk:4
+[2026-04-01 11:30:49] Applying preprocessing to train chunk [1]...
+[2026-04-01 11:30:58]   Recordings:                 4
+[2026-04-01 11:30:58]   sfreq:                      128.0 Hz
+[2026-04-01 11:30:58]   EEG channel count:          62
+[2026-04-01 11:30:58]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 11:30:58]   Std(signal):                2.2511e-05 uV
+[2026-04-01 11:30:58] Creating train subjects [1] windows:
+[2026-04-01 11:30:58]   window_size_samples:       2048
+[2026-04-01 11:30:58]   sampling_interval_samples: 2048
+[2026-04-01 11:30:58]   preload:                   False
+[2026-04-01 11:30:58]   Total windows created: 307
+[2026-04-01 11:30:58]   Window shape (C, T):   (62, 2048)
+[2026-04-01 11:32:49]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:32:49]   chunk recordings total:       4
+[2026-04-01 11:32:49]   chunk windows total:          307
+[2026-04-01 11:32:49]   chunk batches:                9
+[2026-04-01 11:32:49]   chunk mean loss:              0.401634
+[2026-04-01 11:32:49]   cumulative train progress: chunks=1/1 batches=9 running_mean_loss=0.401634
+[2026-04-01 11:32:49] [validation] epoch 1: chunks=1 chunk_size=1 shuffle=False preload=False
+[2026-04-01 11:32:49] [validation] epoch 1 chunk 1/1 subjects=[2] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:33:22] Loaded validation chunk:
+[2026-04-01 11:33:22]   Subjects:                 [2]
+[2026-04-01 11:33:22]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:33:22]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:33:22]   Total recordings in chunk:4
+[2026-04-01 11:33:22] Applying preprocessing to validation chunk [2]...
+[2026-04-01 11:33:30]   Recordings:                 4
+[2026-04-01 11:33:30]   sfreq:                      128.0 Hz
+[2026-04-01 11:33:30]   EEG channel count:          62
+[2026-04-01 11:33:30]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 11:33:30]   Std(signal):                1.5731e-05 uV
+[2026-04-01 11:33:30] Creating validation subjects [2] windows:
+[2026-04-01 11:33:30]   window_size_samples:       2048
+[2026-04-01 11:33:30]   sampling_interval_samples: 2048
+[2026-04-01 11:33:30]   preload:                   False
+[2026-04-01 11:33:30]   Total windows created: 289
+[2026-04-01 11:33:30]   Window shape (C, T):   (62, 2048)
+[2026-04-01 11:33:41]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:33:41]   chunk recordings total:       4
+[2026-04-01 11:33:41]   chunk windows total:          289
+[2026-04-01 11:33:41]   chunk batches:                10
+[2026-04-01 11:33:41]   chunk mean loss:              0.207062
+[2026-04-01 11:33:41]   cumulative validation progress: chunks=1/1 batches=10 running_mean_loss=0.207062
+[2026-04-01 11:33:41] Epoch   1/300  train_loss=0.401634  val_loss=0.207062  best_val=0.207062  patience=0/50  train_chunks=1  val_chunks=1  train_time=154.2s  val_time=52.6s
+[2026-04-01 11:33:41] [train] epoch 2: chunks=1 chunk_size=1 shuffle=True preload=False
+[2026-04-01 11:33:41] [train] epoch 2 chunk 1/1 subjects=[1] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:34:16] Loaded train chunk:
+[2026-04-01 11:34:16]   Subjects:                 [1]
+[2026-04-01 11:34:16]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:34:16]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:34:16]   Total recordings in chunk:4
+[2026-04-01 11:34:16] Applying preprocessing to train chunk [1]...
+[2026-04-01 11:34:26]   Recordings:                 4
+[2026-04-01 11:34:26]   sfreq:                      128.0 Hz
+[2026-04-01 11:34:26]   EEG channel count:          62
+[2026-04-01 11:34:26]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 11:34:26]   Std(signal):                2.2511e-05 uV
+[2026-04-01 11:34:26] Creating train subjects [1] windows:
+[2026-04-01 11:34:26]   window_size_samples:       2048
+[2026-04-01 11:34:26]   sampling_interval_samples: 2048
+[2026-04-01 11:34:26]   preload:                   False
+[2026-04-01 11:34:26]   Total windows created: 307
+[2026-04-01 11:34:26]   Window shape (C, T):   (62, 2048)
+[2026-04-01 11:36:19]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:36:19]   chunk recordings total:       4
+[2026-04-01 11:36:19]   chunk windows total:          307
+[2026-04-01 11:36:19]   chunk batches:                9
+[2026-04-01 11:36:19]   chunk mean loss:              0.156588
+[2026-04-01 11:36:19]   cumulative train progress: chunks=1/1 batches=9 running_mean_loss=0.156588
+[2026-04-01 11:36:19] [validation] epoch 2: chunks=1 chunk_size=1 shuffle=False preload=False
+[2026-04-01 11:36:19] [validation] epoch 2 chunk 1/1 subjects=[2] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:36:53] Loaded validation chunk:
+[2026-04-01 11:36:53]   Subjects:                 [2]
+[2026-04-01 11:36:53]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:36:53]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:36:53]   Total recordings in chunk:4
+[2026-04-01 11:36:53] Applying preprocessing to validation chunk [2]...
+[2026-04-01 11:37:01]   Recordings:                 4
+[2026-04-01 11:37:01]   sfreq:                      128.0 Hz
+[2026-04-01 11:37:01]   EEG channel count:          62
+[2026-04-01 11:37:01]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 11:37:01]   Std(signal):                1.5731e-05 uV
+[2026-04-01 11:37:01] Creating validation subjects [2] windows:
+[2026-04-01 11:37:01]   window_size_samples:       2048
+[2026-04-01 11:37:01]   sampling_interval_samples: 2048
+[2026-04-01 11:37:01]   preload:                   False
+[2026-04-01 11:37:01]   Total windows created: 289
+[2026-04-01 11:37:01]   Window shape (C, T):   (62, 2048)
+[2026-04-01 11:37:12]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:37:12]   chunk recordings total:       4
+[2026-04-01 11:37:12]   chunk windows total:          289
+[2026-04-01 11:37:12]   chunk batches:                10
+[2026-04-01 11:37:12]   chunk mean loss:              0.100120
+[2026-04-01 11:37:12]   cumulative validation progress: chunks=1/1 batches=10 running_mean_loss=0.100120
+[2026-04-01 11:37:12] Epoch   2/300  train_loss=0.156588  val_loss=0.100120  best_val=0.100120  patience=0/50  train_chunks=1  val_chunks=1  train_time=157.8s  val_time=53.1s
+[2026-04-01 11:37:12] [train] epoch 3: chunks=1 chunk_size=1 shuffle=True preload=False
+[2026-04-01 11:37:12] [train] epoch 3 chunk 1/1 subjects=[1] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:37:47] Loaded train chunk:
+[2026-04-01 11:37:47]   Subjects:                 [1]
+[2026-04-01 11:37:47]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:37:47]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:37:47]   Total recordings in chunk:4
+[2026-04-01 11:37:47] Applying preprocessing to train chunk [1]...
+[2026-04-01 11:37:56]   Recordings:                 4
+[2026-04-01 11:37:56]   sfreq:                      128.0 Hz
+[2026-04-01 11:37:56]   EEG channel count:          62
+[2026-04-01 11:37:56]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 11:37:56]   Std(signal):                2.2511e-05 uV
+[2026-04-01 11:37:56] Creating train subjects [1] windows:
+[2026-04-01 11:37:56]   window_size_samples:       2048
+[2026-04-01 11:37:56]   sampling_interval_samples: 2048
+[2026-04-01 11:37:56]   preload:                   False
+[2026-04-01 11:37:56]   Total windows created: 307
+[2026-04-01 11:37:56]   Window shape (C, T):   (62, 2048)
+[2026-04-01 11:39:50]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:39:50]   chunk recordings total:       4
+[2026-04-01 11:39:50]   chunk windows total:          307
+[2026-04-01 11:39:50]   chunk batches:                9
+[2026-04-01 11:39:50]   chunk mean loss:              0.075097
+[2026-04-01 11:39:50]   cumulative train progress: chunks=1/1 batches=9 running_mean_loss=0.075097
+[2026-04-01 11:39:50] [validation] epoch 3: chunks=1 chunk_size=1 shuffle=False preload=False
+[2026-04-01 11:39:50] [validation] epoch 3 chunk 1/1 subjects=[2] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:40:23] Loaded validation chunk:
+[2026-04-01 11:40:23]   Subjects:                 [2]
+[2026-04-01 11:40:23]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:40:23]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:40:23]   Total recordings in chunk:4
+[2026-04-01 11:40:23] Applying preprocessing to validation chunk [2]...
+[2026-04-01 11:40:31]   Recordings:                 4
+[2026-04-01 11:40:31]   sfreq:                      128.0 Hz
+[2026-04-01 11:40:31]   EEG channel count:          62
+[2026-04-01 11:40:31]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 11:40:31]   Std(signal):                1.5731e-05 uV
+[2026-04-01 11:40:31] Creating validation subjects [2] windows:
+[2026-04-01 11:40:31]   window_size_samples:       2048
+[2026-04-01 11:40:31]   sampling_interval_samples: 2048
+[2026-04-01 11:40:31]   preload:                   False
+[2026-04-01 11:40:31]   Total windows created: 289
+[2026-04-01 11:40:31]   Window shape (C, T):   (62, 2048)
+[2026-04-01 11:40:42]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:40:42]   chunk recordings total:       4
+[2026-04-01 11:40:42]   chunk windows total:          289
+[2026-04-01 11:40:42]   chunk batches:                10
+[2026-04-01 11:40:42]   chunk mean loss:              0.049186
+[2026-04-01 11:40:42]   cumulative validation progress: chunks=1/1 batches=10 running_mean_loss=0.049186
+[2026-04-01 11:40:43] Epoch   3/300  train_loss=0.075097  val_loss=0.049186  best_val=0.049186  patience=0/50  train_chunks=1  val_chunks=1  train_time=157.4s  val_time=52.8s
+[2026-04-01 11:40:43] [train] epoch 4: chunks=1 chunk_size=1 shuffle=True preload=False
+[2026-04-01 11:40:43] [train] epoch 4 chunk 1/1 subjects=[1] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:41:17] Loaded train chunk:
+[2026-04-01 11:41:17]   Subjects:                 [1]
+[2026-04-01 11:41:17]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:41:17]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:41:17]   Total recordings in chunk:4
+[2026-04-01 11:41:17] Applying preprocessing to train chunk [1]...
+[2026-04-01 11:41:27]   Recordings:                 4
+[2026-04-01 11:41:27]   sfreq:                      128.0 Hz
+[2026-04-01 11:41:27]   EEG channel count:          62
+[2026-04-01 11:41:27]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 11:41:27]   Std(signal):                2.2511e-05 uV
+[2026-04-01 11:41:27] Creating train subjects [1] windows:
+[2026-04-01 11:41:27]   window_size_samples:       2048
+[2026-04-01 11:41:27]   sampling_interval_samples: 2048
+[2026-04-01 11:41:27]   preload:                   False
+[2026-04-01 11:41:27]   Total windows created: 307
+[2026-04-01 11:41:27]   Window shape (C, T):   (62, 2048)
+[2026-04-01 11:43:18]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:43:18]   chunk recordings total:       4
+[2026-04-01 11:43:18]   chunk windows total:          307
+[2026-04-01 11:43:18]   chunk batches:                9
+[2026-04-01 11:43:18]   chunk mean loss:              0.042128
+[2026-04-01 11:43:18]   cumulative train progress: chunks=1/1 batches=9 running_mean_loss=0.042128
+[2026-04-01 11:43:18] [validation] epoch 4: chunks=1 chunk_size=1 shuffle=False preload=False
+[2026-04-01 11:43:18] [validation] epoch 4 chunk 1/1 subjects=[2] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:43:51] Loaded validation chunk:
+[2026-04-01 11:43:51]   Subjects:                 [2]
+[2026-04-01 11:43:51]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:43:51]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:43:51]   Total recordings in chunk:4
+[2026-04-01 11:43:51] Applying preprocessing to validation chunk [2]...
+[2026-04-01 11:43:59]   Recordings:                 4
+[2026-04-01 11:43:59]   sfreq:                      128.0 Hz
+[2026-04-01 11:43:59]   EEG channel count:          62
+[2026-04-01 11:43:59]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 11:43:59]   Std(signal):                1.5731e-05 uV
+[2026-04-01 11:43:59] Creating validation subjects [2] windows:
+[2026-04-01 11:43:59]   window_size_samples:       2048
+[2026-04-01 11:43:59]   sampling_interval_samples: 2048
+[2026-04-01 11:43:59]   preload:                   False
+[2026-04-01 11:43:59]   Total windows created: 289
+[2026-04-01 11:43:59]   Window shape (C, T):   (62, 2048)
+[2026-04-01 11:44:10]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:44:10]   chunk recordings total:       4
+[2026-04-01 11:44:10]   chunk windows total:          289
+[2026-04-01 11:44:10]   chunk batches:                10
+[2026-04-01 11:44:10]   chunk mean loss:              0.036934
+[2026-04-01 11:44:10]   cumulative validation progress: chunks=1/1 batches=10 running_mean_loss=0.036934
+[2026-04-01 11:44:10] Epoch   4/300  train_loss=0.042128  val_loss=0.036934  best_val=0.036934  patience=0/50  train_chunks=1  val_chunks=1  train_time=155.3s  val_time=52.2s
+[2026-04-01 11:44:10] [train] epoch 5: chunks=1 chunk_size=1 shuffle=True preload=False
+[2026-04-01 11:44:10] [train] epoch 5 chunk 1/1 subjects=[1] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:44:44] Loaded train chunk:
+[2026-04-01 11:44:44]   Subjects:                 [1]
+[2026-04-01 11:44:44]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:44:44]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:44:44]   Total recordings in chunk:4
+[2026-04-01 11:44:44] Applying preprocessing to train chunk [1]...
+[2026-04-01 11:44:54]   Recordings:                 4
+[2026-04-01 11:44:54]   sfreq:                      128.0 Hz
+[2026-04-01 11:44:54]   EEG channel count:          62
+[2026-04-01 11:44:54]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 11:44:54]   Std(signal):                2.2511e-05 uV
+[2026-04-01 11:44:54] Creating train subjects [1] windows:
+[2026-04-01 11:44:54]   window_size_samples:       2048
+[2026-04-01 11:44:54]   sampling_interval_samples: 2048
+[2026-04-01 11:44:54]   preload:                   False
+[2026-04-01 11:44:54]   Total windows created: 307
+[2026-04-01 11:44:54]   Window shape (C, T):   (62, 2048)
+[2026-04-01 11:46:46]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:46:46]   chunk recordings total:       4
+[2026-04-01 11:46:46]   chunk windows total:          307
+[2026-04-01 11:46:46]   chunk batches:                9
+[2026-04-01 11:46:46]   chunk mean loss:              0.034283
+[2026-04-01 11:46:46]   cumulative train progress: chunks=1/1 batches=9 running_mean_loss=0.034283
+[2026-04-01 11:46:47] [validation] epoch 5: chunks=1 chunk_size=1 shuffle=False preload=False
+[2026-04-01 11:46:47] [validation] epoch 5 chunk 1/1 subjects=[2] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:47:20] Loaded validation chunk:
+[2026-04-01 11:47:20]   Subjects:                 [2]
+[2026-04-01 11:47:20]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:47:20]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:47:20]   Total recordings in chunk:4
+[2026-04-01 11:47:20] Applying preprocessing to validation chunk [2]...
+[2026-04-01 11:47:28]   Recordings:                 4
+[2026-04-01 11:47:28]   sfreq:                      128.0 Hz
+[2026-04-01 11:47:28]   EEG channel count:          62
+[2026-04-01 11:47:28]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 11:47:28]   Std(signal):                1.5731e-05 uV
+[2026-04-01 11:47:28] Creating validation subjects [2] windows:
+[2026-04-01 11:47:28]   window_size_samples:       2048
+[2026-04-01 11:47:28]   sampling_interval_samples: 2048
+[2026-04-01 11:47:28]   preload:                   False
+[2026-04-01 11:47:28]   Total windows created: 289
+[2026-04-01 11:47:28]   Window shape (C, T):   (62, 2048)
+[2026-04-01 11:47:39]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:47:39]   chunk recordings total:       4
+[2026-04-01 11:47:39]   chunk windows total:          289
+[2026-04-01 11:47:39]   chunk batches:                10
+[2026-04-01 11:47:39]   chunk mean loss:              0.032737
+[2026-04-01 11:47:39]   cumulative validation progress: chunks=1/1 batches=10 running_mean_loss=0.032737
+[2026-04-01 11:47:39] Epoch   5/300  train_loss=0.034283  val_loss=0.032737  best_val=0.032737  patience=0/50  train_chunks=1  val_chunks=1  train_time=156.2s  val_time=52.5s
+[2026-04-01 11:47:39] [train] epoch 6: chunks=1 chunk_size=1 shuffle=True preload=False
+[2026-04-01 11:47:39] [train] epoch 6 chunk 1/1 subjects=[1] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:48:14] Loaded train chunk:
+[2026-04-01 11:48:14]   Subjects:                 [1]
+[2026-04-01 11:48:14]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:48:14]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:48:14]   Total recordings in chunk:4
+[2026-04-01 11:48:14] Applying preprocessing to train chunk [1]...
+[2026-04-01 11:48:23]   Recordings:                 4
+[2026-04-01 11:48:23]   sfreq:                      128.0 Hz
+[2026-04-01 11:48:23]   EEG channel count:          62
+[2026-04-01 11:48:23]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 11:48:23]   Std(signal):                2.2511e-05 uV
+[2026-04-01 11:48:23] Creating train subjects [1] windows:
+[2026-04-01 11:48:23]   window_size_samples:       2048
+[2026-04-01 11:48:23]   sampling_interval_samples: 2048
+[2026-04-01 11:48:23]   preload:                   False
+[2026-04-01 11:48:23]   Total windows created: 307
+[2026-04-01 11:48:23]   Window shape (C, T):   (62, 2048)
+[2026-04-01 11:50:16]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:50:16]   chunk recordings total:       4
+[2026-04-01 11:50:16]   chunk windows total:          307
+[2026-04-01 11:50:16]   chunk batches:                9
+[2026-04-01 11:50:16]   chunk mean loss:              0.030232
+[2026-04-01 11:50:16]   cumulative train progress: chunks=1/1 batches=9 running_mean_loss=0.030232
+[2026-04-01 11:50:16] [validation] epoch 6: chunks=1 chunk_size=1 shuffle=False preload=False
+[2026-04-01 11:50:16] [validation] epoch 6 chunk 1/1 subjects=[2] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:50:49] Loaded validation chunk:
+[2026-04-01 11:50:49]   Subjects:                 [2]
+[2026-04-01 11:50:49]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:50:49]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:50:49]   Total recordings in chunk:4
+[2026-04-01 11:50:49] Applying preprocessing to validation chunk [2]...
+[2026-04-01 11:50:57]   Recordings:                 4
+[2026-04-01 11:50:57]   sfreq:                      128.0 Hz
+[2026-04-01 11:50:57]   EEG channel count:          62
+[2026-04-01 11:50:57]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 11:50:57]   Std(signal):                1.5731e-05 uV
+[2026-04-01 11:50:57] Creating validation subjects [2] windows:
+[2026-04-01 11:50:57]   window_size_samples:       2048
+[2026-04-01 11:50:57]   sampling_interval_samples: 2048
+[2026-04-01 11:50:57]   preload:                   False
+[2026-04-01 11:50:57]   Total windows created: 289
+[2026-04-01 11:50:57]   Window shape (C, T):   (62, 2048)
+[2026-04-01 11:51:08]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:51:08]   chunk recordings total:       4
+[2026-04-01 11:51:08]   chunk windows total:          289
+[2026-04-01 11:51:08]   chunk batches:                10
+[2026-04-01 11:51:08]   chunk mean loss:              0.029142
+[2026-04-01 11:51:08]   cumulative validation progress: chunks=1/1 batches=10 running_mean_loss=0.029142
+[2026-04-01 11:51:08] Epoch   6/300  train_loss=0.030232  val_loss=0.029142  best_val=0.029142  patience=0/50  train_chunks=1  val_chunks=1  train_time=156.8s  val_time=52.2s
+[2026-04-01 11:51:08] [train] epoch 7: chunks=1 chunk_size=1 shuffle=True preload=False
+[2026-04-01 11:51:08] [train] epoch 7 chunk 1/1 subjects=[1] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:51:43] Loaded train chunk:
+[2026-04-01 11:51:43]   Subjects:                 [1]
+[2026-04-01 11:51:43]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:51:43]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:51:43]   Total recordings in chunk:4
+[2026-04-01 11:51:43] Applying preprocessing to train chunk [1]...
+[2026-04-01 11:51:52]   Recordings:                 4
+[2026-04-01 11:51:52]   sfreq:                      128.0 Hz
+[2026-04-01 11:51:52]   EEG channel count:          62
+[2026-04-01 11:51:52]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 11:51:52]   Std(signal):                2.2511e-05 uV
+[2026-04-01 11:51:52] Creating train subjects [1] windows:
+[2026-04-01 11:51:52]   window_size_samples:       2048
+[2026-04-01 11:51:52]   sampling_interval_samples: 2048
+[2026-04-01 11:51:52]   preload:                   False
+[2026-04-01 11:51:52]   Total windows created: 307
+[2026-04-01 11:51:52]   Window shape (C, T):   (62, 2048)
+[2026-04-01 11:53:45]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:53:45]   chunk recordings total:       4
+[2026-04-01 11:53:45]   chunk windows total:          307
+[2026-04-01 11:53:45]   chunk batches:                9
+[2026-04-01 11:53:45]   chunk mean loss:              0.027501
+[2026-04-01 11:53:45]   cumulative train progress: chunks=1/1 batches=9 running_mean_loss=0.027501
+[2026-04-01 11:53:45] [validation] epoch 7: chunks=1 chunk_size=1 shuffle=False preload=False
+[2026-04-01 11:53:45] [validation] epoch 7 chunk 1/1 subjects=[2] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:54:18] Loaded validation chunk:
+[2026-04-01 11:54:18]   Subjects:                 [2]
+[2026-04-01 11:54:18]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:54:18]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:54:18]   Total recordings in chunk:4
+[2026-04-01 11:54:18] Applying preprocessing to validation chunk [2]...
+[2026-04-01 11:54:26]   Recordings:                 4
+[2026-04-01 11:54:26]   sfreq:                      128.0 Hz
+[2026-04-01 11:54:26]   EEG channel count:          62
+[2026-04-01 11:54:26]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 11:54:26]   Std(signal):                1.5731e-05 uV
+[2026-04-01 11:54:26] Creating validation subjects [2] windows:
+[2026-04-01 11:54:26]   window_size_samples:       2048
+[2026-04-01 11:54:26]   sampling_interval_samples: 2048
+[2026-04-01 11:54:26]   preload:                   False
+[2026-04-01 11:54:26]   Total windows created: 289
+[2026-04-01 11:54:26]   Window shape (C, T):   (62, 2048)
+[2026-04-01 11:54:36]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:54:36]   chunk recordings total:       4
+[2026-04-01 11:54:36]   chunk windows total:          289
+[2026-04-01 11:54:36]   chunk batches:                10
+[2026-04-01 11:54:36]   chunk mean loss:              0.028673
+[2026-04-01 11:54:36]   cumulative validation progress: chunks=1/1 batches=10 running_mean_loss=0.028673
+[2026-04-01 11:54:36] Epoch   7/300  train_loss=0.027501  val_loss=0.028673  best_val=0.028673  patience=0/50  train_chunks=1  val_chunks=1  train_time=156.4s  val_time=51.6s
+[2026-04-01 11:54:36] [train] epoch 8: chunks=1 chunk_size=1 shuffle=True preload=False
+[2026-04-01 11:54:36] [train] epoch 8 chunk 1/1 subjects=[1] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:55:11] Loaded train chunk:
+[2026-04-01 11:55:11]   Subjects:                 [1]
+[2026-04-01 11:55:11]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:55:11]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:55:11]   Total recordings in chunk:4
+[2026-04-01 11:55:11] Applying preprocessing to train chunk [1]...
+[2026-04-01 11:55:20]   Recordings:                 4
+[2026-04-01 11:55:20]   sfreq:                      128.0 Hz
+[2026-04-01 11:55:20]   EEG channel count:          62
+[2026-04-01 11:55:20]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 11:55:20]   Std(signal):                2.2511e-05 uV
+[2026-04-01 11:55:20] Creating train subjects [1] windows:
+[2026-04-01 11:55:20]   window_size_samples:       2048
+[2026-04-01 11:55:20]   sampling_interval_samples: 2048
+[2026-04-01 11:55:20]   preload:                   False
+[2026-04-01 11:55:20]   Total windows created: 307
+[2026-04-01 11:55:20]   Window shape (C, T):   (62, 2048)
+[2026-04-01 11:57:13]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:57:13]   chunk recordings total:       4
+[2026-04-01 11:57:13]   chunk windows total:          307
+[2026-04-01 11:57:13]   chunk batches:                9
+[2026-04-01 11:57:13]   chunk mean loss:              0.025748
+[2026-04-01 11:57:13]   cumulative train progress: chunks=1/1 batches=9 running_mean_loss=0.025748
+[2026-04-01 11:57:13] [validation] epoch 8: chunks=1 chunk_size=1 shuffle=False preload=False
+[2026-04-01 11:57:13] [validation] epoch 8 chunk 1/1 subjects=[2] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:57:47] Loaded validation chunk:
+[2026-04-01 11:57:47]   Subjects:                 [2]
+[2026-04-01 11:57:47]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:57:47]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:57:47]   Total recordings in chunk:4
+[2026-04-01 11:57:47] Applying preprocessing to validation chunk [2]...
+[2026-04-01 11:57:55]   Recordings:                 4
+[2026-04-01 11:57:55]   sfreq:                      128.0 Hz
+[2026-04-01 11:57:55]   EEG channel count:          62
+[2026-04-01 11:57:55]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 11:57:55]   Std(signal):                1.5731e-05 uV
+[2026-04-01 11:57:55] Creating validation subjects [2] windows:
+[2026-04-01 11:57:55]   window_size_samples:       2048
+[2026-04-01 11:57:55]   sampling_interval_samples: 2048
+[2026-04-01 11:57:55]   preload:                   False
+[2026-04-01 11:57:55]   Total windows created: 289
+[2026-04-01 11:57:55]   Window shape (C, T):   (62, 2048)
+[2026-04-01 11:58:05]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:58:05]   chunk recordings total:       4
+[2026-04-01 11:58:05]   chunk windows total:          289
+[2026-04-01 11:58:05]   chunk batches:                10
+[2026-04-01 11:58:05]   chunk mean loss:              0.025785
+[2026-04-01 11:58:05]   cumulative validation progress: chunks=1/1 batches=10 running_mean_loss=0.025785
+[2026-04-01 11:58:06] Epoch   8/300  train_loss=0.025748  val_loss=0.025785  best_val=0.025785  patience=0/50  train_chunks=1  val_chunks=1  train_time=156.8s  val_time=52.3s
+[2026-04-01 11:58:06] [train] epoch 9: chunks=1 chunk_size=1 shuffle=True preload=False
+[2026-04-01 11:58:06] [train] epoch 9 chunk 1/1 subjects=[1] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:58:40] Loaded train chunk:
+[2026-04-01 11:58:40]   Subjects:                 [1]
+[2026-04-01 11:58:40]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 11:58:40]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 11:58:40]   Total recordings in chunk:4
+[2026-04-01 11:58:40] Applying preprocessing to train chunk [1]...
+[2026-04-01 11:58:49]   Recordings:                 4
+[2026-04-01 11:58:49]   sfreq:                      128.0 Hz
+[2026-04-01 11:58:49]   EEG channel count:          62
+[2026-04-01 11:58:49]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 11:58:49]   Std(signal):                2.2511e-05 uV
+[2026-04-01 11:58:49] Creating train subjects [1] windows:
+[2026-04-01 11:58:49]   window_size_samples:       2048
+[2026-04-01 11:58:49]   sampling_interval_samples: 2048
+[2026-04-01 11:58:49]   preload:                   False
+[2026-04-01 11:58:49]   Total windows created: 307
+[2026-04-01 11:58:49]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:00:41]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:00:41]   chunk recordings total:       4
+[2026-04-01 12:00:41]   chunk windows total:          307
+[2026-04-01 12:00:41]   chunk batches:                9
+[2026-04-01 12:00:41]   chunk mean loss:              0.023846
+[2026-04-01 12:00:41]   cumulative train progress: chunks=1/1 batches=9 running_mean_loss=0.023846
+[2026-04-01 12:00:41] [validation] epoch 9: chunks=1 chunk_size=1 shuffle=False preload=False
+[2026-04-01 12:00:41] [validation] epoch 9 chunk 1/1 subjects=[2] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:01:14] Loaded validation chunk:
+[2026-04-01 12:01:14]   Subjects:                 [2]
+[2026-04-01 12:01:14]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:01:14]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:01:14]   Total recordings in chunk:4
+[2026-04-01 12:01:14] Applying preprocessing to validation chunk [2]...
+[2026-04-01 12:01:22]   Recordings:                 4
+[2026-04-01 12:01:22]   sfreq:                      128.0 Hz
+[2026-04-01 12:01:22]   EEG channel count:          62
+[2026-04-01 12:01:22]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 12:01:22]   Std(signal):                1.5731e-05 uV
+[2026-04-01 12:01:22] Creating validation subjects [2] windows:
+[2026-04-01 12:01:22]   window_size_samples:       2048
+[2026-04-01 12:01:22]   sampling_interval_samples: 2048
+[2026-04-01 12:01:22]   preload:                   False
+[2026-04-01 12:01:22]   Total windows created: 289
+[2026-04-01 12:01:22]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:01:33]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:01:33]   chunk recordings total:       4
+[2026-04-01 12:01:33]   chunk windows total:          289
+[2026-04-01 12:01:33]   chunk batches:                10
+[2026-04-01 12:01:33]   chunk mean loss:              0.023902
+[2026-04-01 12:01:33]   cumulative validation progress: chunks=1/1 batches=10 running_mean_loss=0.023902
+[2026-04-01 12:01:33] Epoch   9/300  train_loss=0.023846  val_loss=0.023902  best_val=0.023902  patience=0/50  train_chunks=1  val_chunks=1  train_time=155.0s  val_time=52.2s
+[2026-04-01 12:01:33] [train] epoch 10: chunks=1 chunk_size=1 shuffle=True preload=False
+[2026-04-01 12:01:33] [train] epoch 10 chunk 1/1 subjects=[1] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:02:07] Loaded train chunk:
+[2026-04-01 12:02:07]   Subjects:                 [1]
+[2026-04-01 12:02:07]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:02:07]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:02:07]   Total recordings in chunk:4
+[2026-04-01 12:02:07] Applying preprocessing to train chunk [1]...
+[2026-04-01 12:02:16]   Recordings:                 4
+[2026-04-01 12:02:16]   sfreq:                      128.0 Hz
+[2026-04-01 12:02:16]   EEG channel count:          62
+[2026-04-01 12:02:16]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 12:02:16]   Std(signal):                2.2511e-05 uV
+[2026-04-01 12:02:16] Creating train subjects [1] windows:
+[2026-04-01 12:02:16]   window_size_samples:       2048
+[2026-04-01 12:02:16]   sampling_interval_samples: 2048
+[2026-04-01 12:02:16]   preload:                   False
+[2026-04-01 12:02:16]   Total windows created: 307
+[2026-04-01 12:02:16]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:04:07]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:04:07]   chunk recordings total:       4
+[2026-04-01 12:04:07]   chunk windows total:          307
+[2026-04-01 12:04:07]   chunk batches:                9
+[2026-04-01 12:04:07]   chunk mean loss:              0.022365
+[2026-04-01 12:04:07]   cumulative train progress: chunks=1/1 batches=9 running_mean_loss=0.022365
+[2026-04-01 12:04:07] [validation] epoch 10: chunks=1 chunk_size=1 shuffle=False preload=False
+[2026-04-01 12:04:07] [validation] epoch 10 chunk 1/1 subjects=[2] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:04:40] Loaded validation chunk:
+[2026-04-01 12:04:40]   Subjects:                 [2]
+[2026-04-01 12:04:40]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:04:40]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:04:40]   Total recordings in chunk:4
+[2026-04-01 12:04:40] Applying preprocessing to validation chunk [2]...
+[2026-04-01 12:04:48]   Recordings:                 4
+[2026-04-01 12:04:48]   sfreq:                      128.0 Hz
+[2026-04-01 12:04:48]   EEG channel count:          62
+[2026-04-01 12:04:48]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 12:04:48]   Std(signal):                1.5731e-05 uV
+[2026-04-01 12:04:48] Creating validation subjects [2] windows:
+[2026-04-01 12:04:48]   window_size_samples:       2048
+[2026-04-01 12:04:48]   sampling_interval_samples: 2048
+[2026-04-01 12:04:48]   preload:                   False
+[2026-04-01 12:04:48]   Total windows created: 289
+[2026-04-01 12:04:48]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:04:59]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:04:59]   chunk recordings total:       4
+[2026-04-01 12:04:59]   chunk windows total:          289
+[2026-04-01 12:04:59]   chunk batches:                10
+[2026-04-01 12:04:59]   chunk mean loss:              0.022199
+[2026-04-01 12:04:59]   cumulative validation progress: chunks=1/1 batches=10 running_mean_loss=0.022199
+[2026-04-01 12:04:59] Epoch  10/300  train_loss=0.022365  val_loss=0.022199  best_val=0.022199  patience=0/50  train_chunks=1  val_chunks=1  train_time=154.0s  val_time=52.2s
+[2026-04-01 12:04:59] [train] epoch 11: chunks=1 chunk_size=1 shuffle=True preload=False
+[2026-04-01 12:04:59] [train] epoch 11 chunk 1/1 subjects=[1] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:05:34] Loaded train chunk:
+[2026-04-01 12:05:34]   Subjects:                 [1]
+[2026-04-01 12:05:34]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:05:34]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:05:34]   Total recordings in chunk:4
+[2026-04-01 12:05:34] Applying preprocessing to train chunk [1]...
+[2026-04-01 12:05:43]   Recordings:                 4
+[2026-04-01 12:05:43]   sfreq:                      128.0 Hz
+[2026-04-01 12:05:43]   EEG channel count:          62
+[2026-04-01 12:05:43]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 12:05:43]   Std(signal):                2.2511e-05 uV
+[2026-04-01 12:05:43] Creating train subjects [1] windows:
+[2026-04-01 12:05:43]   window_size_samples:       2048
+[2026-04-01 12:05:43]   sampling_interval_samples: 2048
+[2026-04-01 12:05:43]   preload:                   False
+[2026-04-01 12:05:43]   Total windows created: 307
+[2026-04-01 12:05:43]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:07:37]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:07:37]   chunk recordings total:       4
+[2026-04-01 12:07:37]   chunk windows total:          307
+[2026-04-01 12:07:37]   chunk batches:                9
+[2026-04-01 12:07:37]   chunk mean loss:              0.020860
+[2026-04-01 12:07:37]   cumulative train progress: chunks=1/1 batches=9 running_mean_loss=0.020860
+[2026-04-01 12:07:37] [validation] epoch 11: chunks=1 chunk_size=1 shuffle=False preload=False
+[2026-04-01 12:07:37] [validation] epoch 11 chunk 1/1 subjects=[2] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:08:11] Loaded validation chunk:
+[2026-04-01 12:08:11]   Subjects:                 [2]
+[2026-04-01 12:08:11]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:08:11]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:08:11]   Total recordings in chunk:4
+[2026-04-01 12:08:11] Applying preprocessing to validation chunk [2]...
+[2026-04-01 12:08:19]   Recordings:                 4
+[2026-04-01 12:08:19]   sfreq:                      128.0 Hz
+[2026-04-01 12:08:19]   EEG channel count:          62
+[2026-04-01 12:08:19]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 12:08:19]   Std(signal):                1.5731e-05 uV
+[2026-04-01 12:08:19] Creating validation subjects [2] windows:
+[2026-04-01 12:08:19]   window_size_samples:       2048
+[2026-04-01 12:08:19]   sampling_interval_samples: 2048
+[2026-04-01 12:08:19]   preload:                   False
+[2026-04-01 12:08:19]   Total windows created: 289
+[2026-04-01 12:08:19]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:08:29]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:08:29]   chunk recordings total:       4
+[2026-04-01 12:08:29]   chunk windows total:          289
+[2026-04-01 12:08:29]   chunk batches:                10
+[2026-04-01 12:08:29]   chunk mean loss:              0.021567
+[2026-04-01 12:08:29]   cumulative validation progress: chunks=1/1 batches=10 running_mean_loss=0.021567
+[2026-04-01 12:08:30] Epoch  11/300  train_loss=0.020860  val_loss=0.021567  best_val=0.021567  patience=0/50  train_chunks=1  val_chunks=1  train_time=158.0s  val_time=52.3s
+[2026-04-01 12:08:30] [train] epoch 12: chunks=1 chunk_size=1 shuffle=True preload=False
+[2026-04-01 12:08:30] [train] epoch 12 chunk 1/1 subjects=[1] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:09:04] Loaded train chunk:
+[2026-04-01 12:09:04]   Subjects:                 [1]
+[2026-04-01 12:09:04]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:09:04]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:09:04]   Total recordings in chunk:4
+[2026-04-01 12:09:04] Applying preprocessing to train chunk [1]...
+[2026-04-01 12:09:13]   Recordings:                 4
+[2026-04-01 12:09:13]   sfreq:                      128.0 Hz
+[2026-04-01 12:09:13]   EEG channel count:          62
+[2026-04-01 12:09:13]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 12:09:13]   Std(signal):                2.2511e-05 uV
+[2026-04-01 12:09:13] Creating train subjects [1] windows:
+[2026-04-01 12:09:13]   window_size_samples:       2048
+[2026-04-01 12:09:13]   sampling_interval_samples: 2048
+[2026-04-01 12:09:13]   preload:                   False
+[2026-04-01 12:09:13]   Total windows created: 307
+[2026-04-01 12:09:13]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:11:07]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:11:07]   chunk recordings total:       4
+[2026-04-01 12:11:07]   chunk windows total:          307
+[2026-04-01 12:11:07]   chunk batches:                9
+[2026-04-01 12:11:07]   chunk mean loss:              0.019523
+[2026-04-01 12:11:07]   cumulative train progress: chunks=1/1 batches=9 running_mean_loss=0.019523
+[2026-04-01 12:11:07] [validation] epoch 12: chunks=1 chunk_size=1 shuffle=False preload=False
+[2026-04-01 12:11:07] [validation] epoch 12 chunk 1/1 subjects=[2] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:11:40] Loaded validation chunk:
+[2026-04-01 12:11:40]   Subjects:                 [2]
+[2026-04-01 12:11:40]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:11:40]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:11:40]   Total recordings in chunk:4
+[2026-04-01 12:11:40] Applying preprocessing to validation chunk [2]...
+[2026-04-01 12:11:48]   Recordings:                 4
+[2026-04-01 12:11:48]   sfreq:                      128.0 Hz
+[2026-04-01 12:11:48]   EEG channel count:          62
+[2026-04-01 12:11:48]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 12:11:48]   Std(signal):                1.5731e-05 uV
+[2026-04-01 12:11:48] Creating validation subjects [2] windows:
+[2026-04-01 12:11:48]   window_size_samples:       2048
+[2026-04-01 12:11:48]   sampling_interval_samples: 2048
+[2026-04-01 12:11:48]   preload:                   False
+[2026-04-01 12:11:48]   Total windows created: 289
+[2026-04-01 12:11:48]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:11:59]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:11:59]   chunk recordings total:       4
+[2026-04-01 12:11:59]   chunk windows total:          289
+[2026-04-01 12:11:59]   chunk batches:                10
+[2026-04-01 12:11:59]   chunk mean loss:              0.020754
+[2026-04-01 12:11:59]   cumulative validation progress: chunks=1/1 batches=10 running_mean_loss=0.020754
+[2026-04-01 12:11:59] Epoch  12/300  train_loss=0.019523  val_loss=0.020754  best_val=0.020754  patience=0/50  train_chunks=1  val_chunks=1  train_time=157.5s  val_time=52.0s
+[2026-04-01 12:11:59] [train] epoch 13: chunks=1 chunk_size=1 shuffle=True preload=False
+[2026-04-01 12:11:59] [train] epoch 13 chunk 1/1 subjects=[1] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:12:34] Loaded train chunk:
+[2026-04-01 12:12:34]   Subjects:                 [1]
+[2026-04-01 12:12:34]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:12:34]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:12:34]   Total recordings in chunk:4
+[2026-04-01 12:12:34] Applying preprocessing to train chunk [1]...
+[2026-04-01 12:12:43]   Recordings:                 4
+[2026-04-01 12:12:43]   sfreq:                      128.0 Hz
+[2026-04-01 12:12:43]   EEG channel count:          62
+[2026-04-01 12:12:43]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 12:12:43]   Std(signal):                2.2511e-05 uV
+[2026-04-01 12:12:43] Creating train subjects [1] windows:
+[2026-04-01 12:12:43]   window_size_samples:       2048
+[2026-04-01 12:12:43]   sampling_interval_samples: 2048
+[2026-04-01 12:12:43]   preload:                   False
+[2026-04-01 12:12:43]   Total windows created: 307
+[2026-04-01 12:12:43]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:14:37]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:14:37]   chunk recordings total:       4
+[2026-04-01 12:14:37]   chunk windows total:          307
+[2026-04-01 12:14:37]   chunk batches:                9
+[2026-04-01 12:14:37]   chunk mean loss:              0.018238
+[2026-04-01 12:14:37]   cumulative train progress: chunks=1/1 batches=9 running_mean_loss=0.018238
+[2026-04-01 12:14:37] [validation] epoch 13: chunks=1 chunk_size=1 shuffle=False preload=False
+[2026-04-01 12:14:37] [validation] epoch 13 chunk 1/1 subjects=[2] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:15:10] Loaded validation chunk:
+[2026-04-01 12:15:10]   Subjects:                 [2]
+[2026-04-01 12:15:10]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:15:10]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:15:10]   Total recordings in chunk:4
+[2026-04-01 12:15:10] Applying preprocessing to validation chunk [2]...
+[2026-04-01 12:15:19]   Recordings:                 4
+[2026-04-01 12:15:19]   sfreq:                      128.0 Hz
+[2026-04-01 12:15:19]   EEG channel count:          62
+[2026-04-01 12:15:19]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 12:15:19]   Std(signal):                1.5731e-05 uV
+[2026-04-01 12:15:19] Creating validation subjects [2] windows:
+[2026-04-01 12:15:19]   window_size_samples:       2048
+[2026-04-01 12:15:19]   sampling_interval_samples: 2048
+[2026-04-01 12:15:19]   preload:                   False
+[2026-04-01 12:15:19]   Total windows created: 289
+[2026-04-01 12:15:19]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:15:29]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:15:29]   chunk recordings total:       4
+[2026-04-01 12:15:29]   chunk windows total:          289
+[2026-04-01 12:15:29]   chunk batches:                10
+[2026-04-01 12:15:29]   chunk mean loss:              0.020540
+[2026-04-01 12:15:29]   cumulative validation progress: chunks=1/1 batches=10 running_mean_loss=0.020540
+[2026-04-01 12:15:30] Epoch  13/300  train_loss=0.018238  val_loss=0.020540  best_val=0.020540  patience=0/50  train_chunks=1  val_chunks=1  train_time=157.7s  val_time=52.6s
+[2026-04-01 12:15:30] [train] epoch 14: chunks=1 chunk_size=1 shuffle=True preload=False
+[2026-04-01 12:15:30] [train] epoch 14 chunk 1/1 subjects=[1] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:16:04] Loaded train chunk:
+[2026-04-01 12:16:04]   Subjects:                 [1]
+[2026-04-01 12:16:04]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:16:04]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:16:04]   Total recordings in chunk:4
+[2026-04-01 12:16:04] Applying preprocessing to train chunk [1]...
+[2026-04-01 12:16:14]   Recordings:                 4
+[2026-04-01 12:16:14]   sfreq:                      128.0 Hz
+[2026-04-01 12:16:14]   EEG channel count:          62
+[2026-04-01 12:16:14]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 12:16:14]   Std(signal):                2.2511e-05 uV
+[2026-04-01 12:16:14] Creating train subjects [1] windows:
+[2026-04-01 12:16:14]   window_size_samples:       2048
+[2026-04-01 12:16:14]   sampling_interval_samples: 2048
+[2026-04-01 12:16:14]   preload:                   False
+[2026-04-01 12:16:14]   Total windows created: 307
+[2026-04-01 12:16:14]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:18:08]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:18:08]   chunk recordings total:       4
+[2026-04-01 12:18:08]   chunk windows total:          307
+[2026-04-01 12:18:08]   chunk batches:                9
+[2026-04-01 12:18:08]   chunk mean loss:              0.017293
+[2026-04-01 12:18:08]   cumulative train progress: chunks=1/1 batches=9 running_mean_loss=0.017293
+[2026-04-01 12:18:08] [validation] epoch 14: chunks=1 chunk_size=1 shuffle=False preload=False
+[2026-04-01 12:18:08] [validation] epoch 14 chunk 1/1 subjects=[2] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:18:41] Loaded validation chunk:
+[2026-04-01 12:18:41]   Subjects:                 [2]
+[2026-04-01 12:18:41]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:18:41]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:18:41]   Total recordings in chunk:4
+[2026-04-01 12:18:41] Applying preprocessing to validation chunk [2]...
+[2026-04-01 12:18:49]   Recordings:                 4
+[2026-04-01 12:18:49]   sfreq:                      128.0 Hz
+[2026-04-01 12:18:49]   EEG channel count:          62
+[2026-04-01 12:18:49]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 12:18:49]   Std(signal):                1.5731e-05 uV
+[2026-04-01 12:18:49] Creating validation subjects [2] windows:
+[2026-04-01 12:18:49]   window_size_samples:       2048
+[2026-04-01 12:18:49]   sampling_interval_samples: 2048
+[2026-04-01 12:18:49]   preload:                   False
+[2026-04-01 12:18:49]   Total windows created: 289
+[2026-04-01 12:18:49]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:19:00]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:19:00]   chunk recordings total:       4
+[2026-04-01 12:19:00]   chunk windows total:          289
+[2026-04-01 12:19:00]   chunk batches:                10
+[2026-04-01 12:19:00]   chunk mean loss:              0.017404
+[2026-04-01 12:19:00]   cumulative validation progress: chunks=1/1 batches=10 running_mean_loss=0.017404
+[2026-04-01 12:19:01] Epoch  14/300  train_loss=0.017293  val_loss=0.017404  best_val=0.017404  patience=0/50  train_chunks=1  val_chunks=1  train_time=158.5s  val_time=52.3s
+[2026-04-01 12:19:01] [train] epoch 15: chunks=1 chunk_size=1 shuffle=True preload=False
+[2026-04-01 12:19:01] [train] epoch 15 chunk 1/1 subjects=[1] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:19:35] Loaded train chunk:
+[2026-04-01 12:19:35]   Subjects:                 [1]
+[2026-04-01 12:19:35]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:19:35]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:19:35]   Total recordings in chunk:4
+[2026-04-01 12:19:35] Applying preprocessing to train chunk [1]...
+[2026-04-01 12:19:44]   Recordings:                 4
+[2026-04-01 12:19:44]   sfreq:                      128.0 Hz
+[2026-04-01 12:19:44]   EEG channel count:          62
+[2026-04-01 12:19:44]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 12:19:44]   Std(signal):                2.2511e-05 uV
+[2026-04-01 12:19:44] Creating train subjects [1] windows:
+[2026-04-01 12:19:44]   window_size_samples:       2048
+[2026-04-01 12:19:44]   sampling_interval_samples: 2048
+[2026-04-01 12:19:44]   preload:                   False
+[2026-04-01 12:19:44]   Total windows created: 307
+[2026-04-01 12:19:44]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:21:40]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:21:40]   chunk recordings total:       4
+[2026-04-01 12:21:40]   chunk windows total:          307
+[2026-04-01 12:21:40]   chunk batches:                9
+[2026-04-01 12:21:40]   chunk mean loss:              0.016171
+[2026-04-01 12:21:40]   cumulative train progress: chunks=1/1 batches=9 running_mean_loss=0.016171
+[2026-04-01 12:21:40] [validation] epoch 15: chunks=1 chunk_size=1 shuffle=False preload=False
+[2026-04-01 12:21:40] [validation] epoch 15 chunk 1/1 subjects=[2] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:22:13] Loaded validation chunk:
+[2026-04-01 12:22:13]   Subjects:                 [2]
+[2026-04-01 12:22:13]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:22:13]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:22:13]   Total recordings in chunk:4
+[2026-04-01 12:22:13] Applying preprocessing to validation chunk [2]...
+[2026-04-01 12:22:21]   Recordings:                 4
+[2026-04-01 12:22:21]   sfreq:                      128.0 Hz
+[2026-04-01 12:22:21]   EEG channel count:          62
+[2026-04-01 12:22:21]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 12:22:21]   Std(signal):                1.5731e-05 uV
+[2026-04-01 12:22:21] Creating validation subjects [2] windows:
+[2026-04-01 12:22:21]   window_size_samples:       2048
+[2026-04-01 12:22:21]   sampling_interval_samples: 2048
+[2026-04-01 12:22:21]   preload:                   False
+[2026-04-01 12:22:21]   Total windows created: 289
+[2026-04-01 12:22:21]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:22:32]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:22:32]   chunk recordings total:       4
+[2026-04-01 12:22:32]   chunk windows total:          289
+[2026-04-01 12:22:32]   chunk batches:                10
+[2026-04-01 12:22:32]   chunk mean loss:              0.017423
+[2026-04-01 12:22:32]   cumulative validation progress: chunks=1/1 batches=10 running_mean_loss=0.017423
+[2026-04-01 12:22:32] Epoch  15/300  train_loss=0.016171  val_loss=0.017423  best_val=0.017404  patience=1/50  train_chunks=1  val_chunks=1  train_time=159.0s  val_time=52.0s
+[2026-04-01 12:22:32] [train] epoch 16: chunks=1 chunk_size=1 shuffle=True preload=False
+[2026-04-01 12:22:32] [train] epoch 16 chunk 1/1 subjects=[1] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:23:06] Loaded train chunk:
+[2026-04-01 12:23:06]   Subjects:                 [1]
+[2026-04-01 12:23:06]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:23:06]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:23:06]   Total recordings in chunk:4
+[2026-04-01 12:23:06] Applying preprocessing to train chunk [1]...
+[2026-04-01 12:23:15]   Recordings:                 4
+[2026-04-01 12:23:15]   sfreq:                      128.0 Hz
+[2026-04-01 12:23:15]   EEG channel count:          62
+[2026-04-01 12:23:15]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 12:23:15]   Std(signal):                2.2511e-05 uV
+[2026-04-01 12:23:15] Creating train subjects [1] windows:
+[2026-04-01 12:23:15]   window_size_samples:       2048
+[2026-04-01 12:23:15]   sampling_interval_samples: 2048
+[2026-04-01 12:23:15]   preload:                   False
+[2026-04-01 12:23:15]   Total windows created: 307
+[2026-04-01 12:23:15]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:25:09]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:25:09]   chunk recordings total:       4
+[2026-04-01 12:25:09]   chunk windows total:          307
+[2026-04-01 12:25:09]   chunk batches:                9
+[2026-04-01 12:25:09]   chunk mean loss:              0.015388
+[2026-04-01 12:25:09]   cumulative train progress: chunks=1/1 batches=9 running_mean_loss=0.015388
+[2026-04-01 12:25:10] [validation] epoch 16: chunks=1 chunk_size=1 shuffle=False preload=False
+[2026-04-01 12:25:10] [validation] epoch 16 chunk 1/1 subjects=[2] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:25:43] Loaded validation chunk:
+[2026-04-01 12:25:43]   Subjects:                 [2]
+[2026-04-01 12:25:43]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:25:43]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:25:43]   Total recordings in chunk:4
+[2026-04-01 12:25:43] Applying preprocessing to validation chunk [2]...
+[2026-04-01 12:25:51]   Recordings:                 4
+[2026-04-01 12:25:51]   sfreq:                      128.0 Hz
+[2026-04-01 12:25:51]   EEG channel count:          62
+[2026-04-01 12:25:51]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 12:25:51]   Std(signal):                1.5731e-05 uV
+[2026-04-01 12:25:51] Creating validation subjects [2] windows:
+[2026-04-01 12:25:51]   window_size_samples:       2048
+[2026-04-01 12:25:51]   sampling_interval_samples: 2048
+[2026-04-01 12:25:51]   preload:                   False
+[2026-04-01 12:25:51]   Total windows created: 289
+[2026-04-01 12:25:51]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:26:02]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:26:02]   chunk recordings total:       4
+[2026-04-01 12:26:02]   chunk windows total:          289
+[2026-04-01 12:26:02]   chunk batches:                10
+[2026-04-01 12:26:02]   chunk mean loss:              0.016857
+[2026-04-01 12:26:02]   cumulative validation progress: chunks=1/1 batches=10 running_mean_loss=0.016857
+[2026-04-01 12:26:03] Epoch  16/300  train_loss=0.015388  val_loss=0.016857  best_val=0.016857  patience=0/50  train_chunks=1  val_chunks=1  train_time=157.7s  val_time=52.9s
+[2026-04-01 12:26:03] [train] epoch 17: chunks=1 chunk_size=1 shuffle=True preload=False
+[2026-04-01 12:26:03] [train] epoch 17 chunk 1/1 subjects=[1] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:26:37] Loaded train chunk:
+[2026-04-01 12:26:37]   Subjects:                 [1]
+[2026-04-01 12:26:37]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:26:37]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:26:37]   Total recordings in chunk:4
+[2026-04-01 12:26:37] Applying preprocessing to train chunk [1]...
+[2026-04-01 12:26:46]   Recordings:                 4
+[2026-04-01 12:26:47]   sfreq:                      128.0 Hz
+[2026-04-01 12:26:47]   EEG channel count:          62
+[2026-04-01 12:26:47]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 12:26:47]   Std(signal):                2.2511e-05 uV
+[2026-04-01 12:26:47] Creating train subjects [1] windows:
+[2026-04-01 12:26:47]   window_size_samples:       2048
+[2026-04-01 12:26:47]   sampling_interval_samples: 2048
+[2026-04-01 12:26:47]   preload:                   False
+[2026-04-01 12:26:47]   Total windows created: 307
+[2026-04-01 12:26:47]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:28:40]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:28:40]   chunk recordings total:       4
+[2026-04-01 12:28:40]   chunk windows total:          307
+[2026-04-01 12:28:40]   chunk batches:                9
+[2026-04-01 12:28:40]   chunk mean loss:              0.014640
+[2026-04-01 12:28:40]   cumulative train progress: chunks=1/1 batches=9 running_mean_loss=0.014640
+[2026-04-01 12:28:41] [validation] epoch 17: chunks=1 chunk_size=1 shuffle=False preload=False
+[2026-04-01 12:28:41] [validation] epoch 17 chunk 1/1 subjects=[2] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:29:14] Loaded validation chunk:
+[2026-04-01 12:29:14]   Subjects:                 [2]
+[2026-04-01 12:29:14]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:29:14]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:29:14]   Total recordings in chunk:4
+[2026-04-01 12:29:14] Applying preprocessing to validation chunk [2]...
+[2026-04-01 12:29:22]   Recordings:                 4
+[2026-04-01 12:29:22]   sfreq:                      128.0 Hz
+[2026-04-01 12:29:22]   EEG channel count:          62
+[2026-04-01 12:29:22]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 12:29:22]   Std(signal):                1.5731e-05 uV
+[2026-04-01 12:29:22] Creating validation subjects [2] windows:
+[2026-04-01 12:29:22]   window_size_samples:       2048
+[2026-04-01 12:29:22]   sampling_interval_samples: 2048
+[2026-04-01 12:29:22]   preload:                   False
+[2026-04-01 12:29:22]   Total windows created: 289
+[2026-04-01 12:29:22]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:29:33]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:29:33]   chunk recordings total:       4
+[2026-04-01 12:29:33]   chunk windows total:          289
+[2026-04-01 12:29:33]   chunk batches:                10
+[2026-04-01 12:29:33]   chunk mean loss:              0.015947
+[2026-04-01 12:29:33]   cumulative validation progress: chunks=1/1 batches=10 running_mean_loss=0.015947
+[2026-04-01 12:29:33] Epoch  17/300  train_loss=0.014640  val_loss=0.015947  best_val=0.015947  patience=0/50  train_chunks=1  val_chunks=1  train_time=157.9s  val_time=52.5s
+[2026-04-01 12:29:33] [train] epoch 18: chunks=1 chunk_size=1 shuffle=True preload=False
+[2026-04-01 12:29:33] [train] epoch 18 chunk 1/1 subjects=[1] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:30:08] Loaded train chunk:
+[2026-04-01 12:30:08]   Subjects:                 [1]
+[2026-04-01 12:30:08]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:30:08]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:30:08]   Total recordings in chunk:4
+[2026-04-01 12:30:08] Applying preprocessing to train chunk [1]...
+[2026-04-01 12:30:17]   Recordings:                 4
+[2026-04-01 12:30:17]   sfreq:                      128.0 Hz
+[2026-04-01 12:30:17]   EEG channel count:          62
+[2026-04-01 12:30:17]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 12:30:17]   Std(signal):                2.2511e-05 uV
+[2026-04-01 12:30:17] Creating train subjects [1] windows:
+[2026-04-01 12:30:17]   window_size_samples:       2048
+[2026-04-01 12:30:17]   sampling_interval_samples: 2048
+[2026-04-01 12:30:17]   preload:                   False
+[2026-04-01 12:30:17]   Total windows created: 307
+[2026-04-01 12:30:17]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:32:07]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:32:07]   chunk recordings total:       4
+[2026-04-01 12:32:07]   chunk windows total:          307
+[2026-04-01 12:32:07]   chunk batches:                9
+[2026-04-01 12:32:07]   chunk mean loss:              0.013874
+[2026-04-01 12:32:07]   cumulative train progress: chunks=1/1 batches=9 running_mean_loss=0.013874
+[2026-04-01 12:32:07] [validation] epoch 18: chunks=1 chunk_size=1 shuffle=False preload=False
+[2026-04-01 12:32:07] [validation] epoch 18 chunk 1/1 subjects=[2] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:32:40] Loaded validation chunk:
+[2026-04-01 12:32:40]   Subjects:                 [2]
+[2026-04-01 12:32:40]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:32:40]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:32:40]   Total recordings in chunk:4
+[2026-04-01 12:32:40] Applying preprocessing to validation chunk [2]...
+[2026-04-01 12:32:48]   Recordings:                 4
+[2026-04-01 12:32:48]   sfreq:                      128.0 Hz
+[2026-04-01 12:32:48]   EEG channel count:          62
+[2026-04-01 12:32:48]   Mean |signal|:              7.5922e-06 uV
+[2026-04-01 12:32:48]   Std(signal):                1.5731e-05 uV
+[2026-04-01 12:32:48] Creating validation subjects [2] windows:
+[2026-04-01 12:32:48]   window_size_samples:       2048
+[2026-04-01 12:32:48]   sampling_interval_samples: 2048
+[2026-04-01 12:32:48]   preload:                   False
+[2026-04-01 12:32:48]   Total windows created: 289
+[2026-04-01 12:32:48]   Window shape (C, T):   (62, 2048)
+[2026-04-01 12:32:59]   chunk recordings by paradigm: {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:32:59]   chunk recordings total:       4
+[2026-04-01 12:32:59]   chunk windows total:          289
+[2026-04-01 12:32:59]   chunk batches:                10
+[2026-04-01 12:32:59]   chunk mean loss:              0.015157
+[2026-04-01 12:32:59]   cumulative validation progress: chunks=1/1 batches=10 running_mean_loss=0.015157
+[2026-04-01 12:33:00] Epoch  18/300  train_loss=0.013874  val_loss=0.015157  best_val=0.015157  patience=0/50  train_chunks=1  val_chunks=1  train_time=153.8s  val_time=52.5s
+[2026-04-01 12:33:00] [train] epoch 19: chunks=1 chunk_size=1 shuffle=True preload=False
+[2026-04-01 12:33:00] [train] epoch 19 chunk 1/1 subjects=[1] paradigms=['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:33:34] Loaded train chunk:
+[2026-04-01 12:33:34]   Subjects:                 [1]
+[2026-04-01 12:33:34]   Paradigms:                ['MI', 'ERP', 'SSVEP']
+[2026-04-01 12:33:34]   Recordings by paradigm:   {'MI': 1, 'ERP': 2, 'SSVEP': 1}
+[2026-04-01 12:33:34]   Total recordings in chunk:4
+[2026-04-01 12:33:34] Applying preprocessing to train chunk [1]...
+[2026-04-01 12:33:43]   Recordings:                 4
+[2026-04-01 12:33:43]   sfreq:                      128.0 Hz
+[2026-04-01 12:33:43]   EEG channel count:          62
+[2026-04-01 12:33:43]   Mean |signal|:              1.1399e-05 uV
+[2026-04-01 12:33:43]   Std(signal):                2.2511e-05 uV
+[2026-04-01 12:33:43] Creating train subjects [1] windows:
+[2026-04-01 12:33:43]   window_size_samples:       2048
+[2026-04-01 12:33:43]   sampling_interval_samples: 2048
+[2026-04-01 12:33:43]   preload:                   False
+[2026-04-01 12:33:43]   Total windows created: 307
+[2026-04-01 12:33:43]   Window shape (C, T):   (62, 2048)

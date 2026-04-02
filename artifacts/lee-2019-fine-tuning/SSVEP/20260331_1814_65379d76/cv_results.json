@@ -1,0 +1,302 @@
+[
+  {
+    "subject_id": "51",
+    "fold_id": 1,
+    "n_train": 64,
+    "n_val": 16,
+    "n_test": 20,
+    "train_class_counts": [
+      16,
+      16,
+      16,
+      16
+    ],
+    "val_class_counts": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "test_class_counts": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "best_valid_loss": 1.3862018585205078,
+    "accuracy": 0.25,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        5,
+        0
+      ],
+      [
+        0,
+        1,
+        4,
+        0
+      ],
+      [
+        1,
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        5,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      1,
+      1,
+      18,
+      0
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 2,
+    "n_train": 64,
+    "n_val": 16,
+    "n_test": 20,
+    "train_class_counts": [
+      16,
+      16,
+      16,
+      16
+    ],
+    "val_class_counts": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "test_class_counts": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "best_valid_loss": 1.2821581363677979,
+    "accuracy": 0.4,
+    "balanced_accuracy": 0.4,
+    "confusion_matrix": [
+      [
+        2,
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        2,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        2
+      ]
+    ],
+    "prediction_histogram": [
+      3,
+      5,
+      6,
+      6
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 3,
+    "n_train": 64,
+    "n_val": 16,
+    "n_test": 20,
+    "train_class_counts": [
+      16,
+      16,
+      16,
+      16
+    ],
+    "val_class_counts": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "test_class_counts": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "best_valid_loss": 1.3883315324783325,
+    "accuracy": 0.15,
+    "balanced_accuracy": 0.15,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
+        2,
+        3
+      ]
+    ],
+    "prediction_histogram": [
+      0,
+      0,
+      2,
+      18
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 4,
+    "n_train": 64,
+    "n_val": 16,
+    "n_test": 20,
+    "train_class_counts": [
+      16,
+      16,
+      16,
+      16
+    ],
+    "val_class_counts": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "test_class_counts": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "best_valid_loss": 1.3864175081253052,
+    "accuracy": 0.15,
+    "balanced_accuracy": 0.15000000000000002,
+    "confusion_matrix": [
+      [
+        1,
+        0,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        1,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        5
+      ],
+      [
+        1,
+        0,
+        2,
+        2
+      ]
+    ],
+    "prediction_histogram": [
+      2,
+      0,
+      5,
+      13
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 5,
+    "n_train": 64,
+    "n_val": 16,
+    "n_test": 20,
+    "train_class_counts": [
+      16,
+      16,
+      16,
+      16
+    ],
+    "val_class_counts": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "test_class_counts": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "best_valid_loss": 1.3740177154541016,
+    "accuracy": 0.25,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        0,
+        2,
+        2,
+        1
+      ],
+      [
+        2,
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        0,
+        3,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        2
+      ]
+    ],
+    "prediction_histogram": [
+      4,
+      3,
+      8,
+      5
+    ]
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "subject_id": "51",
+    "fold_id": 1,
+    "n_train": 72,
+    "n_val": 8,
+    "n_test": 20,
+    "train_class_counts": [
+      18,
+      18,
+      18,
+      18
+    ],
+    "val_class_counts": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "test_class_counts": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "best_valid_loss": 1.2578377723693848,
+    "accuracy": 0.25,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        0,
+        3,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        2,
+        0
+      ],
+      [
+        3,
+        0,
+        2,
+        0
+      ],
+      [
+        3,
+        0,
+        1,
+        1
+      ]
+    ],
+    "prediction_histogram": [
+      7,
+      5,
+      6,
+      2
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 2,
+    "n_train": 72,
+    "n_val": 8,
+    "n_test": 20,
+    "train_class_counts": [
+      18,
+      18,
+      18,
+      18
+    ],
+    "val_class_counts": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "test_class_counts": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "best_valid_loss": 1.326886534690857,
+    "accuracy": 0.2,
+    "balanced_accuracy": 0.2,
+    "confusion_matrix": [
+      [
+        0,
+        2,
+        2,
+        1
+      ],
+      [
+        0,
+        2,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        1,
+        2,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      3,
+      7,
+      8,
+      2
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 3,
+    "n_train": 72,
+    "n_val": 8,
+    "n_test": 20,
+    "train_class_counts": [
+      18,
+      18,
+      18,
+      18
+    ],
+    "val_class_counts": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "test_class_counts": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "best_valid_loss": 1.3846721649169922,
+    "accuracy": 0.25,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        1,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        5
+      ],
+      [
+        1,
+        0,
+        0,
+        4
+      ]
+    ],
+    "prediction_histogram": [
+      2,
+      0,
+      0,
+      18
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 4,
+    "n_train": 72,
+    "n_val": 8,
+    "n_test": 20,
+    "train_class_counts": [
+      18,
+      18,
+      18,
+      18
+    ],
+    "val_class_counts": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "test_class_counts": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "best_valid_loss": 1.3888633251190186,
+    "accuracy": 0.35,
+    "balanced_accuracy": 0.35,
+    "confusion_matrix": [
+      [
+        2,
+        0,
+        0,
+        3
+      ],
+      [
+        3,
+        0,
+        0,
+        2
+      ],
+      [
+        3,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        5
+      ]
+    ],
+    "prediction_histogram": [
+      8,
+      0,
+      0,
+      12
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 5,
+    "n_train": 72,
+    "n_val": 8,
+    "n_test": 20,
+    "train_class_counts": [
+      18,
+      18,
+      18,
+      18
+    ],
+    "val_class_counts": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "test_class_counts": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "best_valid_loss": 1.2562928199768066,
+    "accuracy": 0.3,
+    "balanced_accuracy": 0.30000000000000004,
+    "confusion_matrix": [
+      [
+        2,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        2,
+        1,
+        2
+      ],
+      [
+        2,
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        1,
+        0,
+        2
+      ]
+    ],
+    "prediction_histogram": [
+      6,
+      4,
+      1,
+      9
+    ]
+  }
+]

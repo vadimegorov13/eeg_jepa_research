@@ -1,0 +1,33 @@
+[2026-03-31 18:33:23] Requested device 'auto' ignored; forcing CPU-only execution.
+[2026-03-31 18:33:23] Using device: cpu
+[2026-03-31 18:33:23] Seed set to: 42
+[2026-03-31 18:33:23] ======================================================================
+[2026-03-31 18:33:23] CONFIGURATION
+[2026-03-31 18:33:23] ======================================================================
+[2026-03-31 18:33:23]   artifact_dir: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-s-jepa-pretraining
+[2026-03-31 18:33:23]   bandpass_high: 40.0
+[2026-03-31 18:33:23]   bandpass_low: 0.5
+[2026-03-31 18:33:23]   batch_size: 32
+[2026-03-31 18:33:23]   device: auto
+[2026-03-31 18:33:23]   early_stopping_patience: 50
+[2026-03-31 18:33:23]   ema_decay: 0.996
+[2026-03-31 18:33:23]   excluded_subject_ids: [48, 49, 50, 51, 52, 53, 54]
+[2026-03-31 18:33:23]   mask_diameter_percent: 60
+[2026-03-31 18:33:23]   masking_strategy: random_spatial_block_radius
+[2026-03-31 18:33:23]   n_epochs: 300
+[2026-03-31 18:33:23]   paradigm_names: ['MI', 'ERP', 'SSVEP']
+[2026-03-31 18:33:23]   predictor_dim_feedforward: 256
+[2026-03-31 18:33:23]   predictor_n_layers: 4
+[2026-03-31 18:33:23]   predictor_nhead: 8
+[2026-03-31 18:33:23]   pretrain_duration_s: 16.0
+[2026-03-31 18:33:23]   sampling_interval_s: 16
+[2026-03-31 18:33:23]   seed: 42
+[2026-03-31 18:33:23]   sfreq: 128
+[2026-03-31 18:33:23]   train_subject_ids: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]
+[2026-03-31 18:33:23]   val_subject_ids: [41, 42, 43, 44, 45, 46, 47]
+[2026-03-31 18:33:23] ======================================================================
+[2026-03-31 18:33:23] Configuration saved to: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-s-jepa-pretraining/20260331_1833_6628551f/config.json
+[2026-03-31 18:33:23] Lee2019 reduced SSVEP-only pretraining split (not paper-aligned):
+[2026-03-31 18:33:23]   Train subjects:                [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]
+[2026-03-31 18:33:23]   Validation subjects:           [41, 42, 43, 44, 45, 46, 47]
+[2026-03-31 18:33:23]   Excluded downstream subjects:  [48, 49, 50, 51, 52, 53, 54]

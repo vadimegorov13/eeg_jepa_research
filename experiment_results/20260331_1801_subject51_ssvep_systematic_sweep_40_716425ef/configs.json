@@ -1,0 +1,332 @@
+[
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 101
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 102
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 103
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 104
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 105
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 106
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 107
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 108
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 109
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 110
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 201,
+    "learning_rate": 0.0002
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 202,
+    "learning_rate": 0.0003
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 203,
+    "learning_rate": 0.0005
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 204,
+    "learning_rate": 0.0007
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 205,
+    "learning_rate": 0.001
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 206,
+    "learning_rate": 0.002
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 301,
+    "batch_size": 8
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 302,
+    "batch_size": 12
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 303,
+    "batch_size": 16
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 304,
+    "batch_size": 24
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 305,
+    "batch_size": 32
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 306,
+    "batch_size": 48
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 401,
+    "normalize": true,
+    "normalization_method": "zscore"
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 402,
+    "normalize": true,
+    "normalization_method": "robust"
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 403,
+    "normalize": true,
+    "normalization_method": "exponential_moving"
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 404,
+    "normalize": true,
+    "normalization_method": "exponential_moving_slow"
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 405,
+    "normalize": true,
+    "normalization_method": "demean"
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 501,
+    "normalize": true,
+    "normalization_method": "zscore"
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 502,
+    "normalize": true,
+    "normalization_method": "robust"
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 503,
+    "normalize": true,
+    "normalization_method": "exponential_moving"
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 504,
+    "normalize": true,
+    "normalization_method": "exponential_moving_slow"
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 505,
+    "normalize": true,
+    "normalization_method": "demean"
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 601,
+    "convert_to_uV": false
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 602,
+    "convert_to_uV": false,
+    "normalize": true,
+    "normalization_method": "zscore"
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 603,
+    "convert_to_uV": false,
+    "normalize": true,
+    "normalization_method": "robust"
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 604,
+    "convert_to_uV": false,
+    "normalize": true,
+    "normalization_method": "demean"
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 701,
+    "bandpass_low": 0.5,
+    "bandpass_high": 35.0
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 702,
+    "bandpass_low": 0.5,
+    "bandpass_high": 45.0
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 703,
+    "bandpass_low": 1.0,
+    "bandpass_high": 40.0
+  },
+  {
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "seed": 704,
+    "bandpass_low": 1.0,
+    "bandpass_high": 45.0
+  }
+]

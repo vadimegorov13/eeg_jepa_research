@@ -1,0 +1,64 @@
+Notebook:       /home/vegorov/Repos/eeg_jepa_research/src/lee2019_finetune_sjepa.ipynb
+Configurations: /home/vegorov/Repos/eeg_jepa_research/src/utils/experiments/configs/subject51_54_sweep.json
+Total configs:  24
+
+[1/24] Running config override:
+{
+  "seed": 101,
+  "set_seed": true,
+  "sfreq": 128,
+  "bandpass_low": 0.5,
+  "bandpass_high": 40.0,
+  "convert_to_uV": true,
+  "normalize": false,
+  "normalization_method": null,
+  "learning_rate": 0.001,
+  "subjects_to_use": [
+    51
+  ],
+  "paradigm": "SSVEP"
+}
+Traceback (most recent call last):
+  File "/home/vegorov/Repos/eeg_jepa_research/src/utils/experiments/experiments.py", line 536, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/vegorov/Repos/eeg_jepa_research/src/utils/experiments/experiments.py", line 456, in main
+    result = execute_one(
+             ^^^^^^^^^^^^
+  File "/home/vegorov/Repos/eeg_jepa_research/src/utils/experiments/experiments.py", line 356, in execute_one
+    client.execute()
+  File "/home/vegorov/.venvs/dl/lib/python3.11/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vegorov/snap/code/231/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/vegorov/.venvs/dl/lib/python3.11/site-packages/nbclient/client.py", line 693, in async_execute
+    async with self.async_setup_kernel(**kwargs):
+  File "/home/vegorov/snap/code/231/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vegorov/.venvs/dl/lib/python3.11/site-packages/nbclient/client.py", line 648, in async_setup_kernel
+    await self.async_start_new_kernel(**kwargs)
+  File "/home/vegorov/.venvs/dl/lib/python3.11/site-packages/nbclient/client.py", line 550, in async_start_new_kernel
+    await ensure_async(self.km.start_kernel(extra_arguments=self.extra_arguments, **kwargs))
+  File "/home/vegorov/.venvs/dl/lib/python3.11/site-packages/jupyter_core/utils/__init__.py", line 214, in ensure_async
+    result = await obj
+             ^^^^^^^^^
+  File "/home/vegorov/.venvs/dl/lib/python3.11/site-packages/jupyter_client/manager.py", line 97, in wrapper
+    raise e
+  File "/home/vegorov/.venvs/dl/lib/python3.11/site-packages/jupyter_client/manager.py", line 88, in wrapper
+    out = await method(self, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vegorov/.venvs/dl/lib/python3.11/site-packages/jupyter_client/manager.py", line 441, in _async_start_kernel
+    kernel_cmd, kw = await self._async_pre_start_kernel(**kw)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vegorov/.venvs/dl/lib/python3.11/site-packages/jupyter_client/manager.py", line 403, in _async_pre_start_kernel
+    self.kernel_spec,
+    ^^^^^^^^^^^^^^^^
+  File "/home/vegorov/.venvs/dl/lib/python3.11/site-packages/jupyter_client/manager.py", line 196, in kernel_spec
+    self._kernel_spec = self.kernel_spec_manager.get_kernel_spec(self.kernel_name)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vegorov/.venvs/dl/lib/python3.11/site-packages/jupyter_client/kernelspec.py", line 287, in get_kernel_spec
+    raise NoSuchKernel(kernel_name)
+jupyter_client.kernelspec.NoSuchKernel: No such kernel named dl

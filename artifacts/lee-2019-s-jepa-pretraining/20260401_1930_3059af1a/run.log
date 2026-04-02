@@ -1,0 +1,23 @@
+[2026-04-01 19:30:52] Requested device 'auto' ignored; forcing CPU-only execution.
+[2026-04-01 19:30:52] Using device: cpu
+[2026-04-01 19:30:52] Seed set to: 42
+[2026-04-01 19:30:52] [setup] config saved: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-s-jepa-pretraining/20260401_1930_3059af1a/config.json  seed=42  device=cpu  log_verbosity=compact
+[2026-04-01 19:30:52] Lee2019 S-JEPA pretraining split:
+[2026-04-01 19:30:52]   Train subjects:                [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]
+[2026-04-01 19:30:52]   Validation subjects:           [41, 42, 43, 44, 45, 46, 47]
+[2026-04-01 19:30:52]   Excluded downstream subjects:  [48, 49, 50, 51, 52, 53, 54]
+[2026-04-01 19:30:52]   Train chunk size:              5
+[2026-04-01 19:30:52]   Validation chunk size:         7
+[2026-04-01 19:30:52]   Chunk shuffle (train):         True
+[2026-04-01 19:30:52]   Window preload:                False
+
+[2026-04-01 19:33:58] Reference chunk prepared for geometry/model sanity setup.
+[2026-04-01 19:33:58]   Reference subjects:            [1, 2, 3, 4, 5]
+[2026-04-01 19:33:58]   Reference recordings:          20
+[2026-04-01 19:33:58] Pretraining window parameters:
+[2026-04-01 19:33:58]   sfreq:                      128 Hz
+[2026-04-01 19:33:58]   pretrain_duration_s:        16.0 s
+[2026-04-01 19:33:58]   sampling_interval_s:        16 s
+[2026-04-01 19:33:58]   window_size_samples:        2048
+[2026-04-01 19:33:58]   sampling_interval_samples:  2048
+[2026-04-01 19:33:58] Preprocessors ready for chunked train/validation streaming.

@@ -1,0 +1,23 @@
+{
+  "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning",
+  "seed": 3009,
+  "set_seed": true,
+  "sfreq": 128,
+  "bandpass_low": 0.5,
+  "bandpass_high": 40.0,
+  "convert_to_uV": true,
+  "normalize": true,
+  "normalization_method": "exponential_moving",
+  "learning_rate": 0.001,
+  "subjects_to_use": [
+    51
+  ],
+  "paradigm": "SSVEP",
+  "cv_folds": 5,
+  "val_split": 0.2,
+  "batch_size": 8,
+  "n_epochs": 5000,
+  "early_stopping_patience": 50,
+  "pretrained_url": "https://huggingface.co/braindecode/SignalJEPA/resolve/main/signal-jepa_16s-60_adeuwv4s.pth",
+  "device": "auto"
+}

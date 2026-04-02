@@ -1,0 +1,370 @@
+[2026-03-31 17:12:43] Using device: cpu
+[2026-03-31 17:12:43] Seed control enabled: True
+[2026-03-31 17:12:43] Base seed: 204
+[2026-03-31 17:12:44] Seed initialized: 204
+[2026-03-31 17:12:44] ======================================================================
+[2026-03-31 17:12:44] CONFIGURATION
+[2026-03-31 17:12:44] ======================================================================
+[2026-03-31 17:12:44]   artifact_dir: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning
+[2026-03-31 17:12:44]   bandpass_high: 40.0
+[2026-03-31 17:12:44]   bandpass_low: 0.5
+[2026-03-31 17:12:44]   batch_size: 16
+[2026-03-31 17:12:44]   convert_to_uV: True
+[2026-03-31 17:12:44]   cv_folds: 5
+[2026-03-31 17:12:44]   device: auto
+[2026-03-31 17:12:44]   early_stopping_patience: 50
+[2026-03-31 17:12:44]   learning_rate: 0.0005
+[2026-03-31 17:12:44]   n_epochs: 5000
+[2026-03-31 17:12:44]   normalization_method: None
+[2026-03-31 17:12:44]   normalize: False
+[2026-03-31 17:12:44]   paradigm: SSVEP
+[2026-03-31 17:12:44]   pretrained_url: https://huggingface.co/braindecode/SignalJEPA/resolve/main/signal-jepa_16s-60_adeuwv4s.pth
+[2026-03-31 17:12:44]   seed: 204
+[2026-03-31 17:12:44]   set_seed: True
+[2026-03-31 17:12:44]   sfreq: 128
+[2026-03-31 17:12:44]   subjects_to_use: [54]
+[2026-03-31 17:12:44]   val_split: 0.2
+[2026-03-31 17:12:44] ======================================================================
+[2026-03-31 17:12:44] Config saved to: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260331_1712_2f1051be/config.json
+[2026-03-31 17:12:44] Epoch window configuration:
+[2026-03-31 17:12:44]   Target sfreq:                128 Hz
+[2026-03-31 17:12:44]   Target duration:             4.190000 s
+[2026-03-31 17:12:44]   Window samples (rounded):    536
+[2026-03-31 17:12:44]   Base trial samples (4.0 s):  512
+[2026-03-31 17:12:44]   Trial stop offset samples:   24
+[2026-03-31 17:12:44]   Effective window duration:   4.187500 s
+[2026-03-31 17:12:44] Using specified subjects from config: [54]
+[2026-03-31 17:12:44] Selected subjects: [54]
+[2026-03-31 17:12:44] Expected evaluation folds: 5
+
+[2026-03-31 17:12:44] Building MOABBDataset for Lee2019_SSVEP...
+[2026-03-31 17:12:53] MOABBDataset recordings loaded: 1
+[2026-03-31 17:12:53] Discovered annotation descriptions (first recording): [np.str_('12.0'), np.str_('5.45'), np.str_('6.67'), np.str_('8.57')]
+[2026-03-31 17:12:53] Dataset event_id mapping: {'12.0': 1, '8.57': 2, '6.67': 3, '5.45': 4}
+[2026-03-31 17:12:53] Label map (event_code -> class_index): {1: 0, 2: 1, 3: 2, 4: 3}
+[2026-03-31 17:12:53] Applying Braindecode preprocessors to MOABBDataset...
+[2026-03-31 17:12:56] Preprocessing complete.
+
+[2026-03-31 17:12:56] Post-preprocessing validation
+[2026-03-31 17:12:56]   Recordings in DATASET: 1
+[2026-03-31 17:12:56]   Unique subject IDs:    ['54']
+[2026-03-31 17:12:56]   sfreq (first rec):     128.0 Hz
+[2026-03-31 17:12:56]   EEG channel count:     62
+[2026-03-31 17:12:56]   First 10 channels:     ['Fp1', 'Fp2', 'F7', 'F3', 'Fz', 'F4', 'F8', 'FC5', 'FC1', 'FC2']
+[2026-03-31 17:12:56] Channel consistency summary:
+[2026-03-31 17:12:56]   Checked runs: 1
+[2026-03-31 17:12:56]   Unique channel counts: [62]
+[2026-03-31 17:12:56]   Channel order consistent: True
+[2026-03-31 17:12:56] Validated EEG channels: 62
+[2026-03-31 17:12:56] First 10 EEG channels: ['Fp1', 'Fp2', 'F7', 'F3', 'Fz', 'F4', 'F8', 'FC5', 'FC1', 'FC2']
+[2026-03-31 17:12:56] raw mean_abs=1.120330e+01
+[2026-03-31 17:12:56] raw std=2.207442e+01
+[2026-03-31 17:12:56] raw first5 channel std= [66.77397308 81.39217593 25.04253361 17.94161419 14.84598907]
+[2026-03-31 17:12:56] Requested window samples: 536
+[2026-03-31 17:12:56] Base trial samples:       512
+[2026-03-31 17:12:56] Stop offset samples:      24
+[2026-03-31 17:12:56] Global class counts: [25, 25, 25, 25]
+[2026-03-31 17:12:56] Chance level (4-class): 0.25
+[2026-03-31 17:12:56] One window shape: (62, 536)
+[2026-03-31 17:12:56] One window label: 1
+[2026-03-31 17:12:56] Window sample length expected=536, got=536
+[2026-03-31 17:12:56] Subjects in window split: [54]
+[2026-03-31 17:12:56] Summarizing per-subject windows...
+[2026-03-31 17:12:56]   Subject 54: n_windows=100, window_shape=(62, 536), class_counts=[25, 25, 25, 25]
+[2026-03-31 17:12:56]    subject_id  n_windows  n_channels  n_times      class_counts
+0          54        100          62      536  [25, 25, 25, 25]
+[2026-03-31 17:12:56] Window validation summary:
+[2026-03-31 17:12:56]   Subject 54: n_windows=100 class_counts=[25, 25, 25, 25]
+
+[2026-03-31 17:12:56] Validated sampling rate target: 128 Hz
+[2026-03-31 17:12:56] Validated window sample count:   536
+[2026-03-31 17:12:56] Validated window duration:       4.1875 s
+[2026-03-31 17:12:56] Validated channel count:         62
+[2026-03-31 17:12:56] Total windows retained:          100
+[2026-03-31 17:12:56] Preprocessing sanity checks:
+[2026-03-31 17:12:56]   One sample label: 1
+[2026-03-31 17:12:56]   One sample shape: (62, 536)
+[2026-03-31 17:12:56]   Mean(abs(signal)): 3.854891e+00
+[2026-03-31 17:12:56]   Mean(signal):      -3.673276e-09
+[2026-03-31 17:12:56]   Std(signal):       5.098353e+00
+[2026-03-31 17:12:56] Building model with input window duration: 4.1875 s
+[2026-03-31 17:12:56] SignalJEPA_PreLocal instantiated successfully.
+[2026-03-31 17:12:56]   Total parameters:     18,192
+[2026-03-31 17:12:56]   Trainable parameters: 18,192
+[2026-03-31 17:12:56] ======================================================================================================================================================
+Layer (type (var_name):depth-idx)                  Input Shape               Output Shape              Param #                   Kernel Shape
+======================================================================================================================================================
+SignalJEPA_PreLocal (SignalJEPA_PreLocal)          [1, 62, 536]              [1, 4]                    --                        --
+├─Sequential (spatial_conv): 1-1                   [1, 62, 536]              [1, 4, 536]               --                        --
+│    └─Rearrange (0): 2-1                          [1, 62, 536]              [1, 1, 62, 536]           --                        --
+│    └─Conv2d (1): 2-2                             [1, 1, 62, 536]           [1, 4, 1, 536]            252                       [62, 1]
+│    └─Rearrange (2): 2-3                          [1, 4, 1, 536]            [1, 4, 536]               --                        --
+├─_ConvFeatureEncoder (feature_encoder): 1-2       [1, 4, 536]               [1, 16, 64]               --                        --
+│    └─Rearrange (0): 2-4                          [1, 4, 536]               [4, 1, 536]               --                        --
+│    └─Sequential (1): 2-5                         [4, 1, 536]               [4, 8, 64]                --                        --
+│    │    └─Conv1d (0): 3-1                        [4, 1, 536]               [4, 8, 64]                256                       [32]
+│    │    └─Dropout (1): 3-2                       [4, 8, 64]                [4, 8, 64]                --                        --
+│    │    └─GroupNorm (2): 3-3                     [4, 8, 64]                [4, 8, 64]                16                        --
+│    │    └─GELU (3): 3-4                          [4, 8, 64]                [4, 8, 64]                --                        --
+│    └─Sequential (2): 2-6                         [4, 8, 64]                [4, 16, 32]               --                        --
+│    │    └─Conv1d (0): 3-5                        [4, 8, 64]                [4, 16, 32]               256                       [2]
+│    │    └─Dropout (1): 3-6                       [4, 16, 32]               [4, 16, 32]               --                        --
+│    │    └─GELU (2): 3-7                          [4, 16, 32]               [4, 16, 32]               --                        --
+│    └─Sequential (3): 2-7                         [4, 16, 32]               [4, 32, 16]               --                        --
+│    │    └─Conv1d (0): 3-8                        [4, 16, 32]               [4, 32, 16]               1,024                     [2]
+│    │    └─Dropout (1): 3-9                       [4, 32, 16]               [4, 32, 16]               --                        --
+│    │    └─GELU (2): 3-10                         [4, 32, 16]               [4, 32, 16]               --                        --
+│    └─Sequential (4): 2-8                         [4, 32, 16]               [4, 64, 8]                --                        --
+│    │    └─Conv1d (0): 3-11                       [4, 32, 16]               [4, 64, 8]                4,096                     [2]
+│    │    └─Dropout (1): 3-12                      [4, 64, 8]                [4, 64, 8]                --                        --
+│    │    └─GELU (2): 3-13                         [4, 64, 8]                [4, 64, 8]                --                        --
+│    └─Sequential (5): 2-9                         [4, 64, 8]                [4, 64, 4]                --                        --
+│    │    └─Conv1d (0): 3-14                       [4, 64, 8]                [4, 64, 4]                8,192                     [2]
+│    │    └─Dropout (1): 3-15                      [4, 64, 4]                [4, 64, 4]                --                        --
+│    │    └─GELU (2): 3-16                         [4, 64, 4]                [4, 64, 4]                --                        --
+│    └─Rearrange (6): 2-10                         [4, 64, 4]                [1, 16, 64]               --                        --
+├─Sequential (final_layer): 1-3                    [1, 16, 64]               [1, 4]                    --                        --
+│    └─Flatten (0): 2-11                           [1, 16, 64]               [1, 1024]                 --                        --
+│    └─Linear (1): 2-12                            [1, 1024]                 [1, 4]                    4,100                     --
+======================================================================================================================================================
+Total params: 18,192
+Trainable params: 18,192
+Non-trainable params: 0
+Total mult-adds (Units.MEGABYTES): 0.57
+======================================================================================================================================================
+Input size (MB): 0.13
+Forward/backward pass size (MB): 0.11
+Params size (MB): 0.07
+Estimated Total Size (MB): 0.31
+======================================================================================================================================================
+[2026-03-31 17:12:56] Initializing from 16s-60 pretrained checkpoint (Hugging Face):
+[2026-03-31 17:12:56]   https://huggingface.co/braindecode/SignalJEPA/resolve/main/signal-jepa_16s-60_adeuwv4s.pth
+[2026-03-31 17:12:56]   Downloaded 179 keys
+[2026-03-31 17:12:57] ======================================================================
+[2026-03-31 17:12:57] STARTING CROSS-VALIDATION
+[2026-03-31 17:12:57] ======================================================================
+[2026-03-31 17:12:57] Subjects:      [54]
+[2026-03-31 17:12:57] CV folds:      5
+[2026-03-31 17:12:57] Batch size:    16
+[2026-03-31 17:12:57] Max epochs:    5000
+[2026-03-31 17:12:57] Device:        cpu
+[2026-03-31 17:12:57] Seed control:  True
+[2026-03-31 17:12:57] Base seed:     204
+[2026-03-31 17:12:57] ======================================================================
+
+[2026-03-31 17:12:57] Subject 54: 100 windows class_counts=[25, 25, 25, 25]
+[2026-03-31 17:12:57]   Fold 1 split seed: 205
+[2026-03-31 17:12:57]   Fold 1 split class counts:
+[2026-03-31 17:12:57]     train=[16, 16, 16, 16] val=[4, 4, 4, 4] test=[5, 5, 5, 5]
+[2026-03-31 17:12:57]   Fold 2 split seed: 206
+[2026-03-31 17:12:57]   Fold 2 split class counts:
+[2026-03-31 17:12:57]     train=[16, 16, 16, 16] val=[4, 4, 4, 4] test=[5, 5, 5, 5]
+[2026-03-31 17:12:57]   Fold 3 split seed: 207
+[2026-03-31 17:12:57]   Fold 3 split class counts:
+[2026-03-31 17:12:57]     train=[16, 16, 16, 16] val=[4, 4, 4, 4] test=[5, 5, 5, 5]
+[2026-03-31 17:12:57]   Fold 4 split seed: 208
+[2026-03-31 17:12:57]   Fold 4 split class counts:
+[2026-03-31 17:12:57]     train=[16, 16, 16, 16] val=[4, 4, 4, 4] test=[5, 5, 5, 5]
+[2026-03-31 17:12:57]   Fold 5 split seed: 209
+[2026-03-31 17:12:57]   Fold 5 split class counts:
+[2026-03-31 17:12:57]     train=[16, 16, 16, 16] val=[4, 4, 4, 4] test=[5, 5, 5, 5]
+[2026-03-31 17:12:57]   Subject 54 Fold 1 seed: 5605
+[2026-03-31 17:12:57]   Subject 54 Fold 1: n_train=64 n_val=16 n_test=20
+[2026-03-31 17:12:57]     Train class counts: [16, 16, 16, 16]
+[2026-03-31 17:12:57]     Val class counts:   [4, 4, 4, 4]
+[2026-03-31 17:12:57]     Test class counts:  [5, 5, 5, 5]
+[2026-03-31 17:12:57] Building model with input window duration: 4.1875 s
+[2026-03-31 17:12:57] Pretrained weight loading:
+[2026-03-31 17:12:57]   Downloaded keys:        179
+[2026-03-31 17:12:57]   Filtered (transformer): 172
+[2026-03-31 17:12:57]   Filtered (pos_encoder): 0
+[2026-03-31 17:12:57]   Keys to load:           7
+[2026-03-31 17:12:57]   Missing keys:           4
+[2026-03-31 17:12:57]   Unexpected keys:        0
+[2026-03-31 17:12:57]   Missing preview:        ['spatial_conv.1.weight', 'spatial_conv.1.bias', 'final_layer.1.weight', 'final_layer.1.bias']
+[2026-03-31 17:12:57]   Unexpected preview:     []
+[2026-03-31 17:12:57] Encoder freeze configuration:
+[2026-03-31 17:12:57]   Total parameters:        18,192
+[2026-03-31 17:12:57]   Trainable parameters:    4,352
+[2026-03-31 17:12:57]   Training percentage:     23.9%
+[2026-03-31 17:12:57]   Trainable layers: 4
+[2026-03-31 17:12:57]     - final_layer.1.bias
+[2026-03-31 17:12:57]     - final_layer.1.weight
+[2026-03-31 17:12:57]     - spatial_conv.1.bias
+[2026-03-31 17:12:57]     - spatial_conv.1.weight
+[2026-03-31 17:12:57]     Train generator seeded: True
+[2026-03-31 17:13:11]     Stopped epoch:            1114
+[2026-03-31 17:13:11]     Best epoch (valid_loss):  1064
+[2026-03-31 17:13:11]     Best valid_loss:          1.070611834526062
+[2026-03-31 17:13:11]     Test accuracy (primary):  0.6500
+[2026-03-31 17:13:11]     Test balanced acc:        0.6500
+[2026-03-31 17:13:11]     Confusion matrix:         [[4, 0, 1, 0], [0, 4, 0, 1], [0, 3, 1, 1], [0, 0, 1, 4]]
+[2026-03-31 17:13:11]     Prediction histogram:     [4, 7, 3, 6]
+[2026-03-31 17:13:11]     fold_acc=0.6500 fold_bal_acc=0.6500 cm=[[4, 0, 1, 0], [0, 4, 0, 1], [0, 3, 1, 1], [0, 0, 1, 4]]
+[2026-03-31 17:13:11]   Subject 54 Fold 2 seed: 5606
+[2026-03-31 17:13:11]   Subject 54 Fold 2: n_train=64 n_val=16 n_test=20
+[2026-03-31 17:13:11]     Train class counts: [16, 16, 16, 16]
+[2026-03-31 17:13:11]     Val class counts:   [4, 4, 4, 4]
+[2026-03-31 17:13:11]     Test class counts:  [5, 5, 5, 5]
+[2026-03-31 17:13:11] Building model with input window duration: 4.1875 s
+[2026-03-31 17:13:11] Pretrained weight loading:
+[2026-03-31 17:13:11]   Downloaded keys:        179
+[2026-03-31 17:13:11]   Filtered (transformer): 172
+[2026-03-31 17:13:11]   Filtered (pos_encoder): 0
+[2026-03-31 17:13:11]   Keys to load:           7
+[2026-03-31 17:13:11]   Missing keys:           4
+[2026-03-31 17:13:11]   Unexpected keys:        0
+[2026-03-31 17:13:11]   Missing preview:        ['spatial_conv.1.weight', 'spatial_conv.1.bias', 'final_layer.1.weight', 'final_layer.1.bias']
+[2026-03-31 17:13:11]   Unexpected preview:     []
+[2026-03-31 17:13:11] Encoder freeze configuration:
+[2026-03-31 17:13:11]   Total parameters:        18,192
+[2026-03-31 17:13:11]   Trainable parameters:    4,352
+[2026-03-31 17:13:11]   Training percentage:     23.9%
+[2026-03-31 17:13:11]   Trainable layers: 4
+[2026-03-31 17:13:11]     - final_layer.1.bias
+[2026-03-31 17:13:11]     - final_layer.1.weight
+[2026-03-31 17:13:11]     - spatial_conv.1.bias
+[2026-03-31 17:13:11]     - spatial_conv.1.weight
+[2026-03-31 17:13:11]     Train generator seeded: True
+[2026-03-31 17:13:16]     Stopped epoch:            455
+[2026-03-31 17:13:16]     Best epoch (valid_loss):  405
+[2026-03-31 17:13:16]     Best valid_loss:          1.2374018430709839
+[2026-03-31 17:13:16]     Test accuracy (primary):  0.7500
+[2026-03-31 17:13:16]     Test balanced acc:        0.7500
+[2026-03-31 17:13:16]     Confusion matrix:         [[4, 0, 1, 0], [0, 3, 1, 1], [0, 0, 5, 0], [1, 0, 1, 3]]
+[2026-03-31 17:13:16]     Prediction histogram:     [5, 3, 8, 4]
+[2026-03-31 17:13:16]     fold_acc=0.7500 fold_bal_acc=0.7500 cm=[[4, 0, 1, 0], [0, 3, 1, 1], [0, 0, 5, 0], [1, 0, 1, 3]]
+[2026-03-31 17:13:16]   Subject 54 Fold 3 seed: 5607
+[2026-03-31 17:13:16]   Subject 54 Fold 3: n_train=64 n_val=16 n_test=20
+[2026-03-31 17:13:16]     Train class counts: [16, 16, 16, 16]
+[2026-03-31 17:13:16]     Val class counts:   [4, 4, 4, 4]
+[2026-03-31 17:13:16]     Test class counts:  [5, 5, 5, 5]
+[2026-03-31 17:13:16] Building model with input window duration: 4.1875 s
+[2026-03-31 17:13:16] Pretrained weight loading:
+[2026-03-31 17:13:16]   Downloaded keys:        179
+[2026-03-31 17:13:16]   Filtered (transformer): 172
+[2026-03-31 17:13:16]   Filtered (pos_encoder): 0
+[2026-03-31 17:13:16]   Keys to load:           7
+[2026-03-31 17:13:16]   Missing keys:           4
+[2026-03-31 17:13:16]   Unexpected keys:        0
+[2026-03-31 17:13:16]   Missing preview:        ['spatial_conv.1.weight', 'spatial_conv.1.bias', 'final_layer.1.weight', 'final_layer.1.bias']
+[2026-03-31 17:13:16]   Unexpected preview:     []
+[2026-03-31 17:13:16] Encoder freeze configuration:
+[2026-03-31 17:13:16]   Total parameters:        18,192
+[2026-03-31 17:13:16]   Trainable parameters:    4,352
+[2026-03-31 17:13:16]   Training percentage:     23.9%
+[2026-03-31 17:13:16]   Trainable layers: 4
+[2026-03-31 17:13:16]     - final_layer.1.bias
+[2026-03-31 17:13:16]     - final_layer.1.weight
+[2026-03-31 17:13:16]     - spatial_conv.1.bias
+[2026-03-31 17:13:16]     - spatial_conv.1.weight
+[2026-03-31 17:13:16]     Train generator seeded: True
+[2026-03-31 17:13:37]     Stopped epoch:            1666
+[2026-03-31 17:13:37]     Best epoch (valid_loss):  1616
+[2026-03-31 17:13:37]     Best valid_loss:          0.7652172446250916
+[2026-03-31 17:13:37]     Test accuracy (primary):  0.6000
+[2026-03-31 17:13:37]     Test balanced acc:        0.6000
+[2026-03-31 17:13:37]     Confusion matrix:         [[5, 0, 0, 0], [1, 2, 1, 1], [0, 2, 3, 0], [0, 1, 2, 2]]
+[2026-03-31 17:13:37]     Prediction histogram:     [6, 5, 6, 3]
+[2026-03-31 17:13:37]     fold_acc=0.6000 fold_bal_acc=0.6000 cm=[[5, 0, 0, 0], [1, 2, 1, 1], [0, 2, 3, 0], [0, 1, 2, 2]]
+[2026-03-31 17:13:37]   Subject 54 Fold 4 seed: 5608
+[2026-03-31 17:13:37]   Subject 54 Fold 4: n_train=64 n_val=16 n_test=20
+[2026-03-31 17:13:37]     Train class counts: [16, 16, 16, 16]
+[2026-03-31 17:13:37]     Val class counts:   [4, 4, 4, 4]
+[2026-03-31 17:13:37]     Test class counts:  [5, 5, 5, 5]
+[2026-03-31 17:13:37] Building model with input window duration: 4.1875 s
+[2026-03-31 17:13:37] Pretrained weight loading:
+[2026-03-31 17:13:37]   Downloaded keys:        179
+[2026-03-31 17:13:37]   Filtered (transformer): 172
+[2026-03-31 17:13:37]   Filtered (pos_encoder): 0
+[2026-03-31 17:13:37]   Keys to load:           7
+[2026-03-31 17:13:37]   Missing keys:           4
+[2026-03-31 17:13:37]   Unexpected keys:        0
+[2026-03-31 17:13:37]   Missing preview:        ['spatial_conv.1.weight', 'spatial_conv.1.bias', 'final_layer.1.weight', 'final_layer.1.bias']
+[2026-03-31 17:13:37]   Unexpected preview:     []
+[2026-03-31 17:13:37] Encoder freeze configuration:
+[2026-03-31 17:13:37]   Total parameters:        18,192
+[2026-03-31 17:13:37]   Trainable parameters:    4,352
+[2026-03-31 17:13:37]   Training percentage:     23.9%
+[2026-03-31 17:13:37]   Trainable layers: 4
+[2026-03-31 17:13:37]     - final_layer.1.bias
+[2026-03-31 17:13:37]     - final_layer.1.weight
+[2026-03-31 17:13:37]     - spatial_conv.1.bias
+[2026-03-31 17:13:37]     - spatial_conv.1.weight
+[2026-03-31 17:13:37]     Train generator seeded: True
+[2026-03-31 17:13:54]     Stopped epoch:            1360
+[2026-03-31 17:13:54]     Best epoch (valid_loss):  1354
+[2026-03-31 17:13:54]     Best valid_loss:          0.8328714966773987
+[2026-03-31 17:13:54]     Test accuracy (primary):  0.6500
+[2026-03-31 17:13:54]     Test balanced acc:        0.6500
+[2026-03-31 17:13:54]     Confusion matrix:         [[5, 0, 0, 0], [0, 2, 0, 3], [1, 0, 4, 0], [1, 2, 0, 2]]
+[2026-03-31 17:13:54]     Prediction histogram:     [7, 4, 4, 5]
+[2026-03-31 17:13:54]     fold_acc=0.6500 fold_bal_acc=0.6500 cm=[[5, 0, 0, 0], [0, 2, 0, 3], [1, 0, 4, 0], [1, 2, 0, 2]]
+[2026-03-31 17:13:54]   Subject 54 Fold 5 seed: 5609
+[2026-03-31 17:13:54]   Subject 54 Fold 5: n_train=64 n_val=16 n_test=20
+[2026-03-31 17:13:54]     Train class counts: [16, 16, 16, 16]
+[2026-03-31 17:13:54]     Val class counts:   [4, 4, 4, 4]
+[2026-03-31 17:13:54]     Test class counts:  [5, 5, 5, 5]
+[2026-03-31 17:13:54] Building model with input window duration: 4.1875 s
+[2026-03-31 17:13:54] Pretrained weight loading:
+[2026-03-31 17:13:54]   Downloaded keys:        179
+[2026-03-31 17:13:54]   Filtered (transformer): 172
+[2026-03-31 17:13:54]   Filtered (pos_encoder): 0
+[2026-03-31 17:13:54]   Keys to load:           7
+[2026-03-31 17:13:54]   Missing keys:           4
+[2026-03-31 17:13:54]   Unexpected keys:        0
+[2026-03-31 17:13:54]   Missing preview:        ['spatial_conv.1.weight', 'spatial_conv.1.bias', 'final_layer.1.weight', 'final_layer.1.bias']
+[2026-03-31 17:13:54]   Unexpected preview:     []
+[2026-03-31 17:13:54] Encoder freeze configuration:
+[2026-03-31 17:13:54]   Total parameters:        18,192
+[2026-03-31 17:13:54]   Trainable parameters:    4,352
+[2026-03-31 17:13:54]   Training percentage:     23.9%
+[2026-03-31 17:13:54]   Trainable layers: 4
+[2026-03-31 17:13:54]     - final_layer.1.bias
+[2026-03-31 17:13:54]     - final_layer.1.weight
+[2026-03-31 17:13:54]     - spatial_conv.1.bias
+[2026-03-31 17:13:54]     - spatial_conv.1.weight
+[2026-03-31 17:13:54]     Train generator seeded: True
+[2026-03-31 17:14:04]     Stopped epoch:            786
+[2026-03-31 17:14:04]     Best epoch (valid_loss):  736
+[2026-03-31 17:14:04]     Best valid_loss:          1.0720559358596802
+[2026-03-31 17:14:04]     Test accuracy (primary):  0.6000
+[2026-03-31 17:14:04]     Test balanced acc:        0.6000
+[2026-03-31 17:14:04]     Confusion matrix:         [[3, 1, 0, 1], [0, 3, 2, 0], [0, 1, 4, 0], [0, 2, 1, 2]]
+[2026-03-31 17:14:04]     Prediction histogram:     [3, 7, 7, 3]
+[2026-03-31 17:14:04]     fold_acc=0.6000 fold_bal_acc=0.6000 cm=[[3, 1, 0, 1], [0, 3, 2, 0], [0, 1, 4, 0], [0, 2, 1, 2]]
+[2026-03-31 17:14:04]   Subject 54 mean accuracy: 0.6500
+
+[2026-03-31 17:14:04] Total folds completed: 5
+[2026-03-31 17:14:04] ======================================================================
+[2026-03-31 17:14:04] AGGREGATED RESULTS
+[2026-03-31 17:14:04] ======================================================================
+[2026-03-31 17:14:04]   Subject 54:  acc=0.6500±0.0548  bal_acc=0.6500±0.0548
+[2026-03-31 17:14:04] ----------------------------------------------------------------------
+[2026-03-31 17:14:04]   OVERALL:      acc=0.6500±0.0548  bal_acc=0.6500±0.0548
+[2026-03-31 17:14:04] ======================================================================
+[2026-03-31 17:14:04] CV results saved to:      /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260331_1712_2f1051be/cv_results.json
+[2026-03-31 17:14:04] Subject metrics saved to: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260331_1712_2f1051be/subject_metrics.json
+[2026-03-31 17:14:04] Global metrics saved to:  /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260331_1712_2f1051be/global_metrics.json
+[2026-03-31 17:14:04] Run metadata saved to:    /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260331_1712_2f1051be/run_metadata.json
+
+[2026-03-31 17:14:04] All artifacts in: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260331_1712_2f1051be
+
+[2026-03-31 17:14:04] ======================================================================
+[2026-03-31 17:14:04] EXPERIMENT SUMMARY
+[2026-03-31 17:14:04] ======================================================================
+[2026-03-31 17:14:04] Run ID:    20260331_1712_2f1051be
+[2026-03-31 17:14:04] Artifacts: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260331_1712_2f1051be
+
+[2026-03-31 17:14:04] Configuration:
+[2026-03-31 17:14:04]   Subjects:          [54]
+[2026-03-31 17:14:04]   Bandpass:          0.5-40.0 Hz
+[2026-03-31 17:14:04]   Resample:          128 Hz
+[2026-03-31 17:14:04]   CV folds:          5
+[2026-03-31 17:14:04]   Learning rate:     0.0005
+[2026-03-31 17:14:04]   Batch size:        16
+[2026-03-31 17:14:04]   Max epochs:        5000
+
+[2026-03-31 17:14:04] Results:
+[2026-03-31 17:14:04]   Mean Accuracy:          0.6500 ± 0.0548
+[2026-03-31 17:14:04]   Mean Balanced Accuracy: 0.6500 ± 0.0548

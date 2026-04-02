@@ -1,0 +1,497 @@
+[2026-04-01 20:02:00] Requested device 'auto' ignored; forcing CPU-only execution.
+[2026-04-01 20:02:00] Using device: cpu
+[2026-04-01 20:02:00] Seed set to: 42
+[2026-04-01 20:02:00] [setup] config saved: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-s-jepa-pretraining/20260401_2002_c4482f4c/config.json  seed=42  device=cpu  log_verbosity=compact
+[2026-04-01 20:02:00] Lee2019 S-JEPA pretraining split:
+[2026-04-01 20:02:00]   Train subjects:                [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]
+[2026-04-01 20:02:00]   Validation subjects:           [41, 42, 43, 44, 45, 46, 47]
+[2026-04-01 20:02:00]   Excluded downstream subjects:  [48, 49, 50, 51, 52, 53, 54]
+[2026-04-01 20:02:00]   Train chunk size:              2
+[2026-04-01 20:02:00]   Validation chunk size:         1
+[2026-04-01 20:02:00]   Chunk shuffle (train):         True
+[2026-04-01 20:02:00]   Window preload:                False
+
+[2026-04-01 20:03:08] Reference chunk prepared for geometry/model sanity setup.
+[2026-04-01 20:03:08]   Reference subjects:            [1, 2]
+[2026-04-01 20:03:08]   Reference recordings:          8
+[2026-04-01 20:03:08] Pretraining window parameters:
+[2026-04-01 20:03:08]   sfreq:                      128 Hz
+[2026-04-01 20:03:08]   pretrain_duration_s:        16.0 s
+[2026-04-01 20:03:08]   sampling_interval_s:        16 s
+[2026-04-01 20:03:08]   window_size_samples:        2048
+[2026-04-01 20:03:08]   sampling_interval_samples:  2048
+[2026-04-01 20:03:08] Preprocessors ready for chunked train/validation streaming.
+
+[2026-04-01 20:04:42] Reference chunk windows ready:
+[2026-04-01 20:04:42]   Subjects:                    [1, 2]
+[2026-04-01 20:04:42]   Recordings by paradigm:      {'MI': 2, 'ERP': 4, 'SSVEP': 2}
+[2026-04-01 20:04:42]   Window count:                596
+[2026-04-01 20:04:42] Geometry summary:
+[2026-04-01 20:04:42]   Montage present:          True
+[2026-04-01 20:04:42]   Montage kind:             DigMontage
+[2026-04-01 20:04:42]   EEG channels:             62
+[2026-04-01 20:04:42]   Valid EEG positions:      62
+[2026-04-01 20:04:42]   Valid position ratio:     1.000
+[2026-04-01 20:04:42]   Any all-zero channels:    False
+[2026-04-01 20:04:42]   Valid xyz min/max:        x[-0.0876, 0.0842] y[-0.0828, 0.1153] z[-0.0132, 0.1415]
+[2026-04-01 20:04:42]   First channel xyz preview:
+[2026-04-01 20:04:42]        Fp1: (-0.0309,  0.1146,  0.0279) valid=True
+[2026-04-01 20:04:42]        Fp2: ( 0.0284,  0.1153,  0.0277) valid=True
+[2026-04-01 20:04:42]         F7: (-0.0719,  0.0731,  0.0258) valid=True
+[2026-04-01 20:04:42]         F3: (-0.0518,  0.0867,  0.0787) valid=True
+[2026-04-01 20:04:42]         Fz: (-0.0012,  0.0933,  0.1026) valid=True
+[2026-04-01 20:04:42]         F4: ( 0.0503,  0.0874,  0.0773) valid=True
+[2026-04-01 20:04:42]         F8: ( 0.0714,  0.0745,  0.0251) valid=True
+[2026-04-01 20:04:42]        FC5: (-0.0789,  0.0514,  0.0630) valid=True
+[2026-04-01 20:04:42] Sanitized SignalJEPA channel metadata:
+[2026-04-01 20:04:42]   EEG channels:             62
+[2026-04-01 20:04:42]   Valid xyz channels:       62
+[2026-04-01 20:04:42]   Sanitized xyz min/max:    x[-0.0876, 0.0842] y[-0.0828, 0.1153] z[-0.0132, 0.1415]
+
+[2026-04-01 20:04:42] EEG channel geometry summary:
+[2026-04-01 20:04:42]   N_CHANNELS:               62
+[2026-04-01 20:04:42]   CH_POSITIONS shape:       (62, 3)
+[2026-04-01 20:04:42]   Sanitized CHS_INFO count: 62
+[2026-04-01 20:04:42] Window sanity checks (reference-train-chunk):
+[2026-04-01 20:04:42]   Total windows:          596
+[2026-04-01 20:04:42]   Window shape (C, T):    (62, 2048)
+[2026-04-01 20:04:42]   Mean:                   1.2984e-05
+[2026-04-01 20:04:42]   Std(signal) (µV):       1.9971e-05
+[2026-04-01 20:04:42]   Max:                    2.6309e-04
+[2026-04-01 20:05:27] Window sanity checks (validation-preview-chunk):
+[2026-04-01 20:05:27]   Total windows:          298
+[2026-04-01 20:05:27]   Window shape (C, T):    (62, 2048)
+[2026-04-01 20:05:27]   Mean:                   1.3091e-05
+[2026-04-01 20:05:27]   Std(signal) (µV):       2.3802e-05
+[2026-04-01 20:05:27]   Max:                    3.2451e-04
+[2026-04-01 20:05:27] Feature encoder token geometry:
+[2026-04-01 20:05:27]   WINDOW_SIZE_SAMPLES:  2048
+[2026-04-01 20:05:27]   N_TOK_PER_CHANNEL:    15
+[2026-04-01 20:05:27]   EMB_DIM:              64
+[2026-04-01 20:05:27]   TOTAL_TOKENS:         930
+[2026-04-01 20:05:27] Student / teacher backbone summary:
+[2026-04-01 20:05:27]   Student parameters:           3,456,852
+[2026-04-01 20:05:27]   Feature encoder parameters:   13,840
+[2026-04-01 20:05:27]   Positional encoder params:    1,860
+[2026-04-01 20:05:27]   Transformer parameters:       3,441,152
+[2026-04-01 20:05:27]   Teacher trainable parameters: 0
+[2026-04-01 20:05:27] Backbone finite probe: OK
+[2026-04-01 20:05:27] Radius-based random spatial block mask sampler:
+[2026-04-01 20:05:27]   n_channels:               62
+[2026-04-01 20:05:27]   n_valid_channels:         62
+[2026-04-01 20:05:27]   head_diameter (valid):    0.206672
+[2026-04-01 20:05:27]   mask_diameter_percent:    60
+[2026-04-01 20:05:27]   mask_diameter:            0.124003
+[2026-04-01 20:05:27]   mask_radius:              0.062002
+[2026-04-01 20:05:27]   n_tok_per_channel:        15
+[2026-04-01 20:05:27] Mask check: Cz
+[2026-04-01 20:05:27]   radius: 0.062002
+[2026-04-01 20:05:27]   masked channels: 8
+[2026-04-01 20:05:27]   masked tokens: 120
+[2026-04-01 20:05:27]   masked names: ['FC1', 'FC2', 'Cz', 'CP1', 'CP2', 'C1', 'C2', 'CPz']
+[2026-04-01 20:05:27] 40% mask around Cz:
+[2026-04-01 20:05:27]   radius: 0.041334
+[2026-04-01 20:05:27]   masked channels (4): ['Cz', 'C1', 'C2', 'CPz']
+
+[2026-04-01 20:05:27] 60% mask around Cz:
+[2026-04-01 20:05:27]   radius: 0.062002
+[2026-04-01 20:05:27]   masked channels (8): ['FC1', 'FC2', 'Cz', 'CP1', 'CP2', 'C1', 'C2', 'CPz']
+
+[2026-04-01 20:05:27] 80% mask around Cz:
+[2026-04-01 20:05:27]   radius: 0.082669
+[2026-04-01 20:05:27]   masked channels (16): ['Fz', 'FC1', 'FC2', 'C3', 'Cz', 'C4', 'CP1', 'CP2', 'Pz', 'FC3', 'C1', 'C2', 'CP3', 'CPz', 'P1', 'P2']
+
+[2026-04-01 20:05:28] 40% mask around C6:
+[2026-04-01 20:05:28]   radius: 0.041334
+[2026-04-01 20:05:28]   masked channels (5): ['FC6', 'C4', 'T8', 'CP6', 'C6']
+
+[2026-04-01 20:05:28] 60% mask around C6:
+[2026-04-01 20:05:28]   radius: 0.062002
+[2026-04-01 20:05:28]   masked channels (10): ['FC6', 'C4', 'T8', 'CP6', 'FC4', 'C6', 'CP4', 'FTT10h', 'TPP8h', 'TP8']
+
+[2026-04-01 20:05:28] 80% mask around C6:
+[2026-04-01 20:05:28]   radius: 0.082669
+[2026-04-01 20:05:28]   masked channels (18): ['F4', 'F8', 'FC2', 'FC6', 'C4', 'T8', 'CP6', 'TP10', 'P4', 'P8', 'FC4', 'C2', 'C6', 'CP4', 'FTT10h', 'TPP8h', 'TP8', 'TPP10h']
+
+[2026-04-01 20:05:28] 40% mask around Oz:
+[2026-04-01 20:05:28]   radius: 0.041334
+[2026-04-01 20:05:28]   masked channels (4): ['O1', 'Oz', 'O2', 'POz']
+
+[2026-04-01 20:05:28] 60% mask around Oz:
+[2026-04-01 20:05:28]   radius: 0.062002
+[2026-04-01 20:05:28]   masked channels (6): ['O1', 'Oz', 'O2', 'POz', 'PO3', 'PO4']
+
+[2026-04-01 20:05:28] 80% mask around Oz:
+[2026-04-01 20:05:28]   radius: 0.082669
+[2026-04-01 20:05:28]   masked channels (13): ['P3', 'Pz', 'P4', 'PO9', 'O1', 'Oz', 'O2', 'PO10', 'P1', 'P2', 'POz', 'PO3', 'PO4']
+
+[2026-04-01 20:05:28] 40% mask around Cz:
+[2026-04-01 20:05:28]   radius: 0.041334
+[2026-04-01 20:05:28]   masked channels (4): ['Cz', 'C1', 'C2', 'CPz']
+
+[2026-04-01 20:05:28] 60% mask around Cz:
+[2026-04-01 20:05:28]   radius: 0.062002
+[2026-04-01 20:05:28]   masked channels (8): ['FC1', 'FC2', 'Cz', 'CP1', 'CP2', 'C1', 'C2', 'CPz']
+
+[2026-04-01 20:05:28] 80% mask around Cz:
+[2026-04-01 20:05:28]   radius: 0.082669
+[2026-04-01 20:05:28]   masked channels (16): ['Fz', 'FC1', 'FC2', 'C3', 'Cz', 'C4', 'CP1', 'CP2', 'Pz', 'FC3', 'C1', 'C2', 'CP3', 'CPz', 'P1', 'P2']
+
+[2026-04-01 20:05:28] Token-routing:
+[2026-04-01 20:05:28]   Full token shape:         (930, 64)
+[2026-04-01 20:05:28]   Visible token shape:      (795, 64)
+[2026-04-01 20:05:28]   Masked token shape:       (135, 64)
+[2026-04-01 20:05:28]   Sample masked channels:   9
+[2026-04-01 20:05:28] Single-sample token routing validated OK.
+[2026-04-01 20:05:28] MaskedTokenPredictor initialized:
+[2026-04-01 20:05:28]   d_model:          64
+[2026-04-01 20:05:28]   nhead:            8
+[2026-04-01 20:05:28]   num_layers:       4
+[2026-04-01 20:05:28]   dim_feedforward:  256
+[2026-04-01 20:05:28]   Total parameters: 267,136
+
+[2026-04-01 20:05:28] Predictor shape test: OK
+[2026-04-01 20:05:28]   student_context: (1, 780, 64)
+[2026-04-01 20:05:28]   masked_pos_enc:  (1, 150, 64)
+[2026-04-01 20:05:28]   prediction:      (1, 150, 64)
+[2026-04-01 20:07:46] Optimizer: Adam
+[2026-04-01 20:07:46] Learning rate:             0.001
+[2026-04-01 20:07:46] Weight decay:              0.0
+[2026-04-01 20:07:46] Debug train chunk subjects: [1, 2]
+[2026-04-01 20:07:46] Debug train windows:        596
+[2026-04-01 20:07:46] Debug val chunk subjects:   [41]
+[2026-04-01 20:07:46] Debug val windows:          298
+
+[2026-04-01 20:07:46] Running first-batch debug (dry-run before optimizer step)...
+[2026-04-01 20:07:46]   [debug] first-sample training path:
+[2026-04-01 20:07:46]     x_single:             (1, 62, 2048)
+[2026-04-01 20:07:46]     teacher_full_tokens:  (1, 930, 64)
+[2026-04-01 20:07:46]     student_visible:      (1, 795, 64)
+[2026-04-01 20:07:46]     masked_queries:       (1, 135, 64)
+[2026-04-01 20:07:46]     predicted_masked:     (1, 135, 64)
+[2026-04-01 20:07:46]     teacher_masked:       (1, 135, 64)
+[2026-04-01 20:07:46]     center_channel:       40
+[2026-04-01 20:07:46]     masked_channels:      9
+[2026-04-01 20:07:46]     masked_tokens:        135
+[2026-04-01 20:07:46]     visible_tokens:       795
+[2026-04-01 20:07:46]     sample_loss:          1.064596
+[2026-04-01 20:07:55]   Dry-run first training-batch loss: 1.044767
+[2026-04-01 20:08:08]   First training-batch loss (updated): 1.044563
+[2026-04-01 20:08:08]   Mean masked channels:               8.25
+[2026-04-01 20:08:08]   Mean masked tokens:                 123.75
+[2026-04-01 20:08:09]   First validation-batch loss: 0.824392
+[2026-04-01 20:08:09] ======================================================================
+[2026-04-01 20:08:09] [setup] STARTING LEE2019 S-JEPA PRETRAINING
+[2026-04-01 20:08:09] ======================================================================
+[2026-04-01 20:08:09] [setup] run_id:                  20260401_2002_c4482f4c
+[2026-04-01 20:08:09] [setup] seed:                    42
+[2026-04-01 20:08:09] [setup] device:                  cpu
+[2026-04-01 20:08:09] [setup] paradigms:               ['MI', 'ERP', 'SSVEP']
+[2026-04-01 20:08:09] [setup] train_subjects:          40  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]
+[2026-04-01 20:08:09] [setup] val_subjects:            7  [41, 42, 43, 44, 45, 46, 47]
+[2026-04-01 20:08:09] [setup] excluded_subjects:       [48, 49, 50, 51, 52, 53, 54]
+[2026-04-01 20:08:09] [setup] train_chunk_size:        2
+[2026-04-01 20:08:09] [setup] val_chunk_size:          1
+[2026-04-01 20:08:09] [setup] train_chunks_per_epoch:  20
+[2026-04-01 20:08:09] [setup] val_chunks_per_epoch:    7
+[2026-04-01 20:08:09] [setup] batch_size:              32
+[2026-04-01 20:08:09] [setup] early_stopping_patience: 10
+[2026-04-01 20:08:09] [setup] window_preload:          False
+[2026-04-01 20:08:09] [setup] pretrain_duration:       16.0 s
+[2026-04-01 20:08:09] [setup] sampling_interval:       16 s
+[2026-04-01 20:08:09] [setup] mask_diameter:           60%
+[2026-04-01 20:08:09] [setup] ema_decay:               0.996
+[2026-04-01 20:08:09] [setup] epoch_limit:             300
+[2026-04-01 20:08:09] [setup] log_verbosity:           compact
+[2026-04-01 20:08:09] ======================================================================
+[2026-04-01 20:13:04] [train] epoch 1 chunk 1/20 subjects=[22, 28] windows=565 batches=17 loss=0.289318 running=0.289318 time=294.4s
+[2026-04-01 20:18:23] [train] epoch 1 chunk 2/20 subjects=[11, 1] windows=588 batches=18 loss=0.062857 running=0.172852 time=318.7s
+[2026-04-01 20:23:40] [train] epoch 1 chunk 3/20 subjects=[16, 21] windows=587 batches=18 loss=0.032373 running=0.125142 time=317.0s
+[2026-04-01 20:28:54] [train] epoch 1 chunk 4/20 subjects=[26, 31] windows=586 batches=18 loss=0.026431 running=0.100117 time=313.5s
+[2026-04-01 20:34:08] [train] epoch 1 chunk 5/20 subjects=[36, 38] windows=590 batches=18 loss=0.023085 running=0.084537 time=313.6s
+[2026-04-01 20:39:18] [train] epoch 1 chunk 6/20 subjects=[35, 15] windows=591 batches=18 loss=0.020128 running=0.073702 time=309.8s
+[2026-04-01 20:44:20] [train] epoch 1 chunk 7/20 subjects=[8, 9] windows=565 batches=17 loss=0.017633 running=0.066015 time=302.0s
+[2026-04-01 20:49:36] [train] epoch 1 chunk 8/20 subjects=[40, 29] windows=577 batches=18 loss=0.015989 running=0.059674 time=315.9s
+[2026-04-01 20:54:37] [train] epoch 1 chunk 9/20 subjects=[5, 23] windows=573 batches=17 loss=0.014356 running=0.054828 time=300.5s
+[2026-04-01 20:59:42] [train] epoch 1 chunk 10/20 subjects=[27, 4] windows=564 batches=17 loss=0.013002 running=0.050788 time=304.5s
+[2026-04-01 21:05:04] [train] epoch 1 chunk 11/20 subjects=[33, 6] windows=601 batches=18 loss=0.011597 running=0.047152 time=321.5s
+[2026-04-01 21:10:10] [train] epoch 1 chunk 12/20 subjects=[13, 34] windows=575 batches=17 loss=0.010620 running=0.044209 time=306.0s
+[2026-04-01 21:15:13] [train] epoch 1 chunk 13/20 subjects=[25, 18] windows=566 batches=17 loss=0.009403 running=0.041614 time=302.8s
+[2026-04-01 21:20:13] [train] epoch 1 chunk 14/20 subjects=[20, 12] windows=567 batches=17 loss=0.009193 running=0.039364 time=300.2s
+[2026-04-01 21:25:26] [train] epoch 1 chunk 15/20 subjects=[39, 14] windows=585 batches=18 loss=0.008504 running=0.037252 time=312.4s
+[2026-04-01 21:30:44] [train] epoch 1 chunk 16/20 subjects=[17, 2] windows=582 batches=18 loss=0.008378 running=0.035402 time=317.2s
+[2026-04-01 21:35:45] [train] epoch 1 chunk 17/20 subjects=[32, 37] windows=573 batches=17 loss=0.008359 running=0.033860 time=301.1s
+[2026-04-01 21:40:43] [train] epoch 1 chunk 18/20 subjects=[7, 24] windows=575 batches=17 loss=0.008585 running=0.032496 time=298.1s
+[2026-04-01 21:46:08] [train] epoch 1 chunk 19/20 subjects=[30, 10] windows=584 batches=18 loss=0.008600 running=0.031204 time=324.5s
+[2026-04-01 21:51:09] [train] epoch 1 chunk 20/20 subjects=[19, 3] windows=566 batches=17 loss=0.007898 running=0.030072 time=300.1s
+[2026-04-01 21:52:01] [val] epoch 1 chunk 1/7 subjects=[41] windows=298 batches=10 loss=0.008700 running=0.008700 time=52.0s
+[2026-04-01 21:52:56] [val] epoch 1 chunk 2/7 subjects=[42] windows=292 batches=10 loss=0.008631 running=0.008665 time=54.3s
+[2026-04-01 21:53:49] [val] epoch 1 chunk 3/7 subjects=[43] windows=294 batches=10 loss=0.008676 running=0.008669 time=53.0s
+[2026-04-01 21:54:42] [val] epoch 1 chunk 4/7 subjects=[44] windows=284 batches=9 loss=0.008683 running=0.008672 time=52.5s
+[2026-04-01 21:55:37] [val] epoch 1 chunk 5/7 subjects=[45] windows=301 batches=10 loss=0.008673 running=0.008672 time=54.8s
+[2026-04-01 21:56:31] [val] epoch 1 chunk 6/7 subjects=[46] windows=297 batches=10 loss=0.008673 running=0.008672 time=54.1s
+[2026-04-01 21:57:24] [val] epoch 1 chunk 7/7 subjects=[47] windows=285 batches=9 loss=0.008665 running=0.008671 time=52.4s
+[2026-04-01 21:57:24] [epoch]   1/300  train_loss=0.030072  val_loss=0.008671  best_val=0.008671  patience=0/10  train_chunks=20  val_chunks=7  train_time=6179.5s  val_time=375.0s
+[2026-04-01 22:02:39] [train] epoch 2 chunk 1/20 subjects=[40, 31] windows=577 batches=18 loss=0.008641 running=0.008641 time=315.4s
+[2026-04-01 22:07:56] [train] epoch 2 chunk 2/20 subjects=[14, 7] windows=582 batches=18 loss=0.009288 running=0.008965 time=315.8s
+[2026-04-01 22:12:56] [train] epoch 2 chunk 3/20 subjects=[24, 28] windows=571 batches=17 loss=0.007829 running=0.008600 time=299.8s
+[2026-04-01 22:17:58] [train] epoch 2 chunk 4/20 subjects=[18, 16] windows=566 batches=17 loss=0.007545 running=0.008344 time=302.5s
+[2026-04-01 22:23:02] [train] epoch 2 chunk 5/20 subjects=[9, 39] windows=575 batches=17 loss=0.009098 running=0.008491 time=303.1s
+[2026-04-01 22:28:02] [train] epoch 2 chunk 6/20 subjects=[3, 22] windows=567 batches=17 loss=0.007275 running=0.008293 time=300.1s
+[2026-04-01 22:33:18] [train] epoch 2 chunk 7/20 subjects=[5, 26] windows=594 batches=18 loss=0.007530 running=0.008180 time=315.5s
+[2026-04-01 22:38:22] [train] epoch 2 chunk 8/20 subjects=[32, 36] windows=571 batches=17 loss=0.006935 running=0.008028 time=304.2s
+[2026-04-01 22:43:26] [train] epoch 2 chunk 9/20 subjects=[11, 20] windows=561 batches=17 loss=0.008737 running=0.008105 time=303.3s
+[2026-04-01 22:48:28] [train] epoch 2 chunk 10/20 subjects=[29, 13] windows=575 batches=17 loss=0.008152 running=0.008110 time=301.7s
+[2026-04-01 22:53:46] [train] epoch 2 chunk 11/20 subjects=[21, 10] windows=598 batches=18 loss=0.008249 running=0.008123 time=317.5s
+[2026-04-01 22:58:44] [train] epoch 2 chunk 12/20 subjects=[23, 17] windows=575 batches=17 loss=0.007301 running=0.008056 time=298.4s
+[2026-04-01 23:04:03] [train] epoch 2 chunk 13/20 subjects=[38, 6] windows=601 batches=18 loss=0.006602 running=0.007940 time=317.9s
+[2026-04-01 23:09:23] [train] epoch 2 chunk 14/20 subjects=[30, 1] windows=599 batches=18 loss=0.006852 running=0.007860 time=319.9s
+[2026-04-01 23:14:40] [train] epoch 2 chunk 15/20 subjects=[33, 4] windows=589 batches=18 loss=0.007735 running=0.007851 time=317.0s
+[2026-04-01 23:19:59] [train] epoch 2 chunk 16/20 subjects=[37, 2] windows=577 batches=18 loss=0.005287 running=0.007686 time=318.4s
+[2026-04-01 23:25:16] [train] epoch 2 chunk 17/20 subjects=[19, 15] windows=588 batches=18 loss=0.005375 running=0.007547 time=317.3s
+[2026-04-01 23:30:20] [train] epoch 2 chunk 18/20 subjects=[25, 12] windows=568 batches=17 loss=0.005936 running=0.007460 time=303.8s
+[2026-04-01 23:35:23] [train] epoch 2 chunk 19/20 subjects=[8, 35] windows=564 batches=17 loss=0.006060 running=0.007388 time=302.1s
+[2026-04-01 23:40:24] [train] epoch 2 chunk 20/20 subjects=[34, 27] windows=562 batches=17 loss=0.006222 running=0.007331 time=300.7s
+[2026-04-01 23:41:15] [val] epoch 2 chunk 1/7 subjects=[41] windows=298 batches=10 loss=0.007176 running=0.007176 time=51.1s
+[2026-04-01 23:42:10] [val] epoch 2 chunk 2/7 subjects=[42] windows=292 batches=10 loss=0.007169 running=0.007172 time=54.2s
+[2026-04-01 23:43:03] [val] epoch 2 chunk 3/7 subjects=[43] windows=294 batches=10 loss=0.007187 running=0.007177 time=53.1s
+[2026-04-01 23:43:55] [val] epoch 2 chunk 4/7 subjects=[44] windows=284 batches=9 loss=0.007180 running=0.007178 time=52.1s
+[2026-04-01 23:44:51] [val] epoch 2 chunk 5/7 subjects=[45] windows=301 batches=10 loss=0.007184 running=0.007179 time=55.1s
+[2026-04-01 23:45:46] [val] epoch 2 chunk 6/7 subjects=[46] windows=297 batches=10 loss=0.007175 running=0.007178 time=54.6s
+[2026-04-01 23:46:39] [val] epoch 2 chunk 7/7 subjects=[47] windows=285 batches=9 loss=0.007177 running=0.007178 time=52.9s
+[2026-04-01 23:46:39] [epoch]   2/300  train_loss=0.007331  val_loss=0.007178  best_val=0.007178  patience=0/10  train_chunks=20  val_chunks=7  train_time=6179.8s  val_time=375.1s
+[2026-04-01 23:51:40] [train] epoch 3 chunk 1/20 subjects=[37, 8] windows=567 batches=17 loss=0.005398 running=0.005398 time=300.8s
+[2026-04-01 23:56:38] [train] epoch 3 chunk 2/20 subjects=[39, 11] windows=570 batches=17 loss=0.005359 running=0.005379 time=297.7s
+[2026-04-02 00:01:56] [train] epoch 3 chunk 3/20 subjects=[40, 30] windows=586 batches=18 loss=0.005607 running=0.005458 time=317.4s
+[2026-04-02 00:06:53] [train] epoch 3 chunk 4/20 subjects=[36, 23] windows=568 batches=17 loss=0.005095 running=0.005368 time=297.3s
+[2026-04-02 00:12:11] [train] epoch 3 chunk 5/20 subjects=[15, 25] windows=587 batches=18 loss=0.004724 running=0.005235 time=317.0s
+[2026-04-02 00:17:11] [train] epoch 3 chunk 6/20 subjects=[34, 31] windows=566 batches=17 loss=0.004723 running=0.005151 time=300.3s
+[2026-04-02 00:22:27] [train] epoch 3 chunk 7/20 subjects=[12, 13] windows=579 batches=18 loss=0.005319 running=0.005176 time=315.2s
+[2026-04-02 00:27:41] [train] epoch 3 chunk 8/20 subjects=[14, 7] windows=582 batches=18 loss=0.005448 running=0.005211 time=313.9s
+[2026-04-02 00:32:46] [train] epoch 3 chunk 9/20 subjects=[19, 9] windows=568 batches=17 loss=0.004810 running=0.005168 time=304.8s
+[2026-04-02 00:38:05] [train] epoch 3 chunk 10/20 subjects=[38, 3] windows=588 batches=18 loss=0.004846 running=0.005135 time=318.5s
+[2026-04-02 00:43:23] [train] epoch 3 chunk 11/20 subjects=[35, 33] windows=589 batches=18 loss=0.005088 running=0.005130 time=318.6s
+[2026-04-02 00:48:43] [train] epoch 3 chunk 12/20 subjects=[21, 24] windows=595 batches=18 loss=0.006215 running=0.005223 time=318.9s
+[2026-04-02 00:53:41] [train] epoch 3 chunk 13/20 subjects=[28, 29] windows=565 batches=17 loss=0.006069 running=0.005286 time=298.6s
+[2026-04-02 00:58:59] [train] epoch 3 chunk 14/20 subjects=[26, 10] windows=595 batches=18 loss=0.005373 running=0.005292 time=317.4s
+[2026-04-02 01:04:15] [train] epoch 3 chunk 15/20 subjects=[4, 1] windows=592 batches=18 loss=0.005113 running=0.005280 time=316.0s
+[2026-04-02 01:09:19] [train] epoch 3 chunk 16/20 subjects=[16, 5] windows=572 batches=17 loss=0.004798 running=0.005251 time=303.5s
+[2026-04-02 01:14:18] [train] epoch 3 chunk 17/20 subjects=[2, 22] windows=572 batches=17 loss=0.004458 running=0.005206 time=299.0s
+[2026-04-02 01:19:33] [train] epoch 3 chunk 18/20 subjects=[20, 6] windows=577 batches=18 loss=0.004149 running=0.005145 time=314.2s
+[2026-04-02 01:24:54] [train] epoch 3 chunk 19/20 subjects=[17, 32] windows=578 batches=18 loss=0.004549 running=0.005113 time=320.6s
+[2026-04-02 01:29:56] [train] epoch 3 chunk 20/20 subjects=[27, 18] windows=564 batches=17 loss=0.005072 running=0.005111 time=302.2s
+[2026-04-02 01:30:49] [val] epoch 3 chunk 1/7 subjects=[41] windows=298 batches=10 loss=0.005372 running=0.005372 time=52.7s
+[2026-04-02 01:31:44] [val] epoch 3 chunk 2/7 subjects=[42] windows=292 batches=10 loss=0.005384 running=0.005378 time=54.4s
+[2026-04-02 01:32:37] [val] epoch 3 chunk 3/7 subjects=[43] windows=294 batches=10 loss=0.005370 running=0.005375 time=52.9s
+[2026-04-02 01:33:29] [val] epoch 3 chunk 4/7 subjects=[44] windows=284 batches=9 loss=0.005370 running=0.005374 time=52.0s
+[2026-04-02 01:34:25] [val] epoch 3 chunk 5/7 subjects=[45] windows=301 batches=10 loss=0.005366 running=0.005373 time=55.2s
+[2026-04-02 01:35:19] [val] epoch 3 chunk 6/7 subjects=[46] windows=297 batches=10 loss=0.005357 running=0.005370 time=54.3s
+[2026-04-02 01:36:13] [val] epoch 3 chunk 7/7 subjects=[47] windows=285 batches=9 loss=0.005369 running=0.005370 time=53.0s
+[2026-04-02 01:36:13] [epoch]   3/300  train_loss=0.005111  val_loss=0.005370  best_val=0.005370  patience=0/10  train_chunks=20  val_chunks=7  train_time=6197.5s  val_time=376.3s
+[2026-04-02 01:41:17] [train] epoch 4 chunk 1/20 subjects=[31, 22] windows=566 batches=17 loss=0.004703 running=0.004703 time=304.3s
+[2026-04-02 01:46:35] [train] epoch 4 chunk 2/20 subjects=[6, 4] windows=582 batches=18 loss=0.004331 running=0.004512 time=317.4s
+[2026-04-02 01:51:37] [train] epoch 4 chunk 3/20 subjects=[24, 20] windows=569 batches=17 loss=0.004419 running=0.004481 time=301.9s
+[2026-04-02 01:56:36] [train] epoch 4 chunk 4/20 subjects=[29, 7] windows=569 batches=17 loss=0.004789 running=0.004557 time=298.4s
+[2026-04-02 02:01:39] [train] epoch 4 chunk 5/20 subjects=[19, 23] windows=564 batches=17 loss=0.004570 running=0.004560 time=303.0s
+[2026-04-02 02:06:55] [train] epoch 4 chunk 6/20 subjects=[9, 14] windows=582 batches=18 loss=0.004603 running=0.004567 time=315.5s
+[2026-04-02 02:11:59] [train] epoch 4 chunk 7/20 subjects=[28, 37] windows=570 batches=17 loss=0.004678 running=0.004583 time=304.0s
+[2026-04-02 02:17:03] [train] epoch 4 chunk 8/20 subjects=[8, 25] windows=560 batches=17 loss=0.004638 running=0.004590 time=304.0s
+[2026-04-02 02:22:06] [train] epoch 4 chunk 9/20 subjects=[12, 16] windows=568 batches=17 loss=0.004438 running=0.004573 time=301.9s
+[2026-04-02 02:27:22] [train] epoch 4 chunk 10/20 subjects=[13, 36] windows=578 batches=18 loss=0.004652 running=0.004581 time=316.0s
+[2026-04-02 02:32:42] [train] epoch 4 chunk 11/20 subjects=[30, 17] windows=585 batches=18 loss=0.004778 running=0.004600 time=319.8s
+[2026-04-02 02:37:41] [train] epoch 4 chunk 12/20 subjects=[35, 18] windows=570 batches=17 loss=0.004598 running=0.004599 time=298.5s
+[2026-04-02 02:43:01] [train] epoch 4 chunk 13/20 subjects=[32, 1] windows=592 batches=18 loss=0.004969 running=0.004629 time=319.8s
+[2026-04-02 02:48:15] [train] epoch 4 chunk 14/20 subjects=[33, 27] windows=583 batches=18 loss=0.004888 running=0.004648 time=314.0s
+[2026-04-02 02:53:32] [train] epoch 4 chunk 15/20 subjects=[21, 11] windows=587 batches=18 loss=0.004682 running=0.004650 time=316.3s
+[2026-04-02 02:58:53] [train] epoch 4 chunk 16/20 subjects=[39, 40] windows=583 batches=18 loss=0.004080 running=0.004614 time=320.7s
+[2026-04-02 03:04:10] [train] epoch 4 chunk 17/20 subjects=[2, 38] windows=593 batches=18 loss=0.004309 running=0.004595 time=316.8s
+[2026-04-02 03:09:18] [train] epoch 4 chunk 18/20 subjects=[10, 34] windows=575 batches=17 loss=0.004110 running=0.004569 time=308.4s
+[2026-04-02 03:14:35] [train] epoch 4 chunk 19/20 subjects=[15, 3] windows=590 batches=18 loss=0.003709 running=0.004523 time=316.5s
+[2026-04-02 03:19:53] [train] epoch 4 chunk 20/20 subjects=[26, 5] windows=594 batches=18 loss=0.004259 running=0.004509 time=317.6s
+[2026-04-02 03:20:46] [val] epoch 4 chunk 1/7 subjects=[41] windows=298 batches=10 loss=0.005736 running=0.005736 time=52.5s
+[2026-04-02 03:21:40] [val] epoch 4 chunk 2/7 subjects=[42] windows=292 batches=10 loss=0.005740 running=0.005738 time=53.9s
+[2026-04-02 03:22:34] [val] epoch 4 chunk 3/7 subjects=[43] windows=294 batches=10 loss=0.005741 running=0.005739 time=53.5s
+[2026-04-02 03:23:27] [val] epoch 4 chunk 4/7 subjects=[44] windows=284 batches=9 loss=0.005743 running=0.005740 time=52.6s
+[2026-04-02 03:24:22] [val] epoch 4 chunk 5/7 subjects=[45] windows=301 batches=10 loss=0.005739 running=0.005740 time=55.5s
+[2026-04-02 03:25:17] [val] epoch 4 chunk 6/7 subjects=[46] windows=297 batches=10 loss=0.005738 running=0.005739 time=54.9s
+[2026-04-02 03:26:11] [val] epoch 4 chunk 7/7 subjects=[47] windows=285 batches=9 loss=0.005736 running=0.005739 time=53.7s
+[2026-04-02 03:26:12] [epoch]   4/300  train_loss=0.004509  val_loss=0.005739  best_val=0.005370  patience=1/10  train_chunks=20  val_chunks=7  train_time=6220.3s  val_time=378.4s
+[2026-04-02 03:31:11] [train] epoch 5 chunk 1/20 subjects=[29, 31] windows=566 batches=17 loss=0.004276 running=0.004276 time=299.0s
+[2026-04-02 03:36:30] [train] epoch 5 chunk 2/20 subjects=[10, 39] windows=581 batches=18 loss=0.004194 running=0.004234 time=318.9s
+[2026-04-02 03:41:31] [train] epoch 5 chunk 3/20 subjects=[3, 7] windows=570 batches=17 loss=0.003838 running=0.004105 time=300.6s
+[2026-04-02 03:46:33] [train] epoch 5 chunk 4/20 subjects=[37, 12] windows=575 batches=17 loss=0.003838 running=0.004039 time=302.3s
+[2026-04-02 03:51:52] [train] epoch 5 chunk 5/20 subjects=[19, 15] windows=588 batches=18 loss=0.003816 running=0.003993 time=317.9s
+[2026-04-02 03:57:13] [train] epoch 5 chunk 6/20 subjects=[21, 6] windows=603 batches=18 loss=0.004160 running=0.004021 time=320.6s
+[2026-04-02 04:02:31] [train] epoch 5 chunk 7/20 subjects=[34, 38] windows=587 batches=18 loss=0.004491 running=0.004090 time=318.4s
+[2026-04-02 04:07:36] [train] epoch 5 chunk 8/20 subjects=[24, 8] windows=568 batches=17 loss=0.004423 running=0.004131 time=304.0s
+[2026-04-02 04:12:39] [train] epoch 5 chunk 9/20 subjects=[27, 11] windows=560 batches=17 loss=0.004247 running=0.004143 time=303.6s
+[2026-04-02 04:17:56] [train] epoch 5 chunk 10/20 subjects=[40, 18] windows=579 batches=18 loss=0.003918 running=0.004120 time=316.6s
+[2026-04-02 04:22:59] [train] epoch 5 chunk 11/20 subjects=[16, 9] windows=567 batches=17 loss=0.004051 running=0.004114 time=302.4s
+[2026-04-02 04:28:02] [train] epoch 5 chunk 12/20 subjects=[32, 4] windows=570 batches=17 loss=0.003977 running=0.004103 time=302.9s
+[2026-04-02 04:33:21] [train] epoch 5 chunk 13/20 subjects=[1, 35] windows=592 batches=18 loss=0.003664 running=0.004068 time=318.7s
+[2026-04-02 04:38:37] [train] epoch 5 chunk 14/20 subjects=[14, 26] windows=599 batches=18 loss=0.003961 running=0.004060 time=316.1s
+[2026-04-02 04:43:38] [train] epoch 5 chunk 15/20 subjects=[2, 20] windows=569 batches=17 loss=0.003914 running=0.004051 time=300.0s
+[2026-04-02 04:48:36] [train] epoch 5 chunk 16/20 subjects=[13, 25] windows=573 batches=17 loss=0.004034 running=0.004050 time=297.9s
+[2026-04-02 04:53:57] [train] epoch 5 chunk 17/20 subjects=[33, 17] windows=597 batches=18 loss=0.003702 running=0.004029 time=320.9s
+[2026-04-02 04:59:02] [train] epoch 5 chunk 18/20 subjects=[22, 30] windows=575 batches=17 loss=0.003642 running=0.004008 time=304.4s
+[2026-04-02 05:04:04] [train] epoch 5 chunk 19/20 subjects=[36, 28] windows=568 batches=17 loss=0.003860 running=0.004000 time=301.6s
+[2026-04-02 05:09:08] [train] epoch 5 chunk 20/20 subjects=[5, 23] windows=573 batches=17 loss=0.003738 running=0.003987 time=304.3s
+[2026-04-02 05:10:01] [val] epoch 5 chunk 1/7 subjects=[41] windows=298 batches=10 loss=0.004559 running=0.004559 time=52.6s
+[2026-04-02 05:10:55] [val] epoch 5 chunk 2/7 subjects=[42] windows=292 batches=10 loss=0.004558 running=0.004558 time=53.9s
+[2026-04-02 05:11:48] [val] epoch 5 chunk 3/7 subjects=[43] windows=294 batches=10 loss=0.004556 running=0.004558 time=52.9s
+[2026-04-02 05:12:41] [val] epoch 5 chunk 4/7 subjects=[44] windows=284 batches=9 loss=0.004560 running=0.004558 time=52.6s
+[2026-04-02 05:13:36] [val] epoch 5 chunk 5/7 subjects=[45] windows=301 batches=10 loss=0.004565 running=0.004560 time=54.6s
+[2026-04-02 05:14:31] [val] epoch 5 chunk 6/7 subjects=[46] windows=297 batches=10 loss=0.004562 running=0.004560 time=54.6s
+[2026-04-02 05:15:24] [val] epoch 5 chunk 7/7 subjects=[47] windows=285 batches=9 loss=0.004559 running=0.004560 time=52.9s
+[2026-04-02 05:15:25] [epoch]   5/300  train_loss=0.003987  val_loss=0.004560  best_val=0.004560  patience=0/10  train_chunks=20  val_chunks=7  train_time=6176.6s  val_time=376.0s
+[2026-04-02 05:20:29] [train] epoch 6 chunk 1/20 subjects=[34, 29] windows=566 batches=17 loss=0.003893 running=0.003893 time=305.0s
+[2026-04-02 05:25:45] [train] epoch 6 chunk 2/20 subjects=[12, 10] windows=579 batches=18 loss=0.004011 running=0.003953 time=315.7s
+[2026-04-02 05:30:44] [train] epoch 6 chunk 3/20 subjects=[37, 31] windows=571 batches=17 loss=0.003966 running=0.003958 time=298.6s
+[2026-04-02 05:36:13] [train] epoch 6 chunk 4/20 subjects=[15, 38] windows=610 batches=19 loss=0.004238 running=0.004032 time=328.3s
+[2026-04-02 05:41:19] [train] epoch 6 chunk 5/20 subjects=[11, 23] windows=563 batches=17 loss=0.003866 running=0.004000 time=305.6s
+[2026-04-02 05:46:38] [train] epoch 6 chunk 6/20 subjects=[3, 14] windows=580 batches=18 loss=0.003900 running=0.003983 time=318.6s
+[2026-04-02 05:51:40] [train] epoch 6 chunk 7/20 subjects=[19, 2] windows=571 batches=17 loss=0.003870 running=0.003968 time=302.0s
+[2026-04-02 05:56:54] [train] epoch 6 chunk 8/20 subjects=[1, 27] windows=586 batches=18 loss=0.003966 running=0.003967 time=314.2s
+[2026-04-02 06:01:56] [train] epoch 6 chunk 9/20 subjects=[25, 30] windows=573 batches=17 loss=0.003574 running=0.003925 time=301.6s
+[2026-04-02 06:06:58] [train] epoch 6 chunk 10/20 subjects=[24, 18] windows=574 batches=17 loss=0.003843 running=0.003917 time=301.9s
+[2026-04-02 06:12:14] [train] epoch 6 chunk 11/20 subjects=[17, 7] windows=579 batches=18 loss=0.003757 running=0.003902 time=315.5s
+[2026-04-02 06:17:17] [train] epoch 6 chunk 12/20 subjects=[8, 39] windows=568 batches=17 loss=0.003776 running=0.003892 time=302.4s
+[2026-04-02 06:22:16] [train] epoch 6 chunk 13/20 subjects=[16, 4] windows=566 batches=17 loss=0.003599 running=0.003870 time=299.2s
+[2026-04-02 06:27:18] [train] epoch 6 chunk 14/20 subjects=[22, 32] windows=568 batches=17 loss=0.003672 running=0.003856 time=301.4s
+[2026-04-02 06:32:35] [train] epoch 6 chunk 15/20 subjects=[26, 5] windows=594 batches=18 loss=0.003668 running=0.003843 time=316.5s
+[2026-04-02 06:37:52] [train] epoch 6 chunk 16/20 subjects=[6, 28] windows=579 batches=18 loss=0.003429 running=0.003817 time=316.9s
+[2026-04-02 06:43:14] [train] epoch 6 chunk 17/20 subjects=[13, 33] windows=596 batches=18 loss=0.003970 running=0.003826 time=321.4s
+[2026-04-02 06:48:15] [train] epoch 6 chunk 18/20 subjects=[20, 35] windows=565 batches=17 loss=0.004195 running=0.003846 time=301.5s
+[2026-04-02 06:53:32] [train] epoch 6 chunk 19/20 subjects=[40, 9] windows=580 batches=18 loss=0.004252 running=0.003868 time=316.4s
+[2026-04-02 06:58:51] [train] epoch 6 chunk 20/20 subjects=[21, 36] windows=592 batches=18 loss=0.003965 running=0.003873 time=318.6s
+[2026-04-02 06:59:44] [val] epoch 6 chunk 1/7 subjects=[41] windows=298 batches=10 loss=0.004363 running=0.004363 time=52.5s
+[2026-04-02 07:00:38] [val] epoch 6 chunk 2/7 subjects=[42] windows=292 batches=10 loss=0.004361 running=0.004362 time=53.7s
+[2026-04-02 07:01:32] [val] epoch 6 chunk 3/7 subjects=[43] windows=294 batches=10 loss=0.004359 running=0.004361 time=53.7s
+[2026-04-02 07:02:24] [val] epoch 6 chunk 4/7 subjects=[44] windows=284 batches=9 loss=0.004357 running=0.004360 time=52.1s
+[2026-04-02 07:03:20] [val] epoch 6 chunk 5/7 subjects=[45] windows=301 batches=10 loss=0.004355 running=0.004359 time=55.5s
+[2026-04-02 07:04:14] [val] epoch 6 chunk 6/7 subjects=[46] windows=297 batches=10 loss=0.004362 running=0.004359 time=54.3s
+[2026-04-02 07:05:08] [val] epoch 6 chunk 7/7 subjects=[47] windows=285 batches=9 loss=0.004363 running=0.004360 time=53.6s
+[2026-04-02 07:05:08] [epoch]   6/300  train_loss=0.003873  val_loss=0.004360  best_val=0.004360  patience=0/10  train_chunks=20  val_chunks=7  train_time=6206.7s  val_time=377.0s
+[2026-04-02 07:10:10] [train] epoch 7 chunk 1/20 subjects=[30, 22] windows=575 batches=17 loss=0.003687 running=0.003687 time=302.0s
+[2026-04-02 07:15:15] [train] epoch 7 chunk 2/20 subjects=[35, 34] windows=568 batches=17 loss=0.003551 running=0.003619 time=304.8s
+[2026-04-02 07:20:34] [train] epoch 7 chunk 3/20 subjects=[26, 25] windows=584 batches=18 loss=0.003547 running=0.003594 time=317.9s
+[2026-04-02 07:25:51] [train] epoch 7 chunk 4/20 subjects=[9, 38] windows=590 batches=18 loss=0.003422 running=0.003550 time=316.9s
+[2026-04-02 07:30:53] [train] epoch 7 chunk 5/20 subjects=[16, 11] windows=562 batches=17 loss=0.003792 running=0.003597 time=302.0s
+[2026-04-02 07:36:09] [train] epoch 7 chunk 6/20 subjects=[6, 14] windows=593 batches=18 loss=0.003429 running=0.003568 time=315.4s
+[2026-04-02 07:41:10] [train] epoch 7 chunk 7/20 subjects=[39, 7] windows=575 batches=17 loss=0.003641 running=0.003578 time=301.2s
+[2026-04-02 07:46:16] [train] epoch 7 chunk 8/20 subjects=[28, 31] windows=565 batches=17 loss=0.003861 running=0.003613 time=305.6s
+[2026-04-02 07:51:39] [train] epoch 7 chunk 9/20 subjects=[29, 1] windows=590 batches=18 loss=0.003652 running=0.003617 time=322.7s
+[2026-04-02 07:56:55] [train] epoch 7 chunk 10/20 subjects=[13, 12] windows=579 batches=18 loss=0.003609 running=0.003617 time=315.8s
+[2026-04-02 08:02:02] [train] epoch 7 chunk 11/20 subjects=[19, 10] windows=574 batches=17 loss=0.003694 running=0.003623 time=306.6s
+[2026-04-02 08:07:01] [train] epoch 7 chunk 12/20 subjects=[20, 37] windows=568 batches=17 loss=0.003718 running=0.003631 time=298.6s
+[2026-04-02 08:12:28] [train] epoch 7 chunk 13/20 subjects=[17, 32] windows=578 batches=18 loss=0.003725 running=0.003639 time=327.3s
+[2026-04-02 08:17:33] [train] epoch 7 chunk 14/20 subjects=[36, 2] windows=575 batches=17 loss=0.003252 running=0.003612 time=304.6s
+[2026-04-02 08:22:48] [train] epoch 7 chunk 15/20 subjects=[24, 15] windows=595 batches=18 loss=0.003550 running=0.003607 time=314.2s
+[2026-04-02 08:28:02] [train] epoch 7 chunk 16/20 subjects=[40, 18] windows=579 batches=18 loss=0.003474 running=0.003599 time=314.2s
+[2026-04-02 08:33:03] [train] epoch 7 chunk 17/20 subjects=[3, 4] windows=569 batches=17 loss=0.003423 running=0.003589 time=300.4s
+[2026-04-02 08:38:37] [train] epoch 7 chunk 18/20 subjects=[33, 21] windows=610 batches=19 loss=0.003613 running=0.003590 time=333.4s
+[2026-04-02 08:43:34] [train] epoch 7 chunk 19/20 subjects=[8, 27] windows=558 batches=17 loss=0.003910 running=0.003606 time=297.5s
+[2026-04-02 08:48:39] [train] epoch 7 chunk 20/20 subjects=[23, 5] windows=573 batches=17 loss=0.003769 running=0.003614 time=304.1s
+[2026-04-02 08:49:31] [val] epoch 7 chunk 1/7 subjects=[41] windows=298 batches=10 loss=0.004480 running=0.004480 time=52.4s
+[2026-04-02 08:50:25] [val] epoch 7 chunk 2/7 subjects=[42] windows=292 batches=10 loss=0.004484 running=0.004482 time=53.5s
+[2026-04-02 08:51:19] [val] epoch 7 chunk 3/7 subjects=[43] windows=294 batches=10 loss=0.004482 running=0.004482 time=53.5s
+[2026-04-02 08:52:11] [val] epoch 7 chunk 4/7 subjects=[44] windows=284 batches=9 loss=0.004480 running=0.004481 time=52.1s
+[2026-04-02 08:53:07] [val] epoch 7 chunk 5/7 subjects=[45] windows=301 batches=10 loss=0.004482 running=0.004481 time=55.0s
+[2026-04-02 08:54:02] [val] epoch 7 chunk 6/7 subjects=[46] windows=297 batches=10 loss=0.004484 running=0.004482 time=54.9s
+[2026-04-02 08:54:55] [val] epoch 7 chunk 7/7 subjects=[47] windows=285 batches=9 loss=0.004482 running=0.004482 time=53.4s
+[2026-04-02 08:54:56] [epoch]   7/300  train_loss=0.003614  val_loss=0.004482  best_val=0.004360  patience=1/10  train_chunks=20  val_chunks=7  train_time=6210.7s  val_time=376.6s
+[2026-04-02 09:00:02] [train] epoch 8 chunk 1/20 subjects=[23, 17] windows=575 batches=17 loss=0.003809 running=0.003809 time=305.9s
+[2026-04-02 09:05:02] [train] epoch 8 chunk 2/20 subjects=[9, 2] windows=575 batches=17 loss=0.003610 running=0.003710 time=299.8s
+[2026-04-02 09:10:17] [train] epoch 8 chunk 3/20 subjects=[40, 10] windows=586 batches=18 loss=0.003588 running=0.003668 time=314.8s
+[2026-04-02 09:15:17] [train] epoch 8 chunk 4/20 subjects=[19, 28] windows=564 batches=17 loss=0.003434 running=0.003610 time=299.7s
+[2026-04-02 09:20:31] [train] epoch 8 chunk 5/20 subjects=[34, 26] windows=586 batches=18 loss=0.003453 running=0.003578 time=314.4s
+[2026-04-02 09:25:53] [train] epoch 8 chunk 6/20 subjects=[1, 36] windows=593 batches=18 loss=0.003143 running=0.003503 time=321.3s
+[2026-04-02 09:30:55] [train] epoch 8 chunk 7/20 subjects=[37, 25] windows=569 batches=17 loss=0.003291 running=0.003473 time=302.0s
+[2026-04-02 09:35:57] [train] epoch 8 chunk 8/20 subjects=[13, 20] windows=572 batches=17 loss=0.003376 running=0.003462 time=301.1s
+[2026-04-02 09:41:18] [train] epoch 8 chunk 9/20 subjects=[30, 33] windows=596 batches=18 loss=0.003469 running=0.003462 time=321.6s
+[2026-04-02 09:46:39] [train] epoch 8 chunk 10/20 subjects=[14, 38] windows=600 batches=18 loss=0.003511 running=0.003467 time=320.5s
+[2026-04-02 09:51:49] [train] epoch 8 chunk 11/20 subjects=[29, 7] windows=569 batches=17 loss=0.003427 running=0.003464 time=309.5s
+[2026-04-02 09:56:52] [train] epoch 8 chunk 12/20 subjects=[8, 11] windows=560 batches=17 loss=0.003465 running=0.003464 time=303.1s
+[2026-04-02 10:01:51] [train] epoch 8 chunk 13/20 subjects=[27, 4] windows=564 batches=17 loss=0.003204 running=0.003444 time=298.4s
+[2026-04-02 10:07:02] [train] epoch 8 chunk 14/20 subjects=[12, 5] windows=578 batches=18 loss=0.002921 running=0.003406 time=311.1s
+[2026-04-02 10:12:01] [train] epoch 8 chunk 15/20 subjects=[3, 39] windows=573 batches=17 loss=0.003273 running=0.003397 time=298.4s
+[2026-04-02 10:17:23] [train] epoch 8 chunk 16/20 subjects=[35, 15] windows=591 batches=18 loss=0.003193 running=0.003384 time=321.1s
+[2026-04-02 10:22:44] [train] epoch 8 chunk 17/20 subjects=[21, 6] windows=603 batches=18 loss=0.003321 running=0.003380 time=321.4s
+[2026-04-02 10:27:46] [train] epoch 8 chunk 18/20 subjects=[22, 31] windows=566 batches=17 loss=0.003187 running=0.003370 time=301.1s
+[2026-04-02 10:32:53] [train] epoch 8 chunk 19/20 subjects=[16, 24] windows=570 batches=17 loss=0.003637 running=0.003383 time=307.1s
+[2026-04-02 10:37:57] [train] epoch 8 chunk 20/20 subjects=[18, 32] windows=570 batches=17 loss=0.004034 running=0.003415 time=304.0s
+[2026-04-02 10:38:50] [val] epoch 8 chunk 1/7 subjects=[41] windows=298 batches=10 loss=0.004376 running=0.004376 time=52.5s
+[2026-04-02 10:39:45] [val] epoch 8 chunk 2/7 subjects=[42] windows=292 batches=10 loss=0.004378 running=0.004377 time=54.5s
+[2026-04-02 10:40:39] [val] epoch 8 chunk 3/7 subjects=[43] windows=294 batches=10 loss=0.004377 running=0.004377 time=53.9s
+[2026-04-02 10:41:32] [val] epoch 8 chunk 4/7 subjects=[44] windows=284 batches=9 loss=0.004379 running=0.004378 time=52.4s
+[2026-04-02 10:42:27] [val] epoch 8 chunk 5/7 subjects=[45] windows=301 batches=10 loss=0.004373 running=0.004377 time=54.9s
+[2026-04-02 10:43:21] [val] epoch 8 chunk 6/7 subjects=[46] windows=297 batches=10 loss=0.004377 running=0.004377 time=54.3s
+[2026-04-02 10:44:15] [val] epoch 8 chunk 7/7 subjects=[47] windows=285 batches=9 loss=0.004379 running=0.004377 time=53.3s
+[2026-04-02 10:44:15] [epoch]   8/300  train_loss=0.003415  val_loss=0.004377  best_val=0.004360  patience=2/10  train_chunks=20  val_chunks=7  train_time=6181.8s  val_time=377.5s
+[2026-04-02 10:49:20] [train] epoch 9 chunk 1/20 subjects=[32, 7] windows=571 batches=17 loss=0.004033 running=0.004033 time=305.3s
+[2026-04-02 10:54:41] [train] epoch 9 chunk 2/20 subjects=[38, 35] windows=589 batches=18 loss=0.003595 running=0.003808 time=320.0s
+[2026-04-02 10:59:59] [train] epoch 9 chunk 3/20 subjects=[2, 14] windows=585 batches=18 loss=0.003605 running=0.003739 time=318.2s
+[2026-04-02 11:05:03] [train] epoch 9 chunk 4/20 subjects=[29, 20] windows=563 batches=17 loss=0.003696 running=0.003728 time=303.3s
+[2026-04-02 11:10:17] [train] epoch 9 chunk 5/20 subjects=[5, 10] windows=583 batches=18 loss=0.003474 running=0.003676 time=313.7s
+[2026-04-02 11:15:28] [train] epoch 9 chunk 6/20 subjects=[6, 3] windows=581 batches=18 loss=0.003584 running=0.003661 time=310.9s
+[2026-04-02 11:20:25] [train] epoch 9 chunk 7/20 subjects=[39, 8] windows=568 batches=17 loss=0.003722 running=0.003669 time=297.1s
+[2026-04-02 11:25:19] [train] epoch 9 chunk 8/20 subjects=[28, 27] windows=561 batches=17 loss=0.003608 running=0.003662 time=293.6s
+[2026-04-02 11:30:13] [train] epoch 9 chunk 9/20 subjects=[25, 4] windows=566 batches=17 loss=0.003489 running=0.003643 time=293.7s
+[2026-04-02 11:35:26] [train] epoch 9 chunk 10/20 subjects=[1, 31] windows=590 batches=18 loss=0.003253 running=0.003603 time=312.0s
+[2026-04-02 11:40:34] [train] epoch 9 chunk 11/20 subjects=[9, 13] windows=578 batches=18 loss=0.002886 running=0.003536 time=308.0s
+[2026-04-02 11:45:27] [train] epoch 9 chunk 12/20 subjects=[12, 22] windows=570 batches=17 loss=0.003101 running=0.003501 time=292.6s
+[2026-04-02 11:50:26] [train] epoch 9 chunk 13/20 subjects=[19, 37] windows=570 batches=17 loss=0.003203 running=0.003479 time=298.9s
+[2026-04-02 11:55:39] [train] epoch 9 chunk 14/20 subjects=[21, 34] windows=589 batches=18 loss=0.003310 running=0.003466 time=313.0s
+[2026-04-02 12:00:37] [train] epoch 9 chunk 15/20 subjects=[18, 23] windows=567 batches=17 loss=0.003520 running=0.003470 time=297.3s
+[2026-04-02 12:05:47] [train] epoch 9 chunk 16/20 subjects=[24, 30] windows=581 batches=18 loss=0.003448 running=0.003468 time=310.2s
+[2026-04-02 12:11:02] [train] epoch 9 chunk 17/20 subjects=[26, 17] windows=596 batches=18 loss=0.003256 running=0.003455 time=314.0s
+[2026-04-02 12:16:10] [train] epoch 9 chunk 18/20 subjects=[15, 40] windows=600 batches=18 loss=0.003484 running=0.003457 time=307.8s
+[2026-04-02 12:21:03] [train] epoch 9 chunk 19/20 subjects=[11, 36] windows=567 batches=17 loss=0.003527 running=0.003461 time=293.0s
+[2026-04-02 12:26:13] [train] epoch 9 chunk 20/20 subjects=[33, 16] windows=585 batches=18 loss=0.003577 running=0.003467 time=309.9s
+[2026-04-02 12:27:06] [val] epoch 9 chunk 1/7 subjects=[41] windows=298 batches=10 loss=0.004115 running=0.004115 time=52.5s
+[2026-04-02 12:28:00] [val] epoch 9 chunk 2/7 subjects=[42] windows=292 batches=10 loss=0.004115 running=0.004115 time=53.4s
+[2026-04-02 12:28:53] [val] epoch 9 chunk 3/7 subjects=[43] windows=294 batches=10 loss=0.004118 running=0.004116 time=52.7s
+[2026-04-02 12:29:44] [val] epoch 9 chunk 4/7 subjects=[44] windows=284 batches=9 loss=0.004118 running=0.004116 time=51.4s
+[2026-04-02 12:30:40] [val] epoch 9 chunk 5/7 subjects=[45] windows=301 batches=10 loss=0.004117 running=0.004117 time=55.3s
+[2026-04-02 12:31:34] [val] epoch 9 chunk 6/7 subjects=[46] windows=297 batches=10 loss=0.004115 running=0.004116 time=53.9s
+[2026-04-02 12:32:27] [val] epoch 9 chunk 7/7 subjects=[47] windows=285 batches=9 loss=0.004117 running=0.004116 time=52.8s
+[2026-04-02 12:32:28] [epoch]   9/300  train_loss=0.003467  val_loss=0.004116  best_val=0.004116  patience=0/10  train_chunks=20  val_chunks=7  train_time=6118.4s  val_time=373.9s
+[2026-04-02 12:37:23] [train] epoch 10 chunk 1/20 subjects=[20, 23] windows=562 batches=17 loss=0.003306 running=0.003306 time=295.5s
+[2026-04-02 12:42:24] [train] epoch 10 chunk 2/20 subjects=[16, 25] windows=562 batches=17 loss=0.003278 running=0.003292 time=300.7s
+[2026-04-02 12:47:36] [train] epoch 10 chunk 3/20 subjects=[29, 38] windows=587 batches=18 loss=0.003190 running=0.003257 time=311.5s
+[2026-04-02 12:52:29] [train] epoch 10 chunk 4/20 subjects=[19, 7] windows=568 batches=17 loss=0.003186 running=0.003240 time=292.6s
+[2026-04-02 12:57:43] [train] epoch 10 chunk 5/20 subjects=[10, 30] windows=584 batches=18 loss=0.003318 running=0.003256 time=313.9s
+[2026-04-02 13:02:55] [train] epoch 10 chunk 6/20 subjects=[5, 32] windows=576 batches=18 loss=0.003412 running=0.003283 time=311.4s
+[2026-04-02 13:07:54] [train] epoch 10 chunk 7/20 subjects=[39, 22] windows=572 batches=17 loss=0.002904 running=0.003230 time=299.5s
+[2026-04-02 13:12:53] [train] epoch 10 chunk 8/20 subjects=[17, 28] windows=575 batches=17 loss=0.003214 running=0.003228 time=297.9s
+[2026-04-02 13:17:50] [train] epoch 10 chunk 9/20 subjects=[34, 8] windows=562 batches=17 loss=0.003468 running=0.003254 time=297.0s
+[2026-04-02 13:22:42] [train] epoch 10 chunk 10/20 subjects=[36, 37] windows=574 batches=17 loss=0.003267 running=0.003255 time=291.6s
+[2026-04-02 13:27:47] [train] epoch 10 chunk 11/20 subjects=[13, 40] windows=586 batches=18 loss=0.003140 running=0.003244 time=305.0s
+[2026-04-02 13:33:01] [train] epoch 10 chunk 12/20 subjects=[2, 1] windows=596 batches=18 loss=0.003082 running=0.003230 time=313.7s
+[2026-04-02 13:38:31] [train] epoch 10 chunk 13/20 subjects=[21, 15] windows=612 batches=19 loss=0.003028 running=0.003214 time=329.6s
+[2026-04-02 13:43:43] [train] epoch 10 chunk 14/20 subjects=[12, 6] windows=584 batches=18 loss=0.003230 running=0.003215 time=312.0s
+[2026-04-02 13:48:55] [train] epoch 10 chunk 15/20 subjects=[35, 14] windows=581 batches=18 loss=0.003435 running=0.003230 time=311.4s
+[2026-04-02 13:54:06] [train] epoch 10 chunk 16/20 subjects=[26, 11] windows=584 batches=18 loss=0.003309 running=0.003235 time=310.6s
+[2026-04-02 13:59:06] [train] epoch 10 chunk 17/20 subjects=[9, 3] windows=570 batches=17 loss=0.003015 running=0.003222 time=300.1s
+[2026-04-02 14:04:05] [train] epoch 10 chunk 18/20 subjects=[27, 24] windows=568 batches=17 loss=0.003129 running=0.003217 time=298.7s
+[2026-04-02 14:09:19] [train] epoch 10 chunk 19/20 subjects=[31, 33] windows=587 batches=18 loss=0.003263 running=0.003220 time=313.5s
+[2026-04-02 14:14:13] [train] epoch 10 chunk 20/20 subjects=[4, 18] windows=570 batches=17 loss=0.003228 running=0.003220 time=293.8s
+[2026-04-02 14:15:05] [val] epoch 10 chunk 1/7 subjects=[41] windows=298 batches=10 loss=0.004037 running=0.004037 time=51.8s
+[2026-04-02 14:16:00] [val] epoch 10 chunk 2/7 subjects=[42] windows=292 batches=10 loss=0.004037 running=0.004037 time=53.8s
+[2026-04-02 14:16:54] [val] epoch 10 chunk 3/7 subjects=[43] windows=294 batches=10 loss=0.004038 running=0.004037 time=53.9s
+[2026-04-02 14:17:46] [val] epoch 10 chunk 4/7 subjects=[44] windows=284 batches=9 loss=0.004039 running=0.004038 time=52.0s
+[2026-04-02 14:18:42] [val] epoch 10 chunk 5/7 subjects=[45] windows=301 batches=10 loss=0.004042 running=0.004039 time=55.3s
+[2026-04-02 14:19:37] [val] epoch 10 chunk 6/7 subjects=[46] windows=297 batches=10 loss=0.004040 running=0.004039 time=54.7s
+[2026-04-02 14:20:30] [val] epoch 10 chunk 7/7 subjects=[47] windows=285 batches=9 loss=0.004038 running=0.004039 time=53.3s
+[2026-04-02 14:20:30] [epoch]  10/300  train_loss=0.003220  val_loss=0.004039  best_val=0.004039  patience=0/10  train_chunks=20  val_chunks=7  train_time=6106.1s  val_time=376.7s
+[2026-04-02 14:25:24] [train] epoch 11 chunk 1/20 subjects=[25, 4] windows=566 batches=17 loss=0.003179 running=0.003179 time=293.6s
+[2026-04-02 14:30:36] [train] epoch 11 chunk 2/20 subjects=[16, 21] windows=587 batches=18 loss=0.003051 running=0.003113 time=311.3s
+[2026-04-02 14:35:42] [train] epoch 11 chunk 3/20 subjects=[10, 39] windows=581 batches=18 loss=0.003184 running=0.003137 time=306.1s
+[2026-04-02 14:40:55] [train] epoch 11 chunk 4/20 subjects=[1, 17] windows=600 batches=18 loss=0.002963 running=0.003093 time=312.9s
+[2026-04-02 14:45:48] [train] epoch 11 chunk 5/20 subjects=[20, 13] windows=572 batches=17 loss=0.002980 running=0.003071 time=292.3s
+[2026-04-02 14:50:57] [train] epoch 11 chunk 6/20 subjects=[11, 26] windows=584 batches=18 loss=0.003482 running=0.003141 time=308.5s
+[2026-04-02 14:55:54] [train] epoch 11 chunk 7/20 subjects=[22, 18] windows=568 batches=17 loss=0.003665 running=0.003213 time=296.9s
+[2026-04-02 15:00:52] [train] epoch 11 chunk 8/20 subjects=[3, 19] windows=566 batches=17 loss=0.003412 running=0.003237 time=298.3s
+[2026-04-02 15:05:56] [train] epoch 11 chunk 9/20 subjects=[7, 15] windows=592 batches=18 loss=0.003316 running=0.003246 time=303.8s
+[2026-04-02 15:10:50] [train] epoch 11 chunk 10/20 subjects=[8, 27] windows=558 batches=17 loss=0.003048 running=0.003227 time=293.0s
+[2026-04-02 15:15:46] [train] epoch 11 chunk 11/20 subjects=[23, 36] windows=568 batches=17 loss=0.003128 running=0.003218 time=295.5s

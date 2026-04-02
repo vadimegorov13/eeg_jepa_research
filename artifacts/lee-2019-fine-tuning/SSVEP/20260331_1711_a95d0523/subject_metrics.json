@@ -1,0 +1,22 @@
+{
+  "54": {
+    "accuracies": [
+      0.65,
+      0.7,
+      0.7,
+      0.55,
+      0.8
+    ],
+    "balanced_accuracies": [
+      0.65,
+      0.7,
+      0.7,
+      0.55,
+      0.8
+    ],
+    "mean_accuracy": 0.6799999999999999,
+    "std_accuracy": 0.0812403840463596,
+    "mean_balanced_accuracy": 0.6799999999999999,
+    "std_balanced_accuracy": 0.0812403840463596
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "run_id": "20260401_0943_subject51_ssvep_sweep_100_0e2a2740",
+  "state": "completed",
+  "pid": 428043,
+  "pid_running": true,
+  "notebook": "/home/vegorov/Repos/eeg_jepa_research/src/lee2019_finetune_sjepa.ipynb",
+  "configs": "experiment_results/20260401_0943_subject51_ssvep_sweep_100_0e2a2740/configs.json",
+  "total_configs": 100,
+  "completed_configs": 100,
+  "failed_configs": 0,
+  "results_dir": "experiment_results/20260401_0943_subject51_ssvep_sweep_100_0e2a2740",
+  "summary_json": "experiment_results/20260401_0943_subject51_ssvep_sweep_100_0e2a2740/results.json",
+  "artifact_ids_json": "experiment_results/20260401_0943_subject51_ssvep_sweep_100_0e2a2740/artifact_ids.json",
+  "finished_at": "2026-04-01T10:25:09",
+  "updated_at": "2026-04-01T10:25:09"
+}
