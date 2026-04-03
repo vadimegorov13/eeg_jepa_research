@@ -1,0 +1,485 @@
+[
+  {
+    "subject_id": "48",
+    "test_subject_id": "48",
+    "train_subject_ids": [
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54"
+    ],
+    "fold_id": 1,
+    "n_train": 960,
+    "n_val": 240,
+    "n_test": 200,
+    "train_class_counts": [
+      240,
+      240,
+      240,
+      240
+    ],
+    "val_class_counts": [
+      60,
+      60,
+      60,
+      60
+    ],
+    "test_class_counts": [
+      50,
+      50,
+      50,
+      50
+    ],
+    "best_valid_loss": 0.2799659639596939,
+    "accuracy": 0.99,
+    "balanced_accuracy": 0.99,
+    "confusion_matrix": [
+      [
+        49,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        49,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        50,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        50
+      ]
+    ],
+    "prediction_histogram": [
+      50,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "subject_id": "49",
+    "test_subject_id": "49",
+    "train_subject_ids": [
+      "48",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54"
+    ],
+    "fold_id": 2,
+    "n_train": 960,
+    "n_val": 240,
+    "n_test": 200,
+    "train_class_counts": [
+      240,
+      240,
+      240,
+      240
+    ],
+    "val_class_counts": [
+      60,
+      60,
+      60,
+      60
+    ],
+    "test_class_counts": [
+      50,
+      50,
+      50,
+      50
+    ],
+    "best_valid_loss": 0.27061631977558137,
+    "accuracy": 0.905,
+    "balanced_accuracy": 0.9049999999999999,
+    "confusion_matrix": [
+      [
+        41,
+        2,
+        4,
+        3
+      ],
+      [
+        2,
+        48,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        47,
+        2
+      ],
+      [
+        0,
+        3,
+        2,
+        45
+      ]
+    ],
+    "prediction_histogram": [
+      44,
+      53,
+      53,
+      50
+    ]
+  },
+  {
+    "subject_id": "50",
+    "test_subject_id": "50",
+    "train_subject_ids": [
+      "48",
+      "49",
+      "51",
+      "52",
+      "53",
+      "54"
+    ],
+    "fold_id": 3,
+    "n_train": 960,
+    "n_val": 240,
+    "n_test": 200,
+    "train_class_counts": [
+      240,
+      240,
+      240,
+      240
+    ],
+    "val_class_counts": [
+      60,
+      60,
+      60,
+      60
+    ],
+    "test_class_counts": [
+      50,
+      50,
+      50,
+      50
+    ],
+    "best_valid_loss": 0.42959796289602914,
+    "accuracy": 0.905,
+    "balanced_accuracy": 0.905,
+    "confusion_matrix": [
+      [
+        44,
+        2,
+        1,
+        3
+      ],
+      [
+        4,
+        46,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        42,
+        5
+      ],
+      [
+        1,
+        0,
+        0,
+        49
+      ]
+    ],
+    "prediction_histogram": [
+      50,
+      50,
+      43,
+      57
+    ]
+  },
+  {
+    "subject_id": "51",
+    "test_subject_id": "51",
+    "train_subject_ids": [
+      "48",
+      "49",
+      "50",
+      "52",
+      "53",
+      "54"
+    ],
+    "fold_id": 4,
+    "n_train": 960,
+    "n_val": 240,
+    "n_test": 200,
+    "train_class_counts": [
+      240,
+      240,
+      240,
+      240
+    ],
+    "val_class_counts": [
+      60,
+      60,
+      60,
+      60
+    ],
+    "test_class_counts": [
+      50,
+      50,
+      50,
+      50
+    ],
+    "best_valid_loss": 0.155182513097922,
+    "accuracy": 0.63,
+    "balanced_accuracy": 0.63,
+    "confusion_matrix": [
+      [
+        33,
+        6,
+        3,
+        8
+      ],
+      [
+        6,
+        30,
+        3,
+        11
+      ],
+      [
+        5,
+        5,
+        29,
+        11
+      ],
+      [
+        4,
+        4,
+        8,
+        34
+      ]
+    ],
+    "prediction_histogram": [
+      48,
+      45,
+      43,
+      64
+    ]
+  },
+  {
+    "subject_id": "52",
+    "test_subject_id": "52",
+    "train_subject_ids": [
+      "48",
+      "49",
+      "50",
+      "51",
+      "53",
+      "54"
+    ],
+    "fold_id": 5,
+    "n_train": 960,
+    "n_val": 240,
+    "n_test": 200,
+    "train_class_counts": [
+      240,
+      240,
+      240,
+      240
+    ],
+    "val_class_counts": [
+      60,
+      60,
+      60,
+      60
+    ],
+    "test_class_counts": [
+      50,
+      50,
+      50,
+      50
+    ],
+    "best_valid_loss": 0.3285452385743459,
+    "accuracy": 0.85,
+    "balanced_accuracy": 0.85,
+    "confusion_matrix": [
+      [
+        22,
+        11,
+        2,
+        15
+      ],
+      [
+        1,
+        48,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        50,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        50
+      ]
+    ],
+    "prediction_histogram": [
+      23,
+      59,
+      53,
+      65
+    ]
+  },
+  {
+    "subject_id": "53",
+    "test_subject_id": "53",
+    "train_subject_ids": [
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "54"
+    ],
+    "fold_id": 6,
+    "n_train": 960,
+    "n_val": 240,
+    "n_test": 200,
+    "train_class_counts": [
+      240,
+      240,
+      240,
+      240
+    ],
+    "val_class_counts": [
+      60,
+      60,
+      60,
+      60
+    ],
+    "test_class_counts": [
+      50,
+      50,
+      50,
+      50
+    ],
+    "best_valid_loss": 0.2535134494304657,
+    "accuracy": 0.995,
+    "balanced_accuracy": 0.995,
+    "confusion_matrix": [
+      [
+        49,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        50,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        50,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        50
+      ]
+    ],
+    "prediction_histogram": [
+      49,
+      50,
+      50,
+      51
+    ]
+  },
+  {
+    "subject_id": "54",
+    "test_subject_id": "54",
+    "train_subject_ids": [
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53"
+    ],
+    "fold_id": 7,
+    "n_train": 960,
+    "n_val": 240,
+    "n_test": 200,
+    "train_class_counts": [
+      240,
+      240,
+      240,
+      240
+    ],
+    "val_class_counts": [
+      60,
+      60,
+      60,
+      60
+    ],
+    "test_class_counts": [
+      50,
+      50,
+      50,
+      50
+    ],
+    "best_valid_loss": 0.15240904539823533,
+    "accuracy": 0.415,
+    "balanced_accuracy": 0.41500000000000004,
+    "confusion_matrix": [
+      [
+        24,
+        8,
+        12,
+        6
+      ],
+      [
+        9,
+        29,
+        3,
+        9
+      ],
+      [
+        13,
+        10,
+        12,
+        15
+      ],
+      [
+        17,
+        7,
+        8,
+        18
+      ]
+    ],
+    "prediction_histogram": [
+      63,
+      54,
+      35,
+      48
+    ]
+  }
+]
