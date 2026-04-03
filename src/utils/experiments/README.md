@@ -1,6 +1,6 @@
 # Notebook batch runner
 
-Executes the same notebook once per config override from a JSON array.  # noqa: E999
+Executes the same notebook once per config override from a JSON array. # noqa: E999
 It does **not** require you to rewrite the notebook to read external config files.
 Instead, it injects a small cell right after the notebook's `CONFIG = {...}` cell and runs the notebook with those overrides.
 
@@ -20,18 +20,20 @@ Run in daemon mode (detached/background):
 ```bash
 python src/utils/experiments/experiments.py \
   --notebook src/lee2019_finetune_sjepa.ipynb \
-  --configs src/utils/experiments/configs/test.json \
+  --configs src/utils/experiments/configs/subject51_seed5.json \
   --kernel-name dl \
   --daemon
 ```
 
 Daemon mode prints:
+
 - `Run ID`
 - `PID`
 - `Status file`
 - `Daemon log`
 
 Each run writes `experiment_results/<run_id>/status.json` with progress fields like:
+
 - `state`
 - `completed_configs`
 - `total_configs`

@@ -1,0 +1,17 @@
+{
+  "run_id": "20260403_1204_b510d298",
+  "artifact_dir": "/Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1204_b510d298",
+  "subjects": [
+    "51"
+  ],
+  "model": "SignalJEPA_PreLocal",
+  "pretrained_url": "https://huggingface.co/braindecode/SignalJEPA/resolve/main/signal-jepa_16s-60_adeuwv4s.pth",
+  "global_metrics": {
+    "mean_accuracy": 0.35,
+    "std_accuracy": 0.06123724356957945,
+    "mean_balanced_accuracy": 0.35,
+    "std_balanced_accuracy": 0.061237243569579436,
+    "n_subjects": 1,
+    "n_folds_total": 5
+  }
+}

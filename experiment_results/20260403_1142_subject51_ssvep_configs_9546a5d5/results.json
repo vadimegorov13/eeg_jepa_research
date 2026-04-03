@@ -1,0 +1,310 @@
+[
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 42,
+      "subjects_to_use": [
+        51
+      ],
+      "paradigm": "SSVEP",
+      "batch_size": 32,
+      "set_eeg_reference": false,
+      "convert_to_uV": false,
+      "normalize": false,
+      "normalization_method": null,
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "criterion": "CrossEntropyLoss"
+    },
+    "artifact_dir": "/Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1142_d7b57291",
+    "run_id": "20260403_1142_d7b57291",
+    "elapsed_seconds": 49.543
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 3008,
+      "subjects_to_use": [
+        51
+      ],
+      "paradigm": "SSVEP",
+      "batch_size": 32,
+      "set_eeg_reference": false,
+      "convert_to_uV": false,
+      "normalize": false,
+      "normalization_method": null,
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "criterion": "CrossEntropyLoss"
+    },
+    "artifact_dir": "/Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1143_abb33084",
+    "run_id": "20260403_1143_abb33084",
+    "elapsed_seconds": 60.332
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 42,
+      "subjects_to_use": [
+        51
+      ],
+      "paradigm": "SSVEP",
+      "batch_size": 32,
+      "set_eeg_reference": false,
+      "convert_to_uV": false,
+      "normalize": false,
+      "normalization_method": null,
+      "optimizer": "Adam",
+      "learning_rate": 0.0005,
+      "criterion": "CrossEntropyLoss"
+    },
+    "artifact_dir": "/Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1144_287baea0",
+    "run_id": "20260403_1144_287baea0",
+    "elapsed_seconds": 57.143
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 3008,
+      "subjects_to_use": [
+        51
+      ],
+      "paradigm": "SSVEP",
+      "batch_size": 32,
+      "set_eeg_reference": false,
+      "convert_to_uV": false,
+      "normalize": false,
+      "normalization_method": null,
+      "optimizer": "Adam",
+      "learning_rate": 0.0005,
+      "criterion": "CrossEntropyLoss"
+    },
+    "artifact_dir": "/Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1145_7b2abd34",
+    "run_id": "20260403_1145_7b2abd34",
+    "elapsed_seconds": 70.827
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 42,
+      "subjects_to_use": [
+        51
+      ],
+      "paradigm": "SSVEP",
+      "batch_size": 32,
+      "set_eeg_reference": false,
+      "convert_to_uV": false,
+      "normalize": false,
+      "normalization_method": null,
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "criterion": "CrossEntropyLoss"
+    },
+    "artifact_dir": "/Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1146_b319ffaa",
+    "run_id": "20260403_1146_b319ffaa",
+    "elapsed_seconds": 46.745
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 3008,
+      "subjects_to_use": [
+        51
+      ],
+      "paradigm": "SSVEP",
+      "batch_size": 32,
+      "set_eeg_reference": false,
+      "convert_to_uV": false,
+      "normalize": false,
+      "normalization_method": null,
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "criterion": "CrossEntropyLoss"
+    },
+    "artifact_dir": "/Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1147_30fa903c",
+    "run_id": "20260403_1147_30fa903c",
+    "elapsed_seconds": 55.54
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 42,
+      "subjects_to_use": [
+        51
+      ],
+      "paradigm": "SSVEP",
+      "batch_size": 32,
+      "set_eeg_reference": false,
+      "convert_to_uV": false,
+      "normalize": false,
+      "normalization_method": null,
+      "optimizer": "AdamW",
+      "learning_rate": 0.0005,
+      "criterion": "CrossEntropyLoss"
+    },
+    "artifact_dir": "/Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1148_5a6b6c96",
+    "run_id": "20260403_1148_5a6b6c96",
+    "elapsed_seconds": 56.448
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 3008,
+      "subjects_to_use": [
+        51
+      ],
+      "paradigm": "SSVEP",
+      "batch_size": 32,
+      "set_eeg_reference": false,
+      "convert_to_uV": false,
+      "normalize": false,
+      "normalization_method": null,
+      "optimizer": "AdamW",
+      "learning_rate": 0.0005,
+      "criterion": "CrossEntropyLoss"
+    },
+    "artifact_dir": "/Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1149_69f16e0e",
+    "run_id": "20260403_1149_69f16e0e",
+    "elapsed_seconds": 69.707
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 42,
+      "subjects_to_use": [
+        51
+      ],
+      "paradigm": "SSVEP",
+      "batch_size": 32,
+      "set_eeg_reference": true,
+      "convert_to_uV": false,
+      "normalize": false,
+      "normalization_method": null,
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "criterion": "CrossEntropyLoss"
+    },
+    "artifact_dir": "/Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1150_a2ffe774",
+    "run_id": "20260403_1150_a2ffe774",
+    "elapsed_seconds": 50.613
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 42,
+      "subjects_to_use": [
+        51
+      ],
+      "paradigm": "SSVEP",
+      "batch_size": 32,
+      "set_eeg_reference": false,
+      "convert_to_uV": true,
+      "normalize": false,
+      "normalization_method": null,
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "criterion": "CrossEntropyLoss"
+    },
+    "artifact_dir": "/Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1151_47dfd8b8",
+    "run_id": "20260403_1151_47dfd8b8",
+    "elapsed_seconds": 81.737
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 42,
+      "subjects_to_use": [
+        51
+      ],
+      "paradigm": "SSVEP",
+      "batch_size": 32,
+      "set_eeg_reference": true,
+      "convert_to_uV": true,
+      "normalize": false,
+      "normalization_method": null,
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "criterion": "CrossEntropyLoss"
+    },
+    "artifact_dir": "/Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1152_ac013441",
+    "run_id": "20260403_1152_ac013441",
+    "elapsed_seconds": 87.443
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 42,
+      "subjects_to_use": [
+        51
+      ],
+      "paradigm": "SSVEP",
+      "batch_size": 32,
+      "set_eeg_reference": true,
+      "convert_to_uV": false,
+      "normalize": false,
+      "normalization_method": null,
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "criterion": "CrossEntropyLoss"
+    },
+    "artifact_dir": "/Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1153_b7374bfc",
+    "run_id": "20260403_1153_b7374bfc",
+    "elapsed_seconds": 54.275
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 42,
+      "subjects_to_use": [
+        51
+      ],
+      "paradigm": "SSVEP",
+      "batch_size": 32,
+      "set_eeg_reference": false,
+      "convert_to_uV": true,
+      "normalize": false,
+      "normalization_method": null,
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "criterion": "CrossEntropyLoss"
+    },
+    "artifact_dir": "/Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1154_f79920a5",
+    "run_id": "20260403_1154_f79920a5",
+    "elapsed_seconds": 88.881
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 42,
+      "subjects_to_use": [
+        51
+      ],
+      "paradigm": "SSVEP",
+      "batch_size": 32,
+      "set_eeg_reference": true,
+      "convert_to_uV": true,
+      "normalize": false,
+      "normalization_method": null,
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "criterion": "CrossEntropyLoss"
+    },
+    "artifact_dir": "/Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1156_1c0ec3f0",
+    "run_id": "20260403_1156_1c0ec3f0",
+    "elapsed_seconds": 89.242
+  }
+]

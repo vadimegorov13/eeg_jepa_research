@@ -1,0 +1,149 @@
+[2026-04-03 11:00:22] Using device: mps
+[2026-04-03 11:00:22] Seed control enabled: True
+[2026-04-03 11:00:22] Base seed: 42
+[2026-04-03 11:00:22] Seed initialized: 42
+[2026-04-03 11:00:22] ======================================================================
+[2026-04-03 11:00:22] CONFIGURATION
+[2026-04-03 11:00:22] ======================================================================
+[2026-04-03 11:00:22]   artifact_dir: /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning
+[2026-04-03 11:00:22]   bandpass_high: 40.0
+[2026-04-03 11:00:22]   bandpass_low: 0.5
+[2026-04-03 11:00:22]   batch_size: 32
+[2026-04-03 11:00:22]   convert_to_uV: True
+[2026-04-03 11:00:22]   cv_folds: 5
+[2026-04-03 11:00:22]   device: auto
+[2026-04-03 11:00:22]   early_stopping_patience: 50
+[2026-04-03 11:00:22]   learning_rate: None
+[2026-04-03 11:00:22]   n_epochs: 5000
+[2026-04-03 11:00:22]   normalization_method: None
+[2026-04-03 11:00:22]   normalize: False
+[2026-04-03 11:00:22]   paradigm: SSVEP
+[2026-04-03 11:00:22]   pretrained_url: https://huggingface.co/braindecode/SignalJEPA/resolve/main/signal-jepa_16s-60_adeuwv4s.pth
+[2026-04-03 11:00:22]   seed: 42
+[2026-04-03 11:00:22]   set_seed: True
+[2026-04-03 11:00:22]   sfreq: 128
+[2026-04-03 11:00:22]   subjects_to_use: [51]
+[2026-04-03 11:00:22]   val_split: 0.2
+[2026-04-03 11:00:22] ======================================================================
+[2026-04-03 11:00:22] Config saved to: /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1100_a91dc3ec/config.json
+[2026-04-03 11:00:22] Epoch window configuration:
+[2026-04-03 11:00:22]   Target sfreq:                128 Hz
+[2026-04-03 11:00:22]   Target duration:             4.190000 s
+[2026-04-03 11:00:22]   Window samples (rounded):    536
+[2026-04-03 11:00:22]   Base trial samples (4.0 s):  512
+[2026-04-03 11:00:22]   Trial stop offset samples:   24
+[2026-04-03 11:00:22]   Effective window duration:   4.187500 s
+[2026-04-03 11:00:22] Using specified subjects from config: [51]
+[2026-04-03 11:00:22] Selected subjects: [51]
+[2026-04-03 11:00:22] Expected evaluation folds: 5
+
+[2026-04-03 11:00:22] Building MOABBDataset for Lee2019_SSVEP...
+[2026-04-03 11:00:35] MOABBDataset recordings loaded: 2
+[2026-04-03 11:00:35] Discovered annotation descriptions (first recording): [np.str_('12.0'), np.str_('5.45'), np.str_('6.67'), np.str_('8.57')]
+[2026-04-03 11:00:35] Dataset event_id mapping: {'12.0': 1, '8.57': 2, '6.67': 3, '5.45': 4}
+[2026-04-03 11:00:35] Label map (event_code -> class_index): {1: 0, 2: 1, 3: 2, 4: 3}
+[2026-04-03 11:00:35] Applying Braindecode preprocessors to MOABBDataset...
+[2026-04-03 11:00:43] Preprocessing complete.
+
+[2026-04-03 11:00:43] Post-preprocessing validation
+[2026-04-03 11:00:43]   Recordings in DATASET: 2
+[2026-04-03 11:00:43]   Unique subject IDs:    ['51']
+[2026-04-03 11:00:43]   sfreq (first rec):     128.0 Hz
+[2026-04-03 11:00:43]   EEG channel count:     62
+[2026-04-03 11:00:43]   First 10 channels:     ['Fp1', 'Fp2', 'F7', 'F3', 'Fz', 'F4', 'F8', 'FC5', 'FC1', 'FC2']
+[2026-04-03 11:00:43] Channel consistency summary:
+[2026-04-03 11:00:43]   Checked runs: 2
+[2026-04-03 11:00:43]   Unique channel counts: [62]
+[2026-04-03 11:00:43]   Channel order consistent: True
+[2026-04-03 11:00:43] Validated EEG channels: 62
+[2026-04-03 11:00:43] First 10 EEG channels: ['Fp1', 'Fp2', 'F7', 'F3', 'Fz', 'F4', 'F8', 'FC5', 'FC1', 'FC2']
+[2026-04-03 11:00:43] raw mean_abs=6.206608e+00
+[2026-04-03 11:00:43] raw std=2.712803e+01
+[2026-04-03 11:00:43] raw first5 channel std= [30.27595633 56.56813395 13.75714116  8.89857459  7.91183515]
+[2026-04-03 11:00:43] Requested window samples: 536
+[2026-04-03 11:00:43] Base trial samples:       512
+[2026-04-03 11:00:43] Stop offset samples:      24
+[2026-04-03 11:00:43] Global class counts: [50, 50, 50, 50]
+[2026-04-03 11:00:43] Chance level (4-class): 0.25
+[2026-04-03 11:00:43] One window shape: (62, 536)
+[2026-04-03 11:00:43] One window label: 2
+[2026-04-03 11:00:43] Window sample length expected=536, got=536
+[2026-04-03 11:00:43] Subjects in window split: [51]
+[2026-04-03 11:00:43] Summarizing per-subject windows...
+[2026-04-03 11:00:43]   Subject 51: n_windows=200, window_shape=(62, 536), class_counts=[50, 50, 50, 50]
+[2026-04-03 11:00:43]    subject_id  n_windows  n_channels  n_times      class_counts
+0          51        200          62      536  [50, 50, 50, 50]
+[2026-04-03 11:00:43] Window validation summary:
+[2026-04-03 11:00:43]   Subject 51: n_windows=200 class_counts=[50, 50, 50, 50]
+
+[2026-04-03 11:00:43] Validated sampling rate target: 128 Hz
+[2026-04-03 11:00:43] Validated window sample count:   536
+[2026-04-03 11:00:43] Validated window duration:       4.1875 s
+[2026-04-03 11:00:43] Validated channel count:         62
+[2026-04-03 11:00:43] Total windows retained:          200
+[2026-04-03 11:00:43] Preprocessing sanity checks:
+[2026-04-03 11:00:43]   One sample label: 2
+[2026-04-03 11:00:43]   One sample shape: (62, 536)
+[2026-04-03 11:00:43]   Mean(abs(signal)): 7.808386e+00
+[2026-04-03 11:00:43]   Mean(signal):      -1.469310e-08
+[2026-04-03 11:00:43]   Std(signal):       1.102899e+01
+[2026-04-03 11:00:43] SignalJEPA_PreLocal instantiated successfully.
+[2026-04-03 11:00:43]   Total parameters:     18,192
+[2026-04-03 11:00:43]   Trainable parameters: 18,192
+[2026-04-03 11:00:43] Initializing from 16s-60 pretrained checkpoint (Hugging Face):
+[2026-04-03 11:00:43]   https://huggingface.co/braindecode/SignalJEPA/resolve/main/signal-jepa_16s-60_adeuwv4s.pth
+[2026-04-03 11:00:43]   Downloaded 179 keys
+[2026-04-03 11:00:43] ======================================================================
+[2026-04-03 11:00:43] STARTING CROSS-VALIDATION
+[2026-04-03 11:00:43] ======================================================================
+[2026-04-03 11:00:43] Subjects:      [51]
+[2026-04-03 11:00:43] CV folds:      5
+[2026-04-03 11:00:43] Batch size:    32
+[2026-04-03 11:00:43] Max epochs:    5000
+[2026-04-03 11:00:43] Device:        mps
+[2026-04-03 11:00:43] Seed control:  True
+[2026-04-03 11:00:43] Base seed:     42
+[2026-04-03 11:00:43] ======================================================================
+
+[2026-04-03 11:00:43] Subject 51: 200 windows | class_counts=[50, 50, 50, 50]
+[2026-04-03 11:00:43] Trainable modules: spatial_conv + final_layer (4,352 / 18,192 params, 23.9%)
+[2026-04-03 11:00:50]   Fold 1/5 | best_epoch=23 | stop=73 | val_loss=1.3215 | acc=0.3500 | bal_acc=0.3500
+[2026-04-03 11:00:54]   Fold 2/5 | best_epoch=8 | stop=58 | val_loss=1.3717 | acc=0.2000 | bal_acc=0.2000
+[2026-04-03 11:00:59]   Fold 3/5 | best_epoch=30 | stop=80 | val_loss=1.3439 | acc=0.3750 | bal_acc=0.3750
+[2026-04-03 11:01:03]   Fold 4/5 | best_epoch=1 | stop=51 | val_loss=1.3932 | acc=0.2750 | bal_acc=0.2750
+[2026-04-03 11:01:10]   Fold 5/5 | best_epoch=55 | stop=105 | val_loss=1.2244 | acc=0.5000 | bal_acc=0.5000
+[2026-04-03 11:01:10]   Subject 51 summary: acc=0.3400±0.1007  bal_acc=0.3400±0.1007
+
+[2026-04-03 11:01:10] Total folds completed: 5
+[2026-04-03 11:01:10] ======================================================================
+[2026-04-03 11:01:10] AGGREGATED RESULTS
+[2026-04-03 11:01:10] ======================================================================
+[2026-04-03 11:01:10]   Subject 51:  acc=0.3400±0.1007  bal_acc=0.3400±0.1007
+[2026-04-03 11:01:10] ----------------------------------------------------------------------
+[2026-04-03 11:01:10]   OVERALL:      acc=0.3400±0.1007  bal_acc=0.3400±0.1007
+[2026-04-03 11:01:10] ======================================================================
+[2026-04-03 11:01:10] CV results saved to:      /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1100_a91dc3ec/cv_results.json
+[2026-04-03 11:01:10] Subject metrics saved to: /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1100_a91dc3ec/subject_metrics.json
+[2026-04-03 11:01:10] Global metrics saved to:  /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1100_a91dc3ec/global_metrics.json
+[2026-04-03 11:01:10] Run metadata saved to:    /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1100_a91dc3ec/run_metadata.json
+
+[2026-04-03 11:01:10] All artifacts in: /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1100_a91dc3ec
+
+[2026-04-03 11:01:10] ======================================================================
+[2026-04-03 11:01:10] EXPERIMENT SUMMARY
+[2026-04-03 11:01:10] ======================================================================
+[2026-04-03 11:01:10] Run ID:    20260403_1100_a91dc3ec
+[2026-04-03 11:01:10] Artifacts: /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/artifacts/lee-2019-fine-tuning/SSVEP/20260403_1100_a91dc3ec
+
+[2026-04-03 11:01:10] Configuration:
+[2026-04-03 11:01:10]   Subjects:          [51]
+[2026-04-03 11:01:10]   Bandpass:          0.5-40.0 Hz
+[2026-04-03 11:01:10]   Resample:          128 Hz
+[2026-04-03 11:01:10]   CV folds:          5
+[2026-04-03 11:01:10]   Learning rate:     None
+[2026-04-03 11:01:10]   Batch size:        32
+[2026-04-03 11:01:10]   Max epochs:        5000
+
+[2026-04-03 11:01:10] Results:
+[2026-04-03 11:01:10]   Mean Accuracy:          0.3400 ± 0.1007
+[2026-04-03 11:01:10]   Mean Balanced Accuracy: 0.3400 ± 0.1007
