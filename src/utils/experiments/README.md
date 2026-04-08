@@ -20,7 +20,7 @@ Run in daemon mode (detached/background):
 ```bash
 python src/utils/experiments/experiments.py \
   --notebook src/lee2019_finetune_sjepa.ipynb \
-  --configs src/utils/experiments/configs/subject51_seed5.json \
+  --configs src/utils/experiments/configs/hard_subjects_current_keys_sweep.json \
   --kernel-name dl \
   --daemon
 ```
