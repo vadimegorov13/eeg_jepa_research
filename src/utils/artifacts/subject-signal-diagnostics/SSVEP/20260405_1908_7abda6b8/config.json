@@ -1,0 +1,53 @@
+{
+  "artifact_dir": "/Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/src/utils/artifacts/subject-signal-diagnostics",
+  "seed": 1,
+  "set_seed": true,
+  "paradigm": "SSVEP",
+  "target_subject": 51,
+  "comparison_subjects": [
+    50,
+    53
+  ],
+  "extra_subjects": [
+    54
+  ],
+  "inspect_runs_per_subject": 2,
+  "inspection_mode": "both",
+  "set_eeg_reference": true,
+  "convert_to_uV": true,
+  "bandpass_low": 0.5,
+  "bandpass_high": 40.0,
+  "sfreq": 128,
+  "requested_trial_duration_s": 4.19,
+  "save_artifacts": true,
+  "save_figures": true,
+  "save_tables": true,
+  "save_logs": true,
+  "verbose": true,
+  "channels_to_plot": [
+    "O1",
+    "Oz",
+    "O2",
+    "PO3",
+    "POz",
+    "PO4",
+    "Pz",
+    "Cz"
+  ],
+  "plot_duration_s": 8.0,
+  "top_k_suspicious": 12,
+  "psd_n_fft": 512,
+  "harmonic_count": 3,
+  "figure_dpi": 140,
+  "near_flat_threshold_uV": 0.5,
+  "hf_ratio_split_hz": 20.0,
+  "stimulus_frequencies_hz": [
+    5.45,
+    6.67,
+    8.57,
+    12.0
+  ],
+  "snr_band_half_width_hz": 0.2,
+  "snr_noise_exclusion_hz": 0.4,
+  "snr_noise_window_hz": 1.0
+}

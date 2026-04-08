@@ -1,0 +1,67 @@
+[2026-04-05 19:02:44] ======================================================================
+[2026-04-05 19:02:44] RUN INITIALIZED
+[2026-04-05 19:02:44] ======================================================================
+[2026-04-05 19:02:44] Run ID:       20260405_1902_7abda6b8
+[2026-04-05 19:02:44] Artifact dir: /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/src/utils/artifacts/subject-signal-diagnostics/SSVEP/20260405_1902_7abda6b8
+[2026-04-05 19:02:44] Figures dir:  /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/src/utils/artifacts/subject-signal-diagnostics/SSVEP/20260405_1902_7abda6b8/figures
+[2026-04-05 19:02:44] Tables dir:   /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/src/utils/artifacts/subject-signal-diagnostics/SSVEP/20260405_1902_7abda6b8/tables
+[2026-04-05 19:02:44] Logs dir:     /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/src/utils/artifacts/subject-signal-diagnostics/SSVEP/20260405_1902_7abda6b8/logs
+[2026-04-05 19:02:44] Saved JSON: /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/src/utils/artifacts/subject-signal-diagnostics/SSVEP/20260405_1902_7abda6b8/config.json
+[2026-04-05 19:02:44] Saved JSON: /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/src/utils/artifacts/subject-signal-diagnostics/SSVEP/20260405_1902_7abda6b8/run_metadata.json
+[2026-04-05 19:02:44] Utility initialization complete.
+
+[2026-04-05 19:02:44] ======================================================================
+[2026-04-05 19:02:44] DATA LOADING
+[2026-04-05 19:02:44] ======================================================================
+[2026-04-05 19:02:44] MOABB dataset code: Lee2019-SSVEP
+[2026-04-05 19:02:44] Event mapping: {'12.0': 1, '8.57': 2, '6.67': 3, '5.45': 4}
+[2026-04-05 19:02:44] Selected subjects: [50, 51, 53, 54]
+[2026-04-05 19:03:38] Loaded recordings: 8
+
+[2026-04-05 19:04:06] Recording index summary:
+[2026-04-05 19:04:06]    recording_id  subject session     run  run_rank   sfreq  n_channels  duration_s
+0             0       50       0  1train         1  1000.0          62     1293.24
+1             1       50       1  1train         2  1000.0          62     1309.04
+2             2       51       0  1train         1  1000.0          62     1338.40
+3             3       51       1  1train         2  1000.0          62     1307.96
+4             4       53       0  1train         1  1000.0          62     1546.96
+5             5       53       1  1train         2  1000.0          62     1410.76
+6             6       54       0  1train         1  1000.0          62     1313.24
+7             7       54       1  1train         2  1000.0          62     1479.36
+
+[2026-04-05 19:04:06] Channel count check:
+[2026-04-05 19:04:06] subject
+50    [62]
+51    [62]
+53    [62]
+54    [62]
+Name: n_channels, dtype: object
+[2026-04-05 19:04:06] Saved table: /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/src/utils/artifacts/subject-signal-diagnostics/SSVEP/20260405_1902_7abda6b8/tables/recording_index.csv
+[2026-04-05 19:04:06] Saved JSON: /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/src/utils/artifacts/subject-signal-diagnostics/SSVEP/20260405_1902_7abda6b8/recording_overview.json
+
+[2026-04-05 19:04:06] ======================================================================
+[2026-04-05 19:04:06] PREPROCESSING
+[2026-04-05 19:04:06] ======================================================================
+[2026-04-05 19:06:35]             mode  subject  run_rank   sfreq  n_channels   duration_s
+8   preprocessed       50         1   128.0          62  1293.242188
+9   preprocessed       50         2   128.0          62  1309.039062
+10  preprocessed       51         1   128.0          62  1338.398438
+11  preprocessed       51         2   128.0          62  1307.960938
+12  preprocessed       53         1   128.0          62  1546.960938
+13  preprocessed       53         2   128.0          62  1410.757812
+14  preprocessed       54         1   128.0          62  1313.242188
+15  preprocessed       54         2   128.0          62  1479.359375
+0            raw       50         1  1000.0          62  1293.240000
+1            raw       50         2  1000.0          62  1309.040000
+2            raw       51         1  1000.0          62  1338.400000
+3            raw       51         2  1000.0          62  1307.960000
+4            raw       53         1  1000.0          62  1546.960000
+5            raw       53         2  1000.0          62  1410.760000
+6            raw       54         1  1000.0          62  1313.240000
+7            raw       54         2  1000.0          62  1479.360000
+[2026-04-05 19:06:35] Saved table: /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/src/utils/artifacts/subject-signal-diagnostics/SSVEP/20260405_1902_7abda6b8/tables/preprocessing_summary.csv
+[2026-04-05 19:06:35] Saved JSON: /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/src/utils/artifacts/subject-signal-diagnostics/SSVEP/20260405_1902_7abda6b8/preprocessing_config.json
+
+[2026-04-05 19:06:35] ======================================================================
+[2026-04-05 19:06:35] CONTINUOUS SIGNAL DIAGNOSTICS
+[2026-04-05 19:06:35] ======================================================================

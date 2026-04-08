@@ -1,0 +1,302 @@
+[
+  {
+    "subject_id": "54",
+    "fold_id": 1,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "val_class_counts": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "test_class_counts": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "best_valid_loss": 1.031546711921692,
+    "accuracy": 0.825,
+    "balanced_accuracy": 0.825,
+    "confusion_matrix": [
+      [
+        9,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        5,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        9
+      ]
+    ],
+    "prediction_histogram": [
+      10,
+      5,
+      13,
+      12
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 2,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "val_class_counts": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "test_class_counts": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "best_valid_loss": 1.0037740468978882,
+    "accuracy": 0.625,
+    "balanced_accuracy": 0.625,
+    "confusion_matrix": [
+      [
+        8,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        7,
+        1,
+        2
+      ],
+      [
+        2,
+        2,
+        5,
+        1
+      ],
+      [
+        0,
+        0,
+        5,
+        5
+      ]
+    ],
+    "prediction_histogram": [
+      10,
+      10,
+      12,
+      8
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 3,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "val_class_counts": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "test_class_counts": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "best_valid_loss": 0.47163814306259155,
+    "accuracy": 0.55,
+    "balanced_accuracy": 0.55,
+    "confusion_matrix": [
+      [
+        7,
+        1,
+        2,
+        0
+      ],
+      [
+        0,
+        5,
+        1,
+        4
+      ],
+      [
+        1,
+        0,
+        5,
+        4
+      ],
+      [
+        2,
+        2,
+        1,
+        5
+      ]
+    ],
+    "prediction_histogram": [
+      10,
+      8,
+      9,
+      13
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 4,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "val_class_counts": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "test_class_counts": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "best_valid_loss": 0.6871197819709778,
+    "accuracy": 0.775,
+    "balanced_accuracy": 0.775,
+    "confusion_matrix": [
+      [
+        8,
+        1,
+        1,
+        0
+      ],
+      [
+        2,
+        7,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        10,
+        0
+      ],
+      [
+        2,
+        1,
+        1,
+        6
+      ]
+    ],
+    "prediction_histogram": [
+      12,
+      9,
+      12,
+      7
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 5,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "val_class_counts": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "test_class_counts": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "best_valid_loss": 0.878417432308197,
+    "accuracy": 0.775,
+    "balanced_accuracy": 0.775,
+    "confusion_matrix": [
+      [
+        8,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        9,
+        0,
+        1
+      ],
+      [
+        1,
+        4,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        9
+      ]
+    ],
+    "prediction_histogram": [
+      9,
+      14,
+      6,
+      11
+    ]
+  }
+]

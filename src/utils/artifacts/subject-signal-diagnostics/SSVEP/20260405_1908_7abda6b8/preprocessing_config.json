@@ -1,0 +1,8 @@
+{
+  "set_eeg_reference": true,
+  "convert_to_uV": true,
+  "bandpass_low": 0.5,
+  "bandpass_high": 40.0,
+  "sfreq": 128,
+  "inspection_mode": "both"
+}

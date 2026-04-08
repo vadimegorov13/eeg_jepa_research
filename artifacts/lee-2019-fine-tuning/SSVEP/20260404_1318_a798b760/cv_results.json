@@ -1,0 +1,602 @@
+[
+  {
+    "subject_id": "51",
+    "fold_id": 1,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "val_class_counts": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "test_class_counts": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "best_valid_loss": 1.0465745031833649,
+    "accuracy": 0.575,
+    "balanced_accuracy": 0.5750000000000001,
+    "confusion_matrix": [
+      [
+        8,
+        1,
+        1,
+        0
+      ],
+      [
+        3,
+        4,
+        0,
+        3
+      ],
+      [
+        2,
+        0,
+        7,
+        1
+      ],
+      [
+        1,
+        4,
+        1,
+        4
+      ]
+    ],
+    "prediction_histogram": [
+      14,
+      9,
+      9,
+      8
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 2,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "val_class_counts": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "test_class_counts": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "best_valid_loss": 1.3713441491127014,
+    "accuracy": 0.375,
+    "balanced_accuracy": 0.375,
+    "confusion_matrix": [
+      [
+        2,
+        2,
+        2,
+        4
+      ],
+      [
+        2,
+        5,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        5,
+        2
+      ],
+      [
+        3,
+        3,
+        1,
+        3
+      ]
+    ],
+    "prediction_histogram": [
+      8,
+      12,
+      9,
+      11
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 3,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "val_class_counts": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "test_class_counts": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "best_valid_loss": 1.2776762247085571,
+    "accuracy": 0.475,
+    "balanced_accuracy": 0.475,
+    "confusion_matrix": [
+      [
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        7,
+        0,
+        3
+      ],
+      [
+        2,
+        1,
+        6,
+        1
+      ],
+      [
+        2,
+        4,
+        0,
+        4
+      ]
+    ],
+    "prediction_histogram": [
+      6,
+      14,
+      9,
+      11
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 4,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "val_class_counts": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "test_class_counts": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "best_valid_loss": 1.0503840446472168,
+    "accuracy": 0.475,
+    "balanced_accuracy": 0.475,
+    "confusion_matrix": [
+      [
+        6,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        4,
+        1,
+        5
+      ],
+      [
+        2,
+        3,
+        5,
+        0
+      ],
+      [
+        3,
+        1,
+        2,
+        4
+      ]
+    ],
+    "prediction_histogram": [
+      11,
+      9,
+      9,
+      11
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 5,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "val_class_counts": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "test_class_counts": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "best_valid_loss": 1.0693469047546387,
+    "accuracy": 0.525,
+    "balanced_accuracy": 0.525,
+    "confusion_matrix": [
+      [
+        5,
+        1,
+        2,
+        2
+      ],
+      [
+        0,
+        8,
+        1,
+        1
+      ],
+      [
+        3,
+        3,
+        4,
+        0
+      ],
+      [
+        4,
+        2,
+        0,
+        4
+      ]
+    ],
+    "prediction_histogram": [
+      12,
+      14,
+      7,
+      7
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 1,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "val_class_counts": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "test_class_counts": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "best_valid_loss": 0.8742238581180573,
+    "accuracy": 0.75,
+    "balanced_accuracy": 0.75,
+    "confusion_matrix": [
+      [
+        9,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        7,
+        2,
+        0
+      ],
+      [
+        2,
+        1,
+        7,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        7
+      ]
+    ],
+    "prediction_histogram": [
+      13,
+      10,
+      10,
+      7
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 2,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "val_class_counts": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "test_class_counts": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "best_valid_loss": 0.6225566267967224,
+    "accuracy": 0.75,
+    "balanced_accuracy": 0.7499999999999999,
+    "confusion_matrix": [
+      [
+        7,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        7,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        7,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        9
+      ]
+    ],
+    "prediction_histogram": [
+      8,
+      10,
+      9,
+      13
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 3,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "val_class_counts": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "test_class_counts": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "best_valid_loss": 1.171133279800415,
+    "accuracy": 0.6,
+    "balanced_accuracy": 0.6,
+    "confusion_matrix": [
+      [
+        6,
+        1,
+        2,
+        1
+      ],
+      [
+        0,
+        5,
+        2,
+        3
+      ],
+      [
+        0,
+        1,
+        7,
+        2
+      ],
+      [
+        0,
+        3,
+        1,
+        6
+      ]
+    ],
+    "prediction_histogram": [
+      6,
+      10,
+      12,
+      12
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 4,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "val_class_counts": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "test_class_counts": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "best_valid_loss": 0.6453904211521149,
+    "accuracy": 0.7,
+    "balanced_accuracy": 0.7,
+    "confusion_matrix": [
+      [
+        8,
+        0,
+        2,
+        0
+      ],
+      [
+        3,
+        6,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        7,
+        2
+      ],
+      [
+        0,
+        0,
+        3,
+        7
+      ]
+    ],
+    "prediction_histogram": [
+      11,
+      7,
+      12,
+      10
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 5,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      32,
+      32,
+      32,
+      32
+    ],
+    "val_class_counts": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "test_class_counts": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "best_valid_loss": 0.9927679896354675,
+    "accuracy": 0.55,
+    "balanced_accuracy": 0.55,
+    "confusion_matrix": [
+      [
+        5,
+        0,
+        1,
+        4
+      ],
+      [
+        0,
+        6,
+        2,
+        2
+      ],
+      [
+        0,
+        2,
+        4,
+        4
+      ],
+      [
+        0,
+        3,
+        0,
+        7
+      ]
+    ],
+    "prediction_histogram": [
+      5,
+      11,
+      7,
+      17
+    ]
+  }
+]

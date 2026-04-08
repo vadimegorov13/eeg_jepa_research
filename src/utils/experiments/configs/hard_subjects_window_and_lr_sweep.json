@@ -1,0 +1,130 @@
+[
+  {
+    "seed": 6101,
+    "subjects_to_use": [
+      51,
+      54
+    ],
+    "paradigm": "SSVEP",
+    "requested_trial_duration_s": 4.0,
+    "learning_rate": 0.0001,
+    "batch_size": 16
+  },
+  {
+    "seed": 6102,
+    "subjects_to_use": [
+      51,
+      54
+    ],
+    "paradigm": "SSVEP",
+    "requested_trial_duration_s": 4.0,
+    "learning_rate": 0.0003,
+    "batch_size": 16
+  },
+  {
+    "seed": 6103,
+    "subjects_to_use": [
+      51,
+      54
+    ],
+    "paradigm": "SSVEP",
+    "requested_trial_duration_s": 4.0,
+    "learning_rate": 0.001,
+    "batch_size": 16
+  },
+  {
+    "seed": 6104,
+    "subjects_to_use": [
+      51,
+      54
+    ],
+    "paradigm": "SSVEP",
+    "requested_trial_duration_s": 4.0,
+    "learning_rate": 0.003,
+    "batch_size": 16
+  },
+  {
+    "seed": 6105,
+    "subjects_to_use": [
+      51,
+      54
+    ],
+    "paradigm": "SSVEP",
+    "requested_trial_duration_s": 4.19,
+    "learning_rate": 0.0001,
+    "batch_size": 16
+  },
+  {
+    "seed": 6106,
+    "subjects_to_use": [
+      51,
+      54
+    ],
+    "paradigm": "SSVEP",
+    "requested_trial_duration_s": 4.19,
+    "learning_rate": 0.0003,
+    "batch_size": 16
+  },
+  {
+    "seed": 6107,
+    "subjects_to_use": [
+      51,
+      54
+    ],
+    "paradigm": "SSVEP",
+    "requested_trial_duration_s": 4.19,
+    "learning_rate": 0.001,
+    "batch_size": 16
+  },
+  {
+    "seed": 6108,
+    "subjects_to_use": [
+      51,
+      54
+    ],
+    "paradigm": "SSVEP",
+    "requested_trial_duration_s": 4.19,
+    "learning_rate": 0.003,
+    "batch_size": 16
+  },
+  {
+    "seed": 6109,
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "requested_trial_duration_s": 4.0,
+    "learning_rate": 0.001,
+    "batch_size": 16
+  },
+  {
+    "seed": 6110,
+    "subjects_to_use": [
+      51
+    ],
+    "paradigm": "SSVEP",
+    "requested_trial_duration_s": 4.19,
+    "learning_rate": 0.001,
+    "batch_size": 16
+  },
+  {
+    "seed": 6111,
+    "subjects_to_use": [
+      54
+    ],
+    "paradigm": "SSVEP",
+    "requested_trial_duration_s": 4.0,
+    "learning_rate": 0.001,
+    "batch_size": 16
+  },
+  {
+    "seed": 6112,
+    "subjects_to_use": [
+      54
+    ],
+    "paradigm": "SSVEP",
+    "requested_trial_duration_s": 4.19,
+    "learning_rate": 0.001,
+    "batch_size": 16
+  }
+]
