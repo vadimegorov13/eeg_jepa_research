@@ -1,0 +1,23 @@
+{
+  "run_id": "20260408_1811_f79c8bc1",
+  "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260408_1811_f79c8bc1",
+  "subjects": [
+    "48",
+    "49",
+    "50",
+    "51",
+    "52",
+    "53",
+    "54"
+  ],
+  "model": "SignalJEPA_PreLocal",
+  "pretrained_url": "https://huggingface.co/braindecode/SignalJEPA/resolve/main/signal-jepa_16s-60_adeuwv4s.pth",
+  "global_metrics": {
+    "mean_accuracy": 0.8964285714285715,
+    "std_accuracy": 0.16258435800958146,
+    "mean_balanced_accuracy": 0.8964285714285715,
+    "std_balanced_accuracy": 0.16258435800958146,
+    "n_subjects": 7,
+    "n_folds_total": 35
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "run_id": "20260408_1735_iir_58bdda3d",
+  "state": "completed",
+  "pid": 1989102,
+  "pid_running": true,
+  "notebook": "/home/vegorov/Repos/eeg_jepa_research/src/lee2019_finetune_sjepa.ipynb",
+  "configs": "experiment_results/20260408_1735_iir_58bdda3d/configs.json",
+  "total_configs": 18,
+  "completed_configs": 18,
+  "failed_configs": 0,
+  "results_dir": "experiment_results/20260408_1735_iir_58bdda3d",
+  "summary_json": "experiment_results/20260408_1735_iir_58bdda3d/results.json",
+  "artifact_ids_json": "experiment_results/20260408_1735_iir_58bdda3d/artifact_ids.json",
+  "finished_at": "2026-04-09T00:07:02",
+  "updated_at": "2026-04-09T00:07:02"
+}

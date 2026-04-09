@@ -1,0 +1,8 @@
+{
+  "mean_accuracy": 0.9085714285714287,
+  "std_accuracy": 0.1357443575705631,
+  "mean_balanced_accuracy": 0.9085714285714287,
+  "std_balanced_accuracy": 0.1357443575705631,
+  "n_subjects": 7,
+  "n_folds_total": 35
+}

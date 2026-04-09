@@ -1,0 +1,142 @@
+{
+  "48": {
+    "accuracies": [
+      0.95,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "balanced_accuracies": [
+      0.95,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "mean_accuracy": 0.99,
+    "std_accuracy": 0.020000000000000018,
+    "mean_balanced_accuracy": 0.99,
+    "std_balanced_accuracy": 0.020000000000000018
+  },
+  "49": {
+    "accuracies": [
+      1.0,
+      0.95,
+      0.975,
+      0.975,
+      0.975
+    ],
+    "balanced_accuracies": [
+      1.0,
+      0.95,
+      0.975,
+      0.975,
+      0.975
+    ],
+    "mean_accuracy": 0.975,
+    "std_accuracy": 0.01581138830084191,
+    "mean_balanced_accuracy": 0.975,
+    "std_balanced_accuracy": 0.01581138830084191
+  },
+  "50": {
+    "accuracies": [
+      1.0,
+      1.0,
+      0.975,
+      0.975,
+      1.0
+    ],
+    "balanced_accuracies": [
+      1.0,
+      1.0,
+      0.975,
+      0.975,
+      1.0
+    ],
+    "mean_accuracy": 0.99,
+    "std_accuracy": 0.012247448713915901,
+    "mean_balanced_accuracy": 0.99,
+    "std_balanced_accuracy": 0.012247448713915901
+  },
+  "51": {
+    "accuracies": [
+      0.625,
+      0.55,
+      0.7,
+      0.6,
+      0.4
+    ],
+    "balanced_accuracies": [
+      0.625,
+      0.55,
+      0.7000000000000001,
+      0.6,
+      0.4
+    ],
+    "mean_accuracy": 0.575,
+    "std_accuracy": 0.09999999999999998,
+    "mean_balanced_accuracy": 0.575,
+    "std_balanced_accuracy": 0.1
+  },
+  "52": {
+    "accuracies": [
+      1.0,
+      0.95,
+      0.975,
+      1.0,
+      0.975
+    ],
+    "balanced_accuracies": [
+      1.0,
+      0.95,
+      0.975,
+      1.0,
+      0.975
+    ],
+    "mean_accuracy": 0.9799999999999999,
+    "std_accuracy": 0.018708286933869726,
+    "mean_balanced_accuracy": 0.9799999999999999,
+    "std_balanced_accuracy": 0.018708286933869726
+  },
+  "53": {
+    "accuracies": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "balanced_accuracies": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "mean_accuracy": 1.0,
+    "std_accuracy": 0.0,
+    "mean_balanced_accuracy": 1.0,
+    "std_balanced_accuracy": 0.0
+  },
+  "54": {
+    "accuracies": [
+      0.825,
+      0.875,
+      0.9,
+      0.825,
+      0.85
+    ],
+    "balanced_accuracies": [
+      0.8250000000000001,
+      0.875,
+      0.9,
+      0.825,
+      0.8500000000000001
+    ],
+    "mean_accuracy": 0.8549999999999999,
+    "std_accuracy": 0.02915475947422653,
+    "mean_balanced_accuracy": 0.8550000000000001,
+    "std_balanced_accuracy": 0.0291547594742265
+  }
+}

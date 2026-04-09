@@ -1,0 +1,128 @@
+[
+  {
+    "seed": 5,
+    "learning_rate": 0.01,
+    "subjects_to_use": null,
+    "paradigm": "SSVEP",
+    "batch_size": 16
+  },
+  {
+    "seed": 5,
+    "learning_rate": 0.01,
+    "subjects_to_use": null,
+    "paradigm": "SSVEP",
+    "batch_size": 32
+  },
+  {
+    "seed": 5,
+    "learning_rate": 0.03,
+    "subjects_to_use": null,
+    "paradigm": "SSVEP",
+    "batch_size": 16
+  },
+  {
+    "seed": 5,
+    "learning_rate": 0.03,
+    "subjects_to_use": null,
+    "paradigm": "SSVEP",
+    "batch_size": 32
+  },
+  {
+    "seed": 5,
+    "learning_rate": 0.05,
+    "subjects_to_use": null,
+    "paradigm": "SSVEP",
+    "batch_size": 16
+  },
+  {
+    "seed": 5,
+    "learning_rate": 0.05,
+    "subjects_to_use": null,
+    "paradigm": "SSVEP",
+    "batch_size": 32
+  },
+  {
+    "seed": 5,
+    "learning_rate": 0.001,
+    "subjects_to_use": null,
+    "paradigm": "SSVEP",
+    "batch_size": 16
+  },
+  {
+    "seed": 5,
+    "learning_rate": 0.001,
+    "subjects_to_use": null,
+    "paradigm": "SSVEP",
+    "batch_size": 32
+  },
+  {
+    "seed": 5,
+    "learning_rate": 0.003,
+    "subjects_to_use": null,
+    "paradigm": "SSVEP",
+    "batch_size": 16
+  },
+  {
+    "seed": 5,
+    "learning_rate": 0.003,
+    "subjects_to_use": null,
+    "paradigm": "SSVEP",
+    "batch_size": 32
+  },
+  {
+    "seed": 5,
+    "learning_rate": 0.005,
+    "subjects_to_use": null,
+    "paradigm": "SSVEP",
+    "batch_size": 16
+  },
+  {
+    "seed": 5,
+    "learning_rate": 0.005,
+    "subjects_to_use": null,
+    "paradigm": "SSVEP",
+    "batch_size": 32
+  },
+  {
+    "seed": 5,
+    "learning_rate": 0.0001,
+    "subjects_to_use": null,
+    "paradigm": "SSVEP",
+    "batch_size": 16
+  },
+  {
+    "seed": 5,
+    "learning_rate": 0.0001,
+    "subjects_to_use": null,
+    "paradigm": "SSVEP",
+    "batch_size": 32
+  },
+  {
+    "seed": 5,
+    "learning_rate": 0.0003,
+    "subjects_to_use": null,
+    "paradigm": "SSVEP",
+    "batch_size": 16
+  },
+  {
+    "seed": 5,
+    "learning_rate": 0.0003,
+    "subjects_to_use": null,
+    "paradigm": "SSVEP",
+    "batch_size": 32
+  },
+  {
+    "seed": 5,
+    "learning_rate": 0.0005,
+    "subjects_to_use": null,
+    "paradigm": "SSVEP",
+    "batch_size": 16
+  },
+  {
+    "seed": 5,
+    "learning_rate": 0.0005,
+    "subjects_to_use": null,
+    "paradigm": "SSVEP",
+    "batch_size": 32
+  }
+]

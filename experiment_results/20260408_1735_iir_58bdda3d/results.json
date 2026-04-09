@@ -1,0 +1,254 @@
+[
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 5,
+      "learning_rate": 0.01,
+      "subjects_to_use": null,
+      "paradigm": "SSVEP",
+      "batch_size": 16
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260408_1735_90a931e9",
+    "run_id": "20260408_1735_90a931e9",
+    "elapsed_seconds": 703.352
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 5,
+      "learning_rate": 0.01,
+      "subjects_to_use": null,
+      "paradigm": "SSVEP",
+      "batch_size": 32
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260408_1747_bce3c5ff",
+    "run_id": "20260408_1747_bce3c5ff",
+    "elapsed_seconds": 697.232
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 5,
+      "learning_rate": 0.03,
+      "subjects_to_use": null,
+      "paradigm": "SSVEP",
+      "batch_size": 16
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260408_1759_d0b4779b",
+    "run_id": "20260408_1759_d0b4779b",
+    "elapsed_seconds": 748.956
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 5,
+      "learning_rate": 0.03,
+      "subjects_to_use": null,
+      "paradigm": "SSVEP",
+      "batch_size": 32
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260408_1811_f79c8bc1",
+    "run_id": "20260408_1811_f79c8bc1",
+    "elapsed_seconds": 751.253
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 5,
+      "learning_rate": 0.05,
+      "subjects_to_use": null,
+      "paradigm": "SSVEP",
+      "batch_size": 16
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260408_1824_eff5bd3a",
+    "run_id": "20260408_1824_eff5bd3a",
+    "elapsed_seconds": 707.131
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 5,
+      "learning_rate": 0.05,
+      "subjects_to_use": null,
+      "paradigm": "SSVEP",
+      "batch_size": 32
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260408_1835_c7a68041",
+    "run_id": "20260408_1835_c7a68041",
+    "elapsed_seconds": 794.032
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 5,
+      "learning_rate": 0.001,
+      "subjects_to_use": null,
+      "paradigm": "SSVEP",
+      "batch_size": 16
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260408_1849_89f91aac",
+    "run_id": "20260408_1849_89f91aac",
+    "elapsed_seconds": 1175.512
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 5,
+      "learning_rate": 0.001,
+      "subjects_to_use": null,
+      "paradigm": "SSVEP",
+      "batch_size": 32
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260408_1908_cdfe1f4d",
+    "run_id": "20260408_1908_cdfe1f4d",
+    "elapsed_seconds": 1241.002
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 5,
+      "learning_rate": 0.003,
+      "subjects_to_use": null,
+      "paradigm": "SSVEP",
+      "batch_size": 16
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260408_1929_a944d1a5",
+    "run_id": "20260408_1929_a944d1a5",
+    "elapsed_seconds": 832.515
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 5,
+      "learning_rate": 0.003,
+      "subjects_to_use": null,
+      "paradigm": "SSVEP",
+      "batch_size": 32
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260408_1943_ace09cf5",
+    "run_id": "20260408_1943_ace09cf5",
+    "elapsed_seconds": 861.036
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 5,
+      "learning_rate": 0.005,
+      "subjects_to_use": null,
+      "paradigm": "SSVEP",
+      "batch_size": 16
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260408_1957_6fe9c54d",
+    "run_id": "20260408_1957_6fe9c54d",
+    "elapsed_seconds": 785.822
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 5,
+      "learning_rate": 0.005,
+      "subjects_to_use": null,
+      "paradigm": "SSVEP",
+      "batch_size": 32
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260408_2010_4c52a808",
+    "run_id": "20260408_2010_4c52a808",
+    "elapsed_seconds": 782.925
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 5,
+      "learning_rate": 0.0001,
+      "subjects_to_use": null,
+      "paradigm": "SSVEP",
+      "batch_size": 16
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260408_2023_22bdb8dd",
+    "run_id": "20260408_2023_22bdb8dd",
+    "elapsed_seconds": 3314.28
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 5,
+      "learning_rate": 0.0001,
+      "subjects_to_use": null,
+      "paradigm": "SSVEP",
+      "batch_size": 32
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260408_2118_e55be510",
+    "run_id": "20260408_2118_e55be510",
+    "elapsed_seconds": 2789.329
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 5,
+      "learning_rate": 0.0003,
+      "subjects_to_use": null,
+      "paradigm": "SSVEP",
+      "batch_size": 16
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260408_2205_3e41fbb1",
+    "run_id": "20260408_2205_3e41fbb1",
+    "elapsed_seconds": 1958.399
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 5,
+      "learning_rate": 0.0003,
+      "subjects_to_use": null,
+      "paradigm": "SSVEP",
+      "batch_size": 32
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260408_2238_d564163a",
+    "run_id": "20260408_2238_d564163a",
+    "elapsed_seconds": 2106.085
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 5,
+      "learning_rate": 0.0005,
+      "subjects_to_use": null,
+      "paradigm": "SSVEP",
+      "batch_size": 16
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260408_2313_fd52d16c",
+    "run_id": "20260408_2313_fd52d16c",
+    "elapsed_seconds": 1535.981
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 5,
+      "learning_rate": 0.0005,
+      "subjects_to_use": null,
+      "paradigm": "SSVEP",
+      "batch_size": 32
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260408_2338_da80acf9",
+    "run_id": "20260408_2338_da80acf9",
+    "elapsed_seconds": 1698.493
+  }
+]
