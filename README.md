@@ -1,6 +1,6 @@
 # EEG JEPA Research
 
-This repository contains experiments for reproducing and analyzing downstream EEG classification results from **S-JEPA: towards seamless cross-dataset transfer through dynamic spatial attention**.
+This repository contains experiments for reproducing and analyzing downstream EEG classification results from **S-JEPA: towards seamless cross-dataset transfer through dynamic spatial attention**.  # noqa: E999, E701
 
 The current focus of the repo is:
 
@@ -46,52 +46,3 @@ Typical notebooks/scripts in this repo are used for:
 - experiment sweeps
 - artifact evaluation
 - subject-level diagnostics
-
-### 5. Verify the environment inside the notebook
-
-Run this in a notebook cell to confirm the kernel is using the expected environment:
-
-```python
-import sys
-import torch
-import mne
-import braindecode
-import moabb
-
-print("Python executable:", sys.executable)
-print("torch:", torch.__version__)
-print("mne:", mne.__version__)
-print("braindecode:", braindecode.__version__)
-print("moabb:", moabb.__version__)
-```
-
-### 6. Expected outputs
-
-Successful runs should create artifact folders containing outputs such as:
-
-- `config.json`
-- `cv_results.json`
-- `subject_metrics.json`
-- `global_metrics.json`
-- `run_metadata.json`
-
-These artifacts are used to compare runs, inspect subject-level performance, and debug reproduction gaps.
-
-## Notes
-
-- For reproducibility, use the versions pinned in `requirements.txt`.
-- If results differ across machines, first verify:
-  - package versions
-  - selected notebook kernel
-  - number of loaded recordings/sessions
-  - total retained windows
-- The project is sensitive to dataset-loading differences, especially across MOABB versions.
-
-## Current objective
-
-The main reproduction target is the **SSVEP downstream result** associated with:
-
-- **16s pretraining**
-- **60% masking**
-- **pre-local downstream architecture**
-- **5-fold within-subject cross-validation**
