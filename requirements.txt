@@ -1,0 +1,49 @@
+# Reproducible notebook environment aligned to the MPS machine
+# Install inside a fresh Python 3.11 environment:
+#   python -m pip install -r requirements-mps.txt
+#
+# This is a simple project-level requirements file, not a full conda freeze.
+# For exact full-environment recovery, also keep:
+#   - conda env export --no-builds > environment.yml
+#   - python -m pip freeze > requirements-full.txt
+
+braindecode==1.3.2
+mne==1.11.0
+mne-bids==0.18.0
+moabb==1.4.3
+
+torch==2.10.0
+torchaudio==2.10.0
+torchvision==0.25.0
+torchinfo==1.8.0
+skorch==1.3.1
+
+numpy==2.4.3
+scipy==1.17.1
+scikit-learn==1.8.0
+pandas==3.0.1
+matplotlib==3.10.8
+seaborn==0.13.2
+joblib==1.5.3
+threadpoolctl==3.6.0
+pyriemann==0.10
+pooch==1.9.0
+
+nbclient==0.10.4
+nbformat==5.10.4
+jupyterlab==4.5.5
+notebook==7.5.4
+ipykernel==7.2.0
+ipython==9.10.0
+
+requests==2.32.5
+h5py==3.15.1
+wfdb==4.3.1
+edfio==0.4.13
+edflib-python==1.0.8
+soundfile==0.13.1
+psutil==7.2.2
+memory-profiler==0.61.0
+tqdm==4.67.3
+tabulate==0.10.0
+PyYAML==6.0.3
