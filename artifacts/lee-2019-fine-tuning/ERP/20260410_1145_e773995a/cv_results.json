@@ -1,0 +1,1262 @@
+[
+  {
+    "subject_id": "48",
+    "fold_id": 1,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.2065169426733011,
+    "accuracy": 0.9179292929292929,
+    "balanced_accuracy": 0.8356060606060607,
+    "confusion_matrix": [
+      [
+        633,
+        27
+      ],
+      [
+        38,
+        94
+      ]
+    ],
+    "prediction_histogram": [
+      671,
+      121
+    ]
+  },
+  {
+    "subject_id": "48",
+    "fold_id": 2,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.22975980984017677,
+    "accuracy": 0.922979797979798,
+    "balanced_accuracy": 0.8325757575757575,
+    "confusion_matrix": [
+      [
+        639,
+        21
+      ],
+      [
+        40,
+        92
+      ]
+    ],
+    "prediction_histogram": [
+      679,
+      113
+    ]
+  },
+  {
+    "subject_id": "48",
+    "fold_id": 3,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.18092865795367147,
+    "accuracy": 0.9027777777777778,
+    "balanced_accuracy": 0.8022727272727272,
+    "confusion_matrix": [
+      [
+        629,
+        31
+      ],
+      [
+        46,
+        86
+      ]
+    ],
+    "prediction_histogram": [
+      675,
+      117
+    ]
+  },
+  {
+    "subject_id": "48",
+    "fold_id": 4,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.22799676299471208,
+    "accuracy": 0.9305555555555556,
+    "balanced_accuracy": 0.8431818181818183,
+    "confusion_matrix": [
+      [
+        643,
+        17
+      ],
+      [
+        38,
+        94
+      ]
+    ],
+    "prediction_histogram": [
+      681,
+      111
+    ]
+  },
+  {
+    "subject_id": "48",
+    "fold_id": 5,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.20669454688717515,
+    "accuracy": 0.8926767676767676,
+    "balanced_accuracy": 0.7628787878787879,
+    "confusion_matrix": [
+      [
+        632,
+        28
+      ],
+      [
+        57,
+        75
+      ]
+    ],
+    "prediction_histogram": [
+      689,
+      103
+    ]
+  },
+  {
+    "subject_id": "49",
+    "fold_id": 1,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.2602187938964705,
+    "accuracy": 0.9078282828282829,
+    "balanced_accuracy": 0.8053030303030303,
+    "confusion_matrix": [
+      [
+        633,
+        27
+      ],
+      [
+        46,
+        86
+      ]
+    ],
+    "prediction_histogram": [
+      679,
+      113
+    ]
+  },
+  {
+    "subject_id": "49",
+    "fold_id": 2,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.20905230549231688,
+    "accuracy": 0.898989898989899,
+    "balanced_accuracy": 0.7848484848484849,
+    "confusion_matrix": [
+      [
+        631,
+        29
+      ],
+      [
+        51,
+        81
+      ]
+    ],
+    "prediction_histogram": [
+      682,
+      110
+    ]
+  },
+  {
+    "subject_id": "49",
+    "fold_id": 3,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.25289513955733,
+    "accuracy": 0.9318181818181818,
+    "balanced_accuracy": 0.8500000000000001,
+    "confusion_matrix": [
+      [
+        642,
+        18
+      ],
+      [
+        36,
+        96
+      ]
+    ],
+    "prediction_histogram": [
+      678,
+      114
+    ]
+  },
+  {
+    "subject_id": "49",
+    "fold_id": 4,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.20371773716779162,
+    "accuracy": 0.9103535353535354,
+    "balanced_accuracy": 0.825,
+    "confusion_matrix": [
+      [
+        629,
+        31
+      ],
+      [
+        40,
+        92
+      ]
+    ],
+    "prediction_histogram": [
+      669,
+      123
+    ]
+  },
+  {
+    "subject_id": "49",
+    "fold_id": 5,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.23183988443684503,
+    "accuracy": 0.9141414141414141,
+    "balanced_accuracy": 0.8151515151515152,
+    "confusion_matrix": [
+      [
+        636,
+        24
+      ],
+      [
+        44,
+        88
+      ]
+    ],
+    "prediction_histogram": [
+      680,
+      112
+    ]
+  },
+  {
+    "subject_id": "50",
+    "fold_id": 1,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.2703607304239123,
+    "accuracy": 0.8838383838383839,
+    "balanced_accuracy": 0.7333333333333334,
+    "confusion_matrix": [
+      [
+        633,
+        27
+      ],
+      [
+        65,
+        67
+      ]
+    ],
+    "prediction_histogram": [
+      698,
+      94
+    ]
+  },
+  {
+    "subject_id": "50",
+    "fold_id": 2,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.2660635583549268,
+    "accuracy": 0.8914141414141414,
+    "balanced_accuracy": 0.740909090909091,
+    "confusion_matrix": [
+      [
+        638,
+        22
+      ],
+      [
+        64,
+        68
+      ]
+    ],
+    "prediction_histogram": [
+      702,
+      90
+    ]
+  },
+  {
+    "subject_id": "50",
+    "fold_id": 3,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.2760400726968182,
+    "accuracy": 0.8863636363636364,
+    "balanced_accuracy": 0.7318181818181818,
+    "confusion_matrix": [
+      [
+        636,
+        24
+      ],
+      [
+        66,
+        66
+      ]
+    ],
+    "prediction_histogram": [
+      702,
+      90
+    ]
+  },
+  {
+    "subject_id": "50",
+    "fold_id": 4,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.2935569482834933,
+    "accuracy": 0.8977272727272727,
+    "balanced_accuracy": 0.7386363636363636,
+    "confusion_matrix": [
+      [
+        645,
+        15
+      ],
+      [
+        66,
+        66
+      ]
+    ],
+    "prediction_histogram": [
+      711,
+      81
+    ]
+  },
+  {
+    "subject_id": "50",
+    "fold_id": 5,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.2641467018646397,
+    "accuracy": 0.88510101010101,
+    "balanced_accuracy": 0.7401515151515151,
+    "confusion_matrix": [
+      [
+        632,
+        28
+      ],
+      [
+        63,
+        69
+      ]
+    ],
+    "prediction_histogram": [
+      695,
+      97
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 1,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.3825424331407818,
+    "accuracy": 0.8497474747474747,
+    "balanced_accuracy": 0.5916666666666667,
+    "confusion_matrix": [
+      [
+        646,
+        14
+      ],
+      [
+        105,
+        27
+      ]
+    ],
+    "prediction_histogram": [
+      751,
+      41
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 2,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.3551112441610463,
+    "accuracy": 0.8434343434343434,
+    "balanced_accuracy": 0.5909090909090909,
+    "confusion_matrix": [
+      [
+        640,
+        20
+      ],
+      [
+        104,
+        28
+      ]
+    ],
+    "prediction_histogram": [
+      744,
+      48
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 3,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.3749370778020624,
+    "accuracy": 0.8484848484848485,
+    "balanced_accuracy": 0.6060606060606061,
+    "confusion_matrix": [
+      [
+        640,
+        20
+      ],
+      [
+        100,
+        32
+      ]
+    ],
+    "prediction_histogram": [
+      740,
+      52
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 4,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.38133645414930034,
+    "accuracy": 0.8522727272727273,
+    "balanced_accuracy": 0.6022727272727273,
+    "confusion_matrix": [
+      [
+        645,
+        15
+      ],
+      [
+        102,
+        30
+      ]
+    ],
+    "prediction_histogram": [
+      747,
+      45
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 5,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.35340258319295165,
+    "accuracy": 0.8547979797979798,
+    "balanced_accuracy": 0.6310606060606061,
+    "confusion_matrix": [
+      [
+        638,
+        22
+      ],
+      [
+        93,
+        39
+      ]
+    ],
+    "prediction_histogram": [
+      731,
+      61
+    ]
+  },
+  {
+    "subject_id": "52",
+    "fold_id": 1,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.22913218287263382,
+    "accuracy": 0.9065656565656566,
+    "balanced_accuracy": 0.7803030303030303,
+    "confusion_matrix": [
+      [
+        640,
+        20
+      ],
+      [
+        54,
+        78
+      ]
+    ],
+    "prediction_histogram": [
+      694,
+      98
+    ]
+  },
+  {
+    "subject_id": "52",
+    "fold_id": 2,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.24392115872365067,
+    "accuracy": 0.9255050505050505,
+    "balanced_accuracy": 0.831060606060606,
+    "confusion_matrix": [
+      [
+        642,
+        18
+      ],
+      [
+        41,
+        91
+      ]
+    ],
+    "prediction_histogram": [
+      683,
+      109
+    ]
+  },
+  {
+    "subject_id": "52",
+    "fold_id": 3,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.2050424850889561,
+    "accuracy": 0.9179292929292929,
+    "balanced_accuracy": 0.8053030303030303,
+    "confusion_matrix": [
+      [
+        643,
+        17
+      ],
+      [
+        48,
+        84
+      ]
+    ],
+    "prediction_histogram": [
+      691,
+      101
+    ]
+  },
+  {
+    "subject_id": "52",
+    "fold_id": 4,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.2287267688132987,
+    "accuracy": 0.8977272727272727,
+    "balanced_accuracy": 0.768939393939394,
+    "confusion_matrix": [
+      [
+        635,
+        25
+      ],
+      [
+        56,
+        76
+      ]
+    ],
+    "prediction_histogram": [
+      691,
+      101
+    ]
+  },
+  {
+    "subject_id": "52",
+    "fold_id": 5,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.209631218660141,
+    "accuracy": 0.9116161616161617,
+    "balanced_accuracy": 0.8136363636363636,
+    "confusion_matrix": [
+      [
+        634,
+        26
+      ],
+      [
+        44,
+        88
+      ]
+    ],
+    "prediction_histogram": [
+      678,
+      114
+    ]
+  },
+  {
+    "subject_id": "53",
+    "fold_id": 1,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.22388691941646371,
+    "accuracy": 0.9002525252525253,
+    "balanced_accuracy": 0.7916666666666667,
+    "confusion_matrix": [
+      [
+        630,
+        30
+      ],
+      [
+        49,
+        83
+      ]
+    ],
+    "prediction_histogram": [
+      679,
+      113
+    ]
+  },
+  {
+    "subject_id": "53",
+    "fold_id": 2,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.2217601136266245,
+    "accuracy": 0.9078282828282829,
+    "balanced_accuracy": 0.7871212121212121,
+    "confusion_matrix": [
+      [
+        639,
+        21
+      ],
+      [
+        52,
+        80
+      ]
+    ],
+    "prediction_histogram": [
+      691,
+      101
+    ]
+  },
+  {
+    "subject_id": "53",
+    "fold_id": 3,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.25189416519474905,
+    "accuracy": 0.8964646464646465,
+    "balanced_accuracy": 0.7742424242424242,
+    "confusion_matrix": [
+      [
+        632,
+        28
+      ],
+      [
+        54,
+        78
+      ]
+    ],
+    "prediction_histogram": [
+      686,
+      106
+    ]
+  },
+  {
+    "subject_id": "53",
+    "fold_id": 4,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.2173022163403147,
+    "accuracy": 0.9242424242424242,
+    "balanced_accuracy": 0.8181818181818181,
+    "confusion_matrix": [
+      [
+        645,
+        15
+      ],
+      [
+        45,
+        87
+      ]
+    ],
+    "prediction_histogram": [
+      690,
+      102
+    ]
+  },
+  {
+    "subject_id": "53",
+    "fold_id": 5,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.2396006505196027,
+    "accuracy": 0.9217171717171717,
+    "balanced_accuracy": 0.8378787878787879,
+    "confusion_matrix": [
+      [
+        636,
+        24
+      ],
+      [
+        38,
+        94
+      ]
+    ],
+    "prediction_histogram": [
+      674,
+      118
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 1,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.2739254922520851,
+    "accuracy": 0.8952020202020202,
+    "balanced_accuracy": 0.7795454545454545,
+    "confusion_matrix": [
+      [
+        629,
+        31
+      ],
+      [
+        52,
+        80
+      ]
+    ],
+    "prediction_histogram": [
+      681,
+      111
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 2,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.2600097171139642,
+    "accuracy": 0.8926767676767676,
+    "balanced_accuracy": 0.7598484848484848,
+    "confusion_matrix": [
+      [
+        633,
+        27
+      ],
+      [
+        58,
+        74
+      ]
+    ],
+    "prediction_histogram": [
+      691,
+      101
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 3,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.26169030636266954,
+    "accuracy": 0.8926767676767676,
+    "balanced_accuracy": 0.7628787878787879,
+    "confusion_matrix": [
+      [
+        632,
+        28
+      ],
+      [
+        57,
+        75
+      ]
+    ],
+    "prediction_histogram": [
+      689,
+      103
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 4,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.28734720486571735,
+    "accuracy": 0.8775252525252525,
+    "balanced_accuracy": 0.7386363636363636,
+    "confusion_matrix": [
+      [
+        625,
+        35
+      ],
+      [
+        62,
+        70
+      ]
+    ],
+    "prediction_histogram": [
+      687,
+      105
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 5,
+    "n_train": 2534,
+    "n_val": 634,
+    "n_test": 792,
+    "train_class_counts": [
+      2112,
+      422
+    ],
+    "val_class_counts": [
+      528,
+      106
+    ],
+    "test_class_counts": [
+      660,
+      132
+    ],
+    "best_valid_loss": 0.2751723455517826,
+    "accuracy": 0.875,
+    "balanced_accuracy": 0.7340909090909091,
+    "confusion_matrix": [
+      [
+        624,
+        36
+      ],
+      [
+        63,
+        69
+      ]
+    ],
+    "prediction_histogram": [
+      687,
+      105
+    ]
+  }
+]
