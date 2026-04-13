@@ -1,0 +1,15 @@
+{
+  "n_channels": 62,
+  "n_tok_per_channel": 15,
+  "head_diameter": 0.20667175948619843,
+  "mask_diameter_percent": 60.0,
+  "mask_diameter": 0.12400305569171904,
+  "mask_radius": 0.06200152784585952,
+  "masked_channels_mean": 8.37,
+  "masked_channels_min": 5,
+  "masked_channels_max": 12,
+  "masked_tokens_mean": 125.55,
+  "masked_tokens_min": 75,
+  "masked_tokens_max": 180,
+  "n_samples": 200
+}
