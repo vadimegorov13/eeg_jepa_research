@@ -1,0 +1,1745 @@
+[2026-04-15 00:02:15] Using device: cpu
+[2026-04-15 00:02:15] Seed control disabled (CONFIG['set_seed'] = False)
+[2026-04-15 00:02:15] ======================================================================
+[2026-04-15 00:02:15] CONFIGURATION
+[2026-04-15 00:02:15] ======================================================================
+[2026-04-15 00:02:15]   artifact_dir: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning
+[2026-04-15 00:02:15]   bandpass_high: 40.0
+[2026-04-15 00:02:15]   bandpass_low: 0.5
+[2026-04-15 00:02:15]   batch_size: 32
+[2026-04-15 00:02:15]   convert_to_uV: True
+[2026-04-15 00:02:15]   cv_folds: 5
+[2026-04-15 00:02:15]   early_stopping_patience: 50
+[2026-04-15 00:02:15]   learning_rate: None
+[2026-04-15 00:02:15]   model_name: SignalJEPA_PostLocal
+[2026-04-15 00:02:15]   n_epochs: 5000
+[2026-04-15 00:02:15]   paradigm: SSVEP
+[2026-04-15 00:02:15]   pretrained_url: https://huggingface.co/braindecode/SignalJEPA/resolve/main/signal-jepa_16s-60_adeuwv4s.pth
+[2026-04-15 00:02:15]   seed: None
+[2026-04-15 00:02:15]   set_eeg_reference: True
+[2026-04-15 00:02:15]   set_seed: False
+[2026-04-15 00:02:15]   set_standard_montage: True
+[2026-04-15 00:02:15]   sfreq: 128
+[2026-04-15 00:02:15]   strategy: full
+[2026-04-15 00:02:15]   subjects_to_use: None
+[2026-04-15 00:02:15]   val_split: 0.2
+[2026-04-15 00:02:15]   warmup_epochs: 10
+[2026-04-15 00:02:15] ======================================================================
+[2026-04-15 00:02:15] Config saved to: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260415_0002_33e6e683/config.json
+[2026-04-15 00:02:15] Epoch window configuration:
+[2026-04-15 00:02:15]   Target sfreq:                128 Hz
+[2026-04-15 00:02:15]   Target duration:             4.190000 s
+[2026-04-15 00:02:15]   Window samples (rounded):    536
+[2026-04-15 00:02:15]   Base trial samples (4.0 s):  512
+[2026-04-15 00:02:15]   Trial stop offset samples:   24
+[2026-04-15 00:02:15]   Effective window duration:   4.187500 s
+[2026-04-15 00:02:15] Dataset code: Lee2019-SSVEP
+[2026-04-15 00:02:15] Subjects Total: 54
+[2026-04-15 00:02:15] Events: {'12.0': 1, '8.57': 2, '6.67': 3, '5.45': 4}
+[2026-04-15 00:02:15] Interval: [0.0, 4.0]
+[2026-04-15 00:02:15] Paradigm: ssvep
+[2026-04-15 00:02:15] Selected subjects: [48, 49, 50, 51, 52, 53, 54]
+[2026-04-15 00:02:15] Expected evaluation folds: 35
+
+[2026-04-15 00:02:15] Building MOABBDataset for Lee2019_SSVEP...
+[2026-04-15 00:03:20] MOABBDataset recordings loaded: 14
+[2026-04-15 00:03:20] Discovered annotation descriptions (first recording): [np.str_('12.0'), np.str_('5.45'), np.str_('6.67'), np.str_('8.57')]
+[2026-04-15 00:03:20] Dataset event_id mapping: {'12.0': 1, '8.57': 2, '6.67': 3, '5.45': 4}
+[2026-04-15 00:03:20] Label map (event_code -> class_index): {1: 0, 2: 1, 3: 2, 4: 3}
+[2026-04-15 00:03:20] Applying Braindecode preprocessors to MOABBDataset...
+[2026-04-15 00:04:07] Preprocessing complete.
+
+[2026-04-15 00:04:07] Post-preprocessing validation
+[2026-04-15 00:04:07]   Recordings in DATASET: 14
+[2026-04-15 00:04:07]   Unique subject IDs:    ['48', '49', '50', '51', '52', '53', '54']
+[2026-04-15 00:04:07]   sfreq (first rec):     128.0 Hz
+[2026-04-15 00:04:07]   EEG channel count:     62
+[2026-04-15 00:04:07]   First 10 channels:     ['Fp1', 'Fp2', 'F7', 'F3', 'Fz', 'F4', 'F8', 'FC5', 'FC1', 'FC2']
+[2026-04-15 00:04:07] EEG channel #: 62
+[2026-04-15 00:04:07] First 10 EEG channels: ['Fp1', 'Fp2', 'F7', 'F3', 'Fz', 'F4', 'F8', 'FC5', 'FC1', 'FC2']
+[2026-04-15 00:04:08] Channel-location ranges (x, y, z):
+[2026-04-15 00:04:08]   x: min=-0.087556, max=0.084222, span=0.171778
+[2026-04-15 00:04:08]   y: min=-0.082783, max=0.115346, span=0.198129
+[2026-04-15 00:04:08]   z: min=-0.013156, max=0.141549, span=0.154705
+[2026-04-15 00:04:08] Requested window samples: 536
+[2026-04-15 00:04:08] Base trial samples:       512
+[2026-04-15 00:04:08] Stop offset samples:      24
+[2026-04-15 00:04:08] Global class counts: [350, 350, 350, 350]
+[2026-04-15 00:04:08] Chance level (4-class): 0.25
+[2026-04-15 00:04:08] One window shape: (62, 536)
+[2026-04-15 00:04:08] One window label: 2
+[2026-04-15 00:04:08] Window sample length expected=536, got=536
+[2026-04-15 00:04:08] Subjects in window split: [48, 49, 50, 51, 52, 53, 54]
+[2026-04-15 00:04:08] Summarizing per-subject windows...
+[2026-04-15 00:04:08]   Subject 48: n_windows=200, window_shape=(62, 536), class_counts=[50, 50, 50, 50]
+[2026-04-15 00:04:08]   Subject 49: n_windows=200, window_shape=(62, 536), class_counts=[50, 50, 50, 50]
+[2026-04-15 00:04:08]   Subject 50: n_windows=200, window_shape=(62, 536), class_counts=[50, 50, 50, 50]
+[2026-04-15 00:04:08]   Subject 51: n_windows=200, window_shape=(62, 536), class_counts=[50, 50, 50, 50]
+[2026-04-15 00:04:08]   Subject 52: n_windows=200, window_shape=(62, 536), class_counts=[50, 50, 50, 50]
+[2026-04-15 00:04:08]   Subject 53: n_windows=200, window_shape=(62, 536), class_counts=[50, 50, 50, 50]
+[2026-04-15 00:04:08]   Subject 54: n_windows=200, window_shape=(62, 536), class_counts=[50, 50, 50, 50]
+[2026-04-15 00:04:08]    subject_id  n_windows  n_channels  n_times      class_counts
+0          48        200          62      536  [50, 50, 50, 50]
+1          49        200          62      536  [50, 50, 50, 50]
+2          50        200          62      536  [50, 50, 50, 50]
+3          51        200          62      536  [50, 50, 50, 50]
+4          52        200          62      536  [50, 50, 50, 50]
+5          53        200          62      536  [50, 50, 50, 50]
+6          54        200          62      536  [50, 50, 50, 50]
+[2026-04-15 00:04:08] Window validation summary:
+[2026-04-15 00:04:08]   Subject 48: n_windows=200 class_counts=[50, 50, 50, 50]
+[2026-04-15 00:04:08]   Subject 49: n_windows=200 class_counts=[50, 50, 50, 50]
+[2026-04-15 00:04:08]   Subject 50: n_windows=200 class_counts=[50, 50, 50, 50]
+[2026-04-15 00:04:08]   Subject 51: n_windows=200 class_counts=[50, 50, 50, 50]
+[2026-04-15 00:04:08]   Subject 52: n_windows=200 class_counts=[50, 50, 50, 50]
+[2026-04-15 00:04:08]   Subject 53: n_windows=200 class_counts=[50, 50, 50, 50]
+[2026-04-15 00:04:08]   Subject 54: n_windows=200 class_counts=[50, 50, 50, 50]
+
+[2026-04-15 00:04:08] Validated sampling rate target: 128 Hz
+[2026-04-15 00:04:08] Validated window sample count:   536
+[2026-04-15 00:04:08] Validated window duration:       4.1875 s
+[2026-04-15 00:04:08] Validated channel count:         62
+[2026-04-15 00:04:08] Total windows retained:          1400
+[2026-04-15 00:04:08] Preprocessing sanity checks:
+[2026-04-15 00:04:08]   One sample label: 2
+[2026-04-15 00:04:08]   One sample shape: (62, 536)
+[2026-04-15 00:04:08]   Mean(abs(signal)): 3.194527e+00
+[2026-04-15 00:04:08]   Mean(signal):      6.428233e-09
+[2026-04-15 00:04:08]   Std(signal):       4.182395e+00
+[2026-04-15 00:04:08] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:04:08] Building model with input window duration: 4.1875 s
+[2026-04-15 00:04:08] SignalJEPA_PostLocal instantiated successfully.
+[2026-04-15 00:04:08]   Total parameters:     18,192
+[2026-04-15 00:04:08]   Trainable parameters: 18,192
+[2026-04-15 00:04:08] ======================================================================================================================================================
+Layer (type (var_name):depth-idx)                  Input Shape               Output Shape              Param #                   Kernel Shape
+======================================================================================================================================================
+SignalJEPA_PostLocal (SignalJEPA_PostLocal)        [1, 62, 536]              [1, 4]                    --                        --
+├─_ConvFeatureEncoder (feature_encoder): 1-1       [1, 62, 536]              [1, 248, 64]              --                        --
+│    └─Rearrange (0): 2-1                          [1, 62, 536]              [62, 1, 536]              --                        --
+│    └─Sequential (1): 2-2                         [62, 1, 536]              [62, 8, 64]               --                        --
+│    │    └─Conv1d (0): 3-1                        [62, 1, 536]              [62, 8, 64]               256                       [32]
+│    │    └─Dropout (1): 3-2                       [62, 8, 64]               [62, 8, 64]               --                        --
+│    │    └─GroupNorm (2): 3-3                     [62, 8, 64]               [62, 8, 64]               16                        --
+│    │    └─GELU (3): 3-4                          [62, 8, 64]               [62, 8, 64]               --                        --
+│    └─Sequential (2): 2-3                         [62, 8, 64]               [62, 16, 32]              --                        --
+│    │    └─Conv1d (0): 3-5                        [62, 8, 64]               [62, 16, 32]              256                       [2]
+│    │    └─Dropout (1): 3-6                       [62, 16, 32]              [62, 16, 32]              --                        --
+│    │    └─GELU (2): 3-7                          [62, 16, 32]              [62, 16, 32]              --                        --
+│    └─Sequential (3): 2-4                         [62, 16, 32]              [62, 32, 16]              --                        --
+│    │    └─Conv1d (0): 3-8                        [62, 16, 32]              [62, 32, 16]              1,024                     [2]
+│    │    └─Dropout (1): 3-9                       [62, 32, 16]              [62, 32, 16]              --                        --
+│    │    └─GELU (2): 3-10                         [62, 32, 16]              [62, 32, 16]              --                        --
+│    └─Sequential (4): 2-5                         [62, 32, 16]              [62, 64, 8]               --                        --
+│    │    └─Conv1d (0): 3-11                       [62, 32, 16]              [62, 64, 8]               4,096                     [2]
+│    │    └─Dropout (1): 3-12                      [62, 64, 8]               [62, 64, 8]               --                        --
+│    │    └─GELU (2): 3-13                         [62, 64, 8]               [62, 64, 8]               --                        --
+│    └─Sequential (5): 2-6                         [62, 64, 8]               [62, 64, 4]               --                        --
+│    │    └─Conv1d (0): 3-14                       [62, 64, 8]               [62, 64, 4]               8,192                     [2]
+│    │    └─Dropout (1): 3-15                      [62, 64, 4]               [62, 64, 4]               --                        --
+│    │    └─GELU (2): 3-16                         [62, 64, 4]               [62, 64, 4]               --                        --
+│    └─Rearrange (6): 2-7                          [62, 64, 4]               [1, 248, 64]              --                        --
+├─Sequential (final_layer): 1-2                    [1, 248, 64]              [1, 4]                    --                        --
+│    └─Rearrange (unflatten_tokens): 2-8           [1, 248, 64]              [1, 1, 62, 4, 64]         --                        --
+│    └─Conv3d (spat_conv): 2-9                     [1, 1, 62, 4, 64]         [1, 4, 1, 4, 64]          252                       [62, 1, 1]
+│    └─Flatten (flatten): 2-10                     [1, 4, 1, 4, 64]          [1, 1024]                 --                        --
+│    └─Linear (linear): 2-11                       [1, 1024]                 [1, 4]                    4,100                     --
+======================================================================================================================================================
+Total params: 18,192
+Trainable params: 18,192
+Non-trainable params: 0
+Total mult-adds (Units.MEGABYTES): 6.67
+======================================================================================================================================================
+Input size (MB): 0.13
+Forward/backward pass size (MB): 1.40
+Params size (MB): 0.07
+Estimated Total Size (MB): 1.61
+======================================================================================================================================================
+[2026-04-15 00:04:08] Initializing from 16s-60 pretrained checkpoint (Hugging Face):
+[2026-04-15 00:04:08]   https://huggingface.co/braindecode/SignalJEPA/resolve/main/signal-jepa_16s-60_adeuwv4s.pth
+[2026-04-15 00:04:09]   Downloaded 179 keys
+[2026-04-15 00:04:09] ======================================================================
+[2026-04-15 00:04:09] STARTING CROSS-VALIDATION
+[2026-04-15 00:04:09] ======================================================================
+[2026-04-15 00:04:09] Subjects:      [48, 49, 50, 51, 52, 53, 54]
+[2026-04-15 00:04:09] Paradigm:      SSVEP
+[2026-04-15 00:04:09] Model:         SignalJEPA_PostLocal
+[2026-04-15 00:04:09] Strategy:      full
+[2026-04-15 00:04:09] Warm-up epochs:10
+[2026-04-15 00:04:09] CV folds:      5
+[2026-04-15 00:04:09] Batch size:    32
+[2026-04-15 00:04:09] Max epochs:    5000
+[2026-04-15 00:04:09] Device:        cpu
+[2026-04-15 00:04:09] Seed control:  False
+[2026-04-15 00:04:09] Base seed:     None
+[2026-04-15 00:04:09] ======================================================================
+
+[2026-04-15 00:04:09] Subject 48: 200 windows | class_counts=[50, 50, 50, 50]
+[2026-04-15 00:04:09]   Fold 1 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:04:09]   Fold 2 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:04:09]   Fold 3 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:04:09]   Fold 4 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:04:09]   Fold 5 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:04:09]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:04:09]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:04:09]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:04:09] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:04:09] Building model with input window duration: 4.1875 s
+[2026-04-15 00:04:09] Pretrained weight loading:
+[2026-04-15 00:04:09]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:04:09]   Downloaded keys:       179
+[2026-04-15 00:04:09]   Keys selected:         7
+[2026-04-15 00:04:09]   Keys dropped:          172
+[2026-04-15 00:04:09]   Missing keys:          4
+[2026-04-15 00:04:09]   Unexpected keys:       0
+[2026-04-15 00:04:09]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:04:09]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:04:09]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:04:09]     Fine-tune strategy: full
+[2026-04-15 00:04:09]     Warm-up active:     True
+[2026-04-15 00:04:09]     Warm-up epochs:     10
+[2026-04-15 00:04:09]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:04:09]     Phase 1 (warmup):
+[2026-04-15 00:04:09]       Trainable groups: ['final_layer.']
+[2026-04-15 00:04:09]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:04:09]         - final_layer.spat_conv.weight
+[2026-04-15 00:04:09]         - final_layer.spat_conv.bias
+[2026-04-15 00:04:09]         - final_layer.linear.weight
+[2026-04-15 00:04:09]         - final_layer.linear.bias
+[2026-04-15 00:04:09]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:04:10]     Phase 2 (full):
+[2026-04-15 00:04:10]       Trainable groups: ['all_parameters']
+[2026-04-15 00:04:10]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:04:10]         - feature_encoder.1.0.weight
+[2026-04-15 00:04:10]         - feature_encoder.1.2.weight
+[2026-04-15 00:04:10]         - feature_encoder.1.2.bias
+[2026-04-15 00:04:10]         - feature_encoder.2.0.weight
+[2026-04-15 00:04:10]         - feature_encoder.3.0.weight
+[2026-04-15 00:04:10]         - feature_encoder.4.0.weight
+[2026-04-15 00:04:10]         - feature_encoder.5.0.weight
+[2026-04-15 00:04:10]         - final_layer.spat_conv.weight
+[2026-04-15 00:04:10]         - final_layer.spat_conv.bias
+[2026-04-15 00:04:10]         - final_layer.linear.weight
+[2026-04-15 00:04:10]         - ... (1 more)
+[2026-04-15 00:07:06]   Fold 1/5 | best_epoch=1432 | stop=5000 | val_loss=0.0913 | acc=1.0000 | bal_acc=1.0000
+[2026-04-15 00:07:06]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:07:06]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:07:06]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:07:06] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:07:06] Building model with input window duration: 4.1875 s
+[2026-04-15 00:07:06] Pretrained weight loading:
+[2026-04-15 00:07:06]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:07:06]   Downloaded keys:       179
+[2026-04-15 00:07:06]   Keys selected:         7
+[2026-04-15 00:07:06]   Keys dropped:          172
+[2026-04-15 00:07:06]   Missing keys:          4
+[2026-04-15 00:07:06]   Unexpected keys:       0
+[2026-04-15 00:07:06]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:07:06]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:07:06]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:07:06]     Fine-tune strategy: full
+[2026-04-15 00:07:06]     Warm-up active:     True
+[2026-04-15 00:07:06]     Warm-up epochs:     10
+[2026-04-15 00:07:06]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:07:06]     Phase 1 (warmup):
+[2026-04-15 00:07:06]       Trainable groups: ['final_layer.']
+[2026-04-15 00:07:06]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:07:06]         - final_layer.spat_conv.weight
+[2026-04-15 00:07:06]         - final_layer.spat_conv.bias
+[2026-04-15 00:07:06]         - final_layer.linear.weight
+[2026-04-15 00:07:06]         - final_layer.linear.bias
+[2026-04-15 00:07:06]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:07:06]     Phase 2 (full):
+[2026-04-15 00:07:06]       Trainable groups: ['all_parameters']
+[2026-04-15 00:07:06]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:07:06]         - feature_encoder.1.0.weight
+[2026-04-15 00:07:06]         - feature_encoder.1.2.weight
+[2026-04-15 00:07:06]         - feature_encoder.1.2.bias
+[2026-04-15 00:07:06]         - feature_encoder.2.0.weight
+[2026-04-15 00:07:06]         - feature_encoder.3.0.weight
+[2026-04-15 00:07:06]         - feature_encoder.4.0.weight
+[2026-04-15 00:07:06]         - feature_encoder.5.0.weight
+[2026-04-15 00:07:06]         - final_layer.spat_conv.weight
+[2026-04-15 00:07:06]         - final_layer.spat_conv.bias
+[2026-04-15 00:07:06]         - final_layer.linear.weight
+[2026-04-15 00:07:06]         - ... (1 more)
+[2026-04-15 00:10:05]   Fold 2/5 | best_epoch=12 | stop=5000 | val_loss=0.3497 | acc=0.8500 | bal_acc=0.8500
+[2026-04-15 00:10:05]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:10:05]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:10:05]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:10:05] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:10:05] Building model with input window duration: 4.1875 s
+[2026-04-15 00:10:05] Pretrained weight loading:
+[2026-04-15 00:10:05]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:10:05]   Downloaded keys:       179
+[2026-04-15 00:10:05]   Keys selected:         7
+[2026-04-15 00:10:05]   Keys dropped:          172
+[2026-04-15 00:10:05]   Missing keys:          4
+[2026-04-15 00:10:05]   Unexpected keys:       0
+[2026-04-15 00:10:05]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:10:05]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:10:05]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:10:05]     Fine-tune strategy: full
+[2026-04-15 00:10:05]     Warm-up active:     True
+[2026-04-15 00:10:05]     Warm-up epochs:     10
+[2026-04-15 00:10:05]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:10:05]     Phase 1 (warmup):
+[2026-04-15 00:10:05]       Trainable groups: ['final_layer.']
+[2026-04-15 00:10:05]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:10:05]         - final_layer.spat_conv.weight
+[2026-04-15 00:10:05]         - final_layer.spat_conv.bias
+[2026-04-15 00:10:05]         - final_layer.linear.weight
+[2026-04-15 00:10:05]         - final_layer.linear.bias
+[2026-04-15 00:10:05]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:10:06]     Phase 2 (full):
+[2026-04-15 00:10:06]       Trainable groups: ['all_parameters']
+[2026-04-15 00:10:06]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:10:06]         - feature_encoder.1.0.weight
+[2026-04-15 00:10:06]         - feature_encoder.1.2.weight
+[2026-04-15 00:10:06]         - feature_encoder.1.2.bias
+[2026-04-15 00:10:06]         - feature_encoder.2.0.weight
+[2026-04-15 00:10:06]         - feature_encoder.3.0.weight
+[2026-04-15 00:10:06]         - feature_encoder.4.0.weight
+[2026-04-15 00:10:06]         - feature_encoder.5.0.weight
+[2026-04-15 00:10:06]         - final_layer.spat_conv.weight
+[2026-04-15 00:10:06]         - final_layer.spat_conv.bias
+[2026-04-15 00:10:06]         - final_layer.linear.weight
+[2026-04-15 00:10:06]         - ... (1 more)
+[2026-04-15 00:13:04]   Fold 3/5 | best_epoch=21 | stop=5000 | val_loss=0.1440 | acc=0.9250 | bal_acc=0.9250
+[2026-04-15 00:13:04]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:13:04]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:13:04]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:13:04] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:13:04] Building model with input window duration: 4.1875 s
+[2026-04-15 00:13:04] Pretrained weight loading:
+[2026-04-15 00:13:04]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:13:04]   Downloaded keys:       179
+[2026-04-15 00:13:04]   Keys selected:         7
+[2026-04-15 00:13:04]   Keys dropped:          172
+[2026-04-15 00:13:04]   Missing keys:          4
+[2026-04-15 00:13:04]   Unexpected keys:       0
+[2026-04-15 00:13:04]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:13:04]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:13:04]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:13:04]     Fine-tune strategy: full
+[2026-04-15 00:13:04]     Warm-up active:     True
+[2026-04-15 00:13:04]     Warm-up epochs:     10
+[2026-04-15 00:13:04]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:13:04]     Phase 1 (warmup):
+[2026-04-15 00:13:04]       Trainable groups: ['final_layer.']
+[2026-04-15 00:13:04]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:13:04]         - final_layer.spat_conv.weight
+[2026-04-15 00:13:04]         - final_layer.spat_conv.bias
+[2026-04-15 00:13:04]         - final_layer.linear.weight
+[2026-04-15 00:13:04]         - final_layer.linear.bias
+[2026-04-15 00:13:04]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:13:05]     Phase 2 (full):
+[2026-04-15 00:13:05]       Trainable groups: ['all_parameters']
+[2026-04-15 00:13:05]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:13:05]         - feature_encoder.1.0.weight
+[2026-04-15 00:13:05]         - feature_encoder.1.2.weight
+[2026-04-15 00:13:05]         - feature_encoder.1.2.bias
+[2026-04-15 00:13:05]         - feature_encoder.2.0.weight
+[2026-04-15 00:13:05]         - feature_encoder.3.0.weight
+[2026-04-15 00:13:05]         - feature_encoder.4.0.weight
+[2026-04-15 00:13:05]         - feature_encoder.5.0.weight
+[2026-04-15 00:13:05]         - final_layer.spat_conv.weight
+[2026-04-15 00:13:05]         - final_layer.spat_conv.bias
+[2026-04-15 00:13:05]         - final_layer.linear.weight
+[2026-04-15 00:13:05]         - ... (1 more)
+[2026-04-15 00:16:03]   Fold 4/5 | best_epoch=3742 | stop=5000 | val_loss=0.0021 | acc=0.9500 | bal_acc=0.9500
+[2026-04-15 00:16:03]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:16:03]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:16:03]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:16:03] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:16:03] Building model with input window duration: 4.1875 s
+[2026-04-15 00:16:03] Pretrained weight loading:
+[2026-04-15 00:16:03]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:16:03]   Downloaded keys:       179
+[2026-04-15 00:16:03]   Keys selected:         7
+[2026-04-15 00:16:03]   Keys dropped:          172
+[2026-04-15 00:16:03]   Missing keys:          4
+[2026-04-15 00:16:03]   Unexpected keys:       0
+[2026-04-15 00:16:03]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:16:03]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:16:03]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:16:03]     Fine-tune strategy: full
+[2026-04-15 00:16:03]     Warm-up active:     True
+[2026-04-15 00:16:03]     Warm-up epochs:     10
+[2026-04-15 00:16:03]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:16:03]     Phase 1 (warmup):
+[2026-04-15 00:16:03]       Trainable groups: ['final_layer.']
+[2026-04-15 00:16:03]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:16:03]         - final_layer.spat_conv.weight
+[2026-04-15 00:16:03]         - final_layer.spat_conv.bias
+[2026-04-15 00:16:03]         - final_layer.linear.weight
+[2026-04-15 00:16:03]         - final_layer.linear.bias
+[2026-04-15 00:16:03]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:16:03]     Phase 2 (full):
+[2026-04-15 00:16:03]       Trainable groups: ['all_parameters']
+[2026-04-15 00:16:03]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:16:03]         - feature_encoder.1.0.weight
+[2026-04-15 00:16:03]         - feature_encoder.1.2.weight
+[2026-04-15 00:16:03]         - feature_encoder.1.2.bias
+[2026-04-15 00:16:03]         - feature_encoder.2.0.weight
+[2026-04-15 00:16:03]         - feature_encoder.3.0.weight
+[2026-04-15 00:16:03]         - feature_encoder.4.0.weight
+[2026-04-15 00:16:03]         - feature_encoder.5.0.weight
+[2026-04-15 00:16:03]         - final_layer.spat_conv.weight
+[2026-04-15 00:16:03]         - final_layer.spat_conv.bias
+[2026-04-15 00:16:03]         - final_layer.linear.weight
+[2026-04-15 00:16:03]         - ... (1 more)
+[2026-04-15 00:19:02]   Fold 5/5 | best_epoch=5000 | stop=5000 | val_loss=0.0051 | acc=0.9500 | bal_acc=0.9500
+[2026-04-15 00:19:02]   Subject 48 summary: acc=0.9350±0.0490  bal_acc=0.9350±0.0490
+
+[2026-04-15 00:19:02] Subject 49: 200 windows | class_counts=[50, 50, 50, 50]
+[2026-04-15 00:19:02]   Fold 1 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:19:02]   Fold 2 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:19:02]   Fold 3 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:19:02]   Fold 4 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:19:02]   Fold 5 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:19:02]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:19:02]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:19:02]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:19:02] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:19:02] Building model with input window duration: 4.1875 s
+[2026-04-15 00:19:02] Pretrained weight loading:
+[2026-04-15 00:19:02]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:19:02]   Downloaded keys:       179
+[2026-04-15 00:19:02]   Keys selected:         7
+[2026-04-15 00:19:02]   Keys dropped:          172
+[2026-04-15 00:19:02]   Missing keys:          4
+[2026-04-15 00:19:02]   Unexpected keys:       0
+[2026-04-15 00:19:02]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:19:02]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:19:02]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:19:02]     Fine-tune strategy: full
+[2026-04-15 00:19:02]     Warm-up active:     True
+[2026-04-15 00:19:02]     Warm-up epochs:     10
+[2026-04-15 00:19:02]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:19:02]     Phase 1 (warmup):
+[2026-04-15 00:19:02]       Trainable groups: ['final_layer.']
+[2026-04-15 00:19:02]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:19:02]         - final_layer.spat_conv.weight
+[2026-04-15 00:19:02]         - final_layer.spat_conv.bias
+[2026-04-15 00:19:02]         - final_layer.linear.weight
+[2026-04-15 00:19:02]         - final_layer.linear.bias
+[2026-04-15 00:19:02]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:19:02]     Phase 2 (full):
+[2026-04-15 00:19:02]       Trainable groups: ['all_parameters']
+[2026-04-15 00:19:02]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:19:02]         - feature_encoder.1.0.weight
+[2026-04-15 00:19:02]         - feature_encoder.1.2.weight
+[2026-04-15 00:19:02]         - feature_encoder.1.2.bias
+[2026-04-15 00:19:02]         - feature_encoder.2.0.weight
+[2026-04-15 00:19:02]         - feature_encoder.3.0.weight
+[2026-04-15 00:19:02]         - feature_encoder.4.0.weight
+[2026-04-15 00:19:02]         - feature_encoder.5.0.weight
+[2026-04-15 00:19:02]         - final_layer.spat_conv.weight
+[2026-04-15 00:19:02]         - final_layer.spat_conv.bias
+[2026-04-15 00:19:02]         - final_layer.linear.weight
+[2026-04-15 00:19:02]         - ... (1 more)
+[2026-04-15 00:21:59]   Fold 1/5 | best_epoch=12 | stop=5000 | val_loss=0.6568 | acc=0.8500 | bal_acc=0.8500
+[2026-04-15 00:22:00]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:22:00]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:22:00]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:22:00] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:22:00] Building model with input window duration: 4.1875 s
+[2026-04-15 00:22:00] Pretrained weight loading:
+[2026-04-15 00:22:00]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:22:00]   Downloaded keys:       179
+[2026-04-15 00:22:00]   Keys selected:         7
+[2026-04-15 00:22:00]   Keys dropped:          172
+[2026-04-15 00:22:00]   Missing keys:          4
+[2026-04-15 00:22:00]   Unexpected keys:       0
+[2026-04-15 00:22:00]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:22:00]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:22:00]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:22:00]     Fine-tune strategy: full
+[2026-04-15 00:22:00]     Warm-up active:     True
+[2026-04-15 00:22:00]     Warm-up epochs:     10
+[2026-04-15 00:22:00]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:22:00]     Phase 1 (warmup):
+[2026-04-15 00:22:00]       Trainable groups: ['final_layer.']
+[2026-04-15 00:22:00]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:22:00]         - final_layer.spat_conv.weight
+[2026-04-15 00:22:00]         - final_layer.spat_conv.bias
+[2026-04-15 00:22:00]         - final_layer.linear.weight
+[2026-04-15 00:22:00]         - final_layer.linear.bias
+[2026-04-15 00:22:00]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:22:00]     Phase 2 (full):
+[2026-04-15 00:22:00]       Trainable groups: ['all_parameters']
+[2026-04-15 00:22:00]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:22:00]         - feature_encoder.1.0.weight
+[2026-04-15 00:22:00]         - feature_encoder.1.2.weight
+[2026-04-15 00:22:00]         - feature_encoder.1.2.bias
+[2026-04-15 00:22:00]         - feature_encoder.2.0.weight
+[2026-04-15 00:22:00]         - feature_encoder.3.0.weight
+[2026-04-15 00:22:00]         - feature_encoder.4.0.weight
+[2026-04-15 00:22:00]         - feature_encoder.5.0.weight
+[2026-04-15 00:22:00]         - final_layer.spat_conv.weight
+[2026-04-15 00:22:00]         - final_layer.spat_conv.bias
+[2026-04-15 00:22:00]         - final_layer.linear.weight
+[2026-04-15 00:22:00]         - ... (1 more)
+[2026-04-15 00:24:56]   Fold 2/5 | best_epoch=12 | stop=5000 | val_loss=0.7342 | acc=0.7250 | bal_acc=0.7250
+[2026-04-15 00:24:56]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:24:56]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:24:56]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:24:56] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:24:56] Building model with input window duration: 4.1875 s
+[2026-04-15 00:24:56] Pretrained weight loading:
+[2026-04-15 00:24:56]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:24:56]   Downloaded keys:       179
+[2026-04-15 00:24:56]   Keys selected:         7
+[2026-04-15 00:24:56]   Keys dropped:          172
+[2026-04-15 00:24:56]   Missing keys:          4
+[2026-04-15 00:24:56]   Unexpected keys:       0
+[2026-04-15 00:24:56]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:24:56]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:24:56]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:24:56]     Fine-tune strategy: full
+[2026-04-15 00:24:56]     Warm-up active:     True
+[2026-04-15 00:24:56]     Warm-up epochs:     10
+[2026-04-15 00:24:56]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:24:56]     Phase 1 (warmup):
+[2026-04-15 00:24:56]       Trainable groups: ['final_layer.']
+[2026-04-15 00:24:56]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:24:56]         - final_layer.spat_conv.weight
+[2026-04-15 00:24:56]         - final_layer.spat_conv.bias
+[2026-04-15 00:24:56]         - final_layer.linear.weight
+[2026-04-15 00:24:56]         - final_layer.linear.bias
+[2026-04-15 00:24:56]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:24:56]     Phase 2 (full):
+[2026-04-15 00:24:56]       Trainable groups: ['all_parameters']
+[2026-04-15 00:24:56]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:24:56]         - feature_encoder.1.0.weight
+[2026-04-15 00:24:56]         - feature_encoder.1.2.weight
+[2026-04-15 00:24:56]         - feature_encoder.1.2.bias
+[2026-04-15 00:24:56]         - feature_encoder.2.0.weight
+[2026-04-15 00:24:56]         - feature_encoder.3.0.weight
+[2026-04-15 00:24:56]         - feature_encoder.4.0.weight
+[2026-04-15 00:24:56]         - feature_encoder.5.0.weight
+[2026-04-15 00:24:56]         - final_layer.spat_conv.weight
+[2026-04-15 00:24:56]         - final_layer.spat_conv.bias
+[2026-04-15 00:24:56]         - final_layer.linear.weight
+[2026-04-15 00:24:56]         - ... (1 more)
+[2026-04-15 00:27:51]   Fold 3/5 | best_epoch=12 | stop=5000 | val_loss=1.1625 | acc=0.8250 | bal_acc=0.8250
+[2026-04-15 00:27:51]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:27:51]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:27:51]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:27:51] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:27:51] Building model with input window duration: 4.1875 s
+[2026-04-15 00:27:51] Pretrained weight loading:
+[2026-04-15 00:27:51]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:27:51]   Downloaded keys:       179
+[2026-04-15 00:27:51]   Keys selected:         7
+[2026-04-15 00:27:51]   Keys dropped:          172
+[2026-04-15 00:27:51]   Missing keys:          4
+[2026-04-15 00:27:51]   Unexpected keys:       0
+[2026-04-15 00:27:51]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:27:51]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:27:51]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:27:51]     Fine-tune strategy: full
+[2026-04-15 00:27:51]     Warm-up active:     True
+[2026-04-15 00:27:51]     Warm-up epochs:     10
+[2026-04-15 00:27:51]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:27:51]     Phase 1 (warmup):
+[2026-04-15 00:27:51]       Trainable groups: ['final_layer.']
+[2026-04-15 00:27:51]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:27:51]         - final_layer.spat_conv.weight
+[2026-04-15 00:27:51]         - final_layer.spat_conv.bias
+[2026-04-15 00:27:51]         - final_layer.linear.weight
+[2026-04-15 00:27:51]         - final_layer.linear.bias
+[2026-04-15 00:27:51]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:27:51]     Phase 2 (full):
+[2026-04-15 00:27:51]       Trainable groups: ['all_parameters']
+[2026-04-15 00:27:51]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:27:51]         - feature_encoder.1.0.weight
+[2026-04-15 00:27:51]         - feature_encoder.1.2.weight
+[2026-04-15 00:27:51]         - feature_encoder.1.2.bias
+[2026-04-15 00:27:51]         - feature_encoder.2.0.weight
+[2026-04-15 00:27:51]         - feature_encoder.3.0.weight
+[2026-04-15 00:27:51]         - feature_encoder.4.0.weight
+[2026-04-15 00:27:51]         - feature_encoder.5.0.weight
+[2026-04-15 00:27:51]         - final_layer.spat_conv.weight
+[2026-04-15 00:27:51]         - final_layer.spat_conv.bias
+[2026-04-15 00:27:51]         - final_layer.linear.weight
+[2026-04-15 00:27:51]         - ... (1 more)
+[2026-04-15 00:30:42]   Fold 4/5 | best_epoch=13 | stop=5000 | val_loss=0.6741 | acc=0.8000 | bal_acc=0.8000
+[2026-04-15 00:30:42]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:30:42]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:30:42]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:30:42] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:30:42] Building model with input window duration: 4.1875 s
+[2026-04-15 00:30:42] Pretrained weight loading:
+[2026-04-15 00:30:42]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:30:42]   Downloaded keys:       179
+[2026-04-15 00:30:42]   Keys selected:         7
+[2026-04-15 00:30:42]   Keys dropped:          172
+[2026-04-15 00:30:42]   Missing keys:          4
+[2026-04-15 00:30:42]   Unexpected keys:       0
+[2026-04-15 00:30:42]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:30:42]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:30:42]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:30:42]     Fine-tune strategy: full
+[2026-04-15 00:30:42]     Warm-up active:     True
+[2026-04-15 00:30:42]     Warm-up epochs:     10
+[2026-04-15 00:30:42]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:30:42]     Phase 1 (warmup):
+[2026-04-15 00:30:42]       Trainable groups: ['final_layer.']
+[2026-04-15 00:30:42]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:30:42]         - final_layer.spat_conv.weight
+[2026-04-15 00:30:42]         - final_layer.spat_conv.bias
+[2026-04-15 00:30:42]         - final_layer.linear.weight
+[2026-04-15 00:30:42]         - final_layer.linear.bias
+[2026-04-15 00:30:42]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:30:42]     Phase 2 (full):
+[2026-04-15 00:30:42]       Trainable groups: ['all_parameters']
+[2026-04-15 00:30:42]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:30:42]         - feature_encoder.1.0.weight
+[2026-04-15 00:30:42]         - feature_encoder.1.2.weight
+[2026-04-15 00:30:42]         - feature_encoder.1.2.bias
+[2026-04-15 00:30:42]         - feature_encoder.2.0.weight
+[2026-04-15 00:30:42]         - feature_encoder.3.0.weight
+[2026-04-15 00:30:42]         - feature_encoder.4.0.weight
+[2026-04-15 00:30:42]         - feature_encoder.5.0.weight
+[2026-04-15 00:30:42]         - final_layer.spat_conv.weight
+[2026-04-15 00:30:42]         - final_layer.spat_conv.bias
+[2026-04-15 00:30:42]         - final_layer.linear.weight
+[2026-04-15 00:30:42]         - ... (1 more)
+[2026-04-15 00:33:34]   Fold 5/5 | best_epoch=11 | stop=5000 | val_loss=1.0131 | acc=0.8250 | bal_acc=0.8250
+[2026-04-15 00:33:34]   Subject 49 summary: acc=0.8050±0.0430  bal_acc=0.8050±0.0430
+
+[2026-04-15 00:33:34] Subject 50: 200 windows | class_counts=[50, 50, 50, 50]
+[2026-04-15 00:33:34]   Fold 1 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:33:34]   Fold 2 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:33:34]   Fold 3 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:33:34]   Fold 4 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:33:34]   Fold 5 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:33:34]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:33:34]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:33:34]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:33:34] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:33:34] Building model with input window duration: 4.1875 s
+[2026-04-15 00:33:34] Pretrained weight loading:
+[2026-04-15 00:33:34]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:33:34]   Downloaded keys:       179
+[2026-04-15 00:33:34]   Keys selected:         7
+[2026-04-15 00:33:34]   Keys dropped:          172
+[2026-04-15 00:33:34]   Missing keys:          4
+[2026-04-15 00:33:34]   Unexpected keys:       0
+[2026-04-15 00:33:34]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:33:34]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:33:34]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:33:34]     Fine-tune strategy: full
+[2026-04-15 00:33:34]     Warm-up active:     True
+[2026-04-15 00:33:34]     Warm-up epochs:     10
+[2026-04-15 00:33:34]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:33:34]     Phase 1 (warmup):
+[2026-04-15 00:33:34]       Trainable groups: ['final_layer.']
+[2026-04-15 00:33:34]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:33:34]         - final_layer.spat_conv.weight
+[2026-04-15 00:33:34]         - final_layer.spat_conv.bias
+[2026-04-15 00:33:34]         - final_layer.linear.weight
+[2026-04-15 00:33:34]         - final_layer.linear.bias
+[2026-04-15 00:33:34]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:33:34]     Phase 2 (full):
+[2026-04-15 00:33:34]       Trainable groups: ['all_parameters']
+[2026-04-15 00:33:34]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:33:34]         - feature_encoder.1.0.weight
+[2026-04-15 00:33:34]         - feature_encoder.1.2.weight
+[2026-04-15 00:33:34]         - feature_encoder.1.2.bias
+[2026-04-15 00:33:34]         - feature_encoder.2.0.weight
+[2026-04-15 00:33:34]         - feature_encoder.3.0.weight
+[2026-04-15 00:33:34]         - feature_encoder.4.0.weight
+[2026-04-15 00:33:34]         - feature_encoder.5.0.weight
+[2026-04-15 00:33:34]         - final_layer.spat_conv.weight
+[2026-04-15 00:33:34]         - final_layer.spat_conv.bias
+[2026-04-15 00:33:34]         - final_layer.linear.weight
+[2026-04-15 00:33:34]         - ... (1 more)
+[2026-04-15 00:36:29]   Fold 1/5 | best_epoch=11 | stop=5000 | val_loss=0.3416 | acc=0.9250 | bal_acc=0.9250
+[2026-04-15 00:36:29]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:36:29]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:36:29]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:36:29] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:36:29] Building model with input window duration: 4.1875 s
+[2026-04-15 00:36:29] Pretrained weight loading:
+[2026-04-15 00:36:29]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:36:29]   Downloaded keys:       179
+[2026-04-15 00:36:29]   Keys selected:         7
+[2026-04-15 00:36:29]   Keys dropped:          172
+[2026-04-15 00:36:29]   Missing keys:          4
+[2026-04-15 00:36:29]   Unexpected keys:       0
+[2026-04-15 00:36:29]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:36:29]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:36:29]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:36:29]     Fine-tune strategy: full
+[2026-04-15 00:36:29]     Warm-up active:     True
+[2026-04-15 00:36:29]     Warm-up epochs:     10
+[2026-04-15 00:36:29]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:36:29]     Phase 1 (warmup):
+[2026-04-15 00:36:29]       Trainable groups: ['final_layer.']
+[2026-04-15 00:36:29]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:36:29]         - final_layer.spat_conv.weight
+[2026-04-15 00:36:29]         - final_layer.spat_conv.bias
+[2026-04-15 00:36:29]         - final_layer.linear.weight
+[2026-04-15 00:36:29]         - final_layer.linear.bias
+[2026-04-15 00:36:29]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:36:30]     Phase 2 (full):
+[2026-04-15 00:36:30]       Trainable groups: ['all_parameters']
+[2026-04-15 00:36:30]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:36:30]         - feature_encoder.1.0.weight
+[2026-04-15 00:36:30]         - feature_encoder.1.2.weight
+[2026-04-15 00:36:30]         - feature_encoder.1.2.bias
+[2026-04-15 00:36:30]         - feature_encoder.2.0.weight
+[2026-04-15 00:36:30]         - feature_encoder.3.0.weight
+[2026-04-15 00:36:30]         - feature_encoder.4.0.weight
+[2026-04-15 00:36:30]         - feature_encoder.5.0.weight
+[2026-04-15 00:36:30]         - final_layer.spat_conv.weight
+[2026-04-15 00:36:30]         - final_layer.spat_conv.bias
+[2026-04-15 00:36:30]         - final_layer.linear.weight
+[2026-04-15 00:36:30]         - ... (1 more)
+[2026-04-15 00:39:23]   Fold 2/5 | best_epoch=11 | stop=5000 | val_loss=0.4099 | acc=0.8000 | bal_acc=0.8000
+[2026-04-15 00:39:23]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:39:23]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:39:23]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:39:23] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:39:23] Building model with input window duration: 4.1875 s
+[2026-04-15 00:39:23] Pretrained weight loading:
+[2026-04-15 00:39:23]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:39:23]   Downloaded keys:       179
+[2026-04-15 00:39:23]   Keys selected:         7
+[2026-04-15 00:39:23]   Keys dropped:          172
+[2026-04-15 00:39:23]   Missing keys:          4
+[2026-04-15 00:39:23]   Unexpected keys:       0
+[2026-04-15 00:39:23]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:39:23]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:39:23]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:39:23]     Fine-tune strategy: full
+[2026-04-15 00:39:23]     Warm-up active:     True
+[2026-04-15 00:39:23]     Warm-up epochs:     10
+[2026-04-15 00:39:23]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:39:23]     Phase 1 (warmup):
+[2026-04-15 00:39:23]       Trainable groups: ['final_layer.']
+[2026-04-15 00:39:23]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:39:23]         - final_layer.spat_conv.weight
+[2026-04-15 00:39:23]         - final_layer.spat_conv.bias
+[2026-04-15 00:39:23]         - final_layer.linear.weight
+[2026-04-15 00:39:23]         - final_layer.linear.bias
+[2026-04-15 00:39:23]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:39:23]     Phase 2 (full):
+[2026-04-15 00:39:23]       Trainable groups: ['all_parameters']
+[2026-04-15 00:39:23]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:39:23]         - feature_encoder.1.0.weight
+[2026-04-15 00:39:23]         - feature_encoder.1.2.weight
+[2026-04-15 00:39:23]         - feature_encoder.1.2.bias
+[2026-04-15 00:39:23]         - feature_encoder.2.0.weight
+[2026-04-15 00:39:23]         - feature_encoder.3.0.weight
+[2026-04-15 00:39:23]         - feature_encoder.4.0.weight
+[2026-04-15 00:39:23]         - feature_encoder.5.0.weight
+[2026-04-15 00:39:23]         - final_layer.spat_conv.weight
+[2026-04-15 00:39:23]         - final_layer.spat_conv.bias
+[2026-04-15 00:39:23]         - final_layer.linear.weight
+[2026-04-15 00:39:23]         - ... (1 more)
+[2026-04-15 00:42:17]   Fold 3/5 | best_epoch=10 | stop=5000 | val_loss=0.7906 | acc=0.9000 | bal_acc=0.9000
+[2026-04-15 00:42:17]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:42:17]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:42:17]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:42:17] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:42:17] Building model with input window duration: 4.1875 s
+[2026-04-15 00:42:17] Pretrained weight loading:
+[2026-04-15 00:42:17]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:42:17]   Downloaded keys:       179
+[2026-04-15 00:42:17]   Keys selected:         7
+[2026-04-15 00:42:17]   Keys dropped:          172
+[2026-04-15 00:42:17]   Missing keys:          4
+[2026-04-15 00:42:17]   Unexpected keys:       0
+[2026-04-15 00:42:17]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:42:17]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:42:17]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:42:17]     Fine-tune strategy: full
+[2026-04-15 00:42:17]     Warm-up active:     True
+[2026-04-15 00:42:17]     Warm-up epochs:     10
+[2026-04-15 00:42:17]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:42:17]     Phase 1 (warmup):
+[2026-04-15 00:42:17]       Trainable groups: ['final_layer.']
+[2026-04-15 00:42:17]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:42:17]         - final_layer.spat_conv.weight
+[2026-04-15 00:42:17]         - final_layer.spat_conv.bias
+[2026-04-15 00:42:17]         - final_layer.linear.weight
+[2026-04-15 00:42:17]         - final_layer.linear.bias
+[2026-04-15 00:42:17]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:42:17]     Phase 2 (full):
+[2026-04-15 00:42:17]       Trainable groups: ['all_parameters']
+[2026-04-15 00:42:17]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:42:17]         - feature_encoder.1.0.weight
+[2026-04-15 00:42:17]         - feature_encoder.1.2.weight
+[2026-04-15 00:42:17]         - feature_encoder.1.2.bias
+[2026-04-15 00:42:17]         - feature_encoder.2.0.weight
+[2026-04-15 00:42:17]         - feature_encoder.3.0.weight
+[2026-04-15 00:42:17]         - feature_encoder.4.0.weight
+[2026-04-15 00:42:17]         - feature_encoder.5.0.weight
+[2026-04-15 00:42:17]         - final_layer.spat_conv.weight
+[2026-04-15 00:42:17]         - final_layer.spat_conv.bias
+[2026-04-15 00:42:17]         - final_layer.linear.weight
+[2026-04-15 00:42:17]         - ... (1 more)
+[2026-04-15 00:45:09]   Fold 4/5 | best_epoch=11 | stop=5000 | val_loss=0.5967 | acc=0.9500 | bal_acc=0.9500
+[2026-04-15 00:45:10]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:45:10]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:45:10]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:45:10] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:45:10] Building model with input window duration: 4.1875 s
+[2026-04-15 00:45:10] Pretrained weight loading:
+[2026-04-15 00:45:10]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:45:10]   Downloaded keys:       179
+[2026-04-15 00:45:10]   Keys selected:         7
+[2026-04-15 00:45:10]   Keys dropped:          172
+[2026-04-15 00:45:10]   Missing keys:          4
+[2026-04-15 00:45:10]   Unexpected keys:       0
+[2026-04-15 00:45:10]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:45:10]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:45:10]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:45:10]     Fine-tune strategy: full
+[2026-04-15 00:45:10]     Warm-up active:     True
+[2026-04-15 00:45:10]     Warm-up epochs:     10
+[2026-04-15 00:45:10]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:45:10]     Phase 1 (warmup):
+[2026-04-15 00:45:10]       Trainable groups: ['final_layer.']
+[2026-04-15 00:45:10]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:45:10]         - final_layer.spat_conv.weight
+[2026-04-15 00:45:10]         - final_layer.spat_conv.bias
+[2026-04-15 00:45:10]         - final_layer.linear.weight
+[2026-04-15 00:45:10]         - final_layer.linear.bias
+[2026-04-15 00:45:10]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:45:10]     Phase 2 (full):
+[2026-04-15 00:45:10]       Trainable groups: ['all_parameters']
+[2026-04-15 00:45:10]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:45:10]         - feature_encoder.1.0.weight
+[2026-04-15 00:45:10]         - feature_encoder.1.2.weight
+[2026-04-15 00:45:10]         - feature_encoder.1.2.bias
+[2026-04-15 00:45:10]         - feature_encoder.2.0.weight
+[2026-04-15 00:45:10]         - feature_encoder.3.0.weight
+[2026-04-15 00:45:10]         - feature_encoder.4.0.weight
+[2026-04-15 00:45:10]         - feature_encoder.5.0.weight
+[2026-04-15 00:45:10]         - final_layer.spat_conv.weight
+[2026-04-15 00:45:10]         - final_layer.spat_conv.bias
+[2026-04-15 00:45:10]         - final_layer.linear.weight
+[2026-04-15 00:45:10]         - ... (1 more)
+[2026-04-15 00:48:02]   Fold 5/5 | best_epoch=13 | stop=5000 | val_loss=0.2217 | acc=0.8750 | bal_acc=0.8750
+[2026-04-15 00:48:02]   Subject 50 summary: acc=0.8900±0.0515  bal_acc=0.8900±0.0515
+
+[2026-04-15 00:48:02] Subject 51: 200 windows | class_counts=[50, 50, 50, 50]
+[2026-04-15 00:48:02]   Fold 1 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:48:02]   Fold 2 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:48:02]   Fold 3 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:48:02]   Fold 4 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:48:02]   Fold 5 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 00:48:02]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:48:02]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:48:02]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:48:02] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:48:02] Building model with input window duration: 4.1875 s
+[2026-04-15 00:48:02] Pretrained weight loading:
+[2026-04-15 00:48:02]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:48:02]   Downloaded keys:       179
+[2026-04-15 00:48:02]   Keys selected:         7
+[2026-04-15 00:48:02]   Keys dropped:          172
+[2026-04-15 00:48:02]   Missing keys:          4
+[2026-04-15 00:48:02]   Unexpected keys:       0
+[2026-04-15 00:48:02]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:48:02]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:48:02]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:48:02]     Fine-tune strategy: full
+[2026-04-15 00:48:02]     Warm-up active:     True
+[2026-04-15 00:48:02]     Warm-up epochs:     10
+[2026-04-15 00:48:02]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:48:02]     Phase 1 (warmup):
+[2026-04-15 00:48:02]       Trainable groups: ['final_layer.']
+[2026-04-15 00:48:02]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:48:02]         - final_layer.spat_conv.weight
+[2026-04-15 00:48:02]         - final_layer.spat_conv.bias
+[2026-04-15 00:48:02]         - final_layer.linear.weight
+[2026-04-15 00:48:02]         - final_layer.linear.bias
+[2026-04-15 00:48:02]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:48:02]     Phase 2 (full):
+[2026-04-15 00:48:02]       Trainable groups: ['all_parameters']
+[2026-04-15 00:48:02]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:48:02]         - feature_encoder.1.0.weight
+[2026-04-15 00:48:02]         - feature_encoder.1.2.weight
+[2026-04-15 00:48:02]         - feature_encoder.1.2.bias
+[2026-04-15 00:48:02]         - feature_encoder.2.0.weight
+[2026-04-15 00:48:02]         - feature_encoder.3.0.weight
+[2026-04-15 00:48:02]         - feature_encoder.4.0.weight
+[2026-04-15 00:48:02]         - feature_encoder.5.0.weight
+[2026-04-15 00:48:02]         - final_layer.spat_conv.weight
+[2026-04-15 00:48:02]         - final_layer.spat_conv.bias
+[2026-04-15 00:48:02]         - final_layer.linear.weight
+[2026-04-15 00:48:02]         - ... (1 more)
+[2026-04-15 00:50:54]   Fold 1/5 | best_epoch=6 | stop=5000 | val_loss=1.3829 | acc=0.2500 | bal_acc=0.2500
+[2026-04-15 00:50:54]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:50:54]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:50:54]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:50:54] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:50:54] Building model with input window duration: 4.1875 s
+[2026-04-15 00:50:54] Pretrained weight loading:
+[2026-04-15 00:50:54]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:50:54]   Downloaded keys:       179
+[2026-04-15 00:50:54]   Keys selected:         7
+[2026-04-15 00:50:54]   Keys dropped:          172
+[2026-04-15 00:50:54]   Missing keys:          4
+[2026-04-15 00:50:54]   Unexpected keys:       0
+[2026-04-15 00:50:54]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:50:54]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:50:54]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:50:54]     Fine-tune strategy: full
+[2026-04-15 00:50:54]     Warm-up active:     True
+[2026-04-15 00:50:54]     Warm-up epochs:     10
+[2026-04-15 00:50:54]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:50:54]     Phase 1 (warmup):
+[2026-04-15 00:50:54]       Trainable groups: ['final_layer.']
+[2026-04-15 00:50:54]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:50:54]         - final_layer.spat_conv.weight
+[2026-04-15 00:50:54]         - final_layer.spat_conv.bias
+[2026-04-15 00:50:54]         - final_layer.linear.weight
+[2026-04-15 00:50:54]         - final_layer.linear.bias
+[2026-04-15 00:50:54]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:50:54]     Phase 2 (full):
+[2026-04-15 00:50:54]       Trainable groups: ['all_parameters']
+[2026-04-15 00:50:54]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:50:54]         - feature_encoder.1.0.weight
+[2026-04-15 00:50:54]         - feature_encoder.1.2.weight
+[2026-04-15 00:50:54]         - feature_encoder.1.2.bias
+[2026-04-15 00:50:54]         - feature_encoder.2.0.weight
+[2026-04-15 00:50:54]         - feature_encoder.3.0.weight
+[2026-04-15 00:50:54]         - feature_encoder.4.0.weight
+[2026-04-15 00:50:54]         - feature_encoder.5.0.weight
+[2026-04-15 00:50:54]         - final_layer.spat_conv.weight
+[2026-04-15 00:50:54]         - final_layer.spat_conv.bias
+[2026-04-15 00:50:54]         - final_layer.linear.weight
+[2026-04-15 00:50:54]         - ... (1 more)
+[2026-04-15 00:53:47]   Fold 2/5 | best_epoch=8 | stop=5000 | val_loss=1.3227 | acc=0.3500 | bal_acc=0.3500
+[2026-04-15 00:53:47]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:53:47]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:53:47]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:53:47] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:53:47] Building model with input window duration: 4.1875 s
+[2026-04-15 00:53:47] Pretrained weight loading:
+[2026-04-15 00:53:47]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:53:47]   Downloaded keys:       179
+[2026-04-15 00:53:47]   Keys selected:         7
+[2026-04-15 00:53:47]   Keys dropped:          172
+[2026-04-15 00:53:47]   Missing keys:          4
+[2026-04-15 00:53:47]   Unexpected keys:       0
+[2026-04-15 00:53:47]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:53:47]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:53:47]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:53:47]     Fine-tune strategy: full
+[2026-04-15 00:53:47]     Warm-up active:     True
+[2026-04-15 00:53:47]     Warm-up epochs:     10
+[2026-04-15 00:53:47]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:53:47]     Phase 1 (warmup):
+[2026-04-15 00:53:47]       Trainable groups: ['final_layer.']
+[2026-04-15 00:53:47]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:53:47]         - final_layer.spat_conv.weight
+[2026-04-15 00:53:47]         - final_layer.spat_conv.bias
+[2026-04-15 00:53:47]         - final_layer.linear.weight
+[2026-04-15 00:53:47]         - final_layer.linear.bias
+[2026-04-15 00:53:47]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:53:47]     Phase 2 (full):
+[2026-04-15 00:53:47]       Trainable groups: ['all_parameters']
+[2026-04-15 00:53:47]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:53:47]         - feature_encoder.1.0.weight
+[2026-04-15 00:53:47]         - feature_encoder.1.2.weight
+[2026-04-15 00:53:47]         - feature_encoder.1.2.bias
+[2026-04-15 00:53:47]         - feature_encoder.2.0.weight
+[2026-04-15 00:53:47]         - feature_encoder.3.0.weight
+[2026-04-15 00:53:47]         - feature_encoder.4.0.weight
+[2026-04-15 00:53:47]         - feature_encoder.5.0.weight
+[2026-04-15 00:53:47]         - final_layer.spat_conv.weight
+[2026-04-15 00:53:47]         - final_layer.spat_conv.bias
+[2026-04-15 00:53:47]         - final_layer.linear.weight
+[2026-04-15 00:53:47]         - ... (1 more)
+[2026-04-15 00:56:39]   Fold 3/5 | best_epoch=5 | stop=5000 | val_loss=1.3764 | acc=0.3750 | bal_acc=0.3750
+[2026-04-15 00:56:39]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:56:39]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:56:39]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:56:39] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:56:39] Building model with input window duration: 4.1875 s
+[2026-04-15 00:56:39] Pretrained weight loading:
+[2026-04-15 00:56:39]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:56:39]   Downloaded keys:       179
+[2026-04-15 00:56:39]   Keys selected:         7
+[2026-04-15 00:56:39]   Keys dropped:          172
+[2026-04-15 00:56:39]   Missing keys:          4
+[2026-04-15 00:56:39]   Unexpected keys:       0
+[2026-04-15 00:56:39]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:56:39]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:56:39]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:56:39]     Fine-tune strategy: full
+[2026-04-15 00:56:39]     Warm-up active:     True
+[2026-04-15 00:56:39]     Warm-up epochs:     10
+[2026-04-15 00:56:39]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:56:39]     Phase 1 (warmup):
+[2026-04-15 00:56:39]       Trainable groups: ['final_layer.']
+[2026-04-15 00:56:39]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:56:39]         - final_layer.spat_conv.weight
+[2026-04-15 00:56:39]         - final_layer.spat_conv.bias
+[2026-04-15 00:56:39]         - final_layer.linear.weight
+[2026-04-15 00:56:39]         - final_layer.linear.bias
+[2026-04-15 00:56:39]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:56:39]     Phase 2 (full):
+[2026-04-15 00:56:39]       Trainable groups: ['all_parameters']
+[2026-04-15 00:56:39]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:56:39]         - feature_encoder.1.0.weight
+[2026-04-15 00:56:39]         - feature_encoder.1.2.weight
+[2026-04-15 00:56:39]         - feature_encoder.1.2.bias
+[2026-04-15 00:56:39]         - feature_encoder.2.0.weight
+[2026-04-15 00:56:39]         - feature_encoder.3.0.weight
+[2026-04-15 00:56:39]         - feature_encoder.4.0.weight
+[2026-04-15 00:56:39]         - feature_encoder.5.0.weight
+[2026-04-15 00:56:39]         - final_layer.spat_conv.weight
+[2026-04-15 00:56:39]         - final_layer.spat_conv.bias
+[2026-04-15 00:56:39]         - final_layer.linear.weight
+[2026-04-15 00:56:39]         - ... (1 more)
+[2026-04-15 00:59:31]   Fold 4/5 | best_epoch=6 | stop=5000 | val_loss=1.3838 | acc=0.5750 | bal_acc=0.5750
+[2026-04-15 00:59:31]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 00:59:31]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 00:59:31]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 00:59:31] Building model class: SignalJEPA_PostLocal
+[2026-04-15 00:59:31] Building model with input window duration: 4.1875 s
+[2026-04-15 00:59:31] Pretrained weight loading:
+[2026-04-15 00:59:31]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 00:59:31]   Downloaded keys:       179
+[2026-04-15 00:59:31]   Keys selected:         7
+[2026-04-15 00:59:31]   Keys dropped:          172
+[2026-04-15 00:59:31]   Missing keys:          4
+[2026-04-15 00:59:31]   Unexpected keys:       0
+[2026-04-15 00:59:31]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:59:31]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 00:59:31]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 00:59:31]     Fine-tune strategy: full
+[2026-04-15 00:59:31]     Warm-up active:     True
+[2026-04-15 00:59:31]     Warm-up epochs:     10
+[2026-04-15 00:59:31]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 00:59:31]     Phase 1 (warmup):
+[2026-04-15 00:59:31]       Trainable groups: ['final_layer.']
+[2026-04-15 00:59:31]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 00:59:31]         - final_layer.spat_conv.weight
+[2026-04-15 00:59:31]         - final_layer.spat_conv.bias
+[2026-04-15 00:59:31]         - final_layer.linear.weight
+[2026-04-15 00:59:31]         - final_layer.linear.bias
+[2026-04-15 00:59:31]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 00:59:32]     Phase 2 (full):
+[2026-04-15 00:59:32]       Trainable groups: ['all_parameters']
+[2026-04-15 00:59:32]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 00:59:32]         - feature_encoder.1.0.weight
+[2026-04-15 00:59:32]         - feature_encoder.1.2.weight
+[2026-04-15 00:59:32]         - feature_encoder.1.2.bias
+[2026-04-15 00:59:32]         - feature_encoder.2.0.weight
+[2026-04-15 00:59:32]         - feature_encoder.3.0.weight
+[2026-04-15 00:59:32]         - feature_encoder.4.0.weight
+[2026-04-15 00:59:32]         - feature_encoder.5.0.weight
+[2026-04-15 00:59:32]         - final_layer.spat_conv.weight
+[2026-04-15 00:59:32]         - final_layer.spat_conv.bias
+[2026-04-15 00:59:32]         - final_layer.linear.weight
+[2026-04-15 00:59:32]         - ... (1 more)
+[2026-04-15 01:02:25]   Fold 5/5 | best_epoch=8 | stop=5000 | val_loss=1.3610 | acc=0.3750 | bal_acc=0.3750
+[2026-04-15 01:02:25]   Subject 51 summary: acc=0.3850±0.1056  bal_acc=0.3850±0.1056
+
+[2026-04-15 01:02:25] Subject 52: 200 windows | class_counts=[50, 50, 50, 50]
+[2026-04-15 01:02:25]   Fold 1 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 01:02:25]   Fold 2 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 01:02:25]   Fold 3 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 01:02:25]   Fold 4 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 01:02:25]   Fold 5 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 01:02:25]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 01:02:25]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 01:02:25]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 01:02:25] Building model class: SignalJEPA_PostLocal
+[2026-04-15 01:02:25] Building model with input window duration: 4.1875 s
+[2026-04-15 01:02:25] Pretrained weight loading:
+[2026-04-15 01:02:25]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 01:02:25]   Downloaded keys:       179
+[2026-04-15 01:02:25]   Keys selected:         7
+[2026-04-15 01:02:25]   Keys dropped:          172
+[2026-04-15 01:02:25]   Missing keys:          4
+[2026-04-15 01:02:25]   Unexpected keys:       0
+[2026-04-15 01:02:25]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:02:25]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 01:02:25]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 01:02:25]     Fine-tune strategy: full
+[2026-04-15 01:02:25]     Warm-up active:     True
+[2026-04-15 01:02:25]     Warm-up epochs:     10
+[2026-04-15 01:02:25]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:02:25]     Phase 1 (warmup):
+[2026-04-15 01:02:25]       Trainable groups: ['final_layer.']
+[2026-04-15 01:02:25]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 01:02:25]         - final_layer.spat_conv.weight
+[2026-04-15 01:02:25]         - final_layer.spat_conv.bias
+[2026-04-15 01:02:25]         - final_layer.linear.weight
+[2026-04-15 01:02:25]         - final_layer.linear.bias
+[2026-04-15 01:02:25]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 01:02:25]     Phase 2 (full):
+[2026-04-15 01:02:25]       Trainable groups: ['all_parameters']
+[2026-04-15 01:02:25]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 01:02:25]         - feature_encoder.1.0.weight
+[2026-04-15 01:02:25]         - feature_encoder.1.2.weight
+[2026-04-15 01:02:25]         - feature_encoder.1.2.bias
+[2026-04-15 01:02:25]         - feature_encoder.2.0.weight
+[2026-04-15 01:02:25]         - feature_encoder.3.0.weight
+[2026-04-15 01:02:25]         - feature_encoder.4.0.weight
+[2026-04-15 01:02:25]         - feature_encoder.5.0.weight
+[2026-04-15 01:02:25]         - final_layer.spat_conv.weight
+[2026-04-15 01:02:25]         - final_layer.spat_conv.bias
+[2026-04-15 01:02:25]         - final_layer.linear.weight
+[2026-04-15 01:02:25]         - ... (1 more)
+[2026-04-15 01:05:18]   Fold 1/5 | best_epoch=11 | stop=5000 | val_loss=1.0248 | acc=0.4750 | bal_acc=0.4750
+[2026-04-15 01:05:18]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 01:05:18]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 01:05:18]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 01:05:18] Building model class: SignalJEPA_PostLocal
+[2026-04-15 01:05:18] Building model with input window duration: 4.1875 s
+[2026-04-15 01:05:18] Pretrained weight loading:
+[2026-04-15 01:05:18]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 01:05:18]   Downloaded keys:       179
+[2026-04-15 01:05:18]   Keys selected:         7
+[2026-04-15 01:05:18]   Keys dropped:          172
+[2026-04-15 01:05:18]   Missing keys:          4
+[2026-04-15 01:05:18]   Unexpected keys:       0
+[2026-04-15 01:05:18]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:05:18]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 01:05:18]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 01:05:18]     Fine-tune strategy: full
+[2026-04-15 01:05:18]     Warm-up active:     True
+[2026-04-15 01:05:18]     Warm-up epochs:     10
+[2026-04-15 01:05:18]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:05:18]     Phase 1 (warmup):
+[2026-04-15 01:05:18]       Trainable groups: ['final_layer.']
+[2026-04-15 01:05:18]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 01:05:18]         - final_layer.spat_conv.weight
+[2026-04-15 01:05:18]         - final_layer.spat_conv.bias
+[2026-04-15 01:05:18]         - final_layer.linear.weight
+[2026-04-15 01:05:18]         - final_layer.linear.bias
+[2026-04-15 01:05:18]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 01:05:18]     Phase 2 (full):
+[2026-04-15 01:05:18]       Trainable groups: ['all_parameters']
+[2026-04-15 01:05:18]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 01:05:18]         - feature_encoder.1.0.weight
+[2026-04-15 01:05:18]         - feature_encoder.1.2.weight
+[2026-04-15 01:05:18]         - feature_encoder.1.2.bias
+[2026-04-15 01:05:18]         - feature_encoder.2.0.weight
+[2026-04-15 01:05:18]         - feature_encoder.3.0.weight
+[2026-04-15 01:05:18]         - feature_encoder.4.0.weight
+[2026-04-15 01:05:18]         - feature_encoder.5.0.weight
+[2026-04-15 01:05:18]         - final_layer.spat_conv.weight
+[2026-04-15 01:05:18]         - final_layer.spat_conv.bias
+[2026-04-15 01:05:18]         - final_layer.linear.weight
+[2026-04-15 01:05:18]         - ... (1 more)
+[2026-04-15 01:08:11]   Fold 2/5 | best_epoch=8 | stop=5000 | val_loss=1.1537 | acc=0.4250 | bal_acc=0.4250
+[2026-04-15 01:08:11]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 01:08:11]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 01:08:11]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 01:08:11] Building model class: SignalJEPA_PostLocal
+[2026-04-15 01:08:11] Building model with input window duration: 4.1875 s
+[2026-04-15 01:08:11] Pretrained weight loading:
+[2026-04-15 01:08:11]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 01:08:11]   Downloaded keys:       179
+[2026-04-15 01:08:11]   Keys selected:         7
+[2026-04-15 01:08:11]   Keys dropped:          172
+[2026-04-15 01:08:11]   Missing keys:          4
+[2026-04-15 01:08:11]   Unexpected keys:       0
+[2026-04-15 01:08:11]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:08:11]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 01:08:11]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 01:08:11]     Fine-tune strategy: full
+[2026-04-15 01:08:11]     Warm-up active:     True
+[2026-04-15 01:08:11]     Warm-up epochs:     10
+[2026-04-15 01:08:11]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:08:11]     Phase 1 (warmup):
+[2026-04-15 01:08:11]       Trainable groups: ['final_layer.']
+[2026-04-15 01:08:11]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 01:08:11]         - final_layer.spat_conv.weight
+[2026-04-15 01:08:11]         - final_layer.spat_conv.bias
+[2026-04-15 01:08:11]         - final_layer.linear.weight
+[2026-04-15 01:08:11]         - final_layer.linear.bias
+[2026-04-15 01:08:11]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 01:08:11]     Phase 2 (full):
+[2026-04-15 01:08:11]       Trainable groups: ['all_parameters']
+[2026-04-15 01:08:11]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 01:08:11]         - feature_encoder.1.0.weight
+[2026-04-15 01:08:11]         - feature_encoder.1.2.weight
+[2026-04-15 01:08:11]         - feature_encoder.1.2.bias
+[2026-04-15 01:08:11]         - feature_encoder.2.0.weight
+[2026-04-15 01:08:11]         - feature_encoder.3.0.weight
+[2026-04-15 01:08:11]         - feature_encoder.4.0.weight
+[2026-04-15 01:08:11]         - feature_encoder.5.0.weight
+[2026-04-15 01:08:11]         - final_layer.spat_conv.weight
+[2026-04-15 01:08:11]         - final_layer.spat_conv.bias
+[2026-04-15 01:08:11]         - final_layer.linear.weight
+[2026-04-15 01:08:11]         - ... (1 more)
+[2026-04-15 01:11:03]   Fold 3/5 | best_epoch=9 | stop=5000 | val_loss=1.3032 | acc=0.5000 | bal_acc=0.5000
+[2026-04-15 01:11:04]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 01:11:04]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 01:11:04]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 01:11:04] Building model class: SignalJEPA_PostLocal
+[2026-04-15 01:11:04] Building model with input window duration: 4.1875 s
+[2026-04-15 01:11:04] Pretrained weight loading:
+[2026-04-15 01:11:04]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 01:11:04]   Downloaded keys:       179
+[2026-04-15 01:11:04]   Keys selected:         7
+[2026-04-15 01:11:04]   Keys dropped:          172
+[2026-04-15 01:11:04]   Missing keys:          4
+[2026-04-15 01:11:04]   Unexpected keys:       0
+[2026-04-15 01:11:04]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:11:04]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 01:11:04]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 01:11:04]     Fine-tune strategy: full
+[2026-04-15 01:11:04]     Warm-up active:     True
+[2026-04-15 01:11:04]     Warm-up epochs:     10
+[2026-04-15 01:11:04]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:11:04]     Phase 1 (warmup):
+[2026-04-15 01:11:04]       Trainable groups: ['final_layer.']
+[2026-04-15 01:11:04]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 01:11:04]         - final_layer.spat_conv.weight
+[2026-04-15 01:11:04]         - final_layer.spat_conv.bias
+[2026-04-15 01:11:04]         - final_layer.linear.weight
+[2026-04-15 01:11:04]         - final_layer.linear.bias
+[2026-04-15 01:11:04]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 01:11:04]     Phase 2 (full):
+[2026-04-15 01:11:04]       Trainable groups: ['all_parameters']
+[2026-04-15 01:11:04]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 01:11:04]         - feature_encoder.1.0.weight
+[2026-04-15 01:11:04]         - feature_encoder.1.2.weight
+[2026-04-15 01:11:04]         - feature_encoder.1.2.bias
+[2026-04-15 01:11:04]         - feature_encoder.2.0.weight
+[2026-04-15 01:11:04]         - feature_encoder.3.0.weight
+[2026-04-15 01:11:04]         - feature_encoder.4.0.weight
+[2026-04-15 01:11:04]         - feature_encoder.5.0.weight
+[2026-04-15 01:11:04]         - final_layer.spat_conv.weight
+[2026-04-15 01:11:04]         - final_layer.spat_conv.bias
+[2026-04-15 01:11:04]         - final_layer.linear.weight
+[2026-04-15 01:11:04]         - ... (1 more)
+[2026-04-15 01:13:56]   Fold 4/5 | best_epoch=9 | stop=5000 | val_loss=1.1483 | acc=0.6750 | bal_acc=0.6750
+[2026-04-15 01:13:56]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 01:13:56]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 01:13:56]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 01:13:56] Building model class: SignalJEPA_PostLocal
+[2026-04-15 01:13:56] Building model with input window duration: 4.1875 s
+[2026-04-15 01:13:56] Pretrained weight loading:
+[2026-04-15 01:13:56]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 01:13:56]   Downloaded keys:       179
+[2026-04-15 01:13:56]   Keys selected:         7
+[2026-04-15 01:13:56]   Keys dropped:          172
+[2026-04-15 01:13:56]   Missing keys:          4
+[2026-04-15 01:13:56]   Unexpected keys:       0
+[2026-04-15 01:13:56]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:13:56]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 01:13:56]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 01:13:56]     Fine-tune strategy: full
+[2026-04-15 01:13:56]     Warm-up active:     True
+[2026-04-15 01:13:56]     Warm-up epochs:     10
+[2026-04-15 01:13:56]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:13:56]     Phase 1 (warmup):
+[2026-04-15 01:13:56]       Trainable groups: ['final_layer.']
+[2026-04-15 01:13:56]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 01:13:56]         - final_layer.spat_conv.weight
+[2026-04-15 01:13:56]         - final_layer.spat_conv.bias
+[2026-04-15 01:13:56]         - final_layer.linear.weight
+[2026-04-15 01:13:56]         - final_layer.linear.bias
+[2026-04-15 01:13:56]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 01:13:56]     Phase 2 (full):
+[2026-04-15 01:13:56]       Trainable groups: ['all_parameters']
+[2026-04-15 01:13:56]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 01:13:56]         - feature_encoder.1.0.weight
+[2026-04-15 01:13:56]         - feature_encoder.1.2.weight
+[2026-04-15 01:13:56]         - feature_encoder.1.2.bias
+[2026-04-15 01:13:56]         - feature_encoder.2.0.weight
+[2026-04-15 01:13:56]         - feature_encoder.3.0.weight
+[2026-04-15 01:13:56]         - feature_encoder.4.0.weight
+[2026-04-15 01:13:56]         - feature_encoder.5.0.weight
+[2026-04-15 01:13:56]         - final_layer.spat_conv.weight
+[2026-04-15 01:13:56]         - final_layer.spat_conv.bias
+[2026-04-15 01:13:56]         - final_layer.linear.weight
+[2026-04-15 01:13:56]         - ... (1 more)
+[2026-04-15 01:16:47]   Fold 5/5 | best_epoch=6 | stop=5000 | val_loss=1.3707 | acc=0.5750 | bal_acc=0.5750
+[2026-04-15 01:16:48]   Subject 52 summary: acc=0.5300±0.0872  bal_acc=0.5300±0.0872
+
+[2026-04-15 01:16:48] Subject 53: 200 windows | class_counts=[50, 50, 50, 50]
+[2026-04-15 01:16:48]   Fold 1 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 01:16:48]   Fold 2 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 01:16:48]   Fold 3 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 01:16:48]   Fold 4 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 01:16:48]   Fold 5 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 01:16:48]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 01:16:48]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 01:16:48]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 01:16:48] Building model class: SignalJEPA_PostLocal
+[2026-04-15 01:16:48] Building model with input window duration: 4.1875 s
+[2026-04-15 01:16:48] Pretrained weight loading:
+[2026-04-15 01:16:48]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 01:16:48]   Downloaded keys:       179
+[2026-04-15 01:16:48]   Keys selected:         7
+[2026-04-15 01:16:48]   Keys dropped:          172
+[2026-04-15 01:16:48]   Missing keys:          4
+[2026-04-15 01:16:48]   Unexpected keys:       0
+[2026-04-15 01:16:48]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:16:48]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 01:16:48]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 01:16:48]     Fine-tune strategy: full
+[2026-04-15 01:16:48]     Warm-up active:     True
+[2026-04-15 01:16:48]     Warm-up epochs:     10
+[2026-04-15 01:16:48]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:16:48]     Phase 1 (warmup):
+[2026-04-15 01:16:48]       Trainable groups: ['final_layer.']
+[2026-04-15 01:16:48]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 01:16:48]         - final_layer.spat_conv.weight
+[2026-04-15 01:16:48]         - final_layer.spat_conv.bias
+[2026-04-15 01:16:48]         - final_layer.linear.weight
+[2026-04-15 01:16:48]         - final_layer.linear.bias
+[2026-04-15 01:16:48]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 01:16:48]     Phase 2 (full):
+[2026-04-15 01:16:48]       Trainable groups: ['all_parameters']
+[2026-04-15 01:16:48]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 01:16:48]         - feature_encoder.1.0.weight
+[2026-04-15 01:16:48]         - feature_encoder.1.2.weight
+[2026-04-15 01:16:48]         - feature_encoder.1.2.bias
+[2026-04-15 01:16:48]         - feature_encoder.2.0.weight
+[2026-04-15 01:16:48]         - feature_encoder.3.0.weight
+[2026-04-15 01:16:48]         - feature_encoder.4.0.weight
+[2026-04-15 01:16:48]         - feature_encoder.5.0.weight
+[2026-04-15 01:16:48]         - final_layer.spat_conv.weight
+[2026-04-15 01:16:48]         - final_layer.spat_conv.bias
+[2026-04-15 01:16:48]         - final_layer.linear.weight
+[2026-04-15 01:16:48]         - ... (1 more)
+[2026-04-15 01:19:41]   Fold 1/5 | best_epoch=12 | stop=5000 | val_loss=0.5477 | acc=0.8500 | bal_acc=0.8500
+[2026-04-15 01:19:41]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 01:19:41]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 01:19:41]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 01:19:41] Building model class: SignalJEPA_PostLocal
+[2026-04-15 01:19:41] Building model with input window duration: 4.1875 s
+[2026-04-15 01:19:41] Pretrained weight loading:
+[2026-04-15 01:19:41]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 01:19:41]   Downloaded keys:       179
+[2026-04-15 01:19:41]   Keys selected:         7
+[2026-04-15 01:19:41]   Keys dropped:          172
+[2026-04-15 01:19:41]   Missing keys:          4
+[2026-04-15 01:19:41]   Unexpected keys:       0
+[2026-04-15 01:19:41]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:19:41]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 01:19:41]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 01:19:41]     Fine-tune strategy: full
+[2026-04-15 01:19:41]     Warm-up active:     True
+[2026-04-15 01:19:41]     Warm-up epochs:     10
+[2026-04-15 01:19:41]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:19:41]     Phase 1 (warmup):
+[2026-04-15 01:19:41]       Trainable groups: ['final_layer.']
+[2026-04-15 01:19:41]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 01:19:41]         - final_layer.spat_conv.weight
+[2026-04-15 01:19:41]         - final_layer.spat_conv.bias
+[2026-04-15 01:19:41]         - final_layer.linear.weight
+[2026-04-15 01:19:41]         - final_layer.linear.bias
+[2026-04-15 01:19:41]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 01:19:41]     Phase 2 (full):
+[2026-04-15 01:19:41]       Trainable groups: ['all_parameters']
+[2026-04-15 01:19:41]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 01:19:41]         - feature_encoder.1.0.weight
+[2026-04-15 01:19:41]         - feature_encoder.1.2.weight
+[2026-04-15 01:19:41]         - feature_encoder.1.2.bias
+[2026-04-15 01:19:41]         - feature_encoder.2.0.weight
+[2026-04-15 01:19:41]         - feature_encoder.3.0.weight
+[2026-04-15 01:19:41]         - feature_encoder.4.0.weight
+[2026-04-15 01:19:41]         - feature_encoder.5.0.weight
+[2026-04-15 01:19:41]         - final_layer.spat_conv.weight
+[2026-04-15 01:19:41]         - final_layer.spat_conv.bias
+[2026-04-15 01:19:41]         - final_layer.linear.weight
+[2026-04-15 01:19:41]         - ... (1 more)
+[2026-04-15 01:22:35]   Fold 2/5 | best_epoch=28 | stop=5000 | val_loss=0.5681 | acc=0.8500 | bal_acc=0.8500
+[2026-04-15 01:22:35]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 01:22:35]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 01:22:35]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 01:22:35] Building model class: SignalJEPA_PostLocal
+[2026-04-15 01:22:35] Building model with input window duration: 4.1875 s
+[2026-04-15 01:22:35] Pretrained weight loading:
+[2026-04-15 01:22:35]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 01:22:35]   Downloaded keys:       179
+[2026-04-15 01:22:35]   Keys selected:         7
+[2026-04-15 01:22:35]   Keys dropped:          172
+[2026-04-15 01:22:35]   Missing keys:          4
+[2026-04-15 01:22:35]   Unexpected keys:       0
+[2026-04-15 01:22:35]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:22:35]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 01:22:35]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 01:22:35]     Fine-tune strategy: full
+[2026-04-15 01:22:35]     Warm-up active:     True
+[2026-04-15 01:22:35]     Warm-up epochs:     10
+[2026-04-15 01:22:35]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:22:35]     Phase 1 (warmup):
+[2026-04-15 01:22:35]       Trainable groups: ['final_layer.']
+[2026-04-15 01:22:35]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 01:22:35]         - final_layer.spat_conv.weight
+[2026-04-15 01:22:35]         - final_layer.spat_conv.bias
+[2026-04-15 01:22:35]         - final_layer.linear.weight
+[2026-04-15 01:22:35]         - final_layer.linear.bias
+[2026-04-15 01:22:35]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 01:22:36]     Phase 2 (full):
+[2026-04-15 01:22:36]       Trainable groups: ['all_parameters']
+[2026-04-15 01:22:36]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 01:22:36]         - feature_encoder.1.0.weight
+[2026-04-15 01:22:36]         - feature_encoder.1.2.weight
+[2026-04-15 01:22:36]         - feature_encoder.1.2.bias
+[2026-04-15 01:22:36]         - feature_encoder.2.0.weight
+[2026-04-15 01:22:36]         - feature_encoder.3.0.weight
+[2026-04-15 01:22:36]         - feature_encoder.4.0.weight
+[2026-04-15 01:22:36]         - feature_encoder.5.0.weight
+[2026-04-15 01:22:36]         - final_layer.spat_conv.weight
+[2026-04-15 01:22:36]         - final_layer.spat_conv.bias
+[2026-04-15 01:22:36]         - final_layer.linear.weight
+[2026-04-15 01:22:36]         - ... (1 more)
+[2026-04-15 01:25:29]   Fold 3/5 | best_epoch=11 | stop=5000 | val_loss=0.8653 | acc=0.8500 | bal_acc=0.8500
+[2026-04-15 01:25:29]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 01:25:29]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 01:25:29]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 01:25:29] Building model class: SignalJEPA_PostLocal
+[2026-04-15 01:25:29] Building model with input window duration: 4.1875 s
+[2026-04-15 01:25:29] Pretrained weight loading:
+[2026-04-15 01:25:29]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 01:25:29]   Downloaded keys:       179
+[2026-04-15 01:25:29]   Keys selected:         7
+[2026-04-15 01:25:29]   Keys dropped:          172
+[2026-04-15 01:25:29]   Missing keys:          4
+[2026-04-15 01:25:29]   Unexpected keys:       0
+[2026-04-15 01:25:29]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:25:29]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 01:25:29]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 01:25:29]     Fine-tune strategy: full
+[2026-04-15 01:25:29]     Warm-up active:     True
+[2026-04-15 01:25:29]     Warm-up epochs:     10
+[2026-04-15 01:25:29]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:25:29]     Phase 1 (warmup):
+[2026-04-15 01:25:29]       Trainable groups: ['final_layer.']
+[2026-04-15 01:25:29]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 01:25:29]         - final_layer.spat_conv.weight
+[2026-04-15 01:25:29]         - final_layer.spat_conv.bias
+[2026-04-15 01:25:29]         - final_layer.linear.weight
+[2026-04-15 01:25:29]         - final_layer.linear.bias
+[2026-04-15 01:25:29]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 01:25:30]     Phase 2 (full):
+[2026-04-15 01:25:30]       Trainable groups: ['all_parameters']
+[2026-04-15 01:25:30]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 01:25:30]         - feature_encoder.1.0.weight
+[2026-04-15 01:25:30]         - feature_encoder.1.2.weight
+[2026-04-15 01:25:30]         - feature_encoder.1.2.bias
+[2026-04-15 01:25:30]         - feature_encoder.2.0.weight
+[2026-04-15 01:25:30]         - feature_encoder.3.0.weight
+[2026-04-15 01:25:30]         - feature_encoder.4.0.weight
+[2026-04-15 01:25:30]         - feature_encoder.5.0.weight
+[2026-04-15 01:25:30]         - final_layer.spat_conv.weight
+[2026-04-15 01:25:30]         - final_layer.spat_conv.bias
+[2026-04-15 01:25:30]         - final_layer.linear.weight
+[2026-04-15 01:25:30]         - ... (1 more)
+[2026-04-15 01:28:24]   Fold 4/5 | best_epoch=3055 | stop=5000 | val_loss=0.6986 | acc=0.8500 | bal_acc=0.8500
+[2026-04-15 01:28:24]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 01:28:24]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 01:28:24]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 01:28:24] Building model class: SignalJEPA_PostLocal
+[2026-04-15 01:28:24] Building model with input window duration: 4.1875 s
+[2026-04-15 01:28:24] Pretrained weight loading:
+[2026-04-15 01:28:24]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 01:28:24]   Downloaded keys:       179
+[2026-04-15 01:28:24]   Keys selected:         7
+[2026-04-15 01:28:24]   Keys dropped:          172
+[2026-04-15 01:28:24]   Missing keys:          4
+[2026-04-15 01:28:24]   Unexpected keys:       0
+[2026-04-15 01:28:24]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:28:24]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 01:28:24]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 01:28:24]     Fine-tune strategy: full
+[2026-04-15 01:28:24]     Warm-up active:     True
+[2026-04-15 01:28:24]     Warm-up epochs:     10
+[2026-04-15 01:28:24]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:28:24]     Phase 1 (warmup):
+[2026-04-15 01:28:24]       Trainable groups: ['final_layer.']
+[2026-04-15 01:28:24]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 01:28:24]         - final_layer.spat_conv.weight
+[2026-04-15 01:28:24]         - final_layer.spat_conv.bias
+[2026-04-15 01:28:24]         - final_layer.linear.weight
+[2026-04-15 01:28:24]         - final_layer.linear.bias
+[2026-04-15 01:28:24]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 01:28:24]     Phase 2 (full):
+[2026-04-15 01:28:24]       Trainable groups: ['all_parameters']
+[2026-04-15 01:28:24]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 01:28:24]         - feature_encoder.1.0.weight
+[2026-04-15 01:28:24]         - feature_encoder.1.2.weight
+[2026-04-15 01:28:24]         - feature_encoder.1.2.bias
+[2026-04-15 01:28:24]         - feature_encoder.2.0.weight
+[2026-04-15 01:28:24]         - feature_encoder.3.0.weight
+[2026-04-15 01:28:24]         - feature_encoder.4.0.weight
+[2026-04-15 01:28:24]         - feature_encoder.5.0.weight
+[2026-04-15 01:28:24]         - final_layer.spat_conv.weight
+[2026-04-15 01:28:24]         - final_layer.spat_conv.bias
+[2026-04-15 01:28:24]         - final_layer.linear.weight
+[2026-04-15 01:28:24]         - ... (1 more)
+[2026-04-15 01:31:18]   Fold 5/5 | best_epoch=13 | stop=5000 | val_loss=0.3991 | acc=0.8250 | bal_acc=0.8250
+[2026-04-15 01:31:18]   Subject 53 summary: acc=0.8450±0.0100  bal_acc=0.8450±0.0100
+
+[2026-04-15 01:31:18] Subject 54: 200 windows | class_counts=[50, 50, 50, 50]
+[2026-04-15 01:31:18]   Fold 1 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 01:31:18]   Fold 2 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 01:31:18]   Fold 3 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 01:31:18]   Fold 4 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 01:31:18]   Fold 5 class counts: train=[32, 32, 32, 32] val=[8, 8, 8, 8] test=[10, 10, 10, 10]
+[2026-04-15 01:31:18]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 01:31:18]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 01:31:18]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 01:31:18] Building model class: SignalJEPA_PostLocal
+[2026-04-15 01:31:18] Building model with input window duration: 4.1875 s
+[2026-04-15 01:31:18] Pretrained weight loading:
+[2026-04-15 01:31:18]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 01:31:18]   Downloaded keys:       179
+[2026-04-15 01:31:18]   Keys selected:         7
+[2026-04-15 01:31:18]   Keys dropped:          172
+[2026-04-15 01:31:18]   Missing keys:          4
+[2026-04-15 01:31:18]   Unexpected keys:       0
+[2026-04-15 01:31:18]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:31:18]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 01:31:18]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 01:31:18]     Fine-tune strategy: full
+[2026-04-15 01:31:18]     Warm-up active:     True
+[2026-04-15 01:31:18]     Warm-up epochs:     10
+[2026-04-15 01:31:18]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:31:18]     Phase 1 (warmup):
+[2026-04-15 01:31:18]       Trainable groups: ['final_layer.']
+[2026-04-15 01:31:18]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 01:31:18]         - final_layer.spat_conv.weight
+[2026-04-15 01:31:18]         - final_layer.spat_conv.bias
+[2026-04-15 01:31:18]         - final_layer.linear.weight
+[2026-04-15 01:31:18]         - final_layer.linear.bias
+[2026-04-15 01:31:18]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 01:31:18]     Phase 2 (full):
+[2026-04-15 01:31:18]       Trainable groups: ['all_parameters']
+[2026-04-15 01:31:18]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 01:31:18]         - feature_encoder.1.0.weight
+[2026-04-15 01:31:18]         - feature_encoder.1.2.weight
+[2026-04-15 01:31:18]         - feature_encoder.1.2.bias
+[2026-04-15 01:31:18]         - feature_encoder.2.0.weight
+[2026-04-15 01:31:18]         - feature_encoder.3.0.weight
+[2026-04-15 01:31:18]         - feature_encoder.4.0.weight
+[2026-04-15 01:31:18]         - feature_encoder.5.0.weight
+[2026-04-15 01:31:18]         - final_layer.spat_conv.weight
+[2026-04-15 01:31:18]         - final_layer.spat_conv.bias
+[2026-04-15 01:31:18]         - final_layer.linear.weight
+[2026-04-15 01:31:18]         - ... (1 more)
+[2026-04-15 01:34:11]   Fold 1/5 | best_epoch=8 | stop=5000 | val_loss=1.3505 | acc=0.4750 | bal_acc=0.4750
+[2026-04-15 01:34:11]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 01:34:11]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 01:34:11]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 01:34:11] Building model class: SignalJEPA_PostLocal
+[2026-04-15 01:34:11] Building model with input window duration: 4.1875 s
+[2026-04-15 01:34:11] Pretrained weight loading:
+[2026-04-15 01:34:11]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 01:34:11]   Downloaded keys:       179
+[2026-04-15 01:34:11]   Keys selected:         7
+[2026-04-15 01:34:11]   Keys dropped:          172
+[2026-04-15 01:34:11]   Missing keys:          4
+[2026-04-15 01:34:11]   Unexpected keys:       0
+[2026-04-15 01:34:11]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:34:11]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 01:34:11]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 01:34:11]     Fine-tune strategy: full
+[2026-04-15 01:34:11]     Warm-up active:     True
+[2026-04-15 01:34:11]     Warm-up epochs:     10
+[2026-04-15 01:34:11]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:34:11]     Phase 1 (warmup):
+[2026-04-15 01:34:11]       Trainable groups: ['final_layer.']
+[2026-04-15 01:34:11]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 01:34:11]         - final_layer.spat_conv.weight
+[2026-04-15 01:34:11]         - final_layer.spat_conv.bias
+[2026-04-15 01:34:11]         - final_layer.linear.weight
+[2026-04-15 01:34:11]         - final_layer.linear.bias
+[2026-04-15 01:34:11]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 01:34:11]     Phase 2 (full):
+[2026-04-15 01:34:11]       Trainable groups: ['all_parameters']
+[2026-04-15 01:34:11]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 01:34:11]         - feature_encoder.1.0.weight
+[2026-04-15 01:34:11]         - feature_encoder.1.2.weight
+[2026-04-15 01:34:11]         - feature_encoder.1.2.bias
+[2026-04-15 01:34:11]         - feature_encoder.2.0.weight
+[2026-04-15 01:34:11]         - feature_encoder.3.0.weight
+[2026-04-15 01:34:11]         - feature_encoder.4.0.weight
+[2026-04-15 01:34:11]         - feature_encoder.5.0.weight
+[2026-04-15 01:34:11]         - final_layer.spat_conv.weight
+[2026-04-15 01:34:11]         - final_layer.spat_conv.bias
+[2026-04-15 01:34:11]         - final_layer.linear.weight
+[2026-04-15 01:34:11]         - ... (1 more)
+[2026-04-15 01:37:05]   Fold 2/5 | best_epoch=10 | stop=5000 | val_loss=1.1614 | acc=0.6000 | bal_acc=0.6000
+[2026-04-15 01:37:05]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 01:37:05]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 01:37:05]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 01:37:05] Building model class: SignalJEPA_PostLocal
+[2026-04-15 01:37:05] Building model with input window duration: 4.1875 s
+[2026-04-15 01:37:05] Pretrained weight loading:
+[2026-04-15 01:37:05]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 01:37:05]   Downloaded keys:       179
+[2026-04-15 01:37:05]   Keys selected:         7
+[2026-04-15 01:37:05]   Keys dropped:          172
+[2026-04-15 01:37:05]   Missing keys:          4
+[2026-04-15 01:37:05]   Unexpected keys:       0
+[2026-04-15 01:37:05]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:37:05]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 01:37:05]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 01:37:05]     Fine-tune strategy: full
+[2026-04-15 01:37:05]     Warm-up active:     True
+[2026-04-15 01:37:05]     Warm-up epochs:     10
+[2026-04-15 01:37:05]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:37:05]     Phase 1 (warmup):
+[2026-04-15 01:37:05]       Trainable groups: ['final_layer.']
+[2026-04-15 01:37:05]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 01:37:05]         - final_layer.spat_conv.weight
+[2026-04-15 01:37:05]         - final_layer.spat_conv.bias
+[2026-04-15 01:37:05]         - final_layer.linear.weight
+[2026-04-15 01:37:05]         - final_layer.linear.bias
+[2026-04-15 01:37:05]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 01:37:05]     Phase 2 (full):
+[2026-04-15 01:37:05]       Trainable groups: ['all_parameters']
+[2026-04-15 01:37:05]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 01:37:05]         - feature_encoder.1.0.weight
+[2026-04-15 01:37:05]         - feature_encoder.1.2.weight
+[2026-04-15 01:37:05]         - feature_encoder.1.2.bias
+[2026-04-15 01:37:05]         - feature_encoder.2.0.weight
+[2026-04-15 01:37:05]         - feature_encoder.3.0.weight
+[2026-04-15 01:37:05]         - feature_encoder.4.0.weight
+[2026-04-15 01:37:05]         - feature_encoder.5.0.weight
+[2026-04-15 01:37:05]         - final_layer.spat_conv.weight
+[2026-04-15 01:37:05]         - final_layer.spat_conv.bias
+[2026-04-15 01:37:05]         - final_layer.linear.weight
+[2026-04-15 01:37:05]         - ... (1 more)
+[2026-04-15 01:39:58]   Fold 3/5 | best_epoch=1 | stop=5000 | val_loss=1.3980 | acc=0.3250 | bal_acc=0.3250
+[2026-04-15 01:39:58]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 01:39:58]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 01:39:58]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 01:39:58] Building model class: SignalJEPA_PostLocal
+[2026-04-15 01:39:58] Building model with input window duration: 4.1875 s
+[2026-04-15 01:39:58] Pretrained weight loading:
+[2026-04-15 01:39:58]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 01:39:58]   Downloaded keys:       179
+[2026-04-15 01:39:58]   Keys selected:         7
+[2026-04-15 01:39:58]   Keys dropped:          172
+[2026-04-15 01:39:58]   Missing keys:          4
+[2026-04-15 01:39:58]   Unexpected keys:       0
+[2026-04-15 01:39:58]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:39:58]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 01:39:58]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 01:39:58]     Fine-tune strategy: full
+[2026-04-15 01:39:58]     Warm-up active:     True
+[2026-04-15 01:39:58]     Warm-up epochs:     10
+[2026-04-15 01:39:58]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:39:58]     Phase 1 (warmup):
+[2026-04-15 01:39:58]       Trainable groups: ['final_layer.']
+[2026-04-15 01:39:58]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 01:39:58]         - final_layer.spat_conv.weight
+[2026-04-15 01:39:58]         - final_layer.spat_conv.bias
+[2026-04-15 01:39:58]         - final_layer.linear.weight
+[2026-04-15 01:39:58]         - final_layer.linear.bias
+[2026-04-15 01:39:58]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 01:39:58]     Phase 2 (full):
+[2026-04-15 01:39:58]       Trainable groups: ['all_parameters']
+[2026-04-15 01:39:58]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 01:39:58]         - feature_encoder.1.0.weight
+[2026-04-15 01:39:58]         - feature_encoder.1.2.weight
+[2026-04-15 01:39:58]         - feature_encoder.1.2.bias
+[2026-04-15 01:39:58]         - feature_encoder.2.0.weight
+[2026-04-15 01:39:58]         - feature_encoder.3.0.weight
+[2026-04-15 01:39:58]         - feature_encoder.4.0.weight
+[2026-04-15 01:39:58]         - feature_encoder.5.0.weight
+[2026-04-15 01:39:58]         - final_layer.spat_conv.weight
+[2026-04-15 01:39:58]         - final_layer.spat_conv.bias
+[2026-04-15 01:39:58]         - final_layer.linear.weight
+[2026-04-15 01:39:58]         - ... (1 more)
+[2026-04-15 01:42:51]   Fold 4/5 | best_epoch=10 | stop=5000 | val_loss=1.1563 | acc=0.5250 | bal_acc=0.5250
+[2026-04-15 01:42:51]     Train class counts: [32, 32, 32, 32]
+[2026-04-15 01:42:51]     Val class counts:   [8, 8, 8, 8]
+[2026-04-15 01:42:51]     Test class counts:  [10, 10, 10, 10]
+[2026-04-15 01:42:51] Building model class: SignalJEPA_PostLocal
+[2026-04-15 01:42:51] Building model with input window duration: 4.1875 s
+[2026-04-15 01:42:51] Pretrained weight loading:
+[2026-04-15 01:42:51]   Model:                 SignalJEPA_PostLocal
+[2026-04-15 01:42:51]   Downloaded keys:       179
+[2026-04-15 01:42:51]   Keys selected:         7
+[2026-04-15 01:42:51]   Keys dropped:          172
+[2026-04-15 01:42:51]   Missing keys:          4
+[2026-04-15 01:42:51]   Unexpected keys:       0
+[2026-04-15 01:42:51]   Missing preview:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:42:51]   Dropped preview:       ['transformer.decoder.layers.0.linear1.bias', 'transformer.decoder.layers.0.linear1.weight', 'transformer.decoder.layers.0.linear2.bias', 'transformer.decoder.layers.0.linear2.weight', 'transformer.decoder.layers.0.multihead_attn.in_proj_bias', 'transformer.decoder.layers.0.multihead_attn.in_proj_weight']
+[2026-04-15 01:42:51]     Downstream model:   SignalJEPA_PostLocal
+[2026-04-15 01:42:51]     Fine-tune strategy: full
+[2026-04-15 01:42:51]     Warm-up active:     True
+[2026-04-15 01:42:51]     Warm-up epochs:     10
+[2026-04-15 01:42:51]     Missing keys:       ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 01:42:51]     Phase 1 (warmup):
+[2026-04-15 01:42:51]       Trainable groups: ['final_layer.']
+[2026-04-15 01:42:51]       Trainable params: 4,352 / 18,192 (23.9%)
+[2026-04-15 01:42:51]         - final_layer.spat_conv.weight
+[2026-04-15 01:42:51]         - final_layer.spat_conv.bias
+[2026-04-15 01:42:51]         - final_layer.linear.weight
+[2026-04-15 01:42:51]         - final_layer.linear.bias
+[2026-04-15 01:42:51]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_PostLocal.
+[2026-04-15 01:42:51]     Phase 2 (full):
+[2026-04-15 01:42:51]       Trainable groups: ['all_parameters']
+[2026-04-15 01:42:51]       Trainable params: 18,192 / 18,192 (100.0%)
+[2026-04-15 01:42:51]         - feature_encoder.1.0.weight
+[2026-04-15 01:42:51]         - feature_encoder.1.2.weight
+[2026-04-15 01:42:51]         - feature_encoder.1.2.bias
+[2026-04-15 01:42:51]         - feature_encoder.2.0.weight
+[2026-04-15 01:42:51]         - feature_encoder.3.0.weight
+[2026-04-15 01:42:51]         - feature_encoder.4.0.weight
+[2026-04-15 01:42:51]         - feature_encoder.5.0.weight
+[2026-04-15 01:42:51]         - final_layer.spat_conv.weight
+[2026-04-15 01:42:51]         - final_layer.spat_conv.bias
+[2026-04-15 01:42:51]         - final_layer.linear.weight
+[2026-04-15 01:42:51]         - ... (1 more)
+[2026-04-15 01:45:43]   Fold 5/5 | best_epoch=11 | stop=5000 | val_loss=1.2252 | acc=0.5000 | bal_acc=0.5000
+[2026-04-15 01:45:44]   Subject 54 summary: acc=0.4850±0.0903  bal_acc=0.4850±0.0903
+
+[2026-04-15 01:45:44] Total folds completed: 35
+[2026-04-15 01:45:44] ======================================================================
+[2026-04-15 01:45:44] AGGREGATED RESULTS
+[2026-04-15 01:45:44] ======================================================================
+[2026-04-15 01:45:44]   Subject 48:  acc=0.9350±0.0490  bal_acc=0.9350±0.0490
+[2026-04-15 01:45:44]   Subject 49:  acc=0.8050±0.0430  bal_acc=0.8050±0.0430
+[2026-04-15 01:45:44]   Subject 50:  acc=0.8900±0.0515  bal_acc=0.8900±0.0515
+[2026-04-15 01:45:44]   Subject 51:  acc=0.3850±0.1056  bal_acc=0.3850±0.1056
+[2026-04-15 01:45:44]   Subject 52:  acc=0.5300±0.0872  bal_acc=0.5300±0.0872
+[2026-04-15 01:45:44]   Subject 53:  acc=0.8450±0.0100  bal_acc=0.8450±0.0100
+[2026-04-15 01:45:44]   Subject 54:  acc=0.4850±0.0903  bal_acc=0.4850±0.0903
+[2026-04-15 01:45:44] ----------------------------------------------------------------------
+[2026-04-15 01:45:44]   OVERALL:      acc=0.6964±0.2176  bal_acc=0.6964±0.2176
+[2026-04-15 01:45:44] ======================================================================
+[2026-04-15 01:45:44] CV results saved to:      /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260415_0002_33e6e683/cv_results.json
+[2026-04-15 01:45:44] Subject metrics saved to: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260415_0002_33e6e683/subject_metrics.json
+[2026-04-15 01:45:44] Global metrics saved to:  /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260415_0002_33e6e683/global_metrics.json
+[2026-04-15 01:45:44] Run metadata saved to:    /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260415_0002_33e6e683/run_metadata.json
+
+[2026-04-15 01:45:44] All artifacts in: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260415_0002_33e6e683
+
+[2026-04-15 01:45:44] ======================================================================
+[2026-04-15 01:45:44] EXPERIMENT SUMMARY
+[2026-04-15 01:45:44] ======================================================================
+[2026-04-15 01:45:44] Run ID:    20260415_0002_33e6e683
+[2026-04-15 01:45:44] Artifacts: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/SSVEP/20260415_0002_33e6e683
+
+[2026-04-15 01:45:44] Configuration:
+[2026-04-15 01:45:44]   Subjects:          [48, 49, 50, 51, 52, 53, 54]
+[2026-04-15 01:45:44]   Paradigm:          SSVEP
+[2026-04-15 01:45:44]   Model:             SignalJEPA_PostLocal
+[2026-04-15 01:45:44]   Strategy:          full
+[2026-04-15 01:45:44]   Warm-up epochs:    10
+[2026-04-15 01:45:44]   Bandpass:          0.5-40.0 Hz
+[2026-04-15 01:45:44]   Resample:          128 Hz
+[2026-04-15 01:45:44]   CV folds:          5
+[2026-04-15 01:45:44]   Learning rate:     None
+[2026-04-15 01:45:44]   Batch size:        32
+[2026-04-15 01:45:44]   Max epochs:        5000
+
+[2026-04-15 01:45:44] Results:
+[2026-04-15 01:45:44]   Mean Accuracy:          0.6964 ± 0.2176
+[2026-04-15 01:45:44]   Mean Balanced Accuracy: 0.6964 ± 0.2176
