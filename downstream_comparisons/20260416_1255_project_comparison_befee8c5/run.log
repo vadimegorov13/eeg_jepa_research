@@ -1,0 +1,114 @@
+[2026-04-16 12:55:09] Logger initialized.
+[2026-04-16 12:55:09] ======================================================================
+[2026-04-16 12:55:09] CONFIGURATION
+[2026-04-16 12:55:09] ======================================================================
+[2026-04-16 12:55:09]   annotate_missing: False
+[2026-04-16 12:55:09]   artifact_dir: /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/downstream_comparisons
+[2026-04-16 12:55:09]   bar_width: 0.06
+[2026-04-16 12:55:09]   dataset_label_fontsize: 15
+[2026-04-16 12:55:09]   fig_height_per_paradigm: 3
+[2026-04-16 12:55:09]   fig_width: 10
+[2026-04-16 12:55:09]   group_gap: 0.8
+[2026-04-16 12:55:09]   legend_fontsize: 13
+[2026-04-16 12:55:09]   save_figures: True
+[2026-04-16 12:55:09]   save_tables: False
+[2026-04-16 12:55:09]   x_tick_fontsize: 13
+[2026-04-16 12:55:09]   y_label_fontsize: 15
+[2026-04-16 12:55:09]   y_tick_fontsize: 13
+[2026-04-16 12:55:09] ======================================================================
+[2026-04-16 12:55:09] Config saved to: /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/downstream_comparisons/20260416_1255_project_comparison_befee8c5/config.json
+[2026-04-16 12:55:09] load_metrics defined.
+[2026-04-16 12:55:09] Grid-building helpers defined.
+
+[2026-04-16 12:55:09] Building full expected grid and merging loaded results...
+
+[2026-04-16 12:55:09] Expected combinations (full grid): 180  (3 paradigms × 6 schemes × 10 pretraining)
+[2026-04-16 12:55:09] Successfully loaded: 13
+[2026-04-16 12:55:09] Missing / invalid:   167
+
+[2026-04-16 12:55:09] ======================================================================
+[2026-04-16 12:55:09] SUCCESSFULLY LOADED RESULTS
+[2026-04-16 12:55:09] ======================================================================
+[2026-04-16 12:55:09] paradigm       ft_scheme pretraining  metric_value   metric_std status
+     ERP  new-contextual     16s-60%      0.833333 1.110223e-16     ok
+     ERP  new-post-local     16s-60%      0.878608 2.022713e-02     ok
+     ERP   new-pre-local     16s-60%      0.893831 2.402570e-02     ok
+   SSVEP full-post-local     16s-60%      0.696429 2.176287e-01     ok
+   SSVEP  full-pre-local     16s-60%      0.898571 1.514151e-01     ok
+   SSVEP  new-contextual     16s-60%      0.250000 0.000000e+00     ok
+   SSVEP  new-post-local     16s-60%      0.536429 1.969720e-01     ok
+   SSVEP   new-pre-local     16s-60%      0.917857 1.205007e-01     ok
+      MI full-post-local     16s-60%      0.572143 7.832429e-02     ok
+      MI  full-pre-local     16s-60%      0.569286 9.730029e-02     ok
+      MI  new-contextual     16s-60%      0.500000 0.000000e+00     ok
+      MI  new-post-local     16s-60%      0.540000 6.923046e-02     ok
+      MI   new-pre-local     16s-60%      0.549286 8.334218e-02     ok
+
+[2026-04-16 12:55:09] ======================================================================
+[2026-04-16 12:55:09] MISSING OR INVALID RESULTS  (all expected positions without loaded data)
+[2026-04-16 12:55:09] ======================================================================
+
+[2026-04-16 12:55:09] Not-yet-configured (path = None): 167 combinations
+[2026-04-16 12:55:09]   ERP: 57 not configured
+[2026-04-16 12:55:09]   SSVEP: 55 not configured
+[2026-04-16 12:55:09]   MI: 55 not configured
+
+[2026-04-16 12:55:09] ======================================================================
+[2026-04-16 12:55:09] COVERAGE SUMMARY
+[2026-04-16 12:55:09] ======================================================================
+
+[2026-04-16 12:55:09] By Paradigm:
+[2026-04-16 12:55:09]   ERP     :   3 /  60 loaded
+[2026-04-16 12:55:09]   SSVEP   :   5 /  60 loaded
+[2026-04-16 12:55:09]   MI      :   5 /  60 loaded
+
+[2026-04-16 12:55:09] By Fine-tuning Scheme:
+[2026-04-16 12:55:09]   full-contextual     :   0 /  30 loaded
+[2026-04-16 12:55:09]   full-post-local     :   2 /  30 loaded
+[2026-04-16 12:55:09]   full-pre-local      :   2 /  30 loaded
+[2026-04-16 12:55:09]   new-contextual      :   3 /  30 loaded
+[2026-04-16 12:55:09]   new-post-local      :   3 /  30 loaded
+[2026-04-16 12:55:09]   new-pre-local       :   3 /  30 loaded
+
+[2026-04-16 12:55:09] By Pretraining Checkpoint:
+[2026-04-16 12:55:09]   1s-40%         :   0 /  18 loaded
+[2026-04-16 12:55:09]   1s-60%         :   0 /  18 loaded
+[2026-04-16 12:55:09]   1s-80%         :   0 /  18 loaded
+[2026-04-16 12:55:09]   4s-40%         :   0 /  18 loaded
+[2026-04-16 12:55:09]   4s-60%         :   0 /  18 loaded
+[2026-04-16 12:55:09]   4s-80%         :   0 /  18 loaded
+[2026-04-16 12:55:09]   16s-40%        :   0 /  18 loaded
+[2026-04-16 12:55:09]   16s-60%        :  13 /  18 loaded
+[2026-04-16 12:55:09]   16s-80%        :   0 /  18 loaded
+[2026-04-16 12:55:09]   no-pre-training:   0 /  18 loaded
+
+[2026-04-16 12:55:09] Paper-style plot helpers defined.
+[2026-04-16 12:55:09]   Group centers : [0.  1.4 2.8 4.2 5.6 7. ]
+[2026-04-16 12:55:09]   Bar width     : 0.06
+[2026-04-16 12:55:09]   Group span    : 0.60
+
+[2026-04-16 12:55:09] Paper-style comparison figure created.
+[2026-04-16 12:55:10] Figure saved:
+[2026-04-16 12:55:10]   - PNG: /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/downstream_comparisons/20260416_1255_project_comparison_befee8c5/comparison_plot.png
+[2026-04-16 12:55:10]   - PDF: /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/downstream_comparisons/20260416_1255_project_comparison_befee8c5/comparison_plot.pdf
+[2026-04-16 12:55:10] Table saving disabled in CONFIG.
+[2026-04-16 12:55:10] Summary saved to: /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/downstream_comparisons/20260416_1255_project_comparison_befee8c5/summary.json
+
+[2026-04-16 12:55:10] Run ID: 20260416_1255_project_comparison_befee8c5
+[2026-04-16 12:55:10] Artifact Directory: /Users/vadim/Documents/School/Spring 2026/CSCE A698 Individual Research/EEG_JEPA/downstream_comparisons/20260416_1255_project_comparison_befee8c5
+
+[2026-04-16 12:55:10] Grid dimensions: 3 paradigms × 6 FT schemes × 10 pretraining = 180 slots
+[2026-04-16 12:55:10]   Successfully loaded : 13
+[2026-04-16 12:55:10]   Missing / invalid   : 167
+
+[2026-04-16 12:55:10] Coverage by Paradigm:
+[2026-04-16 12:55:10]   ERP     :   3 /  60 (  5.0%)
+[2026-04-16 12:55:10]   SSVEP   :   5 /  60 (  8.3%)
+[2026-04-16 12:55:10]   MI      :   5 /  60 (  8.3%)
+
+[2026-04-16 12:55:10] Generated Outputs:
+[2026-04-16 12:55:10]   - comparison_plot.pdf                 (   16.4 KB)
+[2026-04-16 12:55:10]   - comparison_plot.png                 (  663.4 KB)
+[2026-04-16 12:55:10]   - config.json                         (    0.4 KB)
+[2026-04-16 12:55:10]   - run.log                             (    6.6 KB)
+[2026-04-16 12:55:10]   - summary.json                        (    1.2 KB)
