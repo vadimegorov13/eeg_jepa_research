@@ -1,0 +1,2452 @@
+[
+  {
+    "subject_id": "48",
+    "fold_id": 1,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 9,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6205615401268005,
+    "accuracy": 0.625,
+    "balanced_accuracy": 0.625,
+    "confusion_matrix": [
+      [
+        13,
+        7
+      ],
+      [
+        8,
+        12
+      ]
+    ],
+    "prediction_histogram": [
+      21,
+      19
+    ]
+  },
+  {
+    "subject_id": "48",
+    "fold_id": 2,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 10,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6792091131210327,
+    "accuracy": 0.7,
+    "balanced_accuracy": 0.7,
+    "confusion_matrix": [
+      [
+        12,
+        8
+      ],
+      [
+        4,
+        16
+      ]
+    ],
+    "prediction_histogram": [
+      16,
+      24
+    ]
+  },
+  {
+    "subject_id": "48",
+    "fold_id": 3,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 11,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.4710007607936859,
+    "accuracy": 0.4,
+    "balanced_accuracy": 0.4,
+    "confusion_matrix": [
+      [
+        6,
+        14
+      ],
+      [
+        10,
+        10
+      ]
+    ],
+    "prediction_histogram": [
+      16,
+      24
+    ]
+  },
+  {
+    "subject_id": "48",
+    "fold_id": 4,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 8,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6793221235275269,
+    "accuracy": 0.55,
+    "balanced_accuracy": 0.55,
+    "confusion_matrix": [
+      [
+        11,
+        9
+      ],
+      [
+        9,
+        11
+      ]
+    ],
+    "prediction_histogram": [
+      20,
+      20
+    ]
+  },
+  {
+    "subject_id": "48",
+    "fold_id": 5,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 10,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.634365439414978,
+    "accuracy": 0.625,
+    "balanced_accuracy": 0.625,
+    "confusion_matrix": [
+      [
+        12,
+        8
+      ],
+      [
+        7,
+        13
+      ]
+    ],
+    "prediction_histogram": [
+      19,
+      21
+    ]
+  },
+  {
+    "subject_id": "49",
+    "fold_id": 1,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 12,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.5383848547935486,
+    "accuracy": 0.775,
+    "balanced_accuracy": 0.775,
+    "confusion_matrix": [
+      [
+        18,
+        2
+      ],
+      [
+        7,
+        13
+      ]
+    ],
+    "prediction_histogram": [
+      25,
+      15
+    ]
+  },
+  {
+    "subject_id": "49",
+    "fold_id": 2,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 4,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6785591244697571,
+    "accuracy": 0.8,
+    "balanced_accuracy": 0.8,
+    "confusion_matrix": [
+      [
+        17,
+        3
+      ],
+      [
+        5,
+        15
+      ]
+    ],
+    "prediction_histogram": [
+      22,
+      18
+    ]
+  },
+  {
+    "subject_id": "49",
+    "fold_id": 3,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 11,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.3389807939529419,
+    "accuracy": 0.6,
+    "balanced_accuracy": 0.6,
+    "confusion_matrix": [
+      [
+        12,
+        8
+      ],
+      [
+        8,
+        12
+      ]
+    ],
+    "prediction_histogram": [
+      20,
+      20
+    ]
+  },
+  {
+    "subject_id": "49",
+    "fold_id": 4,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 10,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6259568929672241,
+    "accuracy": 0.75,
+    "balanced_accuracy": 0.75,
+    "confusion_matrix": [
+      [
+        15,
+        5
+      ],
+      [
+        5,
+        15
+      ]
+    ],
+    "prediction_histogram": [
+      20,
+      20
+    ]
+  },
+  {
+    "subject_id": "49",
+    "fold_id": 5,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 9,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6369515657424927,
+    "accuracy": 0.65,
+    "balanced_accuracy": 0.65,
+    "confusion_matrix": [
+      [
+        13,
+        7
+      ],
+      [
+        7,
+        13
+      ]
+    ],
+    "prediction_histogram": [
+      20,
+      20
+    ]
+  },
+  {
+    "subject_id": "50",
+    "fold_id": 1,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 2,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6977359056472778,
+    "accuracy": 0.6,
+    "balanced_accuracy": 0.6,
+    "confusion_matrix": [
+      [
+        12,
+        8
+      ],
+      [
+        8,
+        12
+      ]
+    ],
+    "prediction_histogram": [
+      20,
+      20
+    ]
+  },
+  {
+    "subject_id": "50",
+    "fold_id": 2,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 10,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6545373797416687,
+    "accuracy": 0.55,
+    "balanced_accuracy": 0.55,
+    "confusion_matrix": [
+      [
+        8,
+        12
+      ],
+      [
+        6,
+        14
+      ]
+    ],
+    "prediction_histogram": [
+      14,
+      26
+    ]
+  },
+  {
+    "subject_id": "50",
+    "fold_id": 3,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 1,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6965892910957336,
+    "accuracy": 0.525,
+    "balanced_accuracy": 0.525,
+    "confusion_matrix": [
+      [
+        10,
+        10
+      ],
+      [
+        9,
+        11
+      ]
+    ],
+    "prediction_histogram": [
+      19,
+      21
+    ]
+  },
+  {
+    "subject_id": "50",
+    "fold_id": 4,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 6,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6875925660133362,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        10,
+        10
+      ],
+      [
+        10,
+        10
+      ]
+    ],
+    "prediction_histogram": [
+      20,
+      20
+    ]
+  },
+  {
+    "subject_id": "50",
+    "fold_id": 5,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 10,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6615240573883057,
+    "accuracy": 0.55,
+    "balanced_accuracy": 0.55,
+    "confusion_matrix": [
+      [
+        14,
+        6
+      ],
+      [
+        12,
+        8
+      ]
+    ],
+    "prediction_histogram": [
+      26,
+      14
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 1,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 1,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6940211653709412,
+    "accuracy": 0.625,
+    "balanced_accuracy": 0.625,
+    "confusion_matrix": [
+      [
+        10,
+        10
+      ],
+      [
+        5,
+        15
+      ]
+    ],
+    "prediction_histogram": [
+      15,
+      25
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 2,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 8,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6676065921783447,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        10,
+        10
+      ],
+      [
+        10,
+        10
+      ]
+    ],
+    "prediction_histogram": [
+      20,
+      20
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 3,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 8,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6730873584747314,
+    "accuracy": 0.55,
+    "balanced_accuracy": 0.55,
+    "confusion_matrix": [
+      [
+        15,
+        5
+      ],
+      [
+        13,
+        7
+      ]
+    ],
+    "prediction_histogram": [
+      28,
+      12
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 4,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 1,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6923495531082153,
+    "accuracy": 0.425,
+    "balanced_accuracy": 0.42500000000000004,
+    "confusion_matrix": [
+      [
+        9,
+        11
+      ],
+      [
+        12,
+        8
+      ]
+    ],
+    "prediction_histogram": [
+      21,
+      19
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 5,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 1,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6937892436981201,
+    "accuracy": 0.45,
+    "balanced_accuracy": 0.45,
+    "confusion_matrix": [
+      [
+        8,
+        12
+      ],
+      [
+        10,
+        10
+      ]
+    ],
+    "prediction_histogram": [
+      18,
+      22
+    ]
+  },
+  {
+    "subject_id": "52",
+    "fold_id": 1,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 10,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6397804617881775,
+    "accuracy": 0.425,
+    "balanced_accuracy": 0.42500000000000004,
+    "confusion_matrix": [
+      [
+        6,
+        14
+      ],
+      [
+        9,
+        11
+      ]
+    ],
+    "prediction_histogram": [
+      15,
+      25
+    ]
+  },
+  {
+    "subject_id": "52",
+    "fold_id": 2,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 10,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6291863322257996,
+    "accuracy": 0.6,
+    "balanced_accuracy": 0.6,
+    "confusion_matrix": [
+      [
+        9,
+        11
+      ],
+      [
+        5,
+        15
+      ]
+    ],
+    "prediction_histogram": [
+      14,
+      26
+    ]
+  },
+  {
+    "subject_id": "52",
+    "fold_id": 3,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 10,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6594481468200684,
+    "accuracy": 0.625,
+    "balanced_accuracy": 0.625,
+    "confusion_matrix": [
+      [
+        12,
+        8
+      ],
+      [
+        7,
+        13
+      ]
+    ],
+    "prediction_histogram": [
+      19,
+      21
+    ]
+  },
+  {
+    "subject_id": "52",
+    "fold_id": 4,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 10,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6403982043266296,
+    "accuracy": 0.6,
+    "balanced_accuracy": 0.6000000000000001,
+    "confusion_matrix": [
+      [
+        11,
+        9
+      ],
+      [
+        7,
+        13
+      ]
+    ],
+    "prediction_histogram": [
+      18,
+      22
+    ]
+  },
+  {
+    "subject_id": "52",
+    "fold_id": 5,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 8,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6763955354690552,
+    "accuracy": 0.675,
+    "balanced_accuracy": 0.675,
+    "confusion_matrix": [
+      [
+        15,
+        5
+      ],
+      [
+        8,
+        12
+      ]
+    ],
+    "prediction_histogram": [
+      23,
+      17
+    ]
+  },
+  {
+    "subject_id": "53",
+    "fold_id": 1,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 2,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6987459659576416,
+    "accuracy": 0.675,
+    "balanced_accuracy": 0.675,
+    "confusion_matrix": [
+      [
+        16,
+        4
+      ],
+      [
+        9,
+        11
+      ]
+    ],
+    "prediction_histogram": [
+      25,
+      15
+    ]
+  },
+  {
+    "subject_id": "53",
+    "fold_id": 2,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 9,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6570060849189758,
+    "accuracy": 0.525,
+    "balanced_accuracy": 0.525,
+    "confusion_matrix": [
+      [
+        11,
+        9
+      ],
+      [
+        10,
+        10
+      ]
+    ],
+    "prediction_histogram": [
+      21,
+      19
+    ]
+  },
+  {
+    "subject_id": "53",
+    "fold_id": 3,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 6,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6900960206985474,
+    "accuracy": 0.525,
+    "balanced_accuracy": 0.525,
+    "confusion_matrix": [
+      [
+        13,
+        7
+      ],
+      [
+        12,
+        8
+      ]
+    ],
+    "prediction_histogram": [
+      25,
+      15
+    ]
+  },
+  {
+    "subject_id": "53",
+    "fold_id": 4,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 11,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6453670263290405,
+    "accuracy": 0.45,
+    "balanced_accuracy": 0.45,
+    "confusion_matrix": [
+      [
+        9,
+        11
+      ],
+      [
+        11,
+        9
+      ]
+    ],
+    "prediction_histogram": [
+      20,
+      20
+    ]
+  },
+  {
+    "subject_id": "53",
+    "fold_id": 5,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 10,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6393321752548218,
+    "accuracy": 0.525,
+    "balanced_accuracy": 0.525,
+    "confusion_matrix": [
+      [
+        9,
+        11
+      ],
+      [
+        8,
+        12
+      ]
+    ],
+    "prediction_histogram": [
+      17,
+      23
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 1,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 1,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6904570460319519,
+    "accuracy": 0.55,
+    "balanced_accuracy": 0.55,
+    "confusion_matrix": [
+      [
+        11,
+        9
+      ],
+      [
+        9,
+        11
+      ]
+    ],
+    "prediction_histogram": [
+      20,
+      20
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 2,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 3,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6725040078163147,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        9,
+        11
+      ],
+      [
+        9,
+        11
+      ]
+    ],
+    "prediction_histogram": [
+      18,
+      22
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 3,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 10,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.659236490726471,
+    "accuracy": 0.475,
+    "balanced_accuracy": 0.475,
+    "confusion_matrix": [
+      [
+        9,
+        11
+      ],
+      [
+        10,
+        10
+      ]
+    ],
+    "prediction_histogram": [
+      19,
+      21
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 4,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 4,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6823240518569946,
+    "accuracy": 0.475,
+    "balanced_accuracy": 0.47500000000000003,
+    "confusion_matrix": [
+      [
+        11,
+        9
+      ],
+      [
+        12,
+        8
+      ]
+    ],
+    "prediction_histogram": [
+      23,
+      17
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 5,
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "full",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_PreLocal",
+      "downloaded_keys": 179,
+      "loaded_keys": 7,
+      "dropped_keys": 172,
+      "missing_keys": [
+        "spatial_conv.1.weight",
+        "spatial_conv.1.bias",
+        "final_layer.1.weight",
+        "final_layer.1.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder."
+      ],
+      "expected_missing_prefixes": [
+        "spatial_conv.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_2_trainable_groups": [
+      "all_parameters"
+    ],
+    "phase_2_trainable_params": 16142,
+    "best_epoch": 3,
+    "stopped_epoch": 5000,
+    "best_valid_loss": 0.6754001379013062,
+    "accuracy": 0.55,
+    "balanced_accuracy": 0.55,
+    "confusion_matrix": [
+      [
+        11,
+        9
+      ],
+      [
+        9,
+        11
+      ]
+    ],
+    "prediction_histogram": [
+      20,
+      20
+    ]
+  }
+]

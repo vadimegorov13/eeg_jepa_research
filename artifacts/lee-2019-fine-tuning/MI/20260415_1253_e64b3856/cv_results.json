@@ -1,0 +1,2452 @@
+[
+  {
+    "subject_id": "48",
+    "fold_id": 1,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 67,
+    "stopped_epoch": 81,
+    "best_valid_loss": 0.6931462287902832,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  },
+  {
+    "subject_id": "48",
+    "fold_id": 2,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 58,
+    "stopped_epoch": 59,
+    "best_valid_loss": 0.6931528449058533,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  },
+  {
+    "subject_id": "48",
+    "fold_id": 3,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 40,
+    "stopped_epoch": 68,
+    "best_valid_loss": 0.6931473016738892,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  },
+  {
+    "subject_id": "48",
+    "fold_id": 4,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 35,
+    "stopped_epoch": 62,
+    "best_valid_loss": 0.6931489109992981,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        20
+      ]
+    ],
+    "prediction_histogram": [
+      0,
+      40
+    ]
+  },
+  {
+    "subject_id": "48",
+    "fold_id": 5,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 27,
+    "stopped_epoch": 55,
+    "best_valid_loss": 0.6931509971618652,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  },
+  {
+    "subject_id": "49",
+    "fold_id": 1,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 35,
+    "stopped_epoch": 72,
+    "best_valid_loss": 0.6931472420692444,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        20
+      ]
+    ],
+    "prediction_histogram": [
+      0,
+      40
+    ]
+  },
+  {
+    "subject_id": "49",
+    "fold_id": 2,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 57,
+    "stopped_epoch": 83,
+    "best_valid_loss": 0.6931447982788086,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        20
+      ]
+    ],
+    "prediction_histogram": [
+      0,
+      40
+    ]
+  },
+  {
+    "subject_id": "49",
+    "fold_id": 3,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 32,
+    "stopped_epoch": 71,
+    "best_valid_loss": 0.6931446194648743,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  },
+  {
+    "subject_id": "49",
+    "fold_id": 4,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 58,
+    "stopped_epoch": 76,
+    "best_valid_loss": 0.6931764483451843,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  },
+  {
+    "subject_id": "49",
+    "fold_id": 5,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 43,
+    "stopped_epoch": 79,
+    "best_valid_loss": 0.6931586265563965,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        20
+      ]
+    ],
+    "prediction_histogram": [
+      0,
+      40
+    ]
+  },
+  {
+    "subject_id": "50",
+    "fold_id": 1,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 31,
+    "stopped_epoch": 64,
+    "best_valid_loss": 0.693150520324707,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        20
+      ]
+    ],
+    "prediction_histogram": [
+      0,
+      40
+    ]
+  },
+  {
+    "subject_id": "50",
+    "fold_id": 2,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 64,
+    "stopped_epoch": 102,
+    "best_valid_loss": 0.6931455135345459,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  },
+  {
+    "subject_id": "50",
+    "fold_id": 3,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 7,
+    "stopped_epoch": 57,
+    "best_valid_loss": 0.6931466460227966,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        20
+      ]
+    ],
+    "prediction_histogram": [
+      0,
+      40
+    ]
+  },
+  {
+    "subject_id": "50",
+    "fold_id": 4,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 48,
+    "stopped_epoch": 62,
+    "best_valid_loss": 0.6931438446044922,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        20
+      ]
+    ],
+    "prediction_histogram": [
+      0,
+      40
+    ]
+  },
+  {
+    "subject_id": "50",
+    "fold_id": 5,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 37,
+    "stopped_epoch": 62,
+    "best_valid_loss": 0.6931474804878235,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 1,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 21,
+    "stopped_epoch": 67,
+    "best_valid_loss": 0.6931489706039429,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 2,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 39,
+    "stopped_epoch": 75,
+    "best_valid_loss": 0.6931470632553101,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        20
+      ]
+    ],
+    "prediction_histogram": [
+      0,
+      40
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 3,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 15,
+    "stopped_epoch": 56,
+    "best_valid_loss": 0.6931447386741638,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 4,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 21,
+    "stopped_epoch": 52,
+    "best_valid_loss": 0.6931503415107727,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        20
+      ]
+    ],
+    "prediction_histogram": [
+      0,
+      40
+    ]
+  },
+  {
+    "subject_id": "51",
+    "fold_id": 5,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 61,
+    "stopped_epoch": 65,
+    "best_valid_loss": 0.6931473016738892,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        20
+      ]
+    ],
+    "prediction_histogram": [
+      0,
+      40
+    ]
+  },
+  {
+    "subject_id": "52",
+    "fold_id": 1,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 14,
+    "stopped_epoch": 57,
+    "best_valid_loss": 0.6931471228599548,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  },
+  {
+    "subject_id": "52",
+    "fold_id": 2,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 7,
+    "stopped_epoch": 55,
+    "best_valid_loss": 0.6931505799293518,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  },
+  {
+    "subject_id": "52",
+    "fold_id": 3,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 28,
+    "stopped_epoch": 52,
+    "best_valid_loss": 0.6931487917900085,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  },
+  {
+    "subject_id": "52",
+    "fold_id": 4,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 39,
+    "stopped_epoch": 85,
+    "best_valid_loss": 0.6931456923484802,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        20
+      ]
+    ],
+    "prediction_histogram": [
+      0,
+      40
+    ]
+  },
+  {
+    "subject_id": "52",
+    "fold_id": 5,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 35,
+    "stopped_epoch": 60,
+    "best_valid_loss": 0.6931442022323608,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        20
+      ]
+    ],
+    "prediction_histogram": [
+      0,
+      40
+    ]
+  },
+  {
+    "subject_id": "53",
+    "fold_id": 1,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 36,
+    "stopped_epoch": 52,
+    "best_valid_loss": 0.6931478977203369,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        20
+      ]
+    ],
+    "prediction_histogram": [
+      0,
+      40
+    ]
+  },
+  {
+    "subject_id": "53",
+    "fold_id": 2,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 22,
+    "stopped_epoch": 63,
+    "best_valid_loss": 0.6931475400924683,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  },
+  {
+    "subject_id": "53",
+    "fold_id": 3,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 65,
+    "stopped_epoch": 66,
+    "best_valid_loss": 0.6931478977203369,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        20
+      ]
+    ],
+    "prediction_histogram": [
+      0,
+      40
+    ]
+  },
+  {
+    "subject_id": "53",
+    "fold_id": 4,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 42,
+    "stopped_epoch": 74,
+    "best_valid_loss": 0.6931465864181519,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  },
+  {
+    "subject_id": "53",
+    "fold_id": 5,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 11,
+    "stopped_epoch": 60,
+    "best_valid_loss": 0.693146288394928,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 1,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 35,
+    "stopped_epoch": 63,
+    "best_valid_loss": 0.6931617259979248,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 2,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 58,
+    "stopped_epoch": 74,
+    "best_valid_loss": 0.6931504011154175,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 3,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 30,
+    "stopped_epoch": 54,
+    "best_valid_loss": 0.6931459307670593,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 4,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 30,
+    "stopped_epoch": 80,
+    "best_valid_loss": 0.693148672580719,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        20
+      ]
+    ],
+    "prediction_histogram": [
+      0,
+      40
+    ]
+  },
+  {
+    "subject_id": "54",
+    "fold_id": 5,
+    "model_name": "SignalJEPA_Contextual",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 128,
+    "n_val": 32,
+    "n_test": 40,
+    "train_class_counts": [
+      64,
+      64
+    ],
+    "val_class_counts": [
+      16,
+      16
+    ],
+    "test_class_counts": [
+      20,
+      20
+    ],
+    "pretrained_load": {
+      "model_name": "SignalJEPA_Contextual",
+      "downloaded_keys": 179,
+      "loaded_keys": 179,
+      "dropped_keys": 0,
+      "missing_keys": [
+        "pos_encoder.pos_encoder_spat.weight",
+        "final_layer.spat_conv.weight",
+        "final_layer.spat_conv.bias",
+        "final_layer.linear.weight",
+        "final_layer.linear.bias"
+      ],
+      "unexpected_keys": [],
+      "loaded_prefixes": [
+        "feature_encoder.",
+        "transformer."
+      ],
+      "expected_missing_prefixes": [
+        "pos_encoder.",
+        "final_layer."
+      ]
+    },
+    "phase_1_trainable_groups": [
+      "pos_encoder.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 4162,
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "best_epoch": 31,
+    "stopped_epoch": 64,
+    "best_valid_loss": 0.6931481957435608,
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "confusion_matrix": [
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "prediction_histogram": [
+      40,
+      0
+    ]
+  }
+]

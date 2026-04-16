@@ -1,0 +1,615 @@
+[2026-04-15 21:06:24] Using device: cpu
+[2026-04-15 21:06:24] Seed control disabled (CONFIG['set_seed'] = False)
+[2026-04-15 21:06:24] ======================================================================
+[2026-04-15 21:06:24] CONFIGURATION
+[2026-04-15 21:06:24] ======================================================================
+[2026-04-15 21:06:24]   artifact_dir: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning
+[2026-04-15 21:06:24]   bandpass_high: 40.0
+[2026-04-15 21:06:24]   bandpass_low: 0.5
+[2026-04-15 21:06:24]   batch_size: 32
+[2026-04-15 21:06:24]   convert_to_uV: True
+[2026-04-15 21:06:24]   cv_folds: 5
+[2026-04-15 21:06:24]   early_stopping_patience: 50
+[2026-04-15 21:06:24]   learning_rate: None
+[2026-04-15 21:06:24]   model_name: SignalJEPA_Contextual
+[2026-04-15 21:06:24]   n_epochs: 5000
+[2026-04-15 21:06:24]   paradigm: ERP
+[2026-04-15 21:06:24]   pretrained_url: https://huggingface.co/braindecode/SignalJEPA/resolve/main/signal-jepa_16s-60_adeuwv4s.pth
+[2026-04-15 21:06:24]   seed: None
+[2026-04-15 21:06:24]   set_eeg_reference: True
+[2026-04-15 21:06:24]   set_seed: False
+[2026-04-15 21:06:24]   set_standard_montage: True
+[2026-04-15 21:06:24]   sfreq: 128
+[2026-04-15 21:06:24]   strategy: new
+[2026-04-15 21:06:24]   subjects_to_use: None
+[2026-04-15 21:06:24]   val_split: 0.2
+[2026-04-15 21:06:24]   warmup_epochs: 10
+[2026-04-15 21:06:24] ======================================================================
+[2026-04-15 21:06:24] Config saved to: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/ERP/20260415_2106_45070b97/config.json
+[2026-04-15 21:06:24] Epoch window configuration:
+[2026-04-15 21:06:24]   Target sfreq:                128 Hz
+[2026-04-15 21:06:24]   Target duration:             1.190000 s
+[2026-04-15 21:06:24]   Window samples (rounded):    152
+[2026-04-15 21:06:24]   Base trial samples (1.0 s):  128
+[2026-04-15 21:06:24]   Trial stop offset samples:   24
+[2026-04-15 21:06:24]   Effective window duration:   1.187500 s
+[2026-04-15 21:06:24] Dataset code: Lee2019-ERP
+[2026-04-15 21:06:24] Subjects Total: 54
+[2026-04-15 21:06:24] Events: {'Target': 1, 'NonTarget': 2}
+[2026-04-15 21:06:24] Interval: [0.0, 1.0]
+[2026-04-15 21:06:24] Paradigm: p300
+[2026-04-15 21:06:24] Selected subjects: [48, 49, 50, 51, 52, 53, 54]
+[2026-04-15 21:06:24] Expected evaluation folds: 35
+
+[2026-04-15 21:06:24] Building MOABBDataset for Lee2019_ERP...
+[2026-04-15 21:08:07] MOABBDataset recordings loaded: 14
+[2026-04-15 21:08:07] Discovered annotation descriptions (first recording): [np.str_('NonTarget'), np.str_('Target')]
+[2026-04-15 21:08:07] Dataset event_id mapping: {'Target': 1, 'NonTarget': 2}
+[2026-04-15 21:08:07] Label map (event_code -> class_index): {1: 0, 2: 1}
+[2026-04-15 21:08:07] Applying Braindecode preprocessors to MOABBDataset...
+[2026-04-15 21:08:29] Preprocessing complete.
+
+[2026-04-15 21:08:29] Post-preprocessing validation
+[2026-04-15 21:08:29]   Recordings in DATASET: 14
+[2026-04-15 21:08:29]   Unique subject IDs:    ['48', '49', '50', '51', '52', '53', '54']
+[2026-04-15 21:08:29]   sfreq (first rec):     128.0 Hz
+[2026-04-15 21:08:29]   EEG channel count:     62
+[2026-04-15 21:08:29]   First 10 channels:     ['Fp1', 'Fp2', 'F7', 'F3', 'Fz', 'F4', 'F8', 'FC5', 'FC1', 'FC2']
+[2026-04-15 21:08:29] EEG channel #: 62
+[2026-04-15 21:08:29] First 10 EEG channels: ['Fp1', 'Fp2', 'F7', 'F3', 'Fz', 'F4', 'F8', 'FC5', 'FC1', 'FC2']
+[2026-04-15 21:08:29] Channel-location ranges (x, y, z):
+[2026-04-15 21:08:29]   x: min=-0.087556, max=0.084222, span=0.171778
+[2026-04-15 21:08:29]   y: min=-0.082783, max=0.115346, span=0.198129
+[2026-04-15 21:08:29]   z: min=-0.013156, max=0.141549, span=0.154705
+[2026-04-15 21:08:29] Requested window samples: 152
+[2026-04-15 21:08:29] Base trial samples:       128
+[2026-04-15 21:08:29] Stop offset samples:      24
+[2026-04-15 21:08:29] Global class counts: [23100, 4620]
+[2026-04-15 21:08:29] Chance level (2-class): 0.50
+[2026-04-15 21:08:29] One window shape: (62, 152)
+[2026-04-15 21:08:29] One window label: 0
+[2026-04-15 21:08:29] Window sample length expected=152, got=152
+[2026-04-15 21:08:29] Subjects in window split: [48, 49, 50, 51, 52, 53, 54]
+[2026-04-15 21:08:29] Summarizing per-subject windows...
+[2026-04-15 21:08:29]   Subject 48: n_windows=3960, window_shape=(62, 152), class_counts=[3300, 660]
+[2026-04-15 21:08:30]   Subject 49: n_windows=3960, window_shape=(62, 152), class_counts=[3300, 660]
+[2026-04-15 21:08:30]   Subject 50: n_windows=3960, window_shape=(62, 152), class_counts=[3300, 660]
+[2026-04-15 21:08:30]   Subject 51: n_windows=3960, window_shape=(62, 152), class_counts=[3300, 660]
+[2026-04-15 21:08:30]   Subject 52: n_windows=3960, window_shape=(62, 152), class_counts=[3300, 660]
+[2026-04-15 21:08:30]   Subject 53: n_windows=3960, window_shape=(62, 152), class_counts=[3300, 660]
+[2026-04-15 21:08:30]   Subject 54: n_windows=3960, window_shape=(62, 152), class_counts=[3300, 660]
+[2026-04-15 21:08:30]    subject_id  n_windows  n_channels  n_times class_counts
+0          48       3960          62      152  [3300, 660]
+1          49       3960          62      152  [3300, 660]
+2          50       3960          62      152  [3300, 660]
+3          51       3960          62      152  [3300, 660]
+4          52       3960          62      152  [3300, 660]
+5          53       3960          62      152  [3300, 660]
+6          54       3960          62      152  [3300, 660]
+[2026-04-15 21:08:30] Window validation summary:
+[2026-04-15 21:08:30]   Subject 48: n_windows=3960 class_counts=[3300, 660]
+[2026-04-15 21:08:30]   Subject 49: n_windows=3960 class_counts=[3300, 660]
+[2026-04-15 21:08:30]   Subject 50: n_windows=3960 class_counts=[3300, 660]
+[2026-04-15 21:08:30]   Subject 51: n_windows=3960 class_counts=[3300, 660]
+[2026-04-15 21:08:30]   Subject 52: n_windows=3960 class_counts=[3300, 660]
+[2026-04-15 21:08:30]   Subject 53: n_windows=3960 class_counts=[3300, 660]
+[2026-04-15 21:08:30]   Subject 54: n_windows=3960 class_counts=[3300, 660]
+
+[2026-04-15 21:08:30] Validated sampling rate target: 128 Hz
+[2026-04-15 21:08:30] Validated window sample count:   152
+[2026-04-15 21:08:30] Validated window duration:       1.1875 s
+[2026-04-15 21:08:30] Validated channel count:         62
+[2026-04-15 21:08:30] Total windows retained:          27720
+[2026-04-15 21:08:30] Preprocessing sanity checks:
+[2026-04-15 21:08:30]   One sample label: 0
+[2026-04-15 21:08:30]   One sample shape: (62, 152)
+[2026-04-15 21:08:30]   Mean(abs(signal)): 3.551250e+00
+[2026-04-15 21:08:30]   Mean(signal):      -9.714848e-09
+[2026-04-15 21:08:30]   Std(signal):       4.623938e+00
+[2026-04-15 21:08:30] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-15 21:08:30] SignalJEPA_Contextual instantiated successfully.
+[2026-04-15 21:08:30]   Total parameters:     3,457,618
+[2026-04-15 21:08:30]   Trainable parameters: 3,457,618
+[2026-04-15 21:08:31] Initializing from 16s-60 pretrained checkpoint (Hugging Face):
+[2026-04-15 21:08:31]   https://huggingface.co/braindecode/SignalJEPA/resolve/main/signal-jepa_16s-60_adeuwv4s.pth
+[2026-04-15 21:08:31]   Downloaded 179 keys
+[2026-04-15 21:08:31] ======================================================================
+[2026-04-15 21:08:31] STARTING CROSS-VALIDATION
+[2026-04-15 21:08:31] ======================================================================
+[2026-04-15 21:08:31] Subjects:      [48, 49, 50, 51, 52, 53, 54]
+[2026-04-15 21:08:31] Paradigm:      ERP
+[2026-04-15 21:08:31] Model:         SignalJEPA_Contextual
+[2026-04-15 21:08:31] Strategy:      new
+[2026-04-15 21:08:31] Warm-up epochs:10
+[2026-04-15 21:08:31] CV folds:      5
+[2026-04-15 21:08:31] Batch size:    32
+[2026-04-15 21:08:31] Max epochs:    5000
+[2026-04-15 21:08:31] Device:        cpu
+[2026-04-15 21:08:31] Seed control:  False
+[2026-04-15 21:08:31] Base seed:     None
+[2026-04-15 21:08:31] ======================================================================
+
+[2026-04-15 21:08:31] Subject 48: 3960 windows | class_counts=[3300, 660]
+[2026-04-15 21:08:31] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-15 21:08:31]     Downstream model:   SignalJEPA_Contextual
+[2026-04-15 21:08:31]     Fine-tune strategy: new
+[2026-04-15 21:08:31]     Warm-up active:     False
+[2026-04-15 21:08:31]     Warm-up epochs:     10
+[2026-04-15 21:08:31]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 21:08:31]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-15 21:08:31]     Phase 1 (new):
+[2026-04-15 21:08:31]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-15 21:08:31]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-15 21:08:31]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-15 21:27:09]   Fold 1/5 | best_epoch=7 | stop=56 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-15 21:27:09] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-15 21:27:09]     Downstream model:   SignalJEPA_Contextual
+[2026-04-15 21:27:09]     Fine-tune strategy: new
+[2026-04-15 21:27:09]     Warm-up active:     False
+[2026-04-15 21:27:09]     Warm-up epochs:     10
+[2026-04-15 21:27:09]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 21:27:09]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-15 21:27:09]     Phase 1 (new):
+[2026-04-15 21:27:09]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-15 21:27:09]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-15 21:27:09]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-15 21:44:12]   Fold 2/5 | best_epoch=7 | stop=51 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-15 21:44:12] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-15 21:44:12]     Downstream model:   SignalJEPA_Contextual
+[2026-04-15 21:44:12]     Fine-tune strategy: new
+[2026-04-15 21:44:12]     Warm-up active:     False
+[2026-04-15 21:44:12]     Warm-up epochs:     10
+[2026-04-15 21:44:12]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 21:44:12]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-15 21:44:12]     Phase 1 (new):
+[2026-04-15 21:44:12]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-15 21:44:12]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-15 21:44:12]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-15 22:05:54]   Fold 3/5 | best_epoch=56 | stop=65 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-15 22:05:54] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-15 22:05:54]     Downstream model:   SignalJEPA_Contextual
+[2026-04-15 22:05:54]     Fine-tune strategy: new
+[2026-04-15 22:05:54]     Warm-up active:     False
+[2026-04-15 22:05:54]     Warm-up epochs:     10
+[2026-04-15 22:05:54]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 22:05:54]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-15 22:05:54]     Phase 1 (new):
+[2026-04-15 22:05:54]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-15 22:05:54]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-15 22:05:54]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-15 22:26:58]   Fold 4/5 | best_epoch=56 | stop=63 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-15 22:26:58] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-15 22:26:58]     Downstream model:   SignalJEPA_Contextual
+[2026-04-15 22:26:58]     Fine-tune strategy: new
+[2026-04-15 22:26:58]     Warm-up active:     False
+[2026-04-15 22:26:58]     Warm-up epochs:     10
+[2026-04-15 22:26:58]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 22:26:58]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-15 22:26:58]     Phase 1 (new):
+[2026-04-15 22:26:58]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-15 22:26:58]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-15 22:26:58]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-15 22:53:39]   Fold 5/5 | best_epoch=74 | stop=80 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-15 22:53:39]   Subject 48 summary: acc=0.8333±0.0000  bal_acc=0.5000±0.0000
+
+[2026-04-15 22:53:39] Subject 49: 3960 windows | class_counts=[3300, 660]
+[2026-04-15 22:53:39] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-15 22:53:39]     Downstream model:   SignalJEPA_Contextual
+[2026-04-15 22:53:39]     Fine-tune strategy: new
+[2026-04-15 22:53:39]     Warm-up active:     False
+[2026-04-15 22:53:39]     Warm-up epochs:     10
+[2026-04-15 22:53:39]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 22:53:39]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-15 22:53:39]     Phase 1 (new):
+[2026-04-15 22:53:39]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-15 22:53:39]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-15 22:53:39]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-15 23:12:37]   Fold 1/5 | best_epoch=12 | stop=57 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-15 23:12:37] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-15 23:12:37]     Downstream model:   SignalJEPA_Contextual
+[2026-04-15 23:12:37]     Fine-tune strategy: new
+[2026-04-15 23:12:37]     Warm-up active:     False
+[2026-04-15 23:12:37]     Warm-up epochs:     10
+[2026-04-15 23:12:37]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 23:12:37]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-15 23:12:37]     Phase 1 (new):
+[2026-04-15 23:12:37]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-15 23:12:37]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-15 23:12:37]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-15 23:29:35]   Fold 2/5 | best_epoch=1 | stop=51 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-15 23:29:35] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-15 23:29:35]     Downstream model:   SignalJEPA_Contextual
+[2026-04-15 23:29:35]     Fine-tune strategy: new
+[2026-04-15 23:29:35]     Warm-up active:     False
+[2026-04-15 23:29:35]     Warm-up epochs:     10
+[2026-04-15 23:29:35]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 23:29:35]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-15 23:29:35]     Phase 1 (new):
+[2026-04-15 23:29:35]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-15 23:29:35]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-15 23:29:35]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-15 23:53:58]   Fold 3/5 | best_epoch=57 | stop=73 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-15 23:53:58] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-15 23:53:58]     Downstream model:   SignalJEPA_Contextual
+[2026-04-15 23:53:58]     Fine-tune strategy: new
+[2026-04-15 23:53:58]     Warm-up active:     False
+[2026-04-15 23:53:58]     Warm-up epochs:     10
+[2026-04-15 23:53:58]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-15 23:53:58]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-15 23:53:58]     Phase 1 (new):
+[2026-04-15 23:53:58]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-15 23:53:58]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-15 23:53:58]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 00:12:43]   Fold 4/5 | best_epoch=32 | stop=56 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 00:12:43] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 00:12:43]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 00:12:43]     Fine-tune strategy: new
+[2026-04-16 00:12:43]     Warm-up active:     False
+[2026-04-16 00:12:43]     Warm-up epochs:     10
+[2026-04-16 00:12:43]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 00:12:43]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 00:12:43]     Phase 1 (new):
+[2026-04-16 00:12:43]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 00:12:43]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 00:12:43]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 00:30:06]   Fold 5/5 | best_epoch=6 | stop=52 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 00:30:06]   Subject 49 summary: acc=0.8333±0.0000  bal_acc=0.5000±0.0000
+
+[2026-04-16 00:30:06] Subject 50: 3960 windows | class_counts=[3300, 660]
+[2026-04-16 00:30:06] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 00:30:06]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 00:30:06]     Fine-tune strategy: new
+[2026-04-16 00:30:06]     Warm-up active:     False
+[2026-04-16 00:30:06]     Warm-up epochs:     10
+[2026-04-16 00:30:06]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 00:30:06]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 00:30:06]     Phase 1 (new):
+[2026-04-16 00:30:06]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 00:30:06]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 00:30:06]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 00:50:13]   Fold 1/5 | best_epoch=54 | stop=60 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 00:50:13] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 00:50:13]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 00:50:13]     Fine-tune strategy: new
+[2026-04-16 00:50:13]     Warm-up active:     False
+[2026-04-16 00:50:13]     Warm-up epochs:     10
+[2026-04-16 00:50:13]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 00:50:13]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 00:50:13]     Phase 1 (new):
+[2026-04-16 00:50:13]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 00:50:13]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 00:50:13]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 01:08:39]   Fold 2/5 | best_epoch=44 | stop=55 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 01:08:39] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 01:08:39]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 01:08:39]     Fine-tune strategy: new
+[2026-04-16 01:08:39]     Warm-up active:     False
+[2026-04-16 01:08:39]     Warm-up epochs:     10
+[2026-04-16 01:08:39]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 01:08:39]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 01:08:39]     Phase 1 (new):
+[2026-04-16 01:08:39]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 01:08:39]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 01:08:39]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 01:27:01]   Fold 3/5 | best_epoch=5 | stop=55 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 01:27:01] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 01:27:01]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 01:27:01]     Fine-tune strategy: new
+[2026-04-16 01:27:01]     Warm-up active:     False
+[2026-04-16 01:27:01]     Warm-up epochs:     10
+[2026-04-16 01:27:01]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 01:27:01]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 01:27:01]     Phase 1 (new):
+[2026-04-16 01:27:01]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 01:27:01]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 01:27:01]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 01:49:43]   Fold 4/5 | best_epoch=41 | stop=68 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 01:49:43] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 01:49:43]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 01:49:43]     Fine-tune strategy: new
+[2026-04-16 01:49:43]     Warm-up active:     False
+[2026-04-16 01:49:43]     Warm-up epochs:     10
+[2026-04-16 01:49:43]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 01:49:43]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 01:49:43]     Phase 1 (new):
+[2026-04-16 01:49:43]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 01:49:43]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 01:49:43]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 02:07:06]   Fold 5/5 | best_epoch=36 | stop=52 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 02:07:06]   Subject 50 summary: acc=0.8333±0.0000  bal_acc=0.5000±0.0000
+
+[2026-04-16 02:07:06] Subject 51: 3960 windows | class_counts=[3300, 660]
+[2026-04-16 02:07:07] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 02:07:07]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 02:07:07]     Fine-tune strategy: new
+[2026-04-16 02:07:07]     Warm-up active:     False
+[2026-04-16 02:07:07]     Warm-up epochs:     10
+[2026-04-16 02:07:07]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 02:07:07]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 02:07:07]     Phase 1 (new):
+[2026-04-16 02:07:07]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 02:07:07]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 02:07:07]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 02:33:52]   Fold 1/5 | best_epoch=55 | stop=80 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 02:33:52] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 02:33:52]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 02:33:52]     Fine-tune strategy: new
+[2026-04-16 02:33:52]     Warm-up active:     False
+[2026-04-16 02:33:52]     Warm-up epochs:     10
+[2026-04-16 02:33:52]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 02:33:52]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 02:33:52]     Phase 1 (new):
+[2026-04-16 02:33:52]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 02:33:52]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 02:33:52]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 02:58:11]   Fold 2/5 | best_epoch=51 | stop=73 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 02:58:11] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 02:58:11]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 02:58:11]     Fine-tune strategy: new
+[2026-04-16 02:58:11]     Warm-up active:     False
+[2026-04-16 02:58:11]     Warm-up epochs:     10
+[2026-04-16 02:58:11]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 02:58:11]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 02:58:11]     Phase 1 (new):
+[2026-04-16 02:58:11]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 02:58:11]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 02:58:11]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 03:15:10]   Fold 3/5 | best_epoch=1 | stop=51 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 03:15:10] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 03:15:11]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 03:15:11]     Fine-tune strategy: new
+[2026-04-16 03:15:11]     Warm-up active:     False
+[2026-04-16 03:15:11]     Warm-up epochs:     10
+[2026-04-16 03:15:11]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 03:15:11]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 03:15:11]     Phase 1 (new):
+[2026-04-16 03:15:11]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 03:15:11]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 03:15:11]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 03:42:53]   Fold 4/5 | best_epoch=66 | stop=83 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 03:42:53] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 03:42:53]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 03:42:53]     Fine-tune strategy: new
+[2026-04-16 03:42:53]     Warm-up active:     False
+[2026-04-16 03:42:53]     Warm-up epochs:     10
+[2026-04-16 03:42:53]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 03:42:53]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 03:42:53]     Phase 1 (new):
+[2026-04-16 03:42:53]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 03:42:53]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 03:42:53]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 04:01:20]   Fold 5/5 | best_epoch=39 | stop=55 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 04:01:20]   Subject 51 summary: acc=0.8333±0.0000  bal_acc=0.5000±0.0000
+
+[2026-04-16 04:01:20] Subject 52: 3960 windows | class_counts=[3300, 660]
+[2026-04-16 04:01:20] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 04:01:20]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 04:01:20]     Fine-tune strategy: new
+[2026-04-16 04:01:20]     Warm-up active:     False
+[2026-04-16 04:01:20]     Warm-up epochs:     10
+[2026-04-16 04:01:20]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 04:01:20]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 04:01:20]     Phase 1 (new):
+[2026-04-16 04:01:20]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 04:01:20]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 04:01:20]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 04:28:05]   Fold 1/5 | best_epoch=33 | stop=80 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 04:28:05] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 04:28:05]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 04:28:05]     Fine-tune strategy: new
+[2026-04-16 04:28:05]     Warm-up active:     False
+[2026-04-16 04:28:05]     Warm-up epochs:     10
+[2026-04-16 04:28:05]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 04:28:05]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 04:28:05]     Phase 1 (new):
+[2026-04-16 04:28:05]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 04:28:05]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 04:28:05]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 04:51:52]   Fold 2/5 | best_epoch=46 | stop=71 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 04:51:52] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 04:51:52]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 04:51:52]     Fine-tune strategy: new
+[2026-04-16 04:51:52]     Warm-up active:     False
+[2026-04-16 04:51:52]     Warm-up epochs:     10
+[2026-04-16 04:51:52]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 04:51:52]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 04:51:52]     Phase 1 (new):
+[2026-04-16 04:51:52]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 04:51:52]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 04:51:52]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 05:11:38]   Fold 3/5 | best_epoch=26 | stop=59 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 05:11:38] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 05:11:38]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 05:11:38]     Fine-tune strategy: new
+[2026-04-16 05:11:38]     Warm-up active:     False
+[2026-04-16 05:11:38]     Warm-up epochs:     10
+[2026-04-16 05:11:38]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 05:11:38]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 05:11:38]     Phase 1 (new):
+[2026-04-16 05:11:38]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 05:11:38]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 05:11:38]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 05:33:20]   Fold 4/5 | best_epoch=31 | stop=65 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 05:33:20] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 05:33:20]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 05:33:20]     Fine-tune strategy: new
+[2026-04-16 05:33:20]     Warm-up active:     False
+[2026-04-16 05:33:20]     Warm-up epochs:     10
+[2026-04-16 05:33:20]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 05:33:20]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 05:33:20]     Phase 1 (new):
+[2026-04-16 05:33:20]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 05:33:20]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 05:33:20]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 05:51:49]   Fold 5/5 | best_epoch=19 | stop=55 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 05:51:49]   Subject 52 summary: acc=0.8333±0.0000  bal_acc=0.5000±0.0000
+
+[2026-04-16 05:51:49] Subject 53: 3960 windows | class_counts=[3300, 660]
+[2026-04-16 05:51:49] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 05:51:49]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 05:51:49]     Fine-tune strategy: new
+[2026-04-16 05:51:49]     Warm-up active:     False
+[2026-04-16 05:51:49]     Warm-up epochs:     10
+[2026-04-16 05:51:49]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 05:51:49]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 05:51:49]     Phase 1 (new):
+[2026-04-16 05:51:49]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 05:51:49]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 05:51:49]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 06:23:12]   Fold 1/5 | best_epoch=57 | stop=94 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 06:23:12] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 06:23:12]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 06:23:12]     Fine-tune strategy: new
+[2026-04-16 06:23:12]     Warm-up active:     False
+[2026-04-16 06:23:12]     Warm-up epochs:     10
+[2026-04-16 06:23:12]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 06:23:12]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 06:23:12]     Phase 1 (new):
+[2026-04-16 06:23:12]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 06:23:12]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 06:23:12]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 06:43:01]   Fold 2/5 | best_epoch=55 | stop=59 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 06:43:01] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 06:43:01]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 06:43:01]     Fine-tune strategy: new
+[2026-04-16 06:43:01]     Warm-up active:     False
+[2026-04-16 06:43:01]     Warm-up epochs:     10
+[2026-04-16 06:43:01]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 06:43:01]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 06:43:01]     Phase 1 (new):
+[2026-04-16 06:43:01]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 06:43:01]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 06:43:01]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 07:02:01]   Fold 3/5 | best_epoch=20 | stop=57 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 07:02:01] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 07:02:01]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 07:02:01]     Fine-tune strategy: new
+[2026-04-16 07:02:01]     Warm-up active:     False
+[2026-04-16 07:02:01]     Warm-up epochs:     10
+[2026-04-16 07:02:01]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 07:02:01]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 07:02:01]     Phase 1 (new):
+[2026-04-16 07:02:01]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 07:02:01]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 07:02:01]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 07:22:05]   Fold 4/5 | best_epoch=10 | stop=60 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 07:22:05] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 07:22:05]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 07:22:05]     Fine-tune strategy: new
+[2026-04-16 07:22:05]     Warm-up active:     False
+[2026-04-16 07:22:05]     Warm-up epochs:     10
+[2026-04-16 07:22:05]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 07:22:05]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 07:22:05]     Phase 1 (new):
+[2026-04-16 07:22:05]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 07:22:05]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 07:22:05]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 07:45:12]   Fold 5/5 | best_epoch=44 | stop=69 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 07:45:12]   Subject 53 summary: acc=0.8333±0.0000  bal_acc=0.5000±0.0000
+
+[2026-04-16 07:45:12] Subject 54: 3960 windows | class_counts=[3300, 660]
+[2026-04-16 07:45:12] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 07:45:12]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 07:45:12]     Fine-tune strategy: new
+[2026-04-16 07:45:12]     Warm-up active:     False
+[2026-04-16 07:45:12]     Warm-up epochs:     10
+[2026-04-16 07:45:12]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 07:45:12]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 07:45:12]     Phase 1 (new):
+[2026-04-16 07:45:12]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 07:45:12]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 07:45:12]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 08:13:41]   Fold 1/5 | best_epoch=54 | stop=85 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 08:13:41] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 08:13:41]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 08:13:41]     Fine-tune strategy: new
+[2026-04-16 08:13:41]     Warm-up active:     False
+[2026-04-16 08:13:41]     Warm-up epochs:     10
+[2026-04-16 08:13:41]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 08:13:41]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 08:13:41]     Phase 1 (new):
+[2026-04-16 08:13:41]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 08:13:41]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 08:13:41]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 08:35:25]   Fold 2/5 | best_epoch=26 | stop=65 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 08:35:25] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 08:35:25]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 08:35:25]     Fine-tune strategy: new
+[2026-04-16 08:35:25]     Warm-up active:     False
+[2026-04-16 08:35:25]     Warm-up epochs:     10
+[2026-04-16 08:35:25]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 08:35:25]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 08:35:25]     Phase 1 (new):
+[2026-04-16 08:35:25]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 08:35:25]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 08:35:25]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 09:00:48]   Fold 3/5 | best_epoch=64 | stop=76 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 09:00:48] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 09:00:48]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 09:00:48]     Fine-tune strategy: new
+[2026-04-16 09:00:48]     Warm-up active:     False
+[2026-04-16 09:00:48]     Warm-up epochs:     10
+[2026-04-16 09:00:48]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 09:00:48]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 09:00:48]     Phase 1 (new):
+[2026-04-16 09:00:48]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 09:00:48]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 09:00:48]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 09:17:55]   Fold 4/5 | best_epoch=18 | stop=51 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 09:17:55] Contextual channel-loc fix applied: copied loc[0:3] -> loc[3:6] to avoid degenerate positional-encoding ranges.
+[2026-04-16 09:17:55]     Downstream model:   SignalJEPA_Contextual
+[2026-04-16 09:17:55]     Fine-tune strategy: new
+[2026-04-16 09:17:55]     Warm-up active:     False
+[2026-04-16 09:17:55]     Warm-up epochs:     10
+[2026-04-16 09:17:55]     Missing keys:       ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-16 09:17:55]     Contextual note: missing pos_encoder keys are expected for this checkpoint configuration and will be trained as downstream-added parameters.
+[2026-04-16 09:17:55]     Phase 1 (new):
+[2026-04-16 09:17:55]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-16 09:17:55]       Trainable params: 2,626 / 3,457,618 (0.1%)
+[2026-04-16 09:17:55]     Sanity check passed: finite logits/loss on one training batch for SignalJEPA_Contextual.
+[2026-04-16 09:34:58]   Fold 5/5 | best_epoch=1 | stop=51 | val_loss=0.4514 | acc=0.8333 | bal_acc=0.5000
+[2026-04-16 09:34:58]   Subject 54 summary: acc=0.8333±0.0000  bal_acc=0.5000±0.0000
+
+[2026-04-16 09:34:58] Total folds completed: 35
+[2026-04-16 09:34:58] ======================================================================
+[2026-04-16 09:34:58] AGGREGATED RESULTS
+[2026-04-16 09:34:58] ======================================================================
+[2026-04-16 09:34:58]   Subject 48:  acc=0.8333±0.0000  bal_acc=0.5000±0.0000
+[2026-04-16 09:34:58]   Subject 49:  acc=0.8333±0.0000  bal_acc=0.5000±0.0000
+[2026-04-16 09:34:58]   Subject 50:  acc=0.8333±0.0000  bal_acc=0.5000±0.0000
+[2026-04-16 09:34:58]   Subject 51:  acc=0.8333±0.0000  bal_acc=0.5000±0.0000
+[2026-04-16 09:34:58]   Subject 52:  acc=0.8333±0.0000  bal_acc=0.5000±0.0000
+[2026-04-16 09:34:58]   Subject 53:  acc=0.8333±0.0000  bal_acc=0.5000±0.0000
+[2026-04-16 09:34:58]   Subject 54:  acc=0.8333±0.0000  bal_acc=0.5000±0.0000
+[2026-04-16 09:34:58] ----------------------------------------------------------------------
+[2026-04-16 09:34:58]   OVERALL:      acc=0.8333±0.0000  bal_acc=0.5000±0.0000
+[2026-04-16 09:34:58] ======================================================================
+[2026-04-16 09:34:58] CV results saved to:      /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/ERP/20260415_2106_45070b97/cv_results.json
+[2026-04-16 09:34:58] Subject metrics saved to: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/ERP/20260415_2106_45070b97/subject_metrics.json
+[2026-04-16 09:34:58] Global metrics saved to:  /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/ERP/20260415_2106_45070b97/global_metrics.json
+[2026-04-16 09:34:58] Run metadata saved to:    /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/ERP/20260415_2106_45070b97/run_metadata.json
+
+[2026-04-16 09:34:58] All artifacts in: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/ERP/20260415_2106_45070b97
+
+[2026-04-16 09:34:58] ======================================================================
+[2026-04-16 09:34:58] EXPERIMENT SUMMARY
+[2026-04-16 09:34:58] ======================================================================
+[2026-04-16 09:34:58] Run ID:    20260415_2106_45070b97
+[2026-04-16 09:34:58] Artifacts: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/ERP/20260415_2106_45070b97
+
+[2026-04-16 09:34:58] Configuration:
+[2026-04-16 09:34:58]   Subjects:          [48, 49, 50, 51, 52, 53, 54]
+[2026-04-16 09:34:58]   Paradigm:          ERP
+[2026-04-16 09:34:58]   Model:             SignalJEPA_Contextual
+[2026-04-16 09:34:58]   Strategy:          new
+[2026-04-16 09:34:58]   Warm-up epochs:    10
+[2026-04-16 09:34:58]   Bandpass:          0.5-40.0 Hz
+[2026-04-16 09:34:58]   Resample:          128 Hz
+[2026-04-16 09:34:58]   CV folds:          5
+[2026-04-16 09:34:58]   Learning rate:     None
+[2026-04-16 09:34:58]   Batch size:        32
+[2026-04-16 09:34:58]   Max epochs:        5000
+
+[2026-04-16 09:34:58] Results:
+[2026-04-16 09:34:58]   Mean Accuracy:          0.8333 ± 0.0000
+[2026-04-16 09:34:58]   Mean Balanced Accuracy: 0.5000 ± 0.0000
