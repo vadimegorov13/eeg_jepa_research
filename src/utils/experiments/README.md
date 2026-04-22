@@ -20,7 +20,7 @@ Run in daemon mode (detached/background):
 ```bash
 python src/utils/experiments/experiments.py \
   --notebook src/lee2019_finetune_sjepa.ipynb \
-  --configs src/utils/experiments/configs/model_strategy_sweep_erp.json \
+  --configs src/utils/experiments/configs/model_filter_method_sweep.json \
   --kernel-name eeg-jepa \
   --daemon
 ```
