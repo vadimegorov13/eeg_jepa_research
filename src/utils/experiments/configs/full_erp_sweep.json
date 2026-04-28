@@ -2,27 +2,17 @@
   {
     "paradigm": "ERP",
     "model_name": "SignalJEPA_PreLocal",
-    "strategy": "new"
+    "strategy": "full"
   },
   {
     "paradigm": "ERP",
     "model_name": "SignalJEPA_PostLocal",
-    "strategy": "new"
+    "strategy": "full"
   },
   {
     "paradigm": "ERP",
     "model_name": "SignalJEPA_Contextual",
     "strategy": "new"
-  },
-  {
-    "paradigm": "ERP",
-    "model_name": "SignalJEPA_PreLocal",
-    "strategy": "full"
-  },
-  {
-    "paradigm": "ERP",
-    "model_name": "SignalJEPA_PostLocal",
-    "strategy": "full"
   },
   {
     "paradigm": "ERP",

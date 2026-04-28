@@ -1,0 +1,88 @@
+[2026-04-26 22:09:38] Using device: cpu
+[2026-04-26 22:09:38] Seed control disabled (CONFIG['set_seed'] = False)
+[2026-04-26 22:09:39] ======================================================================
+[2026-04-26 22:09:39] CONFIGURATION
+[2026-04-26 22:09:39] ======================================================================
+[2026-04-26 22:09:39]   artifact_dir: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning
+[2026-04-26 22:09:39]   bandpass_high: 40.0
+[2026-04-26 22:09:39]   bandpass_low: 0.5
+[2026-04-26 22:09:39]   batch_size: 32
+[2026-04-26 22:09:39]   cv_folds: 5
+[2026-04-26 22:09:39]   early_stopping_patience: 50
+[2026-04-26 22:09:39]   learning_rate: 0.001
+[2026-04-26 22:09:39]   model_name: SignalJEPA_Contextual
+[2026-04-26 22:09:39]   n_epochs: 5000
+[2026-04-26 22:09:39]   paradigm: ERP
+[2026-04-26 22:09:39]   seed: 12
+[2026-04-26 22:09:39]   set_seed: False
+[2026-04-26 22:09:39]   sfreq: 128
+[2026-04-26 22:09:39]   strategy: full
+[2026-04-26 22:09:39]   subjects_to_use: None
+[2026-04-26 22:09:39]   val_split: 0.2
+[2026-04-26 22:09:39]   warmup_epochs: 10
+[2026-04-26 22:09:39] ======================================================================
+[2026-04-26 22:09:39] Config saved to: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/ERP/20260426_2209_36c6c418/config.json
+[2026-04-26 22:09:39] Epoch window configuration:
+[2026-04-26 22:09:39]   Target sfreq:                128 Hz
+[2026-04-26 22:09:39]   Requested duration:          1.19 s
+[2026-04-26 22:09:39]   Expected window samples:     152
+
+[2026-04-26 22:09:39] Preprocessed concat dataset exists: True (checked at: /home/vegorov/Repos/eeg_jepa_research/preprocessed_concat_datasets/ERP_subjects_48_49_50_51_52_53_54)
+[2026-04-26 22:09:40] Loaded raw concat dataset from: /home/vegorov/Repos/eeg_jepa_research/preprocessed_concat_datasets/ERP_subjects_48_49_50_51_52_53_54
+
+[2026-04-26 22:09:40] Post-load raw validation
+[2026-04-26 22:09:40]   Recordings in LOADED_DATASET:   28
+[2026-04-26 22:09:40]   Unique subject IDs:             ['48', '49', '50', '51', '52', '53', '54']
+[2026-04-26 22:09:40]   sfreq (first rec):              128.0 Hz
+[2026-04-26 22:09:40]   EEG channel count:              62
+[2026-04-26 22:09:40] Window shape: (62, 152)
+[2026-04-26 22:09:40] Window sample length expected=152, got=152
+[2026-04-26 22:09:41] Global class counts: [48300, 9660]
+[2026-04-26 22:09:41] Chance level (2-class): 0.50
+[2026-04-26 22:09:41] Summarizing per-subject windows...
+[2026-04-26 22:09:41]   Subject 48: n_windows=8280, window_shape=(62, 152), class_counts=[6900, 1380]
+[2026-04-26 22:09:41]   Subject 49: n_windows=8280, window_shape=(62, 152), class_counts=[6900, 1380]
+[2026-04-26 22:09:41]   Subject 50: n_windows=8280, window_shape=(62, 152), class_counts=[6900, 1380]
+[2026-04-26 22:09:41]   Subject 51: n_windows=8280, window_shape=(62, 152), class_counts=[6900, 1380]
+[2026-04-26 22:09:41]   Subject 52: n_windows=8280, window_shape=(62, 152), class_counts=[6900, 1380]
+[2026-04-26 22:09:41]   Subject 53: n_windows=8280, window_shape=(62, 152), class_counts=[6900, 1380]
+[2026-04-26 22:09:41]   Subject 54: n_windows=8280, window_shape=(62, 152), class_counts=[6900, 1380]
+[2026-04-26 22:09:42] SignalJEPA_Contextual instantiated successfully from braindecode/signal-jepa.
+[2026-04-26 22:09:42]   Total parameters:     3,457,618
+[2026-04-26 22:09:42]   Trainable parameters: 3,457,618
+[2026-04-26 22:09:42] ======================================================================
+[2026-04-26 22:09:42] STARTING CROSS-VALIDATION
+[2026-04-26 22:09:42] ======================================================================
+[2026-04-26 22:09:42] Subjects:      [48, 49, 50, 51, 52, 53, 54]
+[2026-04-26 22:09:42] Paradigm:      ERP
+[2026-04-26 22:09:42] Model:         SignalJEPA_Contextual
+[2026-04-26 22:09:42] Strategy:      full
+[2026-04-26 22:09:42] Warm-up epochs:10
+[2026-04-26 22:09:42] CV folds:      5
+[2026-04-26 22:09:42] Batch size:    32
+[2026-04-26 22:09:42] Learning rate: 0.001
+[2026-04-26 22:09:42] Max epochs:    5000
+[2026-04-26 22:09:42] Device:        cpu
+[2026-04-26 22:09:42] Seed control:  False
+[2026-04-26 22:09:42] CV seed:       12
+[2026-04-26 22:09:42] ======================================================================
+
+[2026-04-26 22:09:42] Subject 48: 8280 windows | class_counts=[6900, 1380]
+[2026-04-26 22:09:43]     Downstream model:        SignalJEPA_Contextual
+[2026-04-26 22:09:43]     Fine-tune strategy:      full
+[2026-04-26 22:09:43]     Warm-up epochs:          10
+[2026-04-26 22:09:43]     Pretrained loading path: from_pretrained
+[2026-04-26 22:09:43]     Pretrained repo:         braindecode/signal-jepa
+[2026-04-26 22:09:43]     Phase 1 (warmup):
+[2026-04-26 22:09:43]       Trainable groups: ['pos_encoder.', 'final_layer.']
+[2026-04-26 22:09:43]       Total params:     3,457,618
+[2026-04-26 22:09:43]       Trainable params: 2,626
+[2026-04-26 22:09:43]       Trainable pct:    0.08%
+[2026-04-26 22:09:43]       Trainable parameter names: ['pos_encoder.pos_encoder_spat.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-26 22:16:50]     Phase 2 (full):
+[2026-04-26 22:16:50]       Trainable groups: ['all_parameters']
+[2026-04-26 22:16:50]       Total params:     3,457,618
+[2026-04-26 22:16:50]       Trainable params: 3,457,618
+[2026-04-26 22:16:50]       Trainable pct:    100.00%
+[2026-04-26 22:16:50]       Trainable parameter names: ['feature_encoder.1.0.weight', 'feature_encoder.1.2.weight', 'feature_encoder.1.2.bias', 'feature_encoder.2.0.weight', 'feature_encoder.3.0.weight', 'feature_encoder.4.0.weight', 'feature_encoder.5.0.weight', 'pos_encoder.pos_encoder_spat.weight', 'transformer.encoder.layers.0.self_attn.in_proj_weight', 'transformer.encoder.layers.0.self_attn.in_proj_bias', 'transformer.encoder.layers.0.self_attn.out_proj.weight', 'transformer.encoder.layers.0.self_attn.out_proj.bias']
+[2026-04-26 22:16:50]       ... 172 additional trainable parameters hidden

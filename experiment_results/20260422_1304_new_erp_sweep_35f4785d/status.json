@@ -1,0 +1,27 @@
+{
+  "run_id": "20260422_1304_new_erp_sweep_35f4785d",
+  "state": "running",
+  "pid": 9644,
+  "pid_running": true,
+  "notebook": "/home/vegorov/Repos/eeg_jepa_research/src/lee2019_finetune_sjepa.ipynb",
+  "configs": "/home/vegorov/Repos/eeg_jepa_research/src/utils/experiments/configs/new_erp_sweep.json",
+  "total_configs": 3,
+  "completed_configs": 2,
+  "failed_configs": 0,
+  "current_config_index": 2,
+  "latest_result": {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "paradigm": "ERP",
+      "model_name": "SignalJEPA_PostLocal",
+      "strategy": "new"
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/ERP/20260422_1500_4851fe47",
+    "run_id": "20260422_1500_4851fe47",
+    "elapsed_seconds": 2937.593
+  },
+  "results_dir": "experiment_results/20260422_1304_new_erp_sweep_35f4785d",
+  "started_at": "2026-04-22T13:04:45",
+  "updated_at": "2026-04-22T15:49:26"
+}

@@ -1,0 +1,87 @@
+[2026-04-22 16:12:49] Using device: cpu
+[2026-04-22 16:12:49] Seed control disabled (CONFIG['set_seed'] = False)
+[2026-04-22 16:12:49] ======================================================================
+[2026-04-22 16:12:49] CONFIGURATION
+[2026-04-22 16:12:49] ======================================================================
+[2026-04-22 16:12:49]   artifact_dir: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning
+[2026-04-22 16:12:49]   bandpass_high: 40.0
+[2026-04-22 16:12:49]   bandpass_low: 0.5
+[2026-04-22 16:12:49]   batch_size: 32
+[2026-04-22 16:12:49]   cv_folds: 5
+[2026-04-22 16:12:49]   early_stopping_patience: 50
+[2026-04-22 16:12:49]   learning_rate: 0.001
+[2026-04-22 16:12:49]   model_name: SignalJEPA_PostLocal
+[2026-04-22 16:12:49]   n_epochs: 5000
+[2026-04-22 16:12:49]   paradigm: ERP
+[2026-04-22 16:12:49]   seed: 12
+[2026-04-22 16:12:49]   set_seed: False
+[2026-04-22 16:12:49]   sfreq: 128
+[2026-04-22 16:12:49]   strategy: full
+[2026-04-22 16:12:49]   subjects_to_use: None
+[2026-04-22 16:12:49]   val_split: 0.2
+[2026-04-22 16:12:49]   warmup_epochs: 10
+[2026-04-22 16:12:49] ======================================================================
+[2026-04-22 16:12:49] Config saved to: /home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/ERP/20260422_1612_ea9655ec/config.json
+[2026-04-22 16:12:49] Epoch window configuration:
+[2026-04-22 16:12:49]   Target sfreq:                128 Hz
+[2026-04-22 16:12:49]   Requested duration:          1.19 s
+[2026-04-22 16:12:49]   Expected window samples:     152
+
+[2026-04-22 16:12:49] Preprocessed concat dataset exists: True (checked at: /home/vegorov/Repos/eeg_jepa_research/preprocessed_concat_datasets/ERP_subjects_48_49_50_51_52_53_54)
+[2026-04-22 16:12:50] Loaded raw concat dataset from: /home/vegorov/Repos/eeg_jepa_research/preprocessed_concat_datasets/ERP_subjects_48_49_50_51_52_53_54
+
+[2026-04-22 16:12:50] Post-load raw validation
+[2026-04-22 16:12:50]   Recordings in LOADED_DATASET:   28
+[2026-04-22 16:12:50]   Unique subject IDs:             ['48', '49', '50', '51', '52', '53', '54']
+[2026-04-22 16:12:50]   sfreq (first rec):              128.0 Hz
+[2026-04-22 16:12:50]   EEG channel count:              62
+[2026-04-22 16:12:51] Window shape: (62, 152)
+[2026-04-22 16:12:51] Window sample length expected=152, got=152
+[2026-04-22 16:12:51] Global class counts: [48300, 9660]
+[2026-04-22 16:12:51] Chance level (2-class): 0.50
+[2026-04-22 16:12:51] Summarizing per-subject windows...
+[2026-04-22 16:12:51]   Subject 48: n_windows=8280, window_shape=(62, 152), class_counts=[6900, 1380]
+[2026-04-22 16:12:52]   Subject 49: n_windows=8280, window_shape=(62, 152), class_counts=[6900, 1380]
+[2026-04-22 16:12:52]   Subject 50: n_windows=8280, window_shape=(62, 152), class_counts=[6900, 1380]
+[2026-04-22 16:12:52]   Subject 51: n_windows=8280, window_shape=(62, 152), class_counts=[6900, 1380]
+[2026-04-22 16:12:52]   Subject 52: n_windows=8280, window_shape=(62, 152), class_counts=[6900, 1380]
+[2026-04-22 16:12:52]   Subject 53: n_windows=8280, window_shape=(62, 152), class_counts=[6900, 1380]
+[2026-04-22 16:12:52]   Subject 54: n_windows=8280, window_shape=(62, 152), class_counts=[6900, 1380]
+[2026-04-22 16:12:52] SignalJEPA_PostLocal instantiated successfully from braindecode/signal-jepa_without-chans.
+[2026-04-22 16:12:52]   Total parameters:     14,606
+[2026-04-22 16:12:52]   Trainable parameters: 14,606
+[2026-04-22 16:12:53] ======================================================================
+[2026-04-22 16:12:53] STARTING CROSS-VALIDATION
+[2026-04-22 16:12:53] ======================================================================
+[2026-04-22 16:12:53] Subjects:      [48, 49, 50, 51, 52, 53, 54]
+[2026-04-22 16:12:53] Paradigm:      ERP
+[2026-04-22 16:12:53] Model:         SignalJEPA_PostLocal
+[2026-04-22 16:12:53] Strategy:      full
+[2026-04-22 16:12:53] Warm-up epochs:10
+[2026-04-22 16:12:53] CV folds:      5
+[2026-04-22 16:12:53] Batch size:    32
+[2026-04-22 16:12:53] Learning rate: 0.001
+[2026-04-22 16:12:53] Max epochs:    5000
+[2026-04-22 16:12:53] Device:        cpu
+[2026-04-22 16:12:53] Seed control:  False
+[2026-04-22 16:12:53] CV seed:       12
+[2026-04-22 16:12:53] ======================================================================
+
+[2026-04-22 16:12:53] Subject 48: 8280 windows | class_counts=[6900, 1380]
+[2026-04-22 16:12:53]     Downstream model:        SignalJEPA_PostLocal
+[2026-04-22 16:12:53]     Fine-tune strategy:      full
+[2026-04-22 16:12:53]     Warm-up epochs:          10
+[2026-04-22 16:12:53]     Pretrained loading path: from_pretrained
+[2026-04-22 16:12:53]     Pretrained repo:         braindecode/signal-jepa_without-chans
+[2026-04-22 16:12:53]     Phase 1 (warmup):
+[2026-04-22 16:12:53]       Trainable groups: ['final_layer.']
+[2026-04-22 16:12:53]       Total params:     14,606
+[2026-04-22 16:12:53]       Trainable params: 766
+[2026-04-22 16:12:53]       Trainable pct:    5.24%
+[2026-04-22 16:12:53]       Trainable parameter names: ['final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']
+[2026-04-22 16:12:57]     Phase 2 (full):
+[2026-04-22 16:12:57]       Trainable groups: ['all_parameters']
+[2026-04-22 16:12:57]       Total params:     14,606
+[2026-04-22 16:12:57]       Trainable params: 14,606
+[2026-04-22 16:12:57]       Trainable pct:    100.00%
+[2026-04-22 16:12:57]       Trainable parameter names: ['feature_encoder.1.0.weight', 'feature_encoder.1.2.weight', 'feature_encoder.1.2.bias', 'feature_encoder.2.0.weight', 'feature_encoder.3.0.weight', 'feature_encoder.4.0.weight', 'feature_encoder.5.0.weight', 'final_layer.spat_conv.weight', 'final_layer.spat_conv.bias', 'final_layer.linear.weight', 'final_layer.linear.bias']

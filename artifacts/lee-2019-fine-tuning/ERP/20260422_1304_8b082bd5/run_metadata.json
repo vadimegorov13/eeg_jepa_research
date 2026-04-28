@@ -1,0 +1,33 @@
+{
+  "run_id": "20260422_1304_8b082bd5",
+  "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/lee-2019-fine-tuning/ERP/20260422_1304_8b082bd5",
+  "paradigm": "ERP",
+  "subjects": [
+    "48",
+    "49",
+    "50",
+    "51",
+    "52",
+    "53",
+    "54"
+  ],
+  "model_name": "SignalJEPA_PreLocal",
+  "strategy": "new",
+  "warmup_epochs": 10,
+  "pretrained_checkpoint_info": {
+    "loading_path": "from_pretrained",
+    "model_name": "SignalJEPA_PreLocal",
+    "repo_id": "braindecode/signal-jepa_without-chans"
+  },
+  "cv_seed": 12,
+  "global_metrics": {
+    "mean_accuracy": 0.9072291235334713,
+    "std_accuracy": 0.020357157406685707,
+    "mean_balanced_accuracy": 0.791086956521739,
+    "std_balanced_accuracy": 0.0538866701226863,
+    "mean_roc_auc": 0.9213991658415098,
+    "std_roc_auc": 0.03693688735894589,
+    "n_subjects": 7,
+    "n_folds_total": 35
+  }
+}
