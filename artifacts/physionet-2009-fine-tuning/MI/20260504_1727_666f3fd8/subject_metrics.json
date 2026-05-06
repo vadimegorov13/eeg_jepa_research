@@ -1,0 +1,3134 @@
+{
+  "1": {
+    "accuracies": [
+      0.4444444444444444,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.7777777777777778,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.425,
+      0.525,
+      0.575,
+      0.775,
+      0.55
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5777777777777778,
+    "std_accuracy": 0.10886621079036347,
+    "mean_balanced_accuracy": 0.57,
+    "std_balanced_accuracy": 0.11445523142259598,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "2": {
+    "accuracies": [
+      0.6666666666666666,
+      0.3333333333333333,
+      0.4444444444444444,
+      0.3333333333333333,
+      0.7777777777777778
+    ],
+    "balanced_accuracies": [
+      0.7,
+      0.35,
+      0.475,
+      0.325,
+      0.775
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5111111111111111,
+    "std_accuracy": 0.18053418676968802,
+    "mean_balanced_accuracy": 0.525,
+    "std_balanced_accuracy": 0.1823458252881047,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "3": {
+    "accuracies": [
+      0.4444444444444444,
+      0.7777777777777778,
+      0.3333333333333333,
+      0.3333333333333333,
+      0.2222222222222222
+    ],
+    "balanced_accuracies": [
+      0.45,
+      0.775,
+      0.35,
+      0.35,
+      0.225
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4222222222222222,
+    "std_accuracy": 0.19116278371205836,
+    "mean_balanced_accuracy": 0.43000000000000005,
+    "std_balanced_accuracy": 0.18668154702594472,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "4": {
+    "accuracies": [
+      0.5555555555555556,
+      0.7777777777777778,
+      0.3333333333333333,
+      0.4444444444444444,
+      0.3333333333333333
+    ],
+    "balanced_accuracies": [
+      0.55,
+      0.75,
+      0.35,
+      0.4,
+      0.325
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.48888888888888893,
+    "std_accuracy": 0.16629588385661961,
+    "mean_balanced_accuracy": 0.475,
+    "std_balanced_accuracy": 0.15811388300841897,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "5": {
+    "accuracies": [
+      0.5555555555555556,
+      0.3333333333333333,
+      0.3333333333333333,
+      0.5555555555555556,
+      0.2222222222222222
+    ],
+    "balanced_accuracies": [
+      0.525,
+      0.325,
+      0.3,
+      0.525,
+      0.2
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4,
+    "std_accuracy": 0.13333333333333336,
+    "mean_balanced_accuracy": 0.37500000000000006,
+    "std_balanced_accuracy": 0.12942179105544785,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "6": {
+    "accuracies": [
+      0.3333333333333333,
+      0.6666666666666666,
+      0.5555555555555556,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "balanced_accuracies": [
+      0.35,
+      0.7,
+      0.6,
+      0.35,
+      0.3
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4444444444444445,
+    "std_accuracy": 0.1405456737852613,
+    "mean_balanced_accuracy": 0.45999999999999996,
+    "std_balanced_accuracy": 0.15937377450509227,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "7": {
+    "accuracies": [
+      0.4444444444444444,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.3333333333333333,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.5,
+      0.475,
+      0.6,
+      0.325,
+      0.525
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4666666666666666,
+    "std_accuracy": 0.08314794192830983,
+    "mean_balanced_accuracy": 0.485,
+    "std_balanced_accuracy": 0.09027735042633894,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "8": {
+    "accuracies": [
+      0.4444444444444444,
+      0.3333333333333333,
+      0.4444444444444444,
+      0.5555555555555556,
+      1.0
+    ],
+    "balanced_accuracies": [
+      0.45,
+      0.375,
+      0.4,
+      0.55,
+      1.0
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5555555555555556,
+    "std_accuracy": 0.23306863292670035,
+    "mean_balanced_accuracy": 0.555,
+    "std_balanced_accuracy": 0.23043437243605824,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "9": {
+    "accuracies": [
+      0.2222222222222222,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.225,
+      0.475,
+      0.6,
+      0.7,
+      0.6
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.48888888888888893,
+    "std_accuracy": 0.15071844406945042,
+    "mean_balanced_accuracy": 0.5199999999999999,
+    "std_balanced_accuracy": 0.1638596960817394,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "10": {
+    "accuracies": [
+      0.3333333333333333,
+      0.2222222222222222,
+      0.6666666666666666,
+      0.6666666666666666,
+      0.2222222222222222
+    ],
+    "balanced_accuracies": [
+      0.325,
+      0.225,
+      0.675,
+      0.675,
+      0.25
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4222222222222222,
+    "std_accuracy": 0.20367003088692623,
+    "mean_balanced_accuracy": 0.43000000000000005,
+    "std_balanced_accuracy": 0.20273134932713296,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "11": {
+    "accuracies": [
+      0.4444444444444444,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.5555555555555556,
+      0.8888888888888888
+    ],
+    "balanced_accuracies": [
+      0.425,
+      0.55,
+      0.675,
+      0.525,
+      0.875
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.6222222222222222,
+    "std_accuracy": 0.1507184440694504,
+    "mean_balanced_accuracy": 0.6100000000000001,
+    "std_balanced_accuracy": 0.15459624833740307,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "12": {
+    "accuracies": [
+      0.7777777777777778,
+      0.5555555555555556,
+      0.7777777777777778,
+      0.4444444444444444,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.8,
+      0.525,
+      0.775,
+      0.425,
+      0.65
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.6444444444444444,
+    "std_accuracy": 0.12957670877434002,
+    "mean_balanced_accuracy": 0.635,
+    "std_balanced_accuracy": 0.14370107863199916,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "13": {
+    "accuracies": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.5555555555555556,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "balanced_accuracies": [
+      0.325,
+      0.325,
+      0.6,
+      0.35,
+      0.375
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.37777777777777777,
+    "std_accuracy": 0.0888888888888889,
+    "mean_balanced_accuracy": 0.395,
+    "std_balanced_accuracy": 0.10416333327999829,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "14": {
+    "accuracies": [
+      0.6666666666666666,
+      0.4444444444444444,
+      0.2222222222222222,
+      0.5555555555555556,
+      0.2222222222222222
+    ],
+    "balanced_accuracies": [
+      0.7,
+      0.475,
+      0.2,
+      0.525,
+      0.2
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4222222222222222,
+    "std_accuracy": 0.17777777777777778,
+    "mean_balanced_accuracy": 0.42000000000000004,
+    "std_balanced_accuracy": 0.19455076458343717,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "15": {
+    "accuracies": [
+      0.4444444444444444,
+      0.2222222222222222,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.475,
+      0.25,
+      0.6,
+      0.425,
+      0.425
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4222222222222222,
+    "std_accuracy": 0.10886621079036349,
+    "mean_balanced_accuracy": 0.43499999999999994,
+    "std_balanced_accuracy": 0.11247221879201992,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "16": {
+    "accuracies": [
+      0.5555555555555556,
+      0.5555555555555556,
+      0.7777777777777778,
+      0.7777777777777778,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.6,
+      0.55,
+      0.75,
+      0.75,
+      0.65
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.6666666666666666,
+    "std_accuracy": 0.09938079899999065,
+    "mean_balanced_accuracy": 0.6599999999999999,
+    "std_balanced_accuracy": 0.07999999999999999,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "17": {
+    "accuracies": [
+      0.6666666666666666,
+      0.3333333333333333,
+      0.6666666666666666,
+      0.6666666666666666,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.675,
+      0.3,
+      0.7,
+      0.7,
+      0.575
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5777777777777777,
+    "std_accuracy": 0.12957670877434,
+    "mean_balanced_accuracy": 0.5900000000000001,
+    "std_balanced_accuracy": 0.1521512405470294,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "18": {
+    "accuracies": [
+      0.6666666666666666,
+      0.4444444444444444,
+      0.6666666666666666,
+      0.5555555555555556,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.675,
+      0.425,
+      0.65,
+      0.575,
+      0.6
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5777777777777777,
+    "std_accuracy": 0.0831479419283098,
+    "mean_balanced_accuracy": 0.5850000000000001,
+    "std_balanced_accuracy": 0.08746427842267952,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "19": {
+    "accuracies": [
+      0.6666666666666666,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.3333333333333333,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.65,
+      0.525,
+      0.6,
+      0.35,
+      0.475
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5111111111111111,
+    "std_accuracy": 0.11331154474650633,
+    "mean_balanced_accuracy": 0.52,
+    "std_balanced_accuracy": 0.1041633332799983,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "20": {
+    "accuracies": [
+      0.6666666666666666,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.3333333333333333
+    ],
+    "balanced_accuracies": [
+      0.675,
+      0.575,
+      0.475,
+      0.55,
+      0.325
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5111111111111112,
+    "std_accuracy": 0.11331154474650633,
+    "mean_balanced_accuracy": 0.5200000000000001,
+    "std_balanced_accuracy": 0.11661903789690602,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "21": {
+    "accuracies": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.3,
+      0.375,
+      0.575,
+      0.675,
+      0.55
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.48888888888888893,
+    "std_accuracy": 0.13333333333333336,
+    "mean_balanced_accuracy": 0.495,
+    "std_balanced_accuracy": 0.1372953021774598,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "22": {
+    "accuracies": [
+      0.5555555555555556,
+      0.3333333333333333,
+      0.3333333333333333,
+      0.6666666666666666,
+      0.3333333333333333
+    ],
+    "balanced_accuracies": [
+      0.6,
+      0.375,
+      0.325,
+      0.65,
+      0.3
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4444444444444445,
+    "std_accuracy": 0.1405456737852613,
+    "mean_balanced_accuracy": 0.45,
+    "std_balanced_accuracy": 0.1457737973711325,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "23": {
+    "accuracies": [
+      0.4444444444444444,
+      0.2222222222222222,
+      0.6666666666666666,
+      0.7777777777777778,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.4,
+      0.2,
+      0.625,
+      0.8,
+      0.7
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5555555555555556,
+    "std_accuracy": 0.1987615979999813,
+    "mean_balanced_accuracy": 0.5450000000000002,
+    "std_balanced_accuracy": 0.21702534414210706,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "24": {
+    "accuracies": [
+      0.7777777777777778,
+      0.6666666666666666,
+      0.2222222222222222,
+      0.3333333333333333,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.75,
+      0.625,
+      0.2,
+      0.35,
+      0.7
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5333333333333333,
+    "std_accuracy": 0.2154524381073924,
+    "mean_balanced_accuracy": 0.525,
+    "std_balanced_accuracy": 0.2133072900770154,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "25": {
+    "accuracies": [
+      0.3333333333333333,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.325,
+      0.5,
+      0.5,
+      0.5,
+      0.675
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5111111111111111,
+    "std_accuracy": 0.11331154474650633,
+    "mean_balanced_accuracy": 0.5,
+    "std_balanced_accuracy": 0.11067971810589329,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "26": {
+    "accuracies": [
+      0.4444444444444444,
+      0.3333333333333333,
+      0.3333333333333333,
+      0.5555555555555556,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.425,
+      0.35,
+      0.375,
+      0.575,
+      0.575
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4444444444444445,
+    "std_accuracy": 0.09938079899999068,
+    "mean_balanced_accuracy": 0.45999999999999996,
+    "std_balanced_accuracy": 0.09695359714832656,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "27": {
+    "accuracies": [
+      0.5555555555555556,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.4444444444444444,
+      0.7777777777777778
+    ],
+    "balanced_accuracies": [
+      0.575,
+      0.6,
+      0.675,
+      0.425,
+      0.75
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.6,
+    "std_accuracy": 0.11331154474650633,
+    "mean_balanced_accuracy": 0.605,
+    "std_balanced_accuracy": 0.10885770528538621,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "28": {
+    "accuracies": [
+      0.4444444444444444,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.475,
+      0.55,
+      0.525,
+      0.675,
+      0.525
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5555555555555556,
+    "std_accuracy": 0.07027283689263066,
+    "mean_balanced_accuracy": 0.5499999999999999,
+    "std_balanced_accuracy": 0.06708203932499371,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "29": {
+    "accuracies": [
+      0.6666666666666666,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.3333333333333333,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.675,
+      0.4,
+      0.6,
+      0.375,
+      0.575
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5111111111111111,
+    "std_accuracy": 0.11331154474650633,
+    "mean_balanced_accuracy": 0.525,
+    "std_balanced_accuracy": 0.11726039399558573,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "30": {
+    "accuracies": [
+      0.3333333333333333,
+      0.4444444444444444,
+      0.6666666666666666,
+      0.6666666666666666,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.325,
+      0.5,
+      0.7,
+      0.7,
+      0.475
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5111111111111111,
+    "std_accuracy": 0.13333333333333333,
+    "mean_balanced_accuracy": 0.5399999999999999,
+    "std_balanced_accuracy": 0.14370107863199913,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "31": {
+    "accuracies": [
+      0.5555555555555556,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.6,
+      0.575,
+      0.525,
+      0.625,
+      0.625
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.6,
+    "std_accuracy": 0.05443310539518171,
+    "mean_balanced_accuracy": 0.59,
+    "std_balanced_accuracy": 0.03741657386773941,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "32": {
+    "accuracies": [
+      0.5555555555555556,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.7777777777777778,
+      0.7777777777777778
+    ],
+    "balanced_accuracies": [
+      0.55,
+      0.4,
+      0.425,
+      0.775,
+      0.775
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.6,
+    "std_accuracy": 0.15071844406945042,
+    "mean_balanced_accuracy": 0.585,
+    "std_balanced_accuracy": 0.16324827717314508,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "33": {
+    "accuracies": [
+      0.3333333333333333,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.35,
+      0.475,
+      0.6,
+      0.65,
+      0.525
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5111111111111111,
+    "std_accuracy": 0.11331154474650633,
+    "mean_balanced_accuracy": 0.5199999999999999,
+    "std_balanced_accuracy": 0.1041633332799983,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "34": {
+    "accuracies": [
+      0.7777777777777778,
+      0.3333333333333333,
+      0.6666666666666666,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "balanced_accuracies": [
+      0.8,
+      0.3,
+      0.65,
+      0.3,
+      0.325
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.48888888888888893,
+    "std_accuracy": 0.19372884193514103,
+    "mean_balanced_accuracy": 0.475,
+    "std_balanced_accuracy": 0.20976176963403032,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "35": {
+    "accuracies": [
+      0.6666666666666666,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.7777777777777778,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.675,
+      0.475,
+      0.425,
+      0.75,
+      0.625
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.6,
+    "std_accuracy": 0.13333333333333336,
+    "mean_balanced_accuracy": 0.5900000000000001,
+    "std_balanced_accuracy": 0.12206555615733704,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "36": {
+    "accuracies": [
+      0.7777777777777778,
+      0.7777777777777778,
+      0.6666666666666666,
+      0.6666666666666666,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.775,
+      0.775,
+      0.7,
+      0.7,
+      0.675
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.711111111111111,
+    "std_accuracy": 0.054433105395181765,
+    "mean_balanced_accuracy": 0.725,
+    "std_balanced_accuracy": 0.04183300132670379,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "37": {
+    "accuracies": [
+      0.5555555555555556,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.55,
+      0.425,
+      0.575,
+      0.7,
+      0.475
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5333333333333334,
+    "std_accuracy": 0.08314794192830981,
+    "mean_balanced_accuracy": 0.545,
+    "std_balanced_accuracy": 0.09407443861113389,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "38": {
+    "accuracies": [
+      0.4444444444444444,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.7777777777777778
+    ],
+    "balanced_accuracies": [
+      0.425,
+      0.55,
+      0.5,
+      0.5,
+      0.75
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5333333333333333,
+    "std_accuracy": 0.12957670877434005,
+    "mean_balanced_accuracy": 0.545,
+    "std_balanced_accuracy": 0.11,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "39": {
+    "accuracies": [
+      0.7777777777777778,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.775,
+      0.45,
+      0.45,
+      0.575,
+      0.675
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5777777777777777,
+    "std_accuracy": 0.12957670877434002,
+    "mean_balanced_accuracy": 0.585,
+    "std_balanced_accuracy": 0.12708265027138838,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "40": {
+    "accuracies": [
+      0.6666666666666666,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.65,
+      0.525,
+      0.475,
+      0.525,
+      0.675
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5777777777777777,
+    "std_accuracy": 0.08314794192830981,
+    "mean_balanced_accuracy": 0.57,
+    "std_balanced_accuracy": 0.07810249675906657,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "41": {
+    "accuracies": [
+      0.4444444444444444,
+      0.4444444444444444,
+      0.6666666666666666,
+      0.5555555555555556,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.475,
+      0.5,
+      0.65,
+      0.55,
+      0.575
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5333333333333332,
+    "std_accuracy": 0.08314794192830981,
+    "mean_balanced_accuracy": 0.55,
+    "std_balanced_accuracy": 0.061237243569579464,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "42": {
+    "accuracies": [
+      0.5555555555555556,
+      0.6666666666666666,
+      0.6666666666666666,
+      0.6666666666666666,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.6,
+      0.675,
+      0.625,
+      0.65,
+      0.4
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.6,
+    "std_accuracy": 0.08888888888888888,
+    "mean_balanced_accuracy": 0.59,
+    "std_balanced_accuracy": 0.09823441352194251,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "43": {
+    "accuracies": [
+      0.3333333333333333,
+      0.2222222222222222,
+      0.2222222222222222,
+      0.6666666666666666,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.375,
+      0.25,
+      0.225,
+      0.65,
+      0.425
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.37777777777777777,
+    "std_accuracy": 0.16629588385661961,
+    "mean_balanced_accuracy": 0.385,
+    "std_balanced_accuracy": 0.15215124054702941,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "44": {
+    "accuracies": [
+      0.5555555555555556,
+      0.6666666666666666,
+      0.3333333333333333,
+      0.7777777777777778,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.525,
+      0.65,
+      0.3,
+      0.8,
+      0.475
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5555555555555556,
+    "std_accuracy": 0.15713484026367724,
+    "mean_balanced_accuracy": 0.55,
+    "std_balanced_accuracy": 0.16807736313971613,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "45": {
+    "accuracies": [
+      0.4444444444444444,
+      0.6666666666666666,
+      0.1111111111111111,
+      0.6666666666666666,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.475,
+      0.7,
+      0.125,
+      0.65,
+      0.625
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5111111111111111,
+    "std_accuracy": 0.21773242158072695,
+    "mean_balanced_accuracy": 0.5149999999999999,
+    "std_balanced_accuracy": 0.2089258241577618,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "46": {
+    "accuracies": [
+      0.4444444444444444,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.45,
+      0.525,
+      0.475,
+      0.4,
+      0.575
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.48888888888888893,
+    "std_accuracy": 0.054433105395181765,
+    "mean_balanced_accuracy": 0.485,
+    "std_balanced_accuracy": 0.06041522986797284,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "47": {
+    "accuracies": [
+      0.4444444444444444,
+      0.6666666666666666,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.45,
+      0.675,
+      0.5,
+      0.575,
+      0.525
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5333333333333334,
+    "std_accuracy": 0.08314794192830981,
+    "mean_balanced_accuracy": 0.545,
+    "std_balanced_accuracy": 0.07648529270389177,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "48": {
+    "accuracies": [
+      0.5555555555555556,
+      0.3333333333333333,
+      0.6666666666666666,
+      0.4444444444444444,
+      0.3333333333333333
+    ],
+    "balanced_accuracies": [
+      0.55,
+      0.3,
+      0.625,
+      0.475,
+      0.35
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4666666666666666,
+    "std_accuracy": 0.12957670877434002,
+    "mean_balanced_accuracy": 0.4600000000000001,
+    "std_balanced_accuracy": 0.12103718436910205,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "49": {
+    "accuracies": [
+      0.4444444444444444,
+      0.3333333333333333,
+      0.2222222222222222,
+      0.7777777777777778,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.475,
+      0.375,
+      0.225,
+      0.75,
+      0.525
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4666666666666666,
+    "std_accuracy": 0.1911627837120584,
+    "mean_balanced_accuracy": 0.47000000000000003,
+    "std_balanced_accuracy": 0.17349351572897473,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "50": {
+    "accuracies": [
+      0.6666666666666666,
+      0.6666666666666666,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.65,
+      0.675,
+      0.6,
+      0.575,
+      0.45
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5777777777777778,
+    "std_accuracy": 0.0831479419283098,
+    "mean_balanced_accuracy": 0.5900000000000001,
+    "std_balanced_accuracy": 0.07842193570679061,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "51": {
+    "accuracies": [
+      0.6666666666666666,
+      0.6666666666666666,
+      0.6666666666666666,
+      0.3333333333333333,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.7,
+      0.7,
+      0.675,
+      0.35,
+      0.425
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5555555555555556,
+    "std_accuracy": 0.14054567378526128,
+    "mean_balanced_accuracy": 0.5700000000000001,
+    "std_balanced_accuracy": 0.15116216457830975,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "52": {
+    "accuracies": [
+      0.6666666666666666,
+      0.6666666666666666,
+      0.6666666666666666,
+      0.6666666666666666,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.675,
+      0.675,
+      0.675,
+      0.65,
+      0.5
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.6444444444444445,
+    "std_accuracy": 0.04444444444444442,
+    "mean_balanced_accuracy": 0.635,
+    "std_balanced_accuracy": 0.0681909084849293,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "53": {
+    "accuracies": [
+      0.2222222222222222,
+      0.4444444444444444,
+      0.2222222222222222,
+      0.5555555555555556,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.225,
+      0.5,
+      0.225,
+      0.525,
+      0.65
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4222222222222222,
+    "std_accuracy": 0.17777777777777778,
+    "mean_balanced_accuracy": 0.425,
+    "std_balanced_accuracy": 0.1710263137648707,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "54": {
+    "accuracies": [
+      0.1111111111111111,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.1,
+      0.45,
+      0.45,
+      0.45,
+      0.7
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4222222222222222,
+    "std_accuracy": 0.17777777777777778,
+    "mean_balanced_accuracy": 0.43,
+    "std_balanced_accuracy": 0.19131126469708987,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "55": {
+    "accuracies": [
+      0.5555555555555556,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.575,
+      0.475,
+      0.575,
+      0.675,
+      0.4
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5333333333333334,
+    "std_accuracy": 0.08314794192830981,
+    "mean_balanced_accuracy": 0.5399999999999999,
+    "std_balanced_accuracy": 0.09433981132056604,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "56": {
+    "accuracies": [
+      0.6666666666666666,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.5555555555555556,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.65,
+      0.525,
+      0.625,
+      0.575,
+      0.575
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.6,
+    "std_accuracy": 0.05443310539518171,
+    "mean_balanced_accuracy": 0.5900000000000001,
+    "std_balanced_accuracy": 0.04358898943540674,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "57": {
+    "accuracies": [
+      0.5555555555555556,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.7777777777777778,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.55,
+      0.45,
+      0.55,
+      0.8,
+      0.6
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5777777777777778,
+    "std_accuracy": 0.10886621079036347,
+    "mean_balanced_accuracy": 0.5900000000000001,
+    "std_balanced_accuracy": 0.11575836902790228,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "58": {
+    "accuracies": [
+      0.4444444444444444,
+      0.6666666666666666,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.475,
+      0.675,
+      0.475,
+      0.45,
+      0.55
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5111111111111111,
+    "std_accuracy": 0.0888888888888889,
+    "mean_balanced_accuracy": 0.525,
+    "std_balanced_accuracy": 0.08215838362577493,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "59": {
+    "accuracies": [
+      0.6666666666666666,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.6666666666666666,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.675,
+      0.575,
+      0.475,
+      0.7,
+      0.55
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5777777777777778,
+    "std_accuracy": 0.0831479419283098,
+    "mean_balanced_accuracy": 0.595,
+    "std_balanced_accuracy": 0.08276472678623424,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "60": {
+    "accuracies": [
+      0.4444444444444444,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.5,
+      0.575,
+      0.5,
+      0.525,
+      0.425
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.48888888888888893,
+    "std_accuracy": 0.054433105395181765,
+    "mean_balanced_accuracy": 0.505,
+    "std_balanced_accuracy": 0.04847679857416328,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "61": {
+    "accuracies": [
+      0.3333333333333333,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.2222222222222222
+    ],
+    "balanced_accuracies": [
+      0.3,
+      0.525,
+      0.525,
+      0.6,
+      0.25
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4444444444444445,
+    "std_accuracy": 0.1405456737852613,
+    "mean_balanced_accuracy": 0.44000000000000006,
+    "std_balanced_accuracy": 0.13838352503098048,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "62": {
+    "accuracies": [
+      0.8888888888888888,
+      0.3333333333333333,
+      0.4444444444444444,
+      0.7777777777777778,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.9,
+      0.35,
+      0.475,
+      0.775,
+      0.525
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.6,
+    "std_accuracy": 0.20608041101101565,
+    "mean_balanced_accuracy": 0.605,
+    "std_balanced_accuracy": 0.20211382931407737,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "63": {
+    "accuracies": [
+      0.7777777777777778,
+      0.2222222222222222,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.775,
+      0.2,
+      0.525,
+      0.675,
+      0.475
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5333333333333334,
+    "std_accuracy": 0.1911627837120584,
+    "mean_balanced_accuracy": 0.53,
+    "std_balanced_accuracy": 0.19646882704388502,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "64": {
+    "accuracies": [
+      0.4444444444444444,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.4,
+      0.425,
+      0.475,
+      0.45,
+      0.475
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4444444444444445,
+    "std_accuracy": 5.551115123125783e-17,
+    "mean_balanced_accuracy": 0.44499999999999995,
+    "std_balanced_accuracy": 0.02915475947422649,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "65": {
+    "accuracies": [
+      0.4444444444444444,
+      0.7777777777777778,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.425,
+      0.8,
+      0.575,
+      0.475,
+      0.575
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5555555555555556,
+    "std_accuracy": 0.12171612389003693,
+    "mean_balanced_accuracy": 0.57,
+    "std_balanced_accuracy": 0.12884098726725127,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "66": {
+    "accuracies": [
+      0.5555555555555556,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.6,
+      0.475,
+      0.425,
+      0.4,
+      0.65
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5111111111111111,
+    "std_accuracy": 0.08888888888888889,
+    "mean_balanced_accuracy": 0.51,
+    "std_balanced_accuracy": 0.09823441352194251,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "67": {
+    "accuracies": [
+      0.4444444444444444,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.475,
+      0.6,
+      0.55,
+      0.55,
+      0.525
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5333333333333334,
+    "std_accuracy": 0.04444444444444447,
+    "mean_balanced_accuracy": 0.5399999999999999,
+    "std_balanced_accuracy": 0.040620192023179805,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "68": {
+    "accuracies": [
+      0.7777777777777778,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.7777777777777778
+    ],
+    "balanced_accuracies": [
+      0.8,
+      0.55,
+      0.55,
+      0.475,
+      0.8
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.6222222222222222,
+    "std_accuracy": 0.13333333333333333,
+    "mean_balanced_accuracy": 0.635,
+    "std_balanced_accuracy": 0.13747727084867523,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "69": {
+    "accuracies": [
+      0.6666666666666666,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.2222222222222222
+    ],
+    "balanced_accuracies": [
+      0.7,
+      0.6,
+      0.475,
+      0.475,
+      0.225
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4666666666666667,
+    "std_accuracy": 0.14740554623801777,
+    "mean_balanced_accuracy": 0.495,
+    "std_balanced_accuracy": 0.15921683328090655,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "70": {
+    "accuracies": [
+      0.6666666666666666,
+      0.4444444444444444,
+      0.3333333333333333,
+      0.4444444444444444,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.65,
+      0.45,
+      0.325,
+      0.475,
+      0.5
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4666666666666666,
+    "std_accuracy": 0.10886621079036347,
+    "mean_balanced_accuracy": 0.48,
+    "std_balanced_accuracy": 0.10416333327999829,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "71": {
+    "accuracies": [
+      0.5555555555555556,
+      0.4444444444444444,
+      0.6666666666666666,
+      0.2222222222222222,
+      0.3333333333333333
+    ],
+    "balanced_accuracies": [
+      0.575,
+      0.475,
+      0.65,
+      0.225,
+      0.3
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4444444444444445,
+    "std_accuracy": 0.15713484026367724,
+    "mean_balanced_accuracy": 0.44499999999999995,
+    "std_balanced_accuracy": 0.16077935190813528,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "72": {
+    "accuracies": [
+      0.7777777777777778,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.75,
+      0.525,
+      0.55,
+      0.7,
+      0.475
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.6,
+    "std_accuracy": 0.11331154474650633,
+    "mean_balanced_accuracy": 0.6,
+    "std_balanced_accuracy": 0.10606601717798211,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "73": {
+    "accuracies": [
+      0.4444444444444444,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.475,
+      0.45,
+      0.475,
+      0.5,
+      0.525
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.48888888888888893,
+    "std_accuracy": 0.054433105395181765,
+    "mean_balanced_accuracy": 0.485,
+    "std_balanced_accuracy": 0.02549509756796393,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "74": {
+    "accuracies": [
+      0.4444444444444444,
+      0.4444444444444444,
+      0.3333333333333333,
+      0.4444444444444444,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.425,
+      0.45,
+      0.375,
+      0.475,
+      0.525
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4444444444444445,
+    "std_accuracy": 0.07027283689263067,
+    "mean_balanced_accuracy": 0.45,
+    "std_balanced_accuracy": 0.05,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "75": {
+    "accuracies": [
+      0.6666666666666666,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.3333333333333333,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.675,
+      0.475,
+      0.525,
+      0.3,
+      0.525
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5111111111111111,
+    "std_accuracy": 0.11331154474650633,
+    "mean_balanced_accuracy": 0.5,
+    "std_balanced_accuracy": 0.12041594578792297,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "76": {
+    "accuracies": [
+      0.8888888888888888,
+      0.3333333333333333,
+      0.7777777777777778,
+      0.5555555555555556,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.875,
+      0.325,
+      0.8,
+      0.575,
+      0.7
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.6444444444444444,
+    "std_accuracy": 0.19116278371205836,
+    "mean_balanced_accuracy": 0.655,
+    "std_balanced_accuracy": 0.19326148090087691,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "77": {
+    "accuracies": [
+      0.6666666666666666,
+      0.7777777777777778,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.65,
+      0.775,
+      0.425,
+      0.45,
+      0.575
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5777777777777777,
+    "std_accuracy": 0.12957670877434002,
+    "mean_balanced_accuracy": 0.575,
+    "std_balanced_accuracy": 0.12942179105544788,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "78": {
+    "accuracies": [
+      0.5555555555555556,
+      0.3333333333333333,
+      0.1111111111111111,
+      0.5555555555555556,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.575,
+      0.35,
+      0.1,
+      0.55,
+      0.4
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4,
+    "std_accuracy": 0.16629588385661964,
+    "mean_balanced_accuracy": 0.395,
+    "std_balanced_accuracy": 0.17058722109231983,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "79": {
+    "accuracies": [
+      0.3333333333333333,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.5555555555555556,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.325,
+      0.575,
+      0.65,
+      0.55,
+      0.55
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5333333333333332,
+    "std_accuracy": 0.10886621079036347,
+    "mean_balanced_accuracy": 0.5299999999999999,
+    "std_balanced_accuracy": 0.1088577052853862,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "80": {
+    "accuracies": [
+      0.4444444444444444,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.475,
+      0.45,
+      0.45,
+      0.425,
+      0.45
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4444444444444445,
+    "std_accuracy": 5.551115123125783e-17,
+    "mean_balanced_accuracy": 0.45,
+    "std_balanced_accuracy": 0.015811388300841892,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "81": {
+    "accuracies": [
+      0.2222222222222222,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.25,
+      0.575,
+      0.425,
+      0.4,
+      0.4
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4222222222222222,
+    "std_accuracy": 0.10886621079036349,
+    "mean_balanced_accuracy": 0.41,
+    "std_balanced_accuracy": 0.10319883720275144,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "82": {
+    "accuracies": [
+      0.4444444444444444,
+      0.6666666666666666,
+      0.6666666666666666,
+      0.5555555555555556,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.45,
+      0.7,
+      0.7,
+      0.525,
+      0.65
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5999999999999999,
+    "std_accuracy": 0.08888888888888888,
+    "mean_balanced_accuracy": 0.605,
+    "std_balanced_accuracy": 0.10049875621120888,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "83": {
+    "accuracies": [
+      0.4444444444444444,
+      0.3333333333333333,
+      0.6666666666666666,
+      0.6666666666666666,
+      0.3333333333333333
+    ],
+    "balanced_accuracies": [
+      0.5,
+      0.35,
+      0.65,
+      0.625,
+      0.3
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4888888888888888,
+    "std_accuracy": 0.1507184440694504,
+    "mean_balanced_accuracy": 0.485,
+    "std_balanced_accuracy": 0.14106735979665885,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "84": {
+    "accuracies": [
+      0.5555555555555556,
+      0.6666666666666666,
+      0.4444444444444444,
+      0.7777777777777778,
+      0.7777777777777778
+    ],
+    "balanced_accuracies": [
+      0.575,
+      0.65,
+      0.45,
+      0.775,
+      0.8
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.6444444444444445,
+    "std_accuracy": 0.12957670877434002,
+    "mean_balanced_accuracy": 0.65,
+    "std_balanced_accuracy": 0.12942179105544788,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "85": {
+    "accuracies": [
+      0.5555555555555556,
+      0.4444444444444444,
+      0.7777777777777778,
+      0.4444444444444444,
+      0.7777777777777778
+    ],
+    "balanced_accuracies": [
+      0.575,
+      0.425,
+      0.8,
+      0.475,
+      0.8
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.6,
+    "std_accuracy": 0.15071844406945042,
+    "mean_balanced_accuracy": 0.615,
+    "std_balanced_accuracy": 0.15858751527153708,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "86": {
+    "accuracies": [
+      0.2222222222222222,
+      0.3333333333333333,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.7777777777777778
+    ],
+    "balanced_accuracies": [
+      0.2,
+      0.35,
+      0.55,
+      0.525,
+      0.75
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.48888888888888893,
+    "std_accuracy": 0.19372884193514106,
+    "mean_balanced_accuracy": 0.475,
+    "std_balanced_accuracy": 0.18708286933869706,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "87": {
+    "accuracies": [
+      0.4444444444444444,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.4,
+      0.55,
+      0.525,
+      0.5,
+      0.475
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.48888888888888893,
+    "std_accuracy": 0.054433105395181765,
+    "mean_balanced_accuracy": 0.49000000000000005,
+    "std_balanced_accuracy": 0.05147815070493501,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "89": {
+    "accuracies": [
+      0.5555555555555556,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.4444444444444444,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.575,
+      0.55,
+      0.65,
+      0.475,
+      0.625
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5777777777777777,
+    "std_accuracy": 0.08314794192830981,
+    "mean_balanced_accuracy": 0.575,
+    "std_balanced_accuracy": 0.061237243569579464,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "90": {
+    "accuracies": [
+      0.4444444444444444,
+      0.3333333333333333,
+      0.5555555555555556,
+      0.7777777777777778,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.425,
+      0.375,
+      0.525,
+      0.75,
+      0.425
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5111111111111111,
+    "std_accuracy": 0.15071844406945042,
+    "mean_balanced_accuracy": 0.5,
+    "std_balanced_accuracy": 0.1341640786499874,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "91": {
+    "accuracies": [
+      0.3333333333333333,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.4444444444444444,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.35,
+      0.575,
+      0.65,
+      0.425,
+      0.625
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5333333333333333,
+    "std_accuracy": 0.12957670877434,
+    "mean_balanced_accuracy": 0.525,
+    "std_balanced_accuracy": 0.11726039399558574,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "92": {
+    "accuracies": [
+      0.5,
+      0.5833333333333334,
+      0.5454545454545454,
+      0.7272727272727273,
+      0.5454545454545454
+    ],
+    "balanced_accuracies": [
+      0.5,
+      0.5833333333333333,
+      0.5166666666666667,
+      0.7333333333333334,
+      0.5166666666666667
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5803030303030303,
+    "std_accuracy": 0.07808544682863715,
+    "mean_balanced_accuracy": 0.5700000000000001,
+    "std_balanced_accuracy": 0.0865383665716478,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "93": {
+    "accuracies": [
+      0.6666666666666666,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.2222222222222222
+    ],
+    "balanced_accuracies": [
+      0.675,
+      0.525,
+      0.55,
+      0.575,
+      0.225
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5111111111111112,
+    "std_accuracy": 0.15071844406945042,
+    "mean_balanced_accuracy": 0.51,
+    "std_balanced_accuracy": 0.15132745950421558,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "94": {
+    "accuracies": [
+      0.5555555555555556,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.575,
+      0.6,
+      0.425,
+      0.525,
+      0.5
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5333333333333334,
+    "std_accuracy": 0.04444444444444447,
+    "mean_balanced_accuracy": 0.525,
+    "std_balanced_accuracy": 0.06123724356957944,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "95": {
+    "accuracies": [
+      0.6666666666666666,
+      0.3333333333333333,
+      0.3333333333333333,
+      0.7777777777777778,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.675,
+      0.325,
+      0.325,
+      0.75,
+      0.675
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5555555555555556,
+    "std_accuracy": 0.18592445034090566,
+    "mean_balanced_accuracy": 0.55,
+    "std_balanced_accuracy": 0.1857417562100671,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "96": {
+    "accuracies": [
+      0.6666666666666666,
+      0.3333333333333333,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.3333333333333333
+    ],
+    "balanced_accuracies": [
+      0.65,
+      0.3,
+      0.475,
+      0.45,
+      0.375
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4444444444444445,
+    "std_accuracy": 0.12171612389003691,
+    "mean_balanced_accuracy": 0.45,
+    "std_balanced_accuracy": 0.11726039399558576,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "97": {
+    "accuracies": [
+      0.4444444444444444,
+      0.4444444444444444,
+      0.6666666666666666,
+      0.6666666666666666,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.45,
+      0.45,
+      0.675,
+      0.65,
+      0.675
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5777777777777777,
+    "std_accuracy": 0.10886621079036347,
+    "mean_balanced_accuracy": 0.5800000000000001,
+    "std_balanced_accuracy": 0.1065363787633126,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "98": {
+    "accuracies": [
+      0.5555555555555556,
+      0.2222222222222222,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.3333333333333333
+    ],
+    "balanced_accuracies": [
+      0.575,
+      0.25,
+      0.45,
+      0.55,
+      0.3
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4222222222222222,
+    "std_accuracy": 0.12957670877434002,
+    "mean_balanced_accuracy": 0.425,
+    "std_balanced_accuracy": 0.13038404810405296,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "99": {
+    "accuracies": [
+      0.4444444444444444,
+      0.3333333333333333,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.4,
+      0.3,
+      0.4,
+      0.475,
+      0.55
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.4444444444444445,
+    "std_accuracy": 0.07027283689263067,
+    "mean_balanced_accuracy": 0.425,
+    "std_balanced_accuracy": 0.08366600265340757,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "100": {
+    "accuracies": [
+      0.375,
+      0.42857142857142855,
+      0.7142857142857143,
+      0.2857142857142857,
+      0.42857142857142855
+    ],
+    "balanced_accuracies": [
+      0.375,
+      0.4583333333333333,
+      0.7083333333333333,
+      0.29166666666666663,
+      0.375
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.44642857142857134,
+    "std_accuracy": 0.1437472271249865,
+    "mean_balanced_accuracy": 0.4416666666666666,
+    "std_balanced_accuracy": 0.14337208778404376,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "101": {
+    "accuracies": [
+      0.3333333333333333,
+      0.5555555555555556,
+      0.6666666666666666,
+      0.5555555555555556,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.325,
+      0.6,
+      0.65,
+      0.55,
+      0.55
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5333333333333332,
+    "std_accuracy": 0.10886621079036347,
+    "mean_balanced_accuracy": 0.5349999999999999,
+    "std_balanced_accuracy": 0.11135528725660043,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "102": {
+    "accuracies": [
+      0.5555555555555556,
+      0.6666666666666666,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.3333333333333333
+    ],
+    "balanced_accuracies": [
+      0.55,
+      0.625,
+      0.425,
+      0.575,
+      0.375
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5111111111111112,
+    "std_accuracy": 0.11331154474650633,
+    "mean_balanced_accuracy": 0.51,
+    "std_balanced_accuracy": 0.09433981132056604,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "103": {
+    "accuracies": [
+      0.6666666666666666,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.3333333333333333
+    ],
+    "balanced_accuracies": [
+      0.675,
+      0.55,
+      0.425,
+      0.525,
+      0.325
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5111111111111112,
+    "std_accuracy": 0.11331154474650633,
+    "mean_balanced_accuracy": 0.5000000000000001,
+    "std_balanced_accuracy": 0.11832159566199232,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "104": {
+    "accuracies": [
+      0.6666666666666666,
+      0.5555555555555556,
+      0.5555555555555556,
+      0.625,
+      0.625
+    ],
+    "balanced_accuracies": [
+      0.675,
+      0.575,
+      0.55,
+      0.625,
+      0.625
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.6055555555555555,
+    "std_accuracy": 0.0435677420593281,
+    "mean_balanced_accuracy": 0.61,
+    "std_balanced_accuracy": 0.04358898943540675,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "105": {
+    "accuracies": [
+      0.3333333333333333,
+      0.7777777777777778,
+      0.5555555555555556,
+      0.3333333333333333,
+      0.5555555555555556
+    ],
+    "balanced_accuracies": [
+      0.35,
+      0.8,
+      0.55,
+      0.3,
+      0.525
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5111111111111111,
+    "std_accuracy": 0.16629588385661961,
+    "mean_balanced_accuracy": 0.505,
+    "std_balanced_accuracy": 0.176351920885484,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "106": {
+    "accuracies": [
+      0.3333333333333333,
+      0.6666666666666666,
+      0.5555555555555556,
+      0.4444444444444444,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.375,
+      0.675,
+      0.575,
+      0.5,
+      0.65
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5333333333333333,
+    "std_accuracy": 0.12957670877434,
+    "mean_balanced_accuracy": 0.5549999999999999,
+    "std_balanced_accuracy": 0.10885770528538621,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "107": {
+    "accuracies": [
+      0.5555555555555556,
+      0.3333333333333333,
+      0.4444444444444444,
+      0.5555555555555556,
+      0.6666666666666666
+    ],
+    "balanced_accuracies": [
+      0.55,
+      0.325,
+      0.45,
+      0.55,
+      0.7
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5111111111111111,
+    "std_accuracy": 0.11331154474650633,
+    "mean_balanced_accuracy": 0.515,
+    "std_balanced_accuracy": 0.12409673645990855,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "108": {
+    "accuracies": [
+      0.4444444444444444,
+      0.4444444444444444,
+      0.2222222222222222,
+      0.5555555555555556,
+      0.8888888888888888
+    ],
+    "balanced_accuracies": [
+      0.475,
+      0.425,
+      0.2,
+      0.55,
+      0.875
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5111111111111111,
+    "std_accuracy": 0.21773242158072695,
+    "mean_balanced_accuracy": 0.505,
+    "std_balanced_accuracy": 0.21874642854227358,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  },
+  "109": {
+    "accuracies": [
+      0.6666666666666666,
+      0.6666666666666666,
+      0.6666666666666666,
+      0.3333333333333333,
+      0.4444444444444444
+    ],
+    "balanced_accuracies": [
+      0.7,
+      0.7,
+      0.7,
+      0.35,
+      0.4
+    ],
+    "roc_aucs": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "mean_accuracy": 0.5555555555555556,
+    "std_accuracy": 0.14054567378526128,
+    "mean_balanced_accuracy": 0.57,
+    "std_balanced_accuracy": 0.15999999999999998,
+    "mean_roc_auc": null,
+    "std_roc_auc": null
+  }
+}

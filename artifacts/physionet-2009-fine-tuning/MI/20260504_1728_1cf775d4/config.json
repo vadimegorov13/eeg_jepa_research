@@ -1,0 +1,34 @@
+{
+  "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/physionet-2009-fine-tuning",
+  "dataset_source": "moabb",
+  "dataset_name": "PhysionetMI",
+  "preprocessed_concat_dir": null,
+  "labels_to_keep": [
+    "left_hand",
+    "right_hand"
+  ],
+  "exclude_subjects": [
+    88
+  ],
+  "subjects_to_use": null,
+  "moabb_dataset_kwargs": {
+    "imagined": true,
+    "executed": false
+  },
+  "seed": 12,
+  "set_seed": true,
+  "sfreq": 128,
+  "bandpass_low": 0.5,
+  "bandpass_high": 40.0,
+  "paradigm": "MI",
+  "model_name": "SignalJEPA_PreLocal",
+  "strategy": "full",
+  "warmup_epochs": 10,
+  "use_pretrained": false,
+  "cv_folds": 5,
+  "val_split": 0.2,
+  "batch_size": 32,
+  "n_epochs": 50,
+  "early_stopping_patience": null,
+  "learning_rate": 0.001
+}

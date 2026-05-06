@@ -1,0 +1,102 @@
+[
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 12,
+      "set_seed": true,
+      "sfreq": 128,
+      "bandpass_low": 0.5,
+      "bandpass_high": 40.0,
+      "paradigm": "MI",
+      "model_name": "SignalJEPA_PreLocal",
+      "strategy": "new",
+      "warmup_epochs": 10,
+      "use_pretrained": true,
+      "cv_folds": 5,
+      "val_split": 0.2,
+      "batch_size": 32,
+      "n_epochs": 50,
+      "early_stopping_patience": null,
+      "learning_rate": 0.001
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/physionet-2009-fine-tuning/MI/20260504_1716_4158dc19",
+    "run_id": "20260504_1716_4158dc19",
+    "elapsed_seconds": 320.061
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 12,
+      "set_seed": true,
+      "sfreq": 128,
+      "bandpass_low": 0.5,
+      "bandpass_high": 40.0,
+      "paradigm": "MI",
+      "model_name": "SignalJEPA_PreLocal",
+      "strategy": "full",
+      "warmup_epochs": 10,
+      "use_pretrained": true,
+      "cv_folds": 5,
+      "val_split": 0.2,
+      "batch_size": 32,
+      "n_epochs": 50,
+      "early_stopping_patience": null,
+      "learning_rate": 0.001
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/physionet-2009-fine-tuning/MI/20260504_1722_07993486",
+    "run_id": "20260504_1722_07993486",
+    "elapsed_seconds": 319.147
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 12,
+      "set_seed": true,
+      "sfreq": 128,
+      "bandpass_low": 0.5,
+      "bandpass_high": 40.0,
+      "paradigm": "MI",
+      "model_name": "SignalJEPA_PreLocal",
+      "strategy": "new",
+      "warmup_epochs": 10,
+      "use_pretrained": false,
+      "cv_folds": 5,
+      "val_split": 0.2,
+      "batch_size": 32,
+      "n_epochs": 50,
+      "early_stopping_patience": null,
+      "learning_rate": 0.001
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/physionet-2009-fine-tuning/MI/20260504_1727_666f3fd8",
+    "run_id": "20260504_1727_666f3fd8",
+    "elapsed_seconds": 54.478
+  },
+  {
+    "status": "completed",
+    "error": null,
+    "config": {
+      "seed": 12,
+      "set_seed": true,
+      "sfreq": 128,
+      "bandpass_low": 0.5,
+      "bandpass_high": 40.0,
+      "paradigm": "MI",
+      "model_name": "SignalJEPA_PreLocal",
+      "strategy": "full",
+      "warmup_epochs": 10,
+      "use_pretrained": false,
+      "cv_folds": 5,
+      "val_split": 0.2,
+      "batch_size": 32,
+      "n_epochs": 50,
+      "early_stopping_patience": null,
+      "learning_rate": 0.001
+    },
+    "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/physionet-2009-fine-tuning/MI/20260504_1728_1cf775d4",
+    "run_id": "20260504_1728_1cf775d4",
+    "elapsed_seconds": 54.308
+  }
+]

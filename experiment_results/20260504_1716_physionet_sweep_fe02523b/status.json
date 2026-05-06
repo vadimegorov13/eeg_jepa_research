@@ -1,0 +1,16 @@
+{
+  "run_id": "20260504_1716_physionet_sweep_fe02523b",
+  "state": "completed",
+  "pid": 1685687,
+  "pid_running": true,
+  "notebook": "/home/vegorov/Repos/eeg_jepa_research/src/physionet2009_finetune_sjepa.ipynb",
+  "configs": "experiment_results/20260504_1716_physionet_sweep_fe02523b/configs.json",
+  "total_configs": 4,
+  "completed_configs": 4,
+  "failed_configs": 0,
+  "results_dir": "experiment_results/20260504_1716_physionet_sweep_fe02523b",
+  "summary_json": "experiment_results/20260504_1716_physionet_sweep_fe02523b/results.json",
+  "artifact_ids_json": "experiment_results/20260504_1716_physionet_sweep_fe02523b/artifact_ids.json",
+  "finished_at": "2026-05-04T17:29:22",
+  "updated_at": "2026-05-04T17:29:22"
+}

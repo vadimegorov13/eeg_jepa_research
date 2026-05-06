@@ -19,8 +19,8 @@ Run in daemon mode (detached/background):
 
 ```bash
 python src/utils/experiments/experiments.py \
-  --notebook src/lee2019_finetune_sjepa.ipynb \
-  --configs src/utils/experiments/configs/full_mi_sweep.json \
+  --notebook src/physionet2009_finetune_sjepa.ipynb \
+  --configs src/utils/experiments/configs/physionet_sweep.json \
   --kernel-name eeg-jepa \
   --daemon
 ```

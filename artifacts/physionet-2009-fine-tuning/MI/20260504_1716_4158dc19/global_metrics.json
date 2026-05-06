@@ -1,0 +1,10 @@
+{
+  "mean_accuracy": 0.5071174710063598,
+  "std_accuracy": 0.0619157708621275,
+  "mean_balanced_accuracy": 0.5025771604938272,
+  "std_balanced_accuracy": 0.02817620214375683,
+  "mean_roc_auc": null,
+  "std_roc_auc": null,
+  "n_subjects": 108,
+  "n_folds_total": 540
+}
