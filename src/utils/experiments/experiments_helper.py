@@ -4,6 +4,9 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import platform
+import subprocess
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
@@ -17,8 +20,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "command",
-        choices=["status", "running", "list"],
-        help="status: show one run, running: show active runs, list: show all runs with status",
+        choices=["status", "running", "list", "stop"],
+        help="status: show one run, running: show active runs, list: show all runs with status, stop: stop one run by PID from status.json",
     )
     parser.add_argument(
         "--run-id",
@@ -34,6 +37,19 @@ def parse_args() -> argparse.Namespace:
 
 
 def is_pid_running(pid: int) -> bool:
+    if pid <= 0:
+        return False
+
+    if platform.system() == "Windows":
+        # On Windows, os.kill(pid, 0) can raise WinError 87 for some PIDs.
+        result = subprocess.run(
+            ["tasklist", "/FI", f"PID eq {pid}"],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        return str(pid) in result.stdout
+
     try:
         os.kill(pid, 0)
     except OSError:
@@ -54,6 +70,10 @@ def read_status(status_path: Path) -> dict[str, Any] | None:
     if isinstance(pid, int):
         payload["pid_running"] = is_pid_running(pid)
     return payload
+
+
+def write_status(status_path: Path, payload: dict[str, Any]) -> None:
+    status_path.write_text(json.dumps(payload, indent=2))
 
 
 def find_run_dirs(results_root: Path) -> list[Path]:
@@ -147,6 +167,81 @@ def cmd_list(results_root: Path) -> int:
     return 0
 
 
+def stop_pid(pid: int) -> tuple[bool, str]:
+    if pid <= 0:
+        return False, f"Invalid PID: {pid}"
+
+    if platform.system() == "Windows":
+        result = subprocess.run(
+            ["taskkill", "/PID", str(pid), "/T", "/F"],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        if result.returncode != 0 and is_pid_running(pid):
+            msg = result.stderr.strip() or result.stdout.strip() or "taskkill failed"
+            return False, msg
+        return True, result.stdout.strip() or "Process terminated."
+
+    try:
+        os.kill(pid, 15)
+    except OSError as exc:
+        if is_pid_running(pid):
+            return False, str(exc)
+        return True, "Process was already stopped."
+    return True, "Process termination signal sent."
+
+
+def cmd_stop(results_root: Path, run_id: str | None) -> int:
+    run_dirs = find_run_dirs(results_root)
+    if not run_dirs:
+        print(f"No runs found under: {results_root}")
+        return 1
+
+    if run_id:
+        target_dir = results_root / run_id
+        if not target_dir.exists():
+            print(f"Run not found: {run_id}")
+            return 1
+    else:
+        target_dir = run_dirs[-1]
+
+    status_path = target_dir / "status.json"
+    status = read_status(status_path)
+    if not status:
+        print(f"No valid status file found for run: {target_dir.name}")
+        return 1
+
+    pid = status.get("pid")
+    if not isinstance(pid, int):
+        print(f"Run has no valid pid in status: {target_dir.name}")
+        return 1
+
+    if not is_pid_running(pid):
+        print(f"PID {pid} is not running.")
+        status["pid_running"] = False
+        status["state"] = "stopped"
+        status["updated_at"] = datetime.now().isoformat(timespec="seconds")
+        write_status(status_path, status)
+        return 0
+
+    ok, message = stop_pid(pid)
+    status["pid_running"] = False if ok else is_pid_running(pid)
+    status["state"] = "stopped" if ok else status.get("state", "unknown")
+    status["updated_at"] = datetime.now().isoformat(timespec="seconds")
+    write_status(status_path, status)
+
+    if ok:
+        print(f"Stopped run {target_dir.name} (pid={pid}).")
+        if message:
+            print(message)
+        return 0
+
+    print(f"Failed to stop pid={pid} for run {target_dir.name}.")
+    print(message)
+    return 1
+
+
 def main() -> int:
     args = parse_args()
     results_root = Path(args.results_root).expanduser().resolve()
@@ -157,6 +252,8 @@ def main() -> int:
         return cmd_running(results_root)
     if args.command == "list":
         return cmd_list(results_root)
+    if args.command == "stop":
+        return cmd_stop(results_root, args.run_id)
 
     raise ValueError(f"Unsupported command: {args.command}")
 

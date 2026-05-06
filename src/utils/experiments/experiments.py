@@ -2,13 +2,16 @@
 from __future__ import annotations
 
 import argparse
+import asyncio
 import hashlib
 import json
 import os
+import platform
 import re
 import subprocess
 import sys
 import time
+import uuid
 from copy import deepcopy
 from datetime import datetime
 from pathlib import Path
@@ -24,6 +27,22 @@ ARTIFACT_LINE_PATTERN = re.compile(r"All artifacts in:\s*(.+)")
 RUN_ID_PATTERN = re.compile(r"Run ID:\s*(\S+)")
 METADATA_LINE_PATTERN = re.compile(r"^__EXPERIMENT_META__=(.+)$", re.MULTILINE)
 ARTIFACT_MARKER_FILES = ("run_metadata.json", "global_metrics.json", "cv_results.json")
+
+
+def configure_windows_event_loop_policy() -> None:
+    if platform.system() != "Windows":
+        return
+    try:
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+    except Exception:
+        # Keep execution resilient if policy cannot be changed in this environment.
+        pass
+
+
+def ensure_cell_ids(nb: nbformat.NotebookNode) -> None:
+    for cell in nb.cells:
+        if not cell.get("id"):
+            cell["id"] = uuid.uuid4().hex[:8]
 
 
 def parse_args() -> argparse.Namespace:
@@ -198,6 +217,18 @@ def parse_metadata_from_output(output_text: str) -> tuple[str | None, str | None
 
 
 def is_pid_running(pid: int) -> bool:
+    if pid <= 0:
+        return False
+
+    if platform.system() == "Windows":
+        result = subprocess.run(
+            ["tasklist", "/FI", f"PID eq {pid}"],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        return str(pid) in result.stdout
+
     try:
         os.kill(pid, 0)
     except OSError:
@@ -330,6 +361,7 @@ def execute_one(
     config_idx = find_config_cell_index(nb)
     nb.cells.insert(config_idx + 1, make_override_cell(overrides))
     nb.cells.append(make_metadata_cell())
+    ensure_cell_ids(nb)
 
     artifact_root_value = (
         overrides.get("artifact_dir")
@@ -399,6 +431,7 @@ def execute_one(
 
 def main() -> int:
     args = parse_args()
+    configure_windows_event_loop_policy()
     notebook_path = Path(args.notebook).expanduser().resolve()
     configs_path = Path(args.configs).expanduser().resolve()
 
@@ -420,6 +453,7 @@ def main() -> int:
         )
 
     base_nb = nbformat.read(notebook_path, as_version=4)
+    ensure_cell_ids(base_nb)
 
     results: list[dict[str, Any]] = []
     artifact_ids: list[str] = []
