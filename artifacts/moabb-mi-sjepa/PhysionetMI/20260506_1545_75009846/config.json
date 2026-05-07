@@ -1,0 +1,38 @@
+{
+  "artifact_dir": "c:\\Repos\\eeg-jepa-research\\artifacts\\moabb-mi-sjepa",
+  "dataset_source": "moabb",
+  "dataset_name": "PhysionetMI",
+  "preprocessed_concat_dir": null,
+  "labels_to_keep": [
+    "left_hand",
+    "right_hand"
+  ],
+  "exclude_subjects": [
+    88
+  ],
+  "subjects_to_use": null,
+  "moabb_dataset_kwargs": {
+    "imagined": true,
+    "executed": false
+  },
+  "target_window_duration_s": 3.2,
+  "seed": 12,
+  "set_seed": true,
+  "sfreq": 128,
+  "bandpass_low": 0.5,
+  "bandpass_high": 40.0,
+  "model_name": "SignalJEPA_PreLocal",
+  "pretrained_mode": "from_pretrained",
+  "strategy": "new",
+  "warmup_epochs": 10,
+  "cv_folds": 5,
+  "val_split": 0.2,
+  "batch_size": 32,
+  "n_epochs": 50,
+  "early_stopping_patience": null,
+  "learning_rate": 0.001,
+  "extract_spatial_conv_weights": true,
+  "save_spatial_weight_plots": true,
+  "plot_individual_spatial_filters": true,
+  "max_spatial_filters_to_plot": 8
+}

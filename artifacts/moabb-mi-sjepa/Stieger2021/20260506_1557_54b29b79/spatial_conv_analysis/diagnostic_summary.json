@@ -1,0 +1,10 @@
+{
+  "n_folds": 20,
+  "collapse_rate": 0.0,
+  "mean_collapse_ratio": 0.5143755459999999,
+  "mean_spatial_delta_l2": 1.4052876255000002,
+  "mean_spatial_relative_delta": 1.2332491280000002,
+  "spatial_changed_rate": 1.0,
+  "mean_confidence": 0.840393409,
+  "mean_normalized_prediction_entropy": 0.513159627
+}
