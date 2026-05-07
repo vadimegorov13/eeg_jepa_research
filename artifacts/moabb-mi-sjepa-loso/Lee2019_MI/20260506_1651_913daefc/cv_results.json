@@ -1,0 +1,457 @@
+[
+  {
+    "fold_id": 1,
+    "fold_label": "held_out_subject=48",
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 1200,
+    "n_test": 200,
+    "train_class_counts": [
+      600,
+      600
+    ],
+    "test_class_counts": [
+      100,
+      100
+    ],
+    "pretrained_load": {
+      "loading_path": "from_pretrained",
+      "repo_id": "braindecode/signal-jepa_without-chans",
+      "mode": "from_pretrained",
+      "model_name": "SignalJEPA_PreLocal"
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_1_trainable_names": [
+      "spatial_conv.1.weight",
+      "spatial_conv.1.bias",
+      "final_layer.1.weight",
+      "final_layer.1.bias"
+    ],
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "phase_2_trainable_names": null,
+    "best_epoch": 490,
+    "stopped_epoch": 500,
+    "best_valid_loss": 0.640553641319275,
+    "accuracy": 0.65,
+    "balanced_accuracy": 0.65,
+    "confusion_matrix": [
+      [
+        54,
+        46
+      ],
+      [
+        24,
+        76
+      ]
+    ],
+    "prediction_histogram": [
+      78,
+      122
+    ],
+    "held_out_subject_id": "48",
+    "train_subject_ids": [
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54"
+    ]
+  },
+  {
+    "fold_id": 2,
+    "fold_label": "held_out_subject=49",
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 1200,
+    "n_test": 200,
+    "train_class_counts": [
+      600,
+      600
+    ],
+    "test_class_counts": [
+      100,
+      100
+    ],
+    "pretrained_load": {
+      "loading_path": "from_pretrained",
+      "repo_id": "braindecode/signal-jepa_without-chans",
+      "mode": "from_pretrained",
+      "model_name": "SignalJEPA_PreLocal"
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_1_trainable_names": [
+      "spatial_conv.1.weight",
+      "spatial_conv.1.bias",
+      "final_layer.1.weight",
+      "final_layer.1.bias"
+    ],
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "phase_2_trainable_names": null,
+    "best_epoch": 369,
+    "stopped_epoch": 399,
+    "best_valid_loss": 0.6222422162691752,
+    "accuracy": 0.62,
+    "balanced_accuracy": 0.6200000000000001,
+    "confusion_matrix": [
+      [
+        68,
+        32
+      ],
+      [
+        44,
+        56
+      ]
+    ],
+    "prediction_histogram": [
+      112,
+      88
+    ],
+    "held_out_subject_id": "49",
+    "train_subject_ids": [
+      "48",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54"
+    ]
+  },
+  {
+    "fold_id": 3,
+    "fold_label": "held_out_subject=50",
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 1200,
+    "n_test": 200,
+    "train_class_counts": [
+      600,
+      600
+    ],
+    "test_class_counts": [
+      100,
+      100
+    ],
+    "pretrained_load": {
+      "loading_path": "from_pretrained",
+      "repo_id": "braindecode/signal-jepa_without-chans",
+      "mode": "from_pretrained",
+      "model_name": "SignalJEPA_PreLocal"
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_1_trainable_names": [
+      "spatial_conv.1.weight",
+      "spatial_conv.1.bias",
+      "final_layer.1.weight",
+      "final_layer.1.bias"
+    ],
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "phase_2_trainable_names": null,
+    "best_epoch": 239,
+    "stopped_epoch": 269,
+    "best_valid_loss": 0.6469921986262004,
+    "accuracy": 0.52,
+    "balanced_accuracy": 0.52,
+    "confusion_matrix": [
+      [
+        59,
+        41
+      ],
+      [
+        55,
+        45
+      ]
+    ],
+    "prediction_histogram": [
+      114,
+      86
+    ],
+    "held_out_subject_id": "50",
+    "train_subject_ids": [
+      "48",
+      "49",
+      "51",
+      "52",
+      "53",
+      "54"
+    ]
+  },
+  {
+    "fold_id": 4,
+    "fold_label": "held_out_subject=51",
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 1200,
+    "n_test": 200,
+    "train_class_counts": [
+      600,
+      600
+    ],
+    "test_class_counts": [
+      100,
+      100
+    ],
+    "pretrained_load": {
+      "loading_path": "from_pretrained",
+      "repo_id": "braindecode/signal-jepa_without-chans",
+      "mode": "from_pretrained",
+      "model_name": "SignalJEPA_PreLocal"
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_1_trainable_names": [
+      "spatial_conv.1.weight",
+      "spatial_conv.1.bias",
+      "final_layer.1.weight",
+      "final_layer.1.bias"
+    ],
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "phase_2_trainable_names": null,
+    "best_epoch": 225,
+    "stopped_epoch": 255,
+    "best_valid_loss": 0.673918076356252,
+    "accuracy": 0.575,
+    "balanced_accuracy": 0.575,
+    "confusion_matrix": [
+      [
+        53,
+        47
+      ],
+      [
+        38,
+        62
+      ]
+    ],
+    "prediction_histogram": [
+      91,
+      109
+    ],
+    "held_out_subject_id": "51",
+    "train_subject_ids": [
+      "48",
+      "49",
+      "50",
+      "52",
+      "53",
+      "54"
+    ]
+  },
+  {
+    "fold_id": 5,
+    "fold_label": "held_out_subject=52",
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 1200,
+    "n_test": 200,
+    "train_class_counts": [
+      600,
+      600
+    ],
+    "test_class_counts": [
+      100,
+      100
+    ],
+    "pretrained_load": {
+      "loading_path": "from_pretrained",
+      "repo_id": "braindecode/signal-jepa_without-chans",
+      "mode": "from_pretrained",
+      "model_name": "SignalJEPA_PreLocal"
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_1_trainable_names": [
+      "spatial_conv.1.weight",
+      "spatial_conv.1.bias",
+      "final_layer.1.weight",
+      "final_layer.1.bias"
+    ],
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "phase_2_trainable_names": null,
+    "best_epoch": 150,
+    "stopped_epoch": 162,
+    "best_valid_loss": 0.6748848040898641,
+    "accuracy": 0.635,
+    "balanced_accuracy": 0.635,
+    "confusion_matrix": [
+      [
+        71,
+        29
+      ],
+      [
+        44,
+        56
+      ]
+    ],
+    "prediction_histogram": [
+      115,
+      85
+    ],
+    "held_out_subject_id": "52",
+    "train_subject_ids": [
+      "48",
+      "49",
+      "50",
+      "51",
+      "53",
+      "54"
+    ]
+  },
+  {
+    "fold_id": 6,
+    "fold_label": "held_out_subject=53",
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 1200,
+    "n_test": 200,
+    "train_class_counts": [
+      600,
+      600
+    ],
+    "test_class_counts": [
+      100,
+      100
+    ],
+    "pretrained_load": {
+      "loading_path": "from_pretrained",
+      "repo_id": "braindecode/signal-jepa_without-chans",
+      "mode": "from_pretrained",
+      "model_name": "SignalJEPA_PreLocal"
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_1_trainable_names": [
+      "spatial_conv.1.weight",
+      "spatial_conv.1.bias",
+      "final_layer.1.weight",
+      "final_layer.1.bias"
+    ],
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "phase_2_trainable_names": null,
+    "best_epoch": 201,
+    "stopped_epoch": 231,
+    "best_valid_loss": 0.6688383936882019,
+    "accuracy": 0.705,
+    "balanced_accuracy": 0.7050000000000001,
+    "confusion_matrix": [
+      [
+        65,
+        35
+      ],
+      [
+        24,
+        76
+      ]
+    ],
+    "prediction_histogram": [
+      89,
+      111
+    ],
+    "held_out_subject_id": "53",
+    "train_subject_ids": [
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "54"
+    ]
+  },
+  {
+    "fold_id": 7,
+    "fold_label": "held_out_subject=54",
+    "model_name": "SignalJEPA_PreLocal",
+    "strategy": "new",
+    "warmup_epochs": 10,
+    "n_train": 1200,
+    "n_test": 200,
+    "train_class_counts": [
+      600,
+      600
+    ],
+    "test_class_counts": [
+      100,
+      100
+    ],
+    "pretrained_load": {
+      "loading_path": "from_pretrained",
+      "repo_id": "braindecode/signal-jepa_without-chans",
+      "mode": "from_pretrained",
+      "model_name": "SignalJEPA_PreLocal"
+    },
+    "phase_1_trainable_groups": [
+      "spatial_conv.",
+      "final_layer."
+    ],
+    "phase_1_trainable_params": 2302,
+    "phase_1_trainable_names": [
+      "spatial_conv.1.weight",
+      "spatial_conv.1.bias",
+      "final_layer.1.weight",
+      "final_layer.1.bias"
+    ],
+    "phase_2_trainable_groups": null,
+    "phase_2_trainable_params": null,
+    "phase_2_trainable_names": null,
+    "best_epoch": 221,
+    "stopped_epoch": 242,
+    "best_valid_loss": 0.6575619022051493,
+    "accuracy": 0.6,
+    "balanced_accuracy": 0.6000000000000001,
+    "confusion_matrix": [
+      [
+        68,
+        32
+      ],
+      [
+        48,
+        52
+      ]
+    ],
+    "prediction_histogram": [
+      116,
+      84
+    ],
+    "held_out_subject_id": "54",
+    "train_subject_ids": [
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53"
+    ]
+  }
+]

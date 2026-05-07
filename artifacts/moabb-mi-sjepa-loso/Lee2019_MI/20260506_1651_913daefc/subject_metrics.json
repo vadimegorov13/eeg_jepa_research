@@ -1,0 +1,86 @@
+{
+  "48": {
+    "accuracies": [
+      0.65
+    ],
+    "balanced_accuracies": [
+      0.65
+    ],
+    "mean_accuracy": 0.65,
+    "std_accuracy": 0.0,
+    "mean_balanced_accuracy": 0.65,
+    "std_balanced_accuracy": 0.0
+  },
+  "49": {
+    "accuracies": [
+      0.62
+    ],
+    "balanced_accuracies": [
+      0.6200000000000001
+    ],
+    "mean_accuracy": 0.62,
+    "std_accuracy": 0.0,
+    "mean_balanced_accuracy": 0.6200000000000001,
+    "std_balanced_accuracy": 0.0
+  },
+  "50": {
+    "accuracies": [
+      0.52
+    ],
+    "balanced_accuracies": [
+      0.52
+    ],
+    "mean_accuracy": 0.52,
+    "std_accuracy": 0.0,
+    "mean_balanced_accuracy": 0.52,
+    "std_balanced_accuracy": 0.0
+  },
+  "51": {
+    "accuracies": [
+      0.575
+    ],
+    "balanced_accuracies": [
+      0.575
+    ],
+    "mean_accuracy": 0.575,
+    "std_accuracy": 0.0,
+    "mean_balanced_accuracy": 0.575,
+    "std_balanced_accuracy": 0.0
+  },
+  "52": {
+    "accuracies": [
+      0.635
+    ],
+    "balanced_accuracies": [
+      0.635
+    ],
+    "mean_accuracy": 0.635,
+    "std_accuracy": 0.0,
+    "mean_balanced_accuracy": 0.635,
+    "std_balanced_accuracy": 0.0
+  },
+  "53": {
+    "accuracies": [
+      0.705
+    ],
+    "balanced_accuracies": [
+      0.7050000000000001
+    ],
+    "mean_accuracy": 0.705,
+    "std_accuracy": 0.0,
+    "mean_balanced_accuracy": 0.7050000000000001,
+    "std_balanced_accuracy": 0.0
+  },
+  "54": {
+    "accuracies": [
+      0.6
+    ],
+    "balanced_accuracies": [
+      0.6000000000000001
+    ],
+    "mean_accuracy": 0.6,
+    "std_accuracy": 0.0,
+    "mean_balanced_accuracy": 0.6000000000000001,
+    "std_balanced_accuracy": 0.0
+  }
+}

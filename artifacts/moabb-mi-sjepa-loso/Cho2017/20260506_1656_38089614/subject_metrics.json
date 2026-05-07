@@ -1,0 +1,110 @@
+{
+  "1": {
+    "accuracies": [
+      0.57
+    ],
+    "balanced_accuracies": [
+      0.5700000000000001
+    ],
+    "mean_accuracy": 0.57,
+    "std_accuracy": 0.0,
+    "mean_balanced_accuracy": 0.5700000000000001,
+    "std_balanced_accuracy": 0.0
+  },
+  "2": {
+    "accuracies": [
+      0.56
+    ],
+    "balanced_accuracies": [
+      0.56
+    ],
+    "mean_accuracy": 0.56,
+    "std_accuracy": 0.0,
+    "mean_balanced_accuracy": 0.56,
+    "std_balanced_accuracy": 0.0
+  },
+  "3": {
+    "accuracies": [
+      0.655
+    ],
+    "balanced_accuracies": [
+      0.655
+    ],
+    "mean_accuracy": 0.655,
+    "std_accuracy": 0.0,
+    "mean_balanced_accuracy": 0.655,
+    "std_balanced_accuracy": 0.0
+  },
+  "4": {
+    "accuracies": [
+      0.595
+    ],
+    "balanced_accuracies": [
+      0.595
+    ],
+    "mean_accuracy": 0.595,
+    "std_accuracy": 0.0,
+    "mean_balanced_accuracy": 0.595,
+    "std_balanced_accuracy": 0.0
+  },
+  "5": {
+    "accuracies": [
+      0.96
+    ],
+    "balanced_accuracies": [
+      0.96
+    ],
+    "mean_accuracy": 0.96,
+    "std_accuracy": 0.0,
+    "mean_balanced_accuracy": 0.96,
+    "std_balanced_accuracy": 0.0
+  },
+  "6": {
+    "accuracies": [
+      0.81
+    ],
+    "balanced_accuracies": [
+      0.81
+    ],
+    "mean_accuracy": 0.81,
+    "std_accuracy": 0.0,
+    "mean_balanced_accuracy": 0.81,
+    "std_balanced_accuracy": 0.0
+  },
+  "7": {
+    "accuracies": [
+      0.5958333333333333
+    ],
+    "balanced_accuracies": [
+      0.5958333333333333
+    ],
+    "mean_accuracy": 0.5958333333333333,
+    "std_accuracy": 0.0,
+    "mean_balanced_accuracy": 0.5958333333333333,
+    "std_balanced_accuracy": 0.0
+  },
+  "8": {
+    "accuracies": [
+      0.665
+    ],
+    "balanced_accuracies": [
+      0.665
+    ],
+    "mean_accuracy": 0.665,
+    "std_accuracy": 0.0,
+    "mean_balanced_accuracy": 0.665,
+    "std_balanced_accuracy": 0.0
+  },
+  "9": {
+    "accuracies": [
+      0.5625
+    ],
+    "balanced_accuracies": [
+      0.5625
+    ],
+    "mean_accuracy": 0.5625,
+    "std_accuracy": 0.0,
+    "mean_balanced_accuracy": 0.5625,
+    "std_balanced_accuracy": 0.0
+  }
+}

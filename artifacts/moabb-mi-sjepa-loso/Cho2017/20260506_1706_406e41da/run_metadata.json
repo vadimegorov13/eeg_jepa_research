@@ -1,0 +1,44 @@
+{
+  "run_id": "20260506_1706_406e41da",
+  "artifact_dir": "/home/vegorov/Repos/eeg_jepa_research/artifacts/moabb-mi-sjepa-loso/Cho2017/20260506_1706_406e41da",
+  "dataset_name": "Cho2017",
+  "dataset_source": "moabb",
+  "preprocessed_concat_dir": "/home/vegorov/Repos/eeg_jepa_research/preprocessed_concat_datasets/Cho2017_048eba1d_wacff46_subjects_98eacc98",
+  "labels_to_keep": [
+    "left_hand",
+    "right_hand"
+  ],
+  "excluded_subjects": [],
+  "target_window_duration_s": 3.2,
+  "window_samples": 409,
+  "subjects": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "model_name": "SignalJEPA_PreLocal",
+  "pretrained_mode": "random",
+  "strategy": "new",
+  "warmup_epochs": 10,
+  "pretrained_checkpoint_info": {
+    "loading_path": "random_initialization",
+    "repo_id": null,
+    "mode": "random",
+    "model_name": "SignalJEPA_PreLocal"
+  },
+  "cv_seed": null,
+  "global_metrics": {
+    "mean_accuracy": 0.6012962962962963,
+    "std_accuracy": 0.14046171170613858,
+    "mean_balanced_accuracy": 0.6012962962962963,
+    "std_balanced_accuracy": 0.14046171170613855,
+    "n_groups": 9,
+    "n_folds_total": 9
+  }
+}
