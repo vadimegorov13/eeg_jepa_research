@@ -1,0 +1,50 @@
+[
+  {
+    "dataset_name": "Lee2019_MI",
+    "pretrained_mode": "from_pretrained"
+  },
+  {
+    "dataset_name": "Lee2019_MI",
+    "pretrained_mode": "random"
+  },
+  {
+    "dataset_name": "Cho2017",
+    "pretrained_mode": "from_pretrained"
+  },
+  {
+    "dataset_name": "Cho2017",
+    "pretrained_mode": "random"
+  },
+  {
+    "dataset_name": "PhysionetMI",
+    "pretrained_mode": "from_pretrained"
+  },
+  {
+    "dataset_name": "PhysionetMI",
+    "pretrained_mode": "random"
+  },
+  {
+    "dataset_name": "BNCI2014_001",
+    "pretrained_mode": "from_pretrained"
+  },
+  {
+    "dataset_name": "BNCI2014_001",
+    "pretrained_mode": "random"
+  },
+  {
+    "dataset_name": "Weibo2014",
+    "pretrained_mode": "from_pretrained"
+  },
+  {
+    "dataset_name": "Weibo2014",
+    "pretrained_mode": "random"
+  },
+  {
+    "dataset_name": "Stieger2021",
+    "pretrained_mode": "from_pretrained"
+  },
+  {
+    "dataset_name": "Stieger2021",
+    "pretrained_mode": "random"
+  }
+]
